@@ -43,6 +43,7 @@
 
   --c-inverse-surface: 35 49 68;
   --c-inverse-on-surface: 234 241 255;
+  --c-inverse-primary: 143 205 255;
   color-scheme: light;
 }
 
@@ -90,6 +91,7 @@
 
   --c-inverse-surface: 230 238 245;
   --c-inverse-on-surface: 13 28 46;
+  --c-inverse-primary: 0 97 145;
   color-scheme: dark;
 }
 
