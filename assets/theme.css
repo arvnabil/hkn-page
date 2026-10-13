@@ -1,0 +1,194 @@
+/* AVer Editorial — design tokens (RGB triplets agar bisa dipakai dengan opacity: bg-primary/10) */
+:root {
+  --c-background: 248 249 255;
+  --c-surface: 248 249 255;
+  --c-surface-container-lowest: 255 255 255;
+  --c-surface-container-low: 239 244 255;
+  --c-surface-container: 230 238 255;
+  --c-surface-container-high: 220 233 255;
+  --c-surface-container-highest: 213 227 252;
+  --c-surface-alt: 244 250 253;
+  --c-on-surface: 13 28 46;
+  --c-on-surface-variant: 63 72 80;
+  --c-muted-slate: 88 103 126;
+  --c-outline: 111 120 130;
+  --c-outline-variant: 190 199 210;
+  --c-border-clean: 217 232 242;
+
+  --c-brand: 0 148 218; /* #0094DA — Primary swatch */
+  --c-primary: 0 97 145; /* teks/tombol di light (kontras AA) */
+  --c-on-primary: 255 255 255;
+  --c-primary-container: 0 123 182;
+  --c-on-primary-container: 252 252 255;
+  --c-primary-fixed: 203 230 255; /* tint lembut */
+  --c-on-primary-fixed: 0 30 48;
+
+  --c-secondary: 78 96 119; /* turunan #0B1F33 / #475569 */
+  --c-secondary-container: 206 225 252;
+  --c-on-secondary-container: 82 100 123;
+
+  --c-accent: 204 120 2; /* #CC7802 — Tertiary swatch */
+  --c-tertiary: 154 86 0;
+  --c-on-tertiary: 255 255 255;
+  --c-tertiary-container: 255 221 184;
+  --c-on-tertiary-container: 77 40 0;
+
+  --c-error: 186 26 26;
+  --c-on-error: 255 255 255;
+  --c-error-container: 255 218 214;
+  --c-on-error-container: 147 0 10;
+  --c-status-success: 22 163 74;
+  --c-status-warning: 245 158 11;
+  --c-status-danger: 220 38 38;
+
+  --c-inverse-surface: 35 49 68;
+  --c-inverse-on-surface: 234 241 255;
+  color-scheme: light;
+}
+
+:root.dark {
+  --c-background: 7 19 31; /* #07131F */
+  --c-surface: 7 19 31;
+  --c-surface-container-lowest: 11 31 51; /* #0B1F33 — Secondary swatch */
+  --c-surface-container-low: 13 34 54;
+  --c-surface-container: 16 38 62; /* #10263E */
+  --c-surface-container-high: 22 48 76;
+  --c-surface-container-highest: 28 58 90;
+  --c-surface-alt: 11 31 51;
+  --c-on-surface: 230 238 245;
+  --c-on-surface-variant: 159 179 200;
+  --c-muted-slate: 127 148 170;
+  --c-outline: 107 130 153;
+  --c-outline-variant: 36 64 92;
+  --c-border-clean: 27 55 82; /* #1B3752 */
+
+  --c-brand: 0 148 218;
+  --c-primary: 143 205 255; /* #8FCDFF seperti tombol Primary di mockup dark */
+  --c-on-primary: 0 52 79;
+  --c-primary-container: 0 148 218;
+  --c-on-primary-container: 0 30 48;
+  --c-primary-fixed: 0 60 92;
+  --c-on-primary-fixed: 203 230 255;
+
+  --c-secondary: 181 200 227;
+  --c-secondary-container: 28 46 66;
+  --c-on-secondary-container: 206 225 252;
+
+  --c-accent: 204 120 2;
+  --c-tertiary: 255 184 102;
+  --c-on-tertiary: 70 38 0;
+  --c-tertiary-container: 90 51 0;
+  --c-on-tertiary-container: 255 221 184;
+
+  --c-error: 255 180 171;
+  --c-on-error: 105 0 5;
+  --c-error-container: 105 0 5;
+  --c-on-error-container: 255 218 214;
+  --c-status-success: 74 222 128;
+  --c-status-warning: 251 191 36;
+  --c-status-danger: 248 113 113;
+
+  --c-inverse-surface: 230 238 245;
+  --c-inverse-on-surface: 13 28 46;
+  color-scheme: dark;
+}
+
+/* Dasar */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: rgb(var(--c-background));
+  color: rgb(var(--c-on-surface));
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+:focus-visible {
+  outline: 2px solid rgb(var(--c-brand));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+::selection {
+  background: rgb(var(--c-primary-fixed));
+  color: rgb(var(--c-primary));
+}
+
+/* Aksen reticle kamera (ciri khas brand) */
+.reticle {
+  position: relative;
+}
+.reticle::before,
+.reticle::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  z-index: 2;
+}
+.reticle::before {
+  top: 10px;
+  left: 10px;
+  border-top: 2px solid rgb(var(--c-brand));
+  border-left: 2px solid rgb(var(--c-brand));
+}
+.reticle::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 2px solid rgb(var(--c-brand));
+  border-right: 2px solid rgb(var(--c-brand));
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile: ruang untuk bottom-nav + safe area iPhone */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+.material-symbols-outlined.fill {
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

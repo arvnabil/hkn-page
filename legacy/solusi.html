@@ -1,0 +1,2472 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Solusi Ruang Rapat Hybrid dengan AVer — Harry Kusumo Negoro</title>
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#e6eeff",
+              "surface-dim": "#ccdbf3",
+              "status-success": "#16A34A",
+              "on-surface-variant": "#3f4850",
+              error: "#ba1a1a",
+              "surface-container-highest": "#d5e3fc",
+              "error-container": "#ffdad6",
+              "muted-slate": "#64748B",
+              "on-tertiary-fixed-variant": "#3c494e",
+              "surface-variant": "#d5e3fc",
+              "inverse-primary": "#8fcdff",
+              "on-primary-container": "#fcfcff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#004b71",
+              outline: "#6f7882",
+              "surface-tint": "#006495",
+              "primary-dark": "#0077B6",
+              background: "#f8f9ff",
+              "secondary-container": "#cee1fc",
+              "tertiary-fixed-dim": "#bbc9cf",
+              "inverse-on-surface": "#eaf1ff",
+              "primary-container": "#007bb6",
+              "on-background": "#0d1c2e",
+              "secondary-fixed-dim": "#b5c8e3",
+              "surface-container-high": "#dce9ff",
+              "on-tertiary-fixed": "#101d22",
+              "dark-text": "#E6EEF5",
+              "on-error": "#ffffff",
+              surface: "#f8f9ff",
+              "dark-surface": "#0D2236",
+              "primary-fixed": "#cbe6ff",
+              "inverse-surface": "#233144",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#8fcdff",
+              "border-clean": "#D9E8F2",
+              "dark-bg": "#07131F",
+              "surface-bright": "#f8f9ff",
+              tertiary: "#515e64",
+              "surface-alt": "#F4FAFD",
+              "on-surface": "#0d1c2e",
+              "surface-container-low": "#eff4ff",
+              "tertiary-fixed": "#d7e5ec",
+              "outline-variant": "#bec7d2",
+              "on-primary": "#ffffff",
+              secondary: "#4e6077",
+              "on-secondary-fixed-variant": "#36485e",
+              "on-tertiary-container": "#fafdff",
+              "status-danger": "#DC2626",
+              "on-secondary-fixed": "#081d30",
+              "status-warning": "#F59E0B",
+              "on-secondary-container": "#52647b",
+              primary: "#006191",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d1e4ff",
+              "on-primary-fixed": "#001e30",
+              "dark-border": "#1B3752",
+              "tertiary-container": "#69777d",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-lg": "1.5rem",
+              "space-sm": "0.5rem",
+              "space-xs": "0.25rem",
+              margin: "3rem",
+              "gutter-mobile": "1rem",
+              "space-md": "0.75rem",
+              gutter: "1.5rem",
+              "space-base": "1rem",
+              "space-xl": "2rem",
+              "space-2xl": "3rem",
+              "margin-mobile": "1.5rem",
+              "space-3xl": "5rem",
+            },
+            fontFamily: {
+              "label-telemetry": ["JetBrains Mono"],
+              "body-article": ["Inter"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "label-mono": ["JetBrains Mono"],
+              display: ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              caption: ["Inter"],
+              "body-md": ["Inter"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "title-md": ["Plus Jakarta Sans"],
+              "display-mobile": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "label-telemetry": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-article": [
+                "18px",
+                { lineHeight: "31px", fontWeight: "400" },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-mono": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "54px",
+                {
+                  lineHeight: "60px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              caption: ["13px", { lineHeight: "18px", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-sm": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "display-mobile": [
+                "38px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-md": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+
+      /* Technical camera reticle corner brackets */
+      .reticle-box {
+        position: relative;
+      }
+      .reticle-box::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 14px;
+        height: 14px;
+        border-top: 2px solid #0094da;
+        border-left: 2px solid #0094da;
+        pointer-events: none;
+        z-index: 10;
+      }
+      .reticle-box::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        width: 14px;
+        height: 14px;
+        border-bottom: 2px solid #0094da;
+        border-right: 2px solid #0094da;
+        pointer-events: none;
+        z-index: 10;
+      }
+      .reticle-corner-tr {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 14px;
+        height: 14px;
+        border-top: 2px solid #0094da;
+        border-right: 2px solid #0094da;
+        pointer-events: none;
+        z-index: 10;
+      }
+      .reticle-corner-bl {
+        position: absolute;
+        bottom: -2px;
+        left: -2px;
+        width: 14px;
+        height: 14px;
+        border-bottom: 2px solid #0094da;
+        border-left: 2px solid #0094da;
+        pointer-events: none;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-surface antialiased min-h-screen selection:bg-secondary-container selection:text-primary"
+  >
+    <!-- =========================================================================
+       1. UTILITY BAR & STICKY HEADER
+       ========================================================================= -->
+    <!-- Utility Top Bar -->
+    <div
+      class="bg-surface-alt border-b border-border-clean py-1.5 px-6 hidden sm:block text-xs"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between font-label-mono text-label-telemetry text-muted-slate"
+      >
+        <div class="flex items-center gap-3">
+          <span
+            class="inline-block w-2 h-2 rounded-full bg-status-success animate-pulse"
+          ></span>
+          <span class="text-secondary font-medium"
+            >Situs Personal · Harry Kusumo Negoro</span
+          >
+          <span class="text-border-clean">|</span>
+          <span class="text-secondary"
+            >Konsultan Spesialisasi Desain &amp; Tata Letak Kolaborasi
+            Hybrid</span
+          >
+        </div>
+        <div class="flex items-center gap-5">
+          <div class="flex items-center gap-3">
+            <a
+              class="hover:text-primary transition-colors flex items-center gap-1"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-sm" data-icon="share"
+                >share</span
+              >
+              <span>LinkedIn</span>
+            </a>
+            <span class="text-border-clean">|</span>
+            <a
+              class="hover:text-primary transition-colors flex items-center gap-1"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="play_circle"
+                >play_circle</span
+              >
+              <span>YouTube</span>
+            </a>
+          </div>
+          <span class="text-border-clean">|</span>
+          <div class="flex items-center gap-1.5 font-semibold text-secondary">
+            <span class="text-primary cursor-pointer">ID</span>
+            <span class="text-muted-slate">/</span>
+            <span class="hover:text-primary cursor-pointer text-muted-slate"
+              >EN</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Primary Sticky Header Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-surface-container-lowest border-b border-border-clean shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-18 py-3 flex items-center justify-between"
+      >
+        <!-- Brand Logo Cluster -->
+        <a class="flex items-center gap-3.5 group" href="/solusi/ruang-rapat">
+          <div
+            class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-headline-sm font-bold tracking-tight shadow-sm group-hover:bg-primary-dark transition-colors"
+          >
+            HK
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span
+                class="font-title-md text-title-md font-bold text-on-surface tracking-tight leading-none group-hover:text-primary transition-colors"
+              >
+                Harry Kusumo
+              </span>
+              <span
+                class="px-1.5 py-0.5 rounded bg-surface-container text-primary font-label-mono text-label-telemetry"
+              >
+                PRO-AV
+              </span>
+            </div>
+            <span
+              class="font-body-sm text-xs text-muted-slate mt-1 font-medium"
+            >
+              AVer Solutions Advisor
+            </span>
+          </div>
+        </a>
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="font-title-md text-secondary hover:text-primary transition-colors text-sm font-medium"
+            href="#produk"
+          >
+            Produk
+          </a>
+          <a
+            class="font-title-md text-secondary hover:text-primary transition-colors text-sm font-medium"
+            href="#artikel"
+          >
+            Artikel
+          </a>
+          <!-- ACTIVE ROUTE INDICATOR: Solusi Ruang Rapat -->
+          <a
+            class="font-title-md text-primary font-semibold text-sm border-b-2 border-primary pb-1 flex items-center gap-1.5"
+            href="/solusi/ruang-rapat"
+          >
+            <span>Solusi</span>
+            <span
+              class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
+            ></span>
+          </a>
+          <a
+            class="font-title-md text-secondary hover:text-primary transition-colors text-sm font-medium"
+            href="#panduan"
+          >
+            Panduan
+          </a>
+          <a
+            class="font-title-md text-secondary hover:text-primary transition-colors text-sm font-medium"
+            href="#tentang"
+          >
+            Tentang
+          </a>
+        </nav>
+        <!-- Action Cluster -->
+        <div class="flex items-center gap-3">
+          <button
+            aria-label="Cari artikel atau produk"
+            class="p-2 text-secondary hover:text-primary transition-colors rounded-lg hover:bg-surface-alt"
+            type="button"
+          >
+            <span class="material-symbols-outlined" data-icon="search"
+              >search</span
+            >
+          </button>
+          <button
+            aria-label="Ganti mode visual"
+            class="p-2 text-secondary hover:text-primary transition-colors rounded-lg hover:bg-surface-alt"
+            type="button"
+          >
+            <span class="material-symbols-outlined" data-icon="light_mode"
+              >light_mode</span
+            >
+          </button>
+          <div class="h-6 w-px bg-border-clean mx-1 hidden sm:block"></div>
+          <a
+            class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-[#0094DA] hover:bg-[#0077B6] text-white font-title-md text-sm font-semibold transition-all shadow-sm"
+            href="#penawaran"
+          >
+            Minta Penawaran
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- =========================================================================
+       2. BREADCRUMB & HERO SECTION
+       ========================================================================= -->
+    <main class="max-w-7xl mx-auto px-6 pt-6 pb-20">
+      <!-- Breadcrumb trail -->
+      <nav
+        aria-label="Breadcrumb"
+        class="flex items-center gap-2 text-xs font-label-mono text-muted-slate mb-8"
+      >
+        <a class="hover:text-primary transition-colors" href="/">Beranda</a>
+        <span
+          class="material-symbols-outlined text-xs"
+          data-icon="chevron_right"
+          >chevron_right</span
+        >
+        <a class="hover:text-primary transition-colors" href="#">Solusi</a>
+        <span
+          class="material-symbols-outlined text-xs"
+          data-icon="chevron_right"
+          >chevron_right</span
+        >
+        <span class="text-primary font-semibold">Solusi Ruang Rapat</span>
+      </nav>
+      <!-- Hero Editorial Grid -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24 relative"
+      >
+        <!-- Subtle Cyan Glow Ambient Background -->
+        <div
+          class="absolute -top-16 -left-16 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"
+        ></div>
+        <!-- Left Editorial Column -->
+        <div class="lg:col-span-7 flex flex-col items-start">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-alt border border-border-clean mb-4"
+          >
+            <span
+              class="font-label-mono text-label-telemetry text-primary font-semibold tracking-wider"
+            >
+              // SOLUSI RUANG RAPAT ENTERPRISE
+            </span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            <span class="font-label-mono text-label-telemetry text-muted-slate"
+              >ARSITEKTUR AV</span
+            >
+          </div>
+          <h1
+            class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-extrabold mb-6 leading-tight"
+          >
+            Solusi Ruang Rapat Hybrid dengan AVer
+          </h1>
+          <p
+            class="font-body-md text-body-md text-secondary leading-relaxed mb-8 max-w-2xl"
+          >
+            Integrasi teknologi video konferensi mutakhir yang memadukan
+            rekayasa optik presisi tinggi dan tangkapan akustik cerdas.
+            Dirancang untuk menghadirkan pengalaman kolaborasi tatap muka yang
+            alami tanpa friksi teknis di berbagai ukuran ruang meeting
+            organisasi Anda.
+          </p>
+          <!-- Primary Dual Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+            <a
+              class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-[#0094DA] hover:bg-[#0077B6] text-white font-title-md text-sm font-semibold transition-all shadow-sm gap-2"
+              href="#penawaran"
+            >
+              <span>Minta Penawaran</span>
+              <span
+                class="material-symbols-outlined text-base"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </a>
+            <a
+              class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-[#25D366] hover:bg-[#1eb857] text-white font-title-md text-sm font-semibold transition-all shadow-sm gap-2"
+              href="https://wa.me/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined text-base" data-icon="chat"
+                >chat</span
+              >
+              <span>Chat WhatsApp</span>
+            </a>
+          </div>
+          <!-- Trust Badges & Advisory Indicators -->
+          <div
+            class="pt-6 border-t border-border-clean w-full grid grid-cols-1 sm:grid-cols-3 gap-4"
+          >
+            <div class="flex items-start gap-2.5">
+              <span
+                class="material-symbols-outlined text-primary text-xl mt-0.5"
+                data-icon="square_foot"
+                >square_foot</span
+              >
+              <div>
+                <p class="font-title-md text-xs font-bold text-on-surface">
+                  Konsultasi Tata Letak
+                </p>
+                <p class="font-body-sm text-xs text-muted-slate">
+                  Berdasarkan dimensi ruang
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span
+                class="material-symbols-outlined text-primary text-xl mt-0.5"
+                data-icon="hub"
+                >hub</span
+              >
+              <div>
+                <p class="font-title-md text-xs font-bold text-on-surface">
+                  Multi-Platform
+                </p>
+                <p class="font-body-sm text-xs text-muted-slate">
+                  UVC/UAC Plug &amp; Play
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span
+                class="material-symbols-outlined text-primary text-xl mt-0.5"
+                data-icon="support_agent"
+                >support_agent</span
+              >
+              <div>
+                <p class="font-title-md text-xs font-bold text-on-surface">
+                  Dukungan Teknis
+                </p>
+                <p class="font-body-sm text-xs text-muted-slate">
+                  Panduan advisor langsung
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Visual Camera Reticle Module -->
+        <div class="lg:col-span-5">
+          <div
+            class="relative bg-surface-container-lowest p-2.5 rounded-xl border border-border-clean shadow-sm"
+          >
+            <!-- Outer Camera Reticle Container -->
+            <div
+              class="reticle-box relative overflow-hidden rounded-lg bg-surface-alt border border-border-clean"
+            >
+              <div class="reticle-corner-tr"></div>
+              <div class="reticle-corner-bl"></div>
+              <img
+                class="w-full aspect-[4/3] object-cover"
+                data-alt="A brightly lit executive enterprise conference room viewed through a photographic technical lens. The space features a clean light wood meeting table, high-resolution wall display showing clear remote video feeds, modern minimalist acoustic wall panels, and professional ceiling lighting. The atmosphere reflects clean pro-AV architectural precision with subtle ice-blue and crisp white corporate tones."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTGiwcqx1DVbeKV7ZBUZJ5SO3UCqX-usB7lruFULJwc3kmQJQyw2v2dgK7NtJdvs8LIR9S43UTYVNHHiRLJ7JNmqBZvV4JJ6BMrJREJMgQU1wkYu-9UOKIWYGfDKrhiO6AjjkpNqcK4ljaXFoWRZam9b5RurOZUDXTv0upTrg0NtpoSqyEJLFiq-vN7PWOrJIosQ6YfBg54_7P3DYMUIXHlXzN_Q_sZYVzgik2JQdE9SGYGRvuwQ1X6Q"
+              />
+              <!-- Active AI Tracking Simulated Bounding Overlay -->
+              <div
+                class="absolute inset-0 flex items-center justify-center pointer-events-none p-6"
+              >
+                <div
+                  class="w-3/4 h-3/5 border border-dashed border-[#0094DA]/60 rounded relative flex flex-col justify-between p-2"
+                >
+                  <div
+                    class="flex justify-between items-center text-[10px] font-label-mono text-[#0094DA] bg-white/90 px-1.5 py-0.5 rounded shadow-xs w-max"
+                  >
+                    <span>AI TRACKING: ACTIVE AUTO-FRAMING</span>
+                  </div>
+                  <div
+                    class="self-end text-[10px] font-label-mono text-white bg-primary/80 px-1.5 py-0.5 rounded backdrop-blur-xs"
+                  >
+                    <span>FOV: 120° · 4K 60FPS</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Top Floating Telemetry Chip -->
+              <div
+                class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 rounded-md border border-border-clean shadow-xs"
+              >
+                <span
+                  class="font-label-mono text-label-telemetry text-primary font-bold"
+                >
+                  // TOPOLOGI: HYBRID PRO-AV
+                </span>
+              </div>
+            </div>
+            <!-- Bottom Telemetry Caption Module -->
+            <div
+              class="mt-3.5 p-3 rounded-lg bg-surface-alt border border-border-clean flex items-start gap-3"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-xl shrink-0"
+                data-icon="videocam"
+                >videocam</span
+              >
+              <div class="text-xs">
+                <span
+                  class="font-title-md font-bold text-on-surface block mb-0.5"
+                  >Rekomendasi Penempatan Kamera Sentral</span
+                >
+                <p
+                  class="font-body-sm text-muted-slate text-xs leading-relaxed"
+                >
+                  Penempatan setinggi mata peserta (110–125 cm) memastikan
+                  kontak visual sejajar, diperkuat sensor wide-angle untuk
+                  mengeliminasi blind spot di tepi ruangan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         3. TANTANGAN RUANG RAPAT HYBRID
+         ========================================================================= -->
+      <section class="mb-24">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span
+            class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider uppercase block mb-2"
+          >
+            // DIAGNOSIS PERMASALAHAN
+          </span>
+          <h2
+            class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight"
+          >
+            Tantangan Utama Ruang Rapat Hybrid Modern
+          </h2>
+          <p class="font-body-md text-secondary mt-3">
+            Rapat hibrida yang tidak efektif kerap kali berakar dari
+            ketidaksesuaian perangkat keras dengan dimensi dan kondisi akustik
+            ruang pertemuan.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="p-8 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-6"
+              >
+                <span
+                  class="material-symbols-outlined text-2xl"
+                  data-icon="photo_camera_front"
+                  >photo_camera_front</span
+                >
+              </div>
+              <div
+                class="font-label-mono text-label-telemetry text-muted-slate mb-1"
+              >
+                KENDALA 01
+              </div>
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface mb-3"
+              >
+                Distorsi Perspektif &amp; Peserta Tidak Terlihat
+              </h3>
+              <p
+                class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+              >
+                Kamera bersudut tunggal konvensional sering memotong sudut
+                ruangan atau membuat partisipan di ujung meja tampak sangat
+                kecil (efek bowling-alley), sehingga bahasa tubuh tidak
+                tersampaikan secara jelas.
+              </p>
+            </div>
+            <div
+              class="pt-4 border-t border-border-clean flex items-center justify-between text-xs font-label-mono text-primary font-medium"
+            >
+              <span>Dampak: Partisipasi Rapat Berkurang</span>
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="p-8 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-6"
+              >
+                <span
+                  class="material-symbols-outlined text-2xl"
+                  data-icon="mic_off"
+                  >mic_off</span
+                >
+              </div>
+              <div
+                class="font-label-mono text-label-telemetry text-muted-slate mb-1"
+              >
+                KENDALA 02
+              </div>
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface mb-3"
+              >
+                Kualitas Audio Menurun &amp; Gema Pantulan
+              </h3>
+              <p
+                class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+              >
+                Pantulan suara dari dinding kaca, dengung AC, dan mikrofon yang
+                tidak mampu menjangkau peserta terjauh menyebabkan miskomunikasi
+                repetitif serta kelelahan mendengar bagi partisipan remote.
+              </p>
+            </div>
+            <div
+              class="pt-4 border-t border-border-clean flex items-center justify-between text-xs font-label-mono text-primary font-medium"
+            >
+              <span>Dampak: Kelelahan Pendengaran (Fatigue)</span>
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="p-8 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-6"
+              >
+                <span
+                  class="material-symbols-outlined text-2xl"
+                  data-icon="settings_ethernet"
+                  >settings_ethernet</span
+                >
+              </div>
+              <div
+                class="font-label-mono text-label-telemetry text-muted-slate mb-1"
+              >
+                KENDALA 03
+              </div>
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface mb-3"
+              >
+                Kompleksitas Operasional &amp; Kabel Rumit
+              </h3>
+              <p
+                class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+              >
+                Waktu rapat terbuang 10–15 menit hanya untuk menghubungkan kabel
+                adaptor ganda, mengatur driver software, dan mengarahkan fokus
+                kamera manual yang membingungkan para pengguna.
+              </p>
+            </div>
+            <div
+              class="pt-4 border-t border-border-clean flex items-center justify-between text-xs font-label-mono text-primary font-medium"
+            >
+              <span>Dampak: Penurunan Efisiensi Waktu Kerja</span>
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         4. PILIH BERDASARKAN UKURAN RUANG (4 ROOM CATEGORIES)
+         ========================================================================= -->
+      <section class="mb-24" id="arsitektur">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-border-clean"
+        >
+          <div>
+            <span
+              class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider block mb-2"
+            >
+              // ARSITEKTUR TATA LETAK RUANG
+            </span>
+            <h2
+              class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight"
+            >
+              Rekomendasi Solusi Sesuai Dimensi &amp; Kapasitas
+            </h2>
+          </div>
+          <p class="font-body-sm text-secondary text-sm max-w-md mt-4 md:mt-0">
+            Setiap ruangan memiliki karakter akustik dan jarak tembak optik
+            tersendiri. Pilihlah konfigurasi yang telah dioptimalkan sesuai
+            rasio volume ruang.
+          </p>
+        </div>
+        <!-- 4 High-Density Room Layout Cards -->
+        <div class="space-y-10">
+          <!-- ROOM 1: Huddle Room (2-6 Orang) -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-2xl p-6 lg:p-8 shadow-sm"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <!-- Room Info & Acoustic Analysis -->
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-mono text-label-telemetry font-bold"
+                  >
+                    TIPE 01
+                  </span>
+                  <span
+                    class="font-label-mono text-xs text-muted-slate font-medium"
+                  >
+                    DIMENSI: ~3 × 4 METER
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+                >
+                  Huddle Room (2–6 Orang)
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+                >
+                  Fokus utama pada ruang huddle adalah jarak meja yang dekat
+                  dengan monitor display. Dibutuhkan lensa ultra-wide (120° FOV)
+                  agar partisipan yang duduk di sisi terdekat tidak terpotong
+                  dari pandangan video.
+                </p>
+                <!-- Technical Metric Chips -->
+                <div
+                  class="grid grid-cols-2 gap-3 mb-6 font-label-mono text-xs"
+                >
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >FOV LENSA</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >120° Ultra-Wide Angle</span
+                    >
+                  </div>
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >AUDIO PICKUP</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >Radius 4–5 Meter</span
+                    >
+                  </div>
+                </div>
+                <!-- Recommendation Row -->
+                <div
+                  class="p-4 rounded-xl bg-surface-alt border border-border-clean flex items-center justify-between"
+                >
+                  <div>
+                    <span class="text-xs text-muted-slate block font-label-mono"
+                      >REKOMENDASI PERANGKAT:</span
+                    >
+                    <span class="font-title-md font-bold text-primary text-sm"
+                      >AVer VB342 Pro / CAM130</span
+                    >
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-dark"
+                    href="#penawaran"
+                  >
+                    Lihat Detail
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="arrow_forward"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Visual Blueprint Schematic Diagram -->
+              <div class="lg:col-span-7">
+                <div
+                  class="bg-surface-alt rounded-xl border border-border-clean p-6 relative overflow-hidden"
+                >
+                  <div
+                    class="flex items-center justify-between mb-4 border-b border-border-clean pb-2"
+                  >
+                    <span
+                      class="font-label-mono text-label-telemetry text-muted-slate font-bold"
+                    >
+                      // SCHEMATIC: HUDDLE 120° ULTRA-WIDE COVERAGE
+                    </span>
+                    <span
+                      class="font-label-mono text-label-telemetry text-status-success"
+                      >ALL-IN-ONE SOUNDBAR</span
+                    >
+                  </div>
+                  <!-- SVG Vector Room Diagram -->
+                  <div class="w-full flex justify-center py-4">
+                    <svg
+                      class="w-full max-w-lg h-56"
+                      fill="none"
+                      viewbox="0 0 500 220"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <!-- Wall boundaries -->
+                      <rect
+                        fill="#FFFFFF"
+                        height="200"
+                        rx="8"
+                        stroke="#D9E8F2"
+                        stroke-dasharray="4 4"
+                        stroke-width="2"
+                        width="460"
+                        x="20"
+                        y="10"
+                      ></rect>
+                      <!-- Display & Camera Soundbar -->
+                      <rect
+                        fill="#006191"
+                        height="8"
+                        rx="2"
+                        width="140"
+                        x="180"
+                        y="12"
+                      ></rect>
+                      <rect
+                        fill="#0094DA"
+                        height="12"
+                        rx="3"
+                        width="80"
+                        x="210"
+                        y="24"
+                      ></rect>
+                      <text
+                        fill="#FFFFFF"
+                        font-family="JetBrains Mono"
+                        font-size="7"
+                        font-weight="600"
+                        text-anchor="middle"
+                        x="250"
+                        y="33"
+                      >
+                        AVer VB342 Pro
+                      </text>
+                      <!-- FOV Beam Arc (120 Degrees) -->
+                      <path
+                        d="M250 36 L70 200 L430 200 Z"
+                        fill="#E6F4FB"
+                        opacity="0.6"
+                      ></path>
+                      <line
+                        stroke="#0094DA"
+                        stroke-dasharray="3 3"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="70"
+                        y1="36"
+                        y2="200"
+                      ></line>
+                      <line
+                        stroke="#0094DA"
+                        stroke-dasharray="3 3"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="430"
+                        y1="36"
+                        y2="200"
+                      ></line>
+                      <text
+                        fill="#006191"
+                        font-family="JetBrains Mono"
+                        font-size="10"
+                        font-weight="700"
+                        text-anchor="middle"
+                        x="250"
+                        y="90"
+                      >
+                        120° FOV
+                      </text>
+                      <!-- Compact Huddle Table -->
+                      <rect
+                        fill="#F4FAFD"
+                        height="65"
+                        rx="16"
+                        stroke="#D9E8F2"
+                        stroke-width="1.5"
+                        width="120"
+                        x="190"
+                        y="110"
+                      ></rect>
+                      <text
+                        fill="#4E6077"
+                        font-family="Inter"
+                        font-size="9"
+                        text-anchor="middle"
+                        x="250"
+                        y="148"
+                      >
+                        Meja Rapat 4–6 Pax
+                      </text>
+                      <!-- Participants -->
+                      <circle cx="165" cy="125" fill="#006191" r="9"></circle>
+                      <circle cx="165" cy="160" fill="#006191" r="9"></circle>
+                      <circle cx="335" cy="125" fill="#006191" r="9"></circle>
+                      <circle cx="335" cy="160" fill="#006191" r="9"></circle>
+                      <circle cx="250" cy="195" fill="#006191" r="9"></circle>
+                    </svg>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-[11px] font-label-mono text-muted-slate mt-2"
+                  >
+                    <span>JARAK PANDANG: 1.2M - 3.5M</span>
+                    <span>INSTALASI: WALL-MOUNT / UNDER TV</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROOM 2: Ruang Sedang (6-12 Orang) -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-2xl p-6 lg:p-8 shadow-sm"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-mono text-label-telemetry font-bold"
+                  >
+                    TIPE 02
+                  </span>
+                  <span
+                    class="font-label-mono text-xs text-muted-slate font-medium"
+                  >
+                    DIMENSI: ~4 × 6 METER
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+                >
+                  Ruang Sedang (6–12 Orang)
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+                >
+                  Membutuhkan sinergi dua lensa: sensor panorama fixed untuk
+                  mendeteksi pergerakan di seluruh ruangan, dipadukan lensa
+                  optik PTZ bermotor yang otomatis memperbesar (zoom) pembicara
+                  aktif tanpa jeda mekanis.
+                </p>
+                <div
+                  class="grid grid-cols-2 gap-3 mb-6 font-label-mono text-xs"
+                >
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >SISTEM LENSA</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >Dual Lens (PTZ + AI Panorama)</span
+                    >
+                  </div>
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >OPTICAL ZOOM</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >Up to 24X Total Zoom</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-surface-alt border border-border-clean flex items-center justify-between"
+                >
+                  <div>
+                    <span class="text-xs text-muted-slate block font-label-mono"
+                      >REKOMENDASI PERANGKAT:</span
+                    >
+                    <span class="font-title-md font-bold text-primary text-sm"
+                      >AVer CAM550 &amp; FONE540</span
+                    >
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-dark"
+                    href="#penawaran"
+                  >
+                    Lihat Detail
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="arrow_forward"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Diagram Medium Room -->
+              <div class="lg:col-span-7">
+                <div
+                  class="bg-surface-alt rounded-xl border border-border-clean p-6 relative overflow-hidden"
+                >
+                  <div
+                    class="flex items-center justify-between mb-4 border-b border-border-clean pb-2"
+                  >
+                    <span
+                      class="font-label-mono text-label-telemetry text-muted-slate font-bold"
+                    >
+                      // SCHEMATIC: MEDIUM ROOM DUAL-LENS AI AUTO-FRAMING
+                    </span>
+                    <span
+                      class="font-label-mono text-label-telemetry text-primary"
+                      >PTZ + PANORAMA</span
+                    >
+                  </div>
+                  <div class="w-full flex justify-center py-4">
+                    <svg
+                      class="w-full max-w-lg h-56"
+                      fill="none"
+                      viewbox="0 0 500 220"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="#FFFFFF"
+                        height="200"
+                        rx="8"
+                        stroke="#D9E8F2"
+                        stroke-dasharray="4 4"
+                        stroke-width="2"
+                        width="460"
+                        x="20"
+                        y="10"
+                      ></rect>
+                      <!-- Screen & PTZ Camera -->
+                      <rect
+                        fill="#006191"
+                        height="8"
+                        rx="2"
+                        width="160"
+                        x="170"
+                        y="12"
+                      ></rect>
+                      <circle cx="250" cy="28" fill="#0094DA" r="10"></circle>
+                      <text
+                        fill="#006191"
+                        font-family="JetBrains Mono"
+                        font-size="7"
+                        font-weight="600"
+                        text-anchor="middle"
+                        x="250"
+                        y="47"
+                      >
+                        AVer CAM550 (Dual Lens)
+                      </text>
+                      <!-- Panoramic + PTZ Targeted Beam -->
+                      <path
+                        d="M250 28 L110 200 L390 200 Z"
+                        fill="#E6F4FB"
+                        opacity="0.4"
+                      ></path>
+                      <path
+                        d="M250 28 L200 130 L270 130 Z"
+                        fill="#0094DA"
+                        opacity="0.25"
+                      ></path>
+                      <line
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="200"
+                        y1="28"
+                        y2="130"
+                      ></line>
+                      <line
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="270"
+                        y1="28"
+                        y2="130"
+                      ></line>
+                      <!-- Medium Conference Table -->
+                      <rect
+                        fill="#F4FAFD"
+                        height="90"
+                        rx="20"
+                        stroke="#D9E8F2"
+                        stroke-width="1.5"
+                        width="140"
+                        x="180"
+                        y="90"
+                      ></rect>
+                      <circle
+                        cx="250"
+                        cy="135"
+                        fill="#FFFFFF"
+                        r="12"
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                      ></circle>
+                      <text
+                        fill="#0094DA"
+                        font-family="JetBrains Mono"
+                        font-size="7"
+                        font-weight="700"
+                        text-anchor="middle"
+                        x="250"
+                        y="139"
+                      >
+                        MIC
+                      </text>
+                      <!-- Seated Attendees -->
+                      <circle cx="155" cy="105" fill="#006191" r="8"></circle>
+                      <circle cx="155" cy="135" fill="#006191" r="8"></circle>
+                      <circle cx="155" cy="165" fill="#006191" r="8"></circle>
+                      <circle cx="345" cy="105" fill="#006191" r="8"></circle>
+                      <circle
+                        cx="345"
+                        cy="135"
+                        fill="#0094DA"
+                        r="8"
+                        stroke="#006191"
+                        stroke-width="2"
+                      ></circle>
+                      <circle cx="345" cy="165" fill="#006191" r="8"></circle>
+                    </svg>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-[11px] font-label-mono text-muted-slate mt-2"
+                  >
+                    <span>JARAK TEMBAK: 3.0M - 6.0M</span>
+                    <span>SPEAKERPHONE: DAISY-CHAIN EXPANSION READY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROOM 3: Boardroom Eksekutif (12-25+ Orang) -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-2xl p-6 lg:p-8 shadow-sm"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-mono text-label-telemetry font-bold"
+                  >
+                    TIPE 03
+                  </span>
+                  <span
+                    class="font-label-mono text-xs text-muted-slate font-medium"
+                  >
+                    DIMENSI: ~5 × 10+ METER
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+                >
+                  Boardroom Eksekutif (12–25+ Orang)
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+                >
+                  Meja panjang menuntut kemampuan optical zoom superior agar
+                  peserta di ujung terjauh tetap terekam tajam tanpa noise
+                  piksel digital. Dilengkapi sensor audio tracking yang
+                  menyinkronkan arah lensa ke sumber suara mikrofon.
+                </p>
+                <div
+                  class="grid grid-cols-2 gap-3 mb-6 font-label-mono text-xs"
+                >
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >ZOOM CAPABILITY</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >36X Total / Optical Superior</span
+                    >
+                  </div>
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >AUDIO TRACKING</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >Voice Trigger Beamforming</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-surface-alt border border-border-clean flex items-center justify-between"
+                >
+                  <div>
+                    <span class="text-xs text-muted-slate block font-label-mono"
+                      >REKOMENDASI PERANGKAT:</span
+                    >
+                    <span class="font-title-md font-bold text-primary text-sm"
+                      >AVer CAM570 / CAM520 Pro3</span
+                    >
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-dark"
+                    href="#penawaran"
+                  >
+                    Lihat Detail
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="arrow_forward"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="lg:col-span-7">
+                <div
+                  class="bg-surface-alt rounded-xl border border-border-clean p-6 relative overflow-hidden"
+                >
+                  <div
+                    class="flex items-center justify-between mb-4 border-b border-border-clean pb-2"
+                  >
+                    <span
+                      class="font-label-mono text-label-telemetry text-muted-slate font-bold"
+                    >
+                      // SCHEMATIC: BOARDROOM LONG-TABLE AUDIO TRACKING
+                    </span>
+                    <span
+                      class="font-label-mono text-label-telemetry text-status-success"
+                      >CASCADED AUDIO SYSTEM</span
+                    >
+                  </div>
+                  <div class="w-full flex justify-center py-4">
+                    <svg
+                      class="w-full max-w-lg h-56"
+                      fill="none"
+                      viewbox="0 0 500 220"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="#FFFFFF"
+                        height="200"
+                        rx="8"
+                        stroke="#D9E8F2"
+                        stroke-dasharray="4 4"
+                        stroke-width="2"
+                        width="460"
+                        x="20"
+                        y="10"
+                      ></rect>
+                      <!-- Front Display & CAM570 -->
+                      <rect
+                        fill="#006191"
+                        height="8"
+                        rx="2"
+                        width="180"
+                        x="160"
+                        y="12"
+                      ></rect>
+                      <circle cx="250" cy="27" fill="#0094DA" r="9"></circle>
+                      <text
+                        fill="#006191"
+                        font-family="JetBrains Mono"
+                        font-size="7"
+                        font-weight="600"
+                        text-anchor="middle"
+                        x="250"
+                        y="45"
+                      >
+                        AVer CAM570 (Audio Tracking)
+                      </text>
+                      <!-- Long Boardroom Table -->
+                      <rect
+                        fill="#F4FAFD"
+                        height="135"
+                        rx="14"
+                        stroke="#D9E8F2"
+                        stroke-width="1.5"
+                        width="90"
+                        x="205"
+                        y="65"
+                      ></rect>
+                      <!-- Cascaded Expansion Mics -->
+                      <circle
+                        cx="250"
+                        cy="85"
+                        fill="#FFFFFF"
+                        r="7"
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                      ></circle>
+                      <circle
+                        cx="250"
+                        cy="130"
+                        fill="#FFFFFF"
+                        r="7"
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                      ></circle>
+                      <circle
+                        cx="250"
+                        cy="175"
+                        fill="#FFFFFF"
+                        r="7"
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                      ></circle>
+                      <!-- Audio-to-Camera Tracking Sightlines -->
+                      <line
+                        stroke="#0094DA"
+                        stroke-dasharray="2 2"
+                        stroke-width="1"
+                        x1="250"
+                        x2="250"
+                        y1="27"
+                        y2="175"
+                      ></line>
+                      <!-- Multiple Chairs along sides -->
+                      <circle cx="185" cy="80" fill="#006191" r="7"></circle>
+                      <circle cx="185" cy="110" fill="#006191" r="7"></circle>
+                      <circle cx="185" cy="140" fill="#006191" r="7"></circle>
+                      <circle cx="185" cy="170" fill="#006191" r="7"></circle>
+                      <circle cx="315" cy="80" fill="#006191" r="7"></circle>
+                      <circle cx="315" cy="110" fill="#006191" r="7"></circle>
+                      <circle cx="315" cy="140" fill="#006191" r="7"></circle>
+                      <circle cx="315" cy="170" fill="#006191" r="7"></circle>
+                    </svg>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-[11px] font-label-mono text-muted-slate mt-2"
+                  >
+                    <span>JARAK JANGKAU MAKS: 10M+</span>
+                    <span>INTEGRASI: IP/POE &amp; EXPANSION PODS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROOM 4: Auditorium & Ruang Pelatihan (30+ Orang) -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-2xl p-6 lg:p-8 shadow-sm"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-mono text-label-telemetry font-bold"
+                  >
+                    TIPE 04
+                  </span>
+                  <span
+                    class="font-label-mono text-xs text-muted-slate font-medium"
+                  >
+                    DIMENSI: HALL / TRAINING CENTER
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+                >
+                  Auditorium &amp; Ruang Pelatihan (30+ Orang)
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-sm leading-relaxed mb-6"
+                >
+                  Dirancang untuk skenario edukasi dan presentasi berskala
+                  besar. Memerlukan Pro AV Auto Tracking PTZ yang otomatis
+                  mengikuti langkah instruktur di atas panggung (stage) tanpa
+                  mengenakan lanyard sensor khusus.
+                </p>
+                <div
+                  class="grid grid-cols-2 gap-3 mb-6 font-label-mono text-xs"
+                >
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >FITUR PELACAKAN</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >Presenter &amp; Zone Tracking AI</span
+                    >
+                  </div>
+                  <div
+                    class="p-2.5 rounded bg-surface-alt border border-border-clean"
+                  >
+                    <span class="text-muted-slate block text-[11px]"
+                      >BROADCAST OUTPUT</span
+                    >
+                    <span class="font-bold text-on-surface"
+                      >NDI|HX, IP Streaming, HDMI, USB</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-surface-alt border border-border-clean flex items-center justify-between"
+                >
+                  <div>
+                    <span class="text-xs text-muted-slate block font-label-mono"
+                      >REKOMENDASI PERANGKAT:</span
+                    >
+                    <span class="font-title-md font-bold text-primary text-sm"
+                      >AVer PTC310H &amp; DL30</span
+                    >
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-dark"
+                    href="#penawaran"
+                  >
+                    Lihat Detail
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="arrow_forward"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <div class="lg:col-span-7">
+                <div
+                  class="bg-surface-alt rounded-xl border border-border-clean p-6 relative overflow-hidden"
+                >
+                  <div
+                    class="flex items-center justify-between mb-4 border-b border-border-clean pb-2"
+                  >
+                    <span
+                      class="font-label-mono text-label-telemetry text-muted-slate font-bold"
+                    >
+                      // SCHEMATIC: AUDITORIUM AI PRESENTER TRACKING
+                    </span>
+                    <span
+                      class="font-label-mono text-label-telemetry text-primary"
+                      >PRO AV NDI|HX READY</span
+                    >
+                  </div>
+                  <div class="w-full flex justify-center py-4">
+                    <svg
+                      class="w-full max-w-lg h-56"
+                      fill="none"
+                      viewbox="0 0 500 220"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="#FFFFFF"
+                        height="200"
+                        rx="8"
+                        stroke="#D9E8F2"
+                        stroke-dasharray="4 4"
+                        stroke-width="2"
+                        width="460"
+                        x="20"
+                        y="10"
+                      ></rect>
+                      <!-- Stage Area -->
+                      <rect
+                        fill="#E6F4FB"
+                        height="50"
+                        rx="4"
+                        stroke="#D9E8F2"
+                        stroke-width="1"
+                        width="420"
+                        x="40"
+                        y="20"
+                      ></rect>
+                      <text
+                        fill="#006191"
+                        font-family="JetBrains Mono"
+                        font-size="8"
+                        font-weight="700"
+                        x="70"
+                        y="45"
+                      >
+                        AREA PANGGUNG (PRESENTER ZONE)
+                      </text>
+                      <!-- Presenter Moving Track Vector -->
+                      <circle cx="210" cy="45" fill="#0094DA" r="9"></circle>
+                      <line
+                        stroke="#0094DA"
+                        stroke-dasharray="3 3"
+                        stroke-width="2"
+                        x1="160"
+                        x2="340"
+                        y1="45"
+                        y2="45"
+                      ></line>
+                      <!-- Audience Rows -->
+                      <rect
+                        fill="#F4FAFD"
+                        height="12"
+                        rx="2"
+                        stroke="#D9E8F2"
+                        width="380"
+                        x="60"
+                        y="100"
+                      ></rect>
+                      <rect
+                        fill="#F4FAFD"
+                        height="12"
+                        rx="2"
+                        stroke="#D9E8F2"
+                        width="380"
+                        x="60"
+                        y="125"
+                      ></rect>
+                      <rect
+                        fill="#F4FAFD"
+                        height="12"
+                        rx="2"
+                        stroke="#D9E8F2"
+                        width="380"
+                        x="60"
+                        y="150"
+                      ></rect>
+                      <!-- Pro PTZ Tracking Camera Mounted at Rear -->
+                      <circle cx="250" cy="185" fill="#006191" r="10"></circle>
+                      <text
+                        fill="#006191"
+                        font-family="JetBrains Mono"
+                        font-size="7"
+                        font-weight="600"
+                        text-anchor="middle"
+                        x="250"
+                        y="203"
+                      >
+                        AVer PTC310H (Auto Tracking PTZ)
+                      </text>
+                      <!-- Dynamic tracking cone -->
+                      <line
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="200"
+                        y1="185"
+                        y2="55"
+                      ></line>
+                      <line
+                        stroke="#0094DA"
+                        stroke-width="1.5"
+                        x1="250"
+                        x2="225"
+                        y1="185"
+                        y2="55"
+                      ></line>
+                    </svg>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-[11px] font-label-mono text-muted-slate mt-2"
+                  >
+                    <span>JARAK TEMBAK: HINGGA 15+ METER</span>
+                    <span>AUTONOMOUS TRACKING: TANPA OPERATOR MANUAL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         5. CARA KERJA SOLUSI & ALUR IMPLEMENTASI
+         ========================================================================= -->
+      <section class="mb-24">
+        <div class="max-w-3xl mb-12">
+          <span
+            class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider block mb-2"
+          >
+            // METODOLOGI IMPLEMENTASI
+          </span>
+          <h2
+            class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight"
+          >
+            4 Langkah Menentukan Solusi yang Tepat untuk Organisasi Anda
+          </h2>
+          <p class="font-body-md text-secondary mt-3">
+            Pendekatan sistematis berbasis prinsip rekayasa audio-visual untuk
+            memastikan setiap investasi perangkat tepat guna dan berkinerja
+            tinggi.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Step 1 -->
+          <div
+            class="p-6 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-label-mono text-2xl font-bold text-primary"
+                  >01</span
+                >
+                <span
+                  class="material-symbols-outlined text-muted-slate text-xl"
+                  data-icon="architecture"
+                  >architecture</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-base font-bold text-on-surface mb-2"
+              >
+                Konsultasi &amp; Analisis Denah
+              </h3>
+              <p class="font-body-sm text-secondary text-xs leading-relaxed">
+                Pemeriksaan denah arsitektur, kapasitas kursi, material akustik
+                dinding, dan pencahayaan alami untuk memetakan tantangan visual
+                maupun pantulan gema.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-3 border-t border-border-clean font-label-mono text-[11px] text-muted-slate"
+            >
+              Fokus: Dimensi &amp; Pemetaan FOV
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div
+            class="p-6 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-label-mono text-2xl font-bold text-primary"
+                  >02</span
+                >
+                <span
+                  class="material-symbols-outlined text-muted-slate text-xl"
+                  data-icon="devices"
+                  >devices</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-base font-bold text-on-surface mb-2"
+              >
+                Rekomendasi &amp; Topologi
+              </h3>
+              <p class="font-body-sm text-secondary text-xs leading-relaxed">
+                Pemilihan perangkat AVer paling presisi—apakah soundbar
+                all-in-one, dual-lens tracking, atau kamera PTZ dengan
+                speakerphone cascaded.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-3 border-t border-border-clean font-label-mono text-[11px] text-muted-slate"
+            >
+              Fokus: Kompatibilitas Perangkat Keras
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div
+            class="p-6 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-label-mono text-2xl font-bold text-primary"
+                  >03</span
+                >
+                <span
+                  class="material-symbols-outlined text-muted-slate text-xl"
+                  data-icon="request_quote"
+                  >request_quote</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-base font-bold text-on-surface mb-2"
+              >
+                Penyusunan Proposal Teknis
+              </h3>
+              <p class="font-body-sm text-secondary text-xs leading-relaxed">
+                Transparansi spesifikasi teknis berdasarkan datasheet resmi,
+                diagram perkabelan USB/IP, dan estimasi implementasi yang
+                terperinci.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-3 border-t border-border-clean font-label-mono text-[11px] text-muted-slate"
+            >
+              Fokus: Dokumentasi &amp; Datasheet Resmi
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div
+            class="p-6 rounded-xl bg-surface-container-lowest border border-border-clean relative flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-label-mono text-2xl font-bold text-primary"
+                  >04</span
+                >
+                <span
+                  class="material-symbols-outlined text-muted-slate text-xl"
+                  data-icon="tune"
+                  >tune</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-base font-bold text-on-surface mb-2"
+              >
+                Optimalisasi Konfigurasi
+              </h3>
+              <p class="font-body-sm text-secondary text-xs leading-relaxed">
+                Panduan pengaturan software manajemen (seperti PTZApp 2) untuk
+                mengkalibrasi preset ruang, sensitivitas SmartFrame, dan
+                pembatasan audio fence.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-3 border-t border-border-clean font-label-mono text-[11px] text-muted-slate"
+            >
+              Fokus: Kalibrasi Algoritma AI
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         6. PLATFORM COMPATIBILITY STRIP
+         ========================================================================= -->
+      <section
+        class="mb-24 p-8 rounded-2xl bg-surface-alt border border-border-clean"
+      >
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span
+            class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider uppercase block mb-1"
+          >
+            // INTEROPERABILITAS EKOSISTEM
+          </span>
+          <h3
+            class="font-headline-sm text-headline-sm text-on-surface font-bold"
+          >
+            Dukungan Platform Konferensi Terkemuka Tanpa Hambatan
+          </h3>
+          <p class="font-body-sm text-secondary text-xs mt-2">
+            Perangkat AVer beroperasi melalui protokol standar UVC/UAC Plug
+            &amp; Play, memudahkan koneksi instan dengan sistem operasi Windows,
+            macOS, dan ChromeOS.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="bg-surface-container-lowest p-5 rounded-xl border border-border-clean text-center flex flex-col items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-3xl text-primary mb-2"
+              data-icon="video_chat"
+              >video_chat</span
+            >
+            <span class="font-title-md font-bold text-sm text-on-surface"
+              >Microsoft Teams</span
+            >
+            <span class="font-label-mono text-[11px] text-muted-slate mt-1"
+              >Teams Rooms Certified Ready</span
+            >
+          </div>
+          <div
+            class="bg-surface-container-lowest p-5 rounded-xl border border-border-clean text-center flex flex-col items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-3xl text-primary mb-2"
+              data-icon="videocam"
+              >videocam</span
+            >
+            <span class="font-title-md font-bold text-sm text-on-surface"
+              >Zoom Rooms</span
+            >
+            <span class="font-label-mono text-[11px] text-muted-slate mt-1"
+              >Native Hardware Integration</span
+            >
+          </div>
+          <div
+            class="bg-surface-container-lowest p-5 rounded-xl border border-border-clean text-center flex flex-col items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-3xl text-primary mb-2"
+              data-icon="groups"
+              >groups</span
+            >
+            <span class="font-title-md font-bold text-sm text-on-surface"
+              >Google Meet</span
+            >
+            <span class="font-label-mono text-[11px] text-muted-slate mt-1"
+              >Seamless WebRTC Video</span
+            >
+          </div>
+          <div
+            class="bg-surface-container-lowest p-5 rounded-xl border border-border-clean text-center flex flex-col items-center justify-center"
+          >
+            <span
+              class="material-symbols-outlined text-3xl text-primary mb-2"
+              data-icon="meeting_room"
+              >meeting_room</span
+            >
+            <span class="font-title-md font-bold text-sm text-on-surface"
+              >Cisco Webex</span
+            >
+            <span class="font-label-mono text-[11px] text-muted-slate mt-1"
+              >UVC Control Compatible</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================
+         7. RELATED ARTICLES
+         ========================================================================= -->
+      <section class="mb-24" id="artikel">
+        <div
+          class="flex items-end justify-between mb-10 pb-4 border-b border-border-clean"
+        >
+          <div>
+            <span
+              class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider block mb-1"
+            >
+              // PUBLIKASI &amp; PANDUAN TEKNIS
+            </span>
+            <h2
+              class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight"
+            >
+              Artikel Terkait Rekayasa Ruang Rapat
+            </h2>
+          </div>
+          <a
+            class="text-xs font-semibold text-primary hover:text-primary-dark hidden sm:flex items-center gap-1 font-label-mono"
+            href="#panduan"
+          >
+            Semua Tulisan
+            <span
+              class="material-symbols-outlined text-sm"
+              data-icon="arrow_forward"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <article
+            class="bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="relative overflow-hidden aspect-[16/10] bg-surface-alt"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="Technical optical camera lens mounted on a conference wall capturing a business room with blue analytical overlay guides and precise measurement lines. Pristine clean light-mode studio ambiance highlighting modern enterprise hardware technology."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMspp_slL8QENNgISS9hslXO_p6r3SMnEsJ_a0YCJbYYz5DdTQKL-TOpb9fqbavEqLKBiOFD3wpbS8sHna8icGJDpT3zovdPRZVnNceJ8vuFQcMntJ88h90vraAhLFHkvJ-8RxeQkRk-G6UYWiscE88T7feS2a9r4VDXEZS4mTRWpcDipETITjh4at6aqEsresbHcWLNw00kzaRgbp8UhrkgYVTgbGR2cUwVrqkd8RJSMve2rCsUqutg"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-white/95 px-2 py-0.5 rounded text-[10px] font-label-mono text-primary font-bold shadow-xs"
+                >
+                  // HARDWARE
+                </span>
+              </div>
+              <div class="p-6">
+                <span
+                  class="font-label-mono text-[11px] text-[#0094DA] font-semibold block mb-2"
+                  >// PANDUAN PEMILIHAN</span
+                >
+                <h3
+                  class="font-title-md text-base font-bold text-on-surface mb-2 leading-snug hover:text-primary transition-colors cursor-pointer"
+                >
+                  Panduan Memilih Kamera Konferensi AVer untuk Setiap Ukuran
+                  Ruangan
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-xs leading-relaxed line-clamp-3"
+                >
+                  Memahami perbedaan teknis antara Fixed Wide Soundbar dan PTZ
+                  Optical Zoom untuk menghindari pemborosan spesifikasi di ruang
+                  pertemuan korporasi.
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-6 pb-6 pt-3 border-t border-border-clean flex items-center justify-between text-[11px] font-label-mono text-muted-slate"
+            >
+              <span>Harry Kusumo Negoro</span>
+              <span>[tanggal publikasi] · 5 mnt</span>
+            </div>
+          </article>
+          <!-- Article 2 -->
+          <article
+            class="bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="relative overflow-hidden aspect-[16/10] bg-surface-alt"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="Close up architectural detail of an enterprise dual-lens camera system with a primary mechanical motorized PTZ lens and a secondary panoramic AI sensor. Bright, modern minimalist conference boardroom background with ice-blue accents."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7_Ayj71tBxTxWCA9nvn3JsMxsHyNBAD4DfMKdnUPIOiyst5kUc4PRw5g7ufxcqdiYLsGhh-t-84B_dPR6C6Rju30JMKpAXOnDTcpEZyR0mgUv2MOWyRYuqVbv8Xhfr5g-i-3iPeFmsioPPPI1CZzHiWdlc6i2ZCkZtdwtxILkZohsOGGmoXZvnSE2I6y1L0oqddEf5vWatzaVr2YZimbxUovsFxuVVsQXoxD_A5LppTGN_d5kmrCdw"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-white/95 px-2 py-0.5 rounded text-[10px] font-label-mono text-primary font-bold shadow-xs"
+                >
+                  // AI TRACKING
+                </span>
+              </div>
+              <div class="p-6">
+                <span
+                  class="font-label-mono text-[11px] text-[#0094DA] font-semibold block mb-2"
+                  >// ARSITEKTUR SENSOR</span
+                >
+                <h3
+                  class="font-title-md text-base font-bold text-on-surface mb-2 leading-snug hover:text-primary transition-colors cursor-pointer"
+                >
+                  Arsitektur Dual-Lens: Mengapa Sensor AI Sekunder
+                  Mengoptimalkan Rapat Alami
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-xs leading-relaxed line-clamp-3"
+                >
+                  Bedah cara kerja sensor panorama sekunder yang memonitor
+                  ruangan secara kontinu sehingga lensa utama tidak kehilangan
+                  konteks saat peserta baru memasuki ruangan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-6 pb-6 pt-3 border-t border-border-clean flex items-center justify-between text-[11px] font-label-mono text-muted-slate"
+            >
+              <span>Harry Kusumo Negoro</span>
+              <span>[tanggal publikasi] · 7 mnt</span>
+            </div>
+          </article>
+          <!-- Article 3 -->
+          <article
+            class="bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 hover:border-[#0094DA]/50 transition-all duration-200"
+          >
+            <div>
+              <div
+                class="relative overflow-hidden aspect-[16/10] bg-surface-alt"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="An IT engineer holding an enterprise deployment tablet inspecting an executive meeting room audiovisual layout. Architectural drawings of meeting tables and acoustic glass panels sit alongside clean pro-AV hardware."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3n_WzkaLckzdrGEmbO0AL28qMb7d0fydWZbric_s9B1sCOyE9OP78xgkZZ_KelsP63MNt0Vz-z__rh8pkDNxq6dBQjlz3QJ6gDrbbsq0yfZrnTaJkdlC9wMijJ4Bz_Imj1QYSnT_J2UsQY6--Q1uojhtgzdUuD3QRqeoK6_nfBE3Erczy-Do703UkF1xj6BUoiO89lD0kkHb6_VKiW-wcbr3AMk8vCmAWxp7F01mml50vUO7y5U5oqg"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-white/95 px-2 py-0.5 rounded text-[10px] font-label-mono text-primary font-bold shadow-xs"
+                >
+                  // DEPLOYMENT
+                </span>
+              </div>
+              <div class="p-6">
+                <span
+                  class="font-label-mono text-[11px] text-[#0094DA] font-semibold block mb-2"
+                  >// KESIAPAN SISTEM</span
+                >
+                <h3
+                  class="font-title-md text-base font-bold text-on-surface mb-2 leading-snug hover:text-primary transition-colors cursor-pointer"
+                >
+                  Checklist Kesiapan Ruang Hybrid Sebelum Peluncuran Sistem Baru
+                </h3>
+                <p
+                  class="font-body-sm text-secondary text-xs leading-relaxed line-clamp-3"
+                >
+                  Daftar periksa teknis mencakup manajemen kabel USB 3.0, port
+                  IP PoE, ketinggian braket monitor, dan pengujian peredam gema
+                  ruangan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-6 pb-6 pt-3 border-t border-border-clean flex items-center justify-between text-[11px] font-label-mono text-muted-slate"
+            >
+              <span>Harry Kusumo Negoro</span>
+              <span>[tanggal publikasi] · 4 mnt</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- =========================================================================
+         8. FAQ ACCORDION
+         ========================================================================= -->
+      <section class="mb-24 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <span
+            class="font-label-mono text-label-telemetry text-primary font-bold tracking-wider uppercase block mb-1"
+          >
+            // KLARIFIKASI TEKNIS
+          </span>
+          <h2
+            class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight"
+          >
+            Pertanyaan Umum Mengenai Solusi Ruang Rapat
+          </h2>
+          <p class="font-body-sm text-secondary text-sm mt-2">
+            Penjelasan langsung seputar kompatibilitas perangkat keras, tata
+            letak akustik, dan proses permohonan konsultasi.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <!-- Accordion Item 1 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 transition-all"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md font-bold text-on-surface list-none"
+            >
+              <span class="text-sm"
+                >Bagaimana cara menentukan apakah ruang rapat saya membutuhkan
+                kamera fixed atau kamera PTZ?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200"
+                data-icon="expand_more"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-3 border-t border-border-clean text-xs font-body-sm text-secondary leading-relaxed"
+            >
+              Kamera fixed dengan sudut lebar (seperti AVer VB342 Pro atau
+              CAM130) sangat ideal untuk ruangan dengan kedalaman di bawah 4
+              meter, di mana seluruh peserta dapat tertangkap tanpa zoom
+              mekanis. Sebaliknya, jika ruangan memiliki panjang lebih dari 5
+              meter (seperti Boardroom), kamera PTZ bermotor (seperti CAM550
+              atau CAM570) mutlak diperlukan untuk membidik ekspresi partisipan
+              di ujung meja dengan kejernihan optik tinggi.
+            </div>
+          </details>
+          <!-- Accordion Item 2 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 transition-all"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md font-bold text-on-surface list-none"
+            >
+              <span class="text-sm"
+                >Apakah perangkat AVer memerlukan driver khusus untuk digunakan
+                di Microsoft Teams atau Zoom?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200"
+                data-icon="expand_more"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-3 border-t border-border-clean text-xs font-body-sm text-secondary leading-relaxed"
+            >
+              Tidak. Perangkat AVer menggunakan standar industri UVC (USB Video
+              Class) dan UAC (USB Audio Class) Plug &amp; Play standar. Begitu
+              kabel USB dihubungkan ke komputer ruang rapat (laptop atau mini PC
+              MTR/Zoom Rooms), perangkat langsung dikenali tanpa instalasi
+              driver manual pihak ketiga.
+            </div>
+          </details>
+          <!-- Accordion Item 3 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 transition-all"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md font-bold text-on-surface list-none"
+            >
+              <span class="text-sm"
+                >Bagaimana mengatasi gema dan dengung suara pada ruang rapat
+                dengan dinding kaca?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200"
+                data-icon="expand_more"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-3 border-t border-border-clean text-xs font-body-sm text-secondary leading-relaxed"
+            >
+              Dinding kaca menciptakan pantulan suara tinggi. Perangkat
+              kolaborasi AVer dilengkapi fitur pemrosesan sinyal digital (DSP)
+              canggih yang mencakup Acoustic Echo Cancellation (AEC), Noise
+              Suppression, serta teknologi Audio Fence yang secara aktif meredam
+              suara di luar area meja konferensi. Untuk ruangan sangat
+              reflektif, disarankan penambahan mikrofon cascaded di dekat
+              peserta.
+            </div>
+          </details>
+          <!-- Accordion Item 4 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 transition-all"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md font-bold text-on-surface list-none"
+            >
+              <span class="text-sm"
+                >Bagaimana alur untuk mengajukan permohonan konsultasi denah dan
+                uji coba unit demo?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200"
+                data-icon="expand_more"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-3 border-t border-border-clean text-xs font-body-sm text-secondary leading-relaxed"
+            >
+              Anda dapat menekan tombol "Minta Penawaran" atau menghubungi via
+              WhatsApp langsung. Cukup kirimkan estimasi ukuran ruangan (panjang
+              x lebar) dan platform konferensi yang digunakan organisasi Anda.
+              Kami akan memberikan skema rekomendasi perangkat dan
+              mengoordinasikan kemungkinan demo langsung di lokasi Anda.
+            </div>
+          </details>
+        </div>
+      </section>
+      <!-- =========================================================================
+         9. FINAL CTA BAND
+         ========================================================================= -->
+      <section
+        class="rounded-2xl bg-[#0094DA] text-white p-8 sm:p-12 shadow-sm relative overflow-hidden"
+        id="penawaran"
+      >
+        <div class="relative z-10 max-w-3xl">
+          <span
+            class="font-label-mono text-label-telemetry text-white/80 font-bold uppercase tracking-wider block mb-2"
+          >
+            // KONSULTASI ADVISORY PRIBADI
+          </span>
+          <h2
+            class="font-headline-lg text-headline-lg font-extrabold mb-4 leading-tight"
+          >
+            Butuh rekomendasi produk AVer untuk ruangan Anda?
+          </h2>
+          <p class="font-body-md text-white/90 text-sm leading-relaxed mb-8">
+            Konsultasikan denah ruang, kapasitas peserta, dan platform
+            kolaborasi bersama Harry Kusumo Negoro untuk menemukan konfigurasi
+            kamera dan audio yang paling tepat guna.
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-white text-[#006191] hover:bg-surface-container text-sm font-title-md font-bold transition-all shadow-sm"
+              href="#penawaran"
+            >
+              Minta Penawaran
+            </a>
+            <a
+              class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-[#25D366] hover:bg-[#1eb857] text-white text-sm font-title-md font-bold transition-all shadow-sm gap-2"
+              href="https://wa.me/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined text-base" data-icon="chat"
+                >chat</span
+              >
+              <span>Chat WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <!-- Abstract Graphic Geometry Background -->
+        <div
+          class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none"
+        >
+          <svg
+            fill="currentColor"
+            height="400"
+            viewbox="0 0 200 200"
+            width="400"
+          >
+            <circle
+              cx="100"
+              cy="100"
+              fill="none"
+              r="80"
+              stroke="white"
+              stroke-width="8"
+            ></circle>
+            <circle
+              cx="100"
+              cy="100"
+              fill="none"
+              r="50"
+              stroke="white"
+              stroke-width="4"
+            ></circle>
+            <line
+              stroke="white"
+              stroke-width="2"
+              x1="100"
+              x2="100"
+              y1="0"
+              y2="200"
+            ></line>
+            <line
+              stroke="white"
+              stroke-width="2"
+              x1="0"
+              x2="200"
+              y1="100"
+              y2="100"
+            ></line>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <!-- =========================================================================
+       FOOTER (COMPLIANT WITH DESIGN SYSTEM & JSON REQUISITES)
+       ========================================================================= -->
+    <footer class="bg-surface-alt border-t border-border-clean mt-16">
+      <div class="max-w-7xl mx-auto px-6 py-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12"
+        >
+          <!-- Column 1: Brand & Persona -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-8 h-8 rounded bg-primary flex items-center justify-center text-white font-title-md font-bold text-sm"
+              >
+                HK
+              </div>
+              <div>
+                <span
+                  class="font-title-md font-bold text-on-surface block leading-tight"
+                  >Harry Kusumo</span
+                >
+                <span class="font-body-sm text-xs text-muted-slate"
+                  >AVer Solutions Advisor</span
+                >
+              </div>
+            </div>
+            <p
+              class="font-body-sm text-secondary text-xs leading-relaxed max-w-sm mb-4"
+            >
+              Membantu Anda memilih solusi kolaborasi terbaik melalui analisis
+              denah arsitektur, pemilihan lensa AI, dan integrasi ruang
+              konferensi modern.
+            </p>
+            <div class="font-label-mono text-[11px] text-muted-slate">
+              ROUTE: /solusi/ruang-rapat
+            </div>
+          </div>
+          <!-- Column 2: Produk AVer -->
+          <div>
+            <h4
+              class="font-title-md text-xs font-bold text-on-surface uppercase tracking-wider mb-4 font-label-mono"
+            >
+              Produk AVer
+            </h4>
+            <ul class="space-y-2 text-xs font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >AVer VB342 Pro Soundbar</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >AVer CAM550 Dual-Lens</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >AVer CAM570 Audio Tracking</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >AVer PTC310H PTZ Camera</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >AVer FONE540 Speakerphone</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 3: Solusi Ruang -->
+          <div>
+            <h4
+              class="font-title-md text-xs font-bold text-on-surface uppercase tracking-wider mb-4 font-label-mono"
+            >
+              Solusi Ruang
+            </h4>
+            <ul class="space-y-2 text-xs font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Huddle Room (2–6 Pax)</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Ruang Rapat Sedang</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Boardroom Eksekutif</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Auditorium &amp; Training Hall</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Microsoft Teams Rooms</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 4: Informasi & Kontak -->
+          <div>
+            <h4
+              class="font-title-md text-xs font-bold text-on-surface uppercase tracking-wider mb-4 font-label-mono"
+            >
+              Informasi &amp; Kontak
+            </h4>
+            <ul class="space-y-2 text-xs font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Tentang Harry Kusumo</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Panduan Topologi AV</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Datasheet Resmi AVer</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Hubungi via WhatsApp</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Legal Disclaimer & Copyright -->
+        <div
+          class="pt-8 border-t border-border-clean flex flex-col md:flex-row items-center justify-between gap-4 font-label-mono text-label-telemetry text-muted-slate text-center md:text-left"
+        >
+          <p class="max-w-3xl leading-relaxed">
+            Situs personal Harry Kusumo Negoro. AVer adalah merek dagang AVer
+            Information Inc. Spesifikasi produk dapat berubah sewaktu-waktu;
+            selalu rujuk ke datasheet resmi AVer.
+          </p>
+          <p class="shrink-0">
+            © 2026 Harry Kusumo Negoro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

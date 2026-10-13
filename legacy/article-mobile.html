@@ -1,0 +1,1633 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <title>Harry Kusumo Negoro — AVer Solutions Magazine</title>
+    <!-- Google Fonts: Inter, Plus Jakarta Sans, JetBrains Mono -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#006495",
+              "dark-border": "#1B3752",
+              "on-tertiary-fixed-variant": "#3c494e",
+              "status-danger": "#DC2626",
+              "inverse-on-surface": "#eaf1ff",
+              "muted-slate": "#64748B",
+              "on-surface-variant": "#3f4850",
+              "primary-fixed": "#cbe6ff",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#001e30",
+              "surface-container": "#e6eeff",
+              "on-background": "#0d1c2e",
+              surface: "#f8f9ff",
+              "tertiary-container": "#69777d",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#fafdff",
+              "surface-alt": "#F4FAFD",
+              "surface-bright": "#f8f9ff",
+              "secondary-fixed": "#d1e4ff",
+              "on-secondary-fixed": "#081d30",
+              "dark-bg": "#07131F",
+              "dark-surface": "#0D2236",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#eff4ff",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              outline: "#6f7882",
+              "on-tertiary-fixed": "#101d22",
+              "surface-dim": "#ccdbf3",
+              "on-surface": "#0d1c2e",
+              "surface-variant": "#d5e3fc",
+              "outline-variant": "#bec7d2",
+              "status-warning": "#F59E0B",
+              "dark-text": "#E6EEF5",
+              "on-secondary-container": "#52647b",
+              "secondary-container": "#cee1fc",
+              "tertiary-fixed-dim": "#bbc9cf",
+              tertiary: "#515e64",
+              "on-secondary-fixed-variant": "#36485e",
+              "on-primary-container": "#fcfcff",
+              "primary-dark": "#0077B6",
+              "on-error": "#ffffff",
+              "border-clean": "#D9E8F2",
+              "surface-container-highest": "#d5e3fc",
+              background: "#f8f9ff",
+              "on-secondary": "#ffffff",
+              "status-success": "#16A34A",
+              secondary: "#4e6077",
+              "primary-container": "#007bb6",
+              "on-primary-fixed-variant": "#004b71",
+              "secondary-fixed-dim": "#b5c8e3",
+              "tertiary-fixed": "#d7e5ec",
+              "surface-container-high": "#dce9ff",
+              "inverse-surface": "#233144",
+              "inverse-primary": "#8fcdff",
+              "primary-fixed-dim": "#8fcdff",
+              primary: "#006191",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              "body-article": ["Inter"],
+              "body-md": ["Inter"],
+              display: ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "label-telemetry": ["JetBrains Mono"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "display-mobile": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              caption: ["Inter"],
+              "label-mono": ["JetBrains Mono"],
+              "headline-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-article": [
+                "18px",
+                { lineHeight: "31px", fontWeight: "400" },
+              ],
+              "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              display: [
+                "54px",
+                {
+                  lineHeight: "60px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "body-sm": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-telemetry": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-md": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-mobile": [
+                "38px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg-mobile": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              caption: ["14px", { lineHeight: "20px", fontWeight: "400" }],
+              "label-mono": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface antialiased pb-28 min-h-screen selection:bg-primary selection:text-on-primary"
+  >
+    <!-- Mobile Top Utility Strip -->
+    <div
+      class="bg-surface-alt border-b border-border-clean px-4 py-2 flex items-center justify-between text-muted-slate font-label-mono text-label-mono"
+    >
+      <div class="flex items-center space-x-2">
+        <span
+          class="inline-block w-2 h-2 rounded-full bg-status-success animate-pulse"
+        ></span>
+        <span class="text-on-surface-variant font-medium"
+          >AV TELEMETRY // AKTIF</span
+        >
+      </div>
+      <div class="flex items-center space-x-4">
+        <!-- Language Toggle -->
+        <div
+          class="flex items-center bg-surface-container-lowest border border-border-clean rounded px-1.5 py-0.5 space-x-1"
+        >
+          <span class="text-primary font-bold">ID</span>
+          <span class="text-border-clean">/</span>
+          <span class="hover:text-primary transition-colors cursor-pointer"
+            >EN</span
+          >
+        </div>
+        <!-- Social Media Links -->
+        <div class="flex items-center space-x-2 text-on-surface-variant">
+          <a
+            aria-label="LinkedIn Profile"
+            class="hover:text-primary transition-colors"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[16px]">share</span>
+          </a>
+          <a
+            aria-label="RSS Feed"
+            class="hover:text-primary transition-colors"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[16px]">rss_feed</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Sticky Mobile Navigation Header -->
+    <header
+      class="sticky top-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-b border-border-clean shadow-sm"
+    >
+      <div class="px-4 h-16 flex items-center justify-between">
+        <!-- Monogram & Identity Anchor -->
+        <a class="flex items-center space-x-3 group" href="#">
+          <div
+            class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary font-display font-extrabold text-title-md border border-primary-container shadow-sm group-active:scale-95 transition-transform"
+          >
+            HK
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-display font-extrabold text-title-md text-on-surface tracking-tight leading-tight"
+              >Harry Kusumo</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry text-primary font-semibold"
+              >AVer Solutions Advisor</span
+            >
+          </div>
+        </a>
+        <!-- Header Action Controls -->
+        <div class="flex items-center space-x-1">
+          <button
+            aria-label="Search"
+            class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-alt text-on-surface transition-colors"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]">search</span>
+          </button>
+          <button
+            aria-label="Toggle Theme"
+            class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-alt text-on-surface transition-colors"
+            id="theme-toggle"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >light_mode</span
+            >
+          </button>
+          <button
+            aria-label="Navigation Menu"
+            class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-alt border border-border-clean text-primary hover:bg-surface-container transition-colors"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Container (Engineered for ~390px Mobile Viewport) -->
+    <main class="max-w-[420px] mx-auto px-4 pt-5 space-y-7">
+      <!-- Hero: Featured Article Card with Camera Reticles -->
+      <section>
+        <div
+          class="relative bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden shadow-sm"
+        >
+          <!-- Reticle Corner Guides -->
+          <div
+            class="absolute top-2 left-2 w-3.5 h-3.5 border-t-2 border-l-2 border-primary pointer-events-none z-20"
+          ></div>
+          <div
+            class="absolute top-2 right-2 w-3.5 h-3.5 border-t-2 border-r-2 border-primary pointer-events-none z-20"
+          ></div>
+          <div
+            class="absolute bottom-2 left-2 w-3.5 h-3.5 border-b-2 border-l-2 border-primary pointer-events-none z-20"
+          ></div>
+          <div
+            class="absolute bottom-2 right-2 w-3.5 h-3.5 border-b-2 border-r-2 border-primary pointer-events-none z-20"
+          ></div>
+          <!-- Featured Media Visual -->
+          <div
+            class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="An advanced corporate hybrid boardroom in a bright modern skyscraper featuring dual-lens AVer PTZ tracking video conference cameras mounted under professional ultra-wide displays. High-key clinical daylight illuminates sleek architectural conference furniture in a palette of cool whites, metallic slate, and subtle cyan accents, embodying clean professional engineering precision."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcYAeSpbiX-4DybsoCMnU07tflS9fJTkfQtImHGpD5MPOQJ4L3GL6RCPUjXeAZTcUI5tQzqYWt3kmGWqsfaYEwxZ1yLoRPt1uCWeQXOvz4tDC8vMdvJTeV-RIJR6pQdpGLdTr4wOGn82E2Xrr9T8zLSjU7qFSnwhrNX2aluSlEaWiutLTpIDfwXne3bps_lkVHYSSqLRi0dqIZakvgEZlRD50egCZtrugloepj7aU6ZUQEYYMlDGHkKw"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"
+            ></div>
+            <!-- Category Floating Badge -->
+            <div class="absolute top-3 left-3 z-10">
+              <span
+                class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm border border-border-clean rounded text-primary font-label-mono text-label-mono"
+              >
+                // ARTIKEL UTAMA
+              </span>
+            </div>
+            <!-- Quick Telemetry Badge Overlay -->
+            <div
+              class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-label-telemetry text-label-telemetry"
+            >
+              <span
+                class="bg-on-surface/75 px-2 py-0.5 rounded border border-white/20"
+                >CAM550 DUAL 4K</span
+              >
+              <span
+                class="bg-on-surface/75 px-2 py-0.5 rounded border border-white/20"
+                >FOI 120° DYNAMIC</span
+              >
+            </div>
+          </div>
+          <!-- Editorial Content Details -->
+          <div class="p-4 space-y-3">
+            <div
+              class="flex items-center space-x-2 text-primary font-label-mono text-label-mono"
+            >
+              <span>SISTEM TRACKING OTOMATIS</span>
+              <span>•</span>
+              <span class="text-muted-slate">[tanggal publikasi]</span>
+            </div>
+            <h1
+              class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug"
+            >
+              Arsitektur Dual Lens pada Ruang Rapat Enterprise: Mengapa AI
+              Framing Mengubah Dinamika Kolaborasi
+            </h1>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Evolusi kecerdasan buatan dalam memetakan posisi pembicara secara
+              presisi tanpa intervensi kontrol manual untuk pengalaman pertemuan
+              hibrida yang natural.
+            </p>
+            <!-- Author Credential Strip -->
+            <div
+              class="pt-2 border-t border-border-clean flex items-center justify-between"
+            >
+              <div class="flex items-center space-x-2.5">
+                <div
+                  class="w-7 h-7 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary font-display font-bold text-caption"
+                >
+                  HK
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="font-body-sm text-body-sm font-semibold text-on-surface"
+                    >Harry Kusumo Negoro</span
+                  >
+                  <span
+                    class="font-label-telemetry text-label-telemetry text-muted-slate"
+                    >AVer Solutions Advisor</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center text-muted-slate font-label-mono text-label-mono"
+              >
+                <span class="material-symbols-outlined text-[15px] mr-1"
+                  >schedule</span
+                >
+                <span>6 Menit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Horizontally Scrollable Category Chips Pill Row -->
+      <section class="-mx-4 px-4 overflow-x-auto no-scrollbar py-1">
+        <div class="flex items-center space-x-2 whitespace-nowrap">
+          <button
+            class="px-4 py-2 bg-primary text-on-primary rounded-full font-label-mono text-label-mono font-semibold shadow-sm transition-colors"
+          >
+            Semua
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            Konferensi Video
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            PTZ Pro AV
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            Soundbar
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            Edukasi
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            Panduan
+          </button>
+          <button
+            class="px-3.5 py-2 bg-surface-container-lowest border border-border-clean text-secondary rounded-full font-label-mono text-label-mono hover:text-primary hover:border-primary transition-colors"
+          >
+            Solusi Ruang
+          </button>
+        </div>
+      </section>
+      <!-- Produk Unggulan: Featured AVer Hardware Cards -->
+      <section class="space-y-3.5">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="font-label-mono text-label-mono text-primary"
+              >// HARDWARE LINEUP</span
+            >
+            <h2
+              class="font-headline-sm text-headline-sm font-bold text-on-surface"
+            >
+              Produk Unggulan
+            </h2>
+          </div>
+          <span
+            class="font-label-telemetry text-label-telemetry text-muted-slate bg-surface-alt px-2 py-1 rounded border border-border-clean"
+            >4 MODEL</span
+          >
+        </div>
+        <!-- Card 1: CAM550 -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-xl p-4 space-y-3 relative overflow-hidden shadow-sm"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                >Dual Lens 4K PTZ</span
+              >
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface"
+              >
+                AVer CAM550
+              </h3>
+            </div>
+            <span
+              class="px-2 py-0.5 bg-surface-alt border border-border-clean text-secondary font-label-mono text-label-mono rounded"
+              >Medium / Large</span
+            >
+          </div>
+          <div
+            class="relative aspect-video rounded-lg overflow-hidden border border-border-clean bg-surface-alt"
+          >
+            <!-- Reticle motif on media -->
+            <div
+              class="absolute top-1.5 left-1.5 w-2.5 h-2.5 border-t border-l border-primary z-10"
+            ></div>
+            <div
+              class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 border-b border-r border-primary z-10"
+            ></div>
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Technical product profile photo of the AVer CAM550 dual-lens enterprise video conference camera sitting securely on a clean white laboratory testing pedestal. The upper secondary AI lens and lower primary optical PTZ lens are in sharp focus under soft diffused photographic illumination with cool studio blue reflections."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbENYvgPm5-22wbeYRu4MZ1h24E2vyk-h05YVIToW1HhHvASAcMCCwOTGGEkFGQg1U6NBz1jocYPeWi8tCrahuiB4em11QSbAM7T4GWfjaA8dDqX0CRu9To7ai_kqaZQDz-TlIQwcxWstxlhBuy--GxjhW25iY1UdEHcK42fLoTiRgOD99OSt0_VoQOIFr0VQDjSepAWzONP4X2i2kAihuM1hsN6I3owjM5pUYV2RXXkjn6G43OJ00hw"
+            />
+          </div>
+          <!-- Spec Chips -->
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Dual 4K Sensors</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >12X Optical Zoom</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >AI Smart Framing</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >[isi dari datasheet resmi]</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary">
+            Sistem konferensi video dual-lens dengan integrasi lensa sekunder AI
+            untuk pendeteksian partisipan secara real-time.
+          </p>
+          <!-- CTA Row -->
+          <div class="grid grid-cols-2 gap-2 pt-2 border-t border-border-clean">
+            <button
+              class="px-3 py-2 bg-surface-container-lowest border border-primary text-primary hover:bg-surface-alt rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Lihat Detail
+            </button>
+            <button
+              class="px-3 py-2 bg-primary hover:bg-primary-dark text-on-primary rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Minta Penawaran
+            </button>
+          </div>
+        </article>
+        <!-- Card 2: CAM570 -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-xl p-4 space-y-3 relative overflow-hidden shadow-sm"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                >Audio Tracking PTZ</span
+              >
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface"
+              >
+                AVer CAM570
+              </h3>
+            </div>
+            <span
+              class="px-2 py-0.5 bg-surface-alt border border-border-clean text-secondary font-label-mono text-label-mono rounded"
+              >Large Rooms</span
+            >
+          </div>
+          <div
+            class="relative aspect-video rounded-lg overflow-hidden border border-border-clean bg-surface-alt"
+          >
+            <div
+              class="absolute top-1.5 left-1.5 w-2.5 h-2.5 border-t border-l border-primary z-10"
+            ></div>
+            <div
+              class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 border-b border-r border-primary z-10"
+            ></div>
+            <img
+              class="w-full h-full object-cover"
+              data-alt="AVer CAM570 commercial audio tracking PTZ conference camera positioned in an engineered executive meeting environment. The camera displays its embedded beamforming audio sensors and dual lens tracking array against a backdrop of crisp architectural blue glass panels and technical acoustic wood slats."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF6JJjDtvPnBarMsUl1ZN9Z5jCzCSY9rcmV5H3WxMuJzPgbbSqifUQLH8bHltWmY5sw0OEMB0mZueMwKGvbuOrHANbpy4nQqgqiSXjR7liVRGgQh-_em_qftDuUWb5eFNXrh5IvgY96XF8J2EgcB0eIWUaqM7ap0rRU3PXr7KYUwRG93QaUtI-_5PFMzZYa243dKf4HIH2ioWQTVKGFUEBiT7L0lpud_1JJlTGWFy8uFBDIqJVXmKs-w"
+            />
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Built-in Audio Sensor</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Voice Tracking 10M</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >36X Total Zoom</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >[isi dari datasheet resmi]</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary">
+            Kamera konferensi dengan sensor suara terintegrasi untuk beralih
+            otomatis ke pembicara aktif di ruang rapat berukuran besar.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-2 border-t border-border-clean">
+            <button
+              class="px-3 py-2 bg-surface-container-lowest border border-primary text-primary hover:bg-surface-alt rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Lihat Detail
+            </button>
+            <button
+              class="px-3 py-2 bg-primary hover:bg-primary-dark text-on-primary rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Minta Penawaran
+            </button>
+          </div>
+        </article>
+        <!-- Card 3: CAM520 Pro3 -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-xl p-4 space-y-3 relative overflow-hidden shadow-sm"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                >Enterprise Pro AV</span
+              >
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface"
+              >
+                AVer CAM520 Pro3
+              </h3>
+            </div>
+            <span
+              class="px-2 py-0.5 bg-surface-alt border border-border-clean text-secondary font-label-mono text-label-mono rounded"
+              >Medium / Large</span
+            >
+          </div>
+          <div
+            class="relative aspect-video rounded-lg overflow-hidden border border-border-clean bg-surface-alt"
+          >
+            <div
+              class="absolute top-1.5 left-1.5 w-2.5 h-2.5 border-t border-l border-primary z-10"
+            ></div>
+            <div
+              class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 border-b border-r border-primary z-10"
+            ></div>
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Studio showcase photograph of the AVer CAM520 Pro3 professional enterprise PTZ conference camera with wide-angle glass lens element shimmering under crisp clean studio lights. The deep matte black and silver industrial body sits on an ice blue minimalist surface evoking professional pro AV telemetry."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuFHn3WiNnImBZPeg6r2IfKQAILxZRIPF6Be2RJbWdNhpTnKJGAkSqQginyH_jZMXJd8X5QNe37OgRMQQIZIdtsUqlBTDDFpxRIDGwBEvpopgj_YSRj5uG8WebRdptvXbQ2YedOSdwM5DB6k3OGTNip4fTVkq64fd4kzNtVfc4E6aQGaCeo_qKtUX9N9j-WQufnPQCQSetrhvu6R4zz5H1rjodQ3teZUhO2S-79YRtDR2LSERlInF0KA"
+            />
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >36X Total Zoom</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >SmartComposition</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Sony WDR Sensor</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >[isi dari datasheet resmi]</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary">
+            Solusi PTZ enterprise dengan fitur SmartComposition untuk
+            menampilkan close-up setiap peserta secara proporsional.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-2 border-t border-border-clean">
+            <button
+              class="px-3 py-2 bg-surface-container-lowest border border-primary text-primary hover:bg-surface-alt rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Lihat Detail
+            </button>
+            <button
+              class="px-3 py-2 bg-primary hover:bg-primary-dark text-on-primary rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Minta Penawaran
+            </button>
+          </div>
+        </article>
+        <!-- Card 4: VB342 Pro -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-xl p-4 space-y-3 relative overflow-hidden shadow-sm"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                >All-in-One Soundbar</span
+              >
+              <h3
+                class="font-headline-sm text-title-md font-bold text-on-surface"
+              >
+                AVer VB342 Pro
+              </h3>
+            </div>
+            <span
+              class="px-2 py-0.5 bg-surface-alt border border-border-clean text-secondary font-label-mono text-label-mono rounded"
+              >Huddle / Medium</span
+            >
+          </div>
+          <div
+            class="relative aspect-video rounded-lg overflow-hidden border border-border-clean bg-surface-alt"
+          >
+            <div
+              class="absolute top-1.5 left-1.5 w-2.5 h-2.5 border-t border-l border-primary z-10"
+            ></div>
+            <div
+              class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 border-b border-r border-primary z-10"
+            ></div>
+            <img
+              class="w-full h-full object-cover"
+              data-alt="AVer VB342 Pro all in one commercial video soundbar installed elegantly below a wall-mounted interactive display inside a contemporary huddle room. The camera PTZ lens, beamforming microphone array mesh, and dual speakers exhibit high quality industrial craftsmanship in crisp neutral ambient lighting."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCA8bA3t89yqXsigUdtViT_BYLktQc88IHuSJ9i6jZqte_FJZ11I9gPSRLDRobbFqd8zM-AS1JycrJiCawjDXm8MwZ99FCw1qKsD7GaPw7tbpq51Wwnmnyx3Ne5WpNPQSrJI3qtmHL8xmlqu4RT7rvFmOdQTzcq3Cd16dzQuv5FSCG12PXGczb70l7NafYuID0UJbqe-9SV5c1rkTfjU_dobyp3k4_m_h93SqPPUmjgbh56buu4w_uxA"
+            />
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >All-in-One 4K PTZ</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Beamforming Mics</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >Audio Fence Tech</span
+            >
+            <span
+              class="font-label-telemetry text-label-telemetry bg-surface-alt border border-border-clean px-2 py-1 rounded text-secondary font-medium"
+              >[isi dari datasheet resmi]</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary">
+            Soundbar konferensi video terintegrasi dilengkapi teknologi Audio
+            Fence untuk memblokir kebisingan di luar area rapat.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-2 border-t border-border-clean">
+            <button
+              class="px-3 py-2 bg-surface-container-lowest border border-primary text-primary hover:bg-surface-alt rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Lihat Detail
+            </button>
+            <button
+              class="px-3 py-2 bg-primary hover:bg-primary-dark text-on-primary rounded-lg font-title-md text-body-sm font-semibold text-center transition-colors"
+              type="button"
+            >
+              Minta Penawaran
+            </button>
+          </div>
+        </article>
+      </section>
+      <!-- Terbaru: Single-column Vertical List of Article Rows -->
+      <section class="space-y-3.5">
+        <div
+          class="flex items-center justify-between border-b border-border-clean pb-2"
+        >
+          <div>
+            <span class="font-label-mono text-label-mono text-primary"
+              >// PUBLIKASI ARSIP</span
+            >
+            <h2
+              class="font-headline-sm text-headline-sm font-bold text-on-surface"
+            >
+              Terbaru
+            </h2>
+          </div>
+          <a
+            class="text-primary font-body-sm text-body-sm font-semibold flex items-center hover:underline"
+            href="#"
+          >
+            Lihat Semua
+            <span class="material-symbols-outlined text-[16px] ml-0.5"
+              >chevron_right</span
+            >
+          </a>
+        </div>
+        <div class="space-y-3">
+          <!-- Article Item 1 -->
+          <article
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex space-x-3 items-center"
+          >
+            <div
+              class="w-24 h-24 rounded-lg overflow-hidden border border-border-clean shrink-0 bg-surface-alt relative"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Overhead architectural perspective of an enterprise videoconferencing layout showing precise camera coverage angles and microphone pickup cones illustrated in clean blue architectural blueprints on a crisp white table."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCap-8B-a-FpE49IV20VYf3HAQWqU433XqYoNHY7HG1ZwasXXmjyfdPR8b6oYLWOWh0_Qfa8-VbewPKl94U5tXf6rZBXyCWJViUUnN9bJTabwZWvYtPct5hK5shDnLGHtgrNUCK0oW6Uy2fGJqJ92jiWDn1duPnE059n2VH5HQxxCjubC_o8jp6ZQjWwu9D15SAK1QRB3xmPP5NO8UAaRatrOnEHj6pTp9Bnt63z8LAC3AdxIXxNe7Dbg"
+              />
+            </div>
+            <div class="flex-1 min-w-0 space-y-1">
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-semibold"
+                >// PANDUAN RUANG</span
+              >
+              <h3
+                class="font-title-md text-body-md font-bold text-on-surface line-clamp-2 leading-snug"
+              >
+                Kalkulasi Sudut FOV Kamera untuk Ruang Rapat Sempit: Panduan
+                Penempatan VB342 Pro
+              </h3>
+              <div
+                class="flex items-center space-x-2 text-muted-slate font-label-telemetry text-label-telemetry"
+              >
+                <span>[tanggal publikasi]</span>
+                <span>•</span>
+                <span>4 min baca</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article Item 2 -->
+          <article
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex space-x-3 items-center"
+          >
+            <div
+              class="w-24 h-24 rounded-lg overflow-hidden border border-border-clean shrink-0 bg-surface-alt relative"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Modern university lecture hall equipped with ceiling-mounted tracking PTZ cameras capturing an interactive professor presentation on a bright high-resolution screen with cool studio lighting."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD0CkUbHQzH9g6bv6wiRv-gPTX9Sd6PEVzBt3rz2mNgcTubDEIZLqy4P46pZcwNgF6Kusm0DmOnqk05i0sse6cyGCdpKkVYpPH3Xcie6may90E1i1ydFPhnR67cSOq5zxCsiEq5ZyhIDAV1i9Uqu4jNkuyRNqCvvqbPYlpb8GUSdWPrLt9vbdysqa2EMiQnxO1HxWAEIs_sURw3gUxfh-BXjNxlpWQh2cxGz-rRTTJPMNfnDKpqPwkSA"
+              />
+            </div>
+            <div class="flex-1 min-w-0 space-y-1">
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-semibold"
+                >// EDUKASI &amp; HYBRID</span
+              >
+              <h3
+                class="font-title-md text-body-md font-bold text-on-surface line-clamp-2 leading-snug"
+              >
+                Auto-Tracking Presisi Tinggi di Auditorium Tanpa Operator Kamera
+                Manual
+              </h3>
+              <div
+                class="flex items-center space-x-2 text-muted-slate font-label-telemetry text-label-telemetry"
+              >
+                <span>[tanggal publikasi]</span>
+                <span>•</span>
+                <span>7 min baca</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article Item 3 -->
+          <article
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex space-x-3 items-center"
+          >
+            <div
+              class="w-24 h-24 rounded-lg overflow-hidden border border-border-clean shrink-0 bg-surface-alt relative"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Close up view of video conferencing cables, USB-C ports, and HDMI connectors neatly integrated inside a polished brushed-aluminum tabletop cubby in an executive boardroom."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB58U7NSNP7hLu1FABjSkoTuYLTnOf2ArymOSQihTFDfaiFXZkCxWGUCQpbZtwILLxkQWjohm0YkAxnT-De0UfHjrFp5KXrWV3F69cWNFeSZfJrLPEBS7W9HPgUfXCc8t4egaHLufvXV8oMavJ1Ixu3R7wneB0d2wXakiN3KTQneUycUFiEdSvOAf0KkK9zrxyMojLn59cEPTJYPiJthR-YR-kP1-fv-K204VPZHBWR9Rx7AwPtX_gOFw"
+              />
+            </div>
+            <div class="flex-1 min-w-0 space-y-1">
+              <span
+                class="font-label-telemetry text-label-telemetry text-primary font-semibold"
+                >// INTEGRASI KABEL</span
+              >
+              <h3
+                class="font-title-md text-body-md font-bold text-on-surface line-clamp-2 leading-snug"
+              >
+                Topologi Konektivitas USB 3.1 &amp; IP Streaming pada Ekosistem
+                Kamera AVer
+              </h3>
+              <div
+                class="flex items-center space-x-2 text-muted-slate font-label-telemetry text-label-telemetry"
+              >
+                <span>[tanggal publikasi]</span>
+                <span>•</span>
+                <span>5 min baca</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Sedang Tren #1–#5 Compact Numbered List -->
+      <section
+        class="bg-surface-alt border border-border-clean rounded-xl p-4 space-y-3.5"
+      >
+        <div class="flex items-center space-x-2">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >trending_up</span
+          >
+          <h2 class="font-headline-sm text-title-md font-bold text-on-surface">
+            Sedang Tren
+          </h2>
+          <span
+            class="font-label-telemetry text-label-telemetry text-muted-slate ml-auto"
+            >TOP 5 MINGGU INI</span
+          >
+        </div>
+        <div class="divide-y divide-border-clean">
+          <!-- Trend 1 -->
+          <div class="py-2.5 flex items-start space-x-3">
+            <span
+              class="font-label-telemetry font-extrabold text-title-md text-primary w-6 pt-0.5"
+              >01</span
+            >
+            <div class="flex-1">
+              <a
+                class="font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                href="#"
+              >
+                Perbedaan Mekanikal Optical Zoom 12X vs Digital Zoom pada Jarak
+                8 Meter
+              </a>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >[tanggal publikasi]</span
+              >
+            </div>
+          </div>
+          <!-- Trend 2 -->
+          <div class="py-2.5 flex items-start space-x-3">
+            <span
+              class="font-label-telemetry font-extrabold text-title-md text-primary w-6 pt-0.5"
+              >02</span
+            >
+            <div class="flex-1">
+              <a
+                class="font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                href="#"
+              >
+                Konfigurasi Audio Fence pada AVer VB342 Pro untuk Menghilangkan
+                Noise Akustik Kaca
+              </a>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >[tanggal publikasi]</span
+              >
+            </div>
+          </div>
+          <!-- Trend 3 -->
+          <div class="py-2.5 flex items-start space-x-3">
+            <span
+              class="font-label-telemetry font-extrabold text-title-md text-primary w-6 pt-0.5"
+              >03</span
+            >
+            <div class="flex-1">
+              <a
+                class="font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                href="#"
+              >
+                Panduan Pemilihan Format NDI|HX vs HDMI untuk Live Streaming
+                Acara Korporasi
+              </a>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >[tanggal publikasi]</span
+              >
+            </div>
+          </div>
+          <!-- Trend 4 -->
+          <div class="py-2.5 flex items-start space-x-3">
+            <span
+              class="font-label-telemetry font-extrabold text-title-md text-primary w-6 pt-0.5"
+              >04</span
+            >
+            <div class="flex-1">
+              <a
+                class="font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                href="#"
+              >
+                Fitur SmartGallery: Menghadirkan Sudut Pandang Personal bagi
+                Peserta Jarak Jauh
+              </a>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >[tanggal publikasi]</span
+              >
+            </div>
+          </div>
+          <!-- Trend 5 -->
+          <div class="py-2.5 flex items-start space-x-3">
+            <span
+              class="font-label-telemetry font-extrabold text-title-md text-primary w-6 pt-0.5"
+              >05</span
+            >
+            <div class="flex-1">
+              <a
+                class="font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary transition-colors line-clamp-2"
+                href="#"
+              >
+                Komparasi Teknis CAM550 vs CAM570: Memilih Solusi Berdasarkan
+                Luas Ruang
+              </a>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >[tanggal publikasi]</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pilih Berdasarkan Ruang: 4 Compact Stacked Cards -->
+      <section class="space-y-3.5">
+        <div>
+          <span class="font-label-mono text-label-mono text-primary"
+            >// REKOMENDASI ARSITEKTUR</span
+          >
+          <h2
+            class="font-headline-sm text-headline-sm font-bold text-on-surface"
+          >
+            Pilih Berdasarkan Ruang
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 gap-2.5">
+          <!-- Space 1: Huddle -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 flex items-center justify-between hover:border-primary transition-colors"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-lg bg-surface-alt border border-border-clean flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >meeting_room</span
+                >
+              </div>
+              <div>
+                <h3
+                  class="font-title-md text-body-md font-bold text-on-surface"
+                >
+                  Huddle Room
+                </h3>
+                <p class="font-body-sm text-caption text-secondary">
+                  2–6 Orang · Model VB342 Pro / CAM130
+                </p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-[20px]"
+              >arrow_forward</span
+            >
+          </div>
+          <!-- Space 2: Ruang Sedang -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 flex items-center justify-between hover:border-primary transition-colors"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-lg bg-surface-alt border border-border-clean flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >groups</span
+                >
+              </div>
+              <div>
+                <h3
+                  class="font-title-md text-body-md font-bold text-on-surface"
+                >
+                  Ruang Rapat Sedang
+                </h3>
+                <p class="font-body-sm text-caption text-secondary">
+                  6–12 Orang · Model CAM520 Pro3
+                </p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-[20px]"
+              >arrow_forward</span
+            >
+          </div>
+          <!-- Space 3: Boardroom -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 flex items-center justify-between hover:border-primary transition-colors"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-lg bg-surface-alt border border-border-clean flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >corporate_fare</span
+                >
+              </div>
+              <div>
+                <h3
+                  class="font-title-md text-body-md font-bold text-on-surface"
+                >
+                  Boardroom Eksekutif
+                </h3>
+                <p class="font-body-sm text-caption text-secondary">
+                  12–24 Orang · Model CAM550 / CAM570
+                </p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-[20px]"
+              >arrow_forward</span
+            >
+          </div>
+          <!-- Space 4: Auditorium -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 flex items-center justify-between hover:border-primary transition-colors"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 rounded-lg bg-surface-alt border border-border-clean flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >theater_comedy</span
+                >
+              </div>
+              <div>
+                <h3
+                  class="font-title-md text-body-md font-bold text-on-surface"
+                >
+                  Auditorium &amp; Training
+                </h3>
+                <p class="font-body-sm text-caption text-secondary">
+                  50+ Peserta · Auto-Tracking PTZ Pro AV
+                </p>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-primary text-[20px]"
+              >arrow_forward</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Jelajahi Topik: 2x3 Grid Hub -->
+      <section class="space-y-3.5">
+        <div>
+          <span class="font-label-mono text-label-mono text-primary"
+            >// TAKSONOMI KONTEN</span
+          >
+          <h2
+            class="font-headline-sm text-headline-sm font-bold text-on-surface"
+          >
+            Jelajahi Topik
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 gap-2.5">
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >videocam</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                Kamera PTZ
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >18 Artikel</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >graphic_eq</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                Audio Tracking
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >12 Artikel</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >psychology</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                AI SmartFraming
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >15 Artikel</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >tune</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                Integrasi MTR
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >9 Artikel</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >school</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                Ruang Kelas Pintar
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >14 Artikel</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 bg-surface-container-lowest border border-border-clean rounded-xl flex flex-col space-y-2"
+          >
+            <span class="material-symbols-outlined text-primary text-[24px]"
+              >settings_ethernet</span
+            >
+            <div>
+              <h3 class="font-title-md text-body-sm font-bold text-on-surface">
+                Pro AV &amp; NDI
+              </h3>
+              <span
+                class="font-label-telemetry text-label-telemetry text-muted-slate"
+                >11 Artikel</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ringkasan Cepat: Editorial TL;DR Component -->
+      <section
+        class="bg-surface-alt border border-border-clean border-l-4 border-l-primary rounded-xl p-4 space-y-3"
+      >
+        <div class="flex items-center space-x-2">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            >fact_check</span
+          >
+          <h3 class="font-headline-sm text-title-md font-bold text-on-surface">
+            Ringkasan Cepat // Rekomendasi
+          </h3>
+        </div>
+        <ul class="space-y-2 font-body-sm text-body-sm text-secondary">
+          <li class="flex items-start space-x-2">
+            <span
+              class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+              >check_circle</span
+            >
+            <span
+              >Gunakan sistem dual-lens untuk boardroom dengan meja lebih dari 6
+              meter guna menghindari latency zoom mekanikal.</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <span
+              class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+              >check_circle</span
+            >
+            <span
+              >Untuk ruang huddle dengan dinding kaca, optimalkan Audio Fence
+              untuk mencegah kebisingan koridor luar.</span
+            >
+          </li>
+          <li class="flex items-start space-x-2">
+            <span
+              class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+              >check_circle</span
+            >
+            <span
+              >Selalu sesuaikan pencahayaan di area wajah pada 300–500 lux agar
+              sensor AI framing bekerja pada presisi terbaik.</span
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- Tentang Harry Kusumo: Professional Advisor Bio Card -->
+      <section
+        class="bg-surface-container-lowest border border-border-clean rounded-xl p-4 space-y-4 shadow-sm"
+      >
+        <div class="flex items-center space-x-3.5">
+          <!-- Photo with reticle corner marks -->
+          <div
+            class="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden border border-border-clean bg-surface-alt"
+          >
+            <div
+              class="absolute top-0.5 left-0.5 w-2 h-2 border-t-2 border-l-2 border-primary z-10 pointer-events-none"
+            ></div>
+            <div
+              class="absolute bottom-0.5 right-0.5 w-2 h-2 border-b-2 border-r-2 border-primary z-10 pointer-events-none"
+            ></div>
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Professional portrait photograph of Harry Kusumo Negoro, an enterprise AV technology advisor wearing a sharp navy blue blazer in front of an architectural control room environment with sleek high-tech video conference monitor displays and cool blue ambient lighting."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSOx7IErCJYqDnf7bo4O_hlrR17238jnUEZSzrd8vxIyXamjLNLTWRfHuJR8lEJWuN-C-uH5MKthRmtk0p_xganVAi5afGqpwmcm0lBN6lvuWubDjpLBa_nrGEui7rIujwg0IQMX25vU7dBk3vLWbvbn7sLnelhmHX79vaDfI2sJ7Xl_WwaoUeIO9SpBgmJKjQnQbBlYePdoEJA2ei2AIDw910i_3mwZ5-XaQekNiNEznEKgnx8RTEMQ"
+            />
+          </div>
+          <div>
+            <span class="font-label-mono text-label-mono text-primary"
+              >// ADVISOR PROFILE</span
+            >
+            <h2
+              class="font-headline-sm text-title-md font-bold text-on-surface"
+            >
+              Harry Kusumo Negoro
+            </h2>
+            <p class="font-body-sm text-body-sm text-secondary font-medium">
+              AVer Solutions Advisor
+            </p>
+          </div>
+        </div>
+        <p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+          Berpengalaman mendampingi perancangan ruang konferensi enterprise,
+          integrasi sistem kamera tracking pintar, dan standardisasi perangkat
+          kolaborasi hibrida untuk korporasi, institusi pemerintahan, dan
+          universitas di Indonesia.
+        </p>
+        <!-- Credentials & Focus Areas (No percentage bars) -->
+        <div class="space-y-2 pt-2 border-t border-border-clean">
+          <span
+            class="font-label-telemetry text-label-telemetry text-muted-slate uppercase font-bold tracking-wider"
+            >Fokus Rekayasa &amp; Konsultasi</span
+          >
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              class="px-2.5 py-1 bg-surface-alt border border-border-clean rounded-md font-label-telemetry text-label-telemetry text-on-surface font-medium"
+              >Enterprise Meeting Rooms</span
+            >
+            <span
+              class="px-2.5 py-1 bg-surface-alt border border-border-clean rounded-md font-label-telemetry text-label-telemetry text-on-surface font-medium"
+              >AI Auto-Tracking Camera</span
+            >
+            <span
+              class="px-2.5 py-1 bg-surface-alt border border-border-clean rounded-md font-label-telemetry text-label-telemetry text-on-surface font-medium"
+              >Microsoft Teams Rooms (MTR)</span
+            >
+            <span
+              class="px-2.5 py-1 bg-surface-alt border border-border-clean rounded-md font-label-telemetry text-label-telemetry text-on-surface font-medium"
+              >Zoom Rooms Architecture</span
+            >
+            <span
+              class="px-2.5 py-1 bg-surface-alt border border-border-clean rounded-md font-label-telemetry text-label-telemetry text-on-surface font-medium"
+              >High-Density Audio Fence</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Pertanyaan Umum (FAQ): Accordion (4 questions) -->
+      <section class="space-y-3">
+        <div>
+          <span class="font-label-mono text-label-mono text-primary"
+            >// KLARIFIKASI TEKNIS</span
+          >
+          <h2
+            class="font-headline-sm text-headline-sm font-bold text-on-surface"
+          >
+            Pertanyaan Umum (FAQ)
+          </h2>
+        </div>
+        <div class="space-y-2">
+          <!-- FAQ 1 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 transition-all"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md text-body-md font-bold text-on-surface cursor-pointer list-none"
+            >
+              <span
+                >Bagaimana cara menentukan kamera yang tepat untuk ukuran
+                ruangan saya?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-2.5 pt-2.5 border-t border-border-clean font-body-sm text-body-sm text-secondary"
+            >
+              Pemilihan didasarkan pada jarak pandang terjauh, sudut jangkau
+              meja (FOV), serta jumlah partisipan. Ruang kecil di bawah 5 meter
+              optimal menggunakan VB342 Pro, sedangkan ruang rapat panjang
+              membutuhkan optical zoom 12X atau lebih seperti seri CAM550 dan
+              CAM520 Pro3.
+            </div>
+          </details>
+          <!-- FAQ 2 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 transition-all"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md text-body-md font-bold text-on-surface cursor-pointer list-none"
+            >
+              <span
+                >Apakah fitur AI tracking memerlukan perangkat lunak
+                tambahan?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-2.5 pt-2.5 border-t border-border-clean font-body-sm text-body-sm text-secondary"
+            >
+              Tidak. Pemrosesan kecerdasan buatan pada lini kamera AVer seperti
+              SmartFraming dan Voice Tracking diproses secara mandiri langsung
+              di dalam chipset hardware kamera (on-device processing) tanpa
+              membebani komputer ruang rapat.
+            </div>
+          </details>
+          <!-- FAQ 3 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 transition-all"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md text-body-md font-bold text-on-surface cursor-pointer list-none"
+            >
+              <span
+                >Apakah kamera AVer kompatibel dengan platform MTR dan
+                Zoom?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-2.5 pt-2.5 border-t border-border-clean font-body-sm text-body-sm text-secondary"
+            >
+              Ya. Seluruh lini produk dirancang sesuai standar UVC/UAC
+              plug-and-play dan mendukung integrasi penuh dengan Microsoft Teams
+              Rooms, Zoom Rooms, Google Meet, serta berbagai sistem kontrol
+              pihak ketiga.
+            </div>
+          </details>
+          <!-- FAQ 4 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-3.5 transition-all"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md text-body-md font-bold text-on-surface cursor-pointer list-none"
+            >
+              <span
+                >Bagaimana proses meminta penawaran dan sesi demonstrasi
+                perangkat?</span
+              >
+              <span
+                class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-2.5 pt-2.5 border-t border-border-clean font-body-sm text-body-sm text-secondary"
+            >
+              Anda dapat menekan tombol 'Minta Penawaran' atau menghubungi
+              langsung via 'Chat WhatsApp' di bagian bawah layar. Tim advisor
+              kami akan mendiskusikan kebutuhan arsitektur ruang dan mengatur
+              sesi demo perangkat.
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <!-- Sticky Bottom Bar (Safe area padding, pb-24 prevents content cover) -->
+    <aside
+      aria-label="Aksi Cepat Konsultasi"
+      class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-t border-border-clean px-4 py-3 shadow-lg"
+    >
+      <div class="max-w-[420px] mx-auto grid grid-cols-2 gap-2.5">
+        <!-- Minta Penawaran (Primary Blue) -->
+        <a
+          class="w-full py-3 bg-primary hover:bg-primary-dark text-on-primary rounded-lg font-title-md text-body-sm font-semibold flex items-center justify-center space-x-1.5 shadow-sm active:scale-98 transition-all"
+          href="#penawaran"
+        >
+          <span class="material-symbols-outlined text-[18px]"
+            >request_quote</span
+          >
+          <span>Minta Penawaran</span>
+        </a>
+        <!-- Chat WhatsApp (Green) -->
+        <a
+          class="w-full py-3 bg-status-success hover:bg-green-700 text-white rounded-lg font-title-md text-body-sm font-semibold flex items-center justify-center space-x-1.5 shadow-sm active:scale-98 transition-all"
+          href="https://wa.me/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>Chat WhatsApp</span>
+        </a>
+      </div>
+    </aside>
+    <!-- Footer: Compact Mobile Accordion / Stacked Footer -->
+    <footer
+      class="mt-12 bg-surface-alt border-t border-border-clean text-secondary font-body-sm text-body-sm"
+    >
+      <div class="max-w-[420px] mx-auto px-4 py-8 space-y-6">
+        <!-- Footer Brand Head -->
+        <div class="space-y-2">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-8 h-8 rounded bg-primary flex items-center justify-center text-on-primary font-display font-extrabold text-body-md"
+            >
+              HK
+            </div>
+            <span
+              class="font-display font-extrabold text-title-md text-on-surface"
+              >Harry Kusumo Negoro</span
+            >
+          </div>
+          <p class="font-body-sm text-caption text-secondary">
+            Publikasi panduan teknis independen, arsitektur integrasi pro-AV,
+            dan solusi sistem video konferensi AVer untuk enterprise modern.
+          </p>
+        </div>
+        <!-- Quick Nav Stack -->
+        <div
+          class="grid grid-cols-2 gap-4 pt-3 border-t border-border-clean font-body-sm text-body-sm"
+        >
+          <div class="space-y-2">
+            <span
+              class="font-label-telemetry text-label-telemetry text-on-surface font-bold uppercase tracking-wider"
+              >Navigasi</span
+            >
+            <ul class="space-y-1.5 text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Semua Artikel</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Lineup Produk</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Solusi Ruangan</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Profil Advisor</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-2">
+            <span
+              class="font-label-telemetry text-label-telemetry text-on-surface font-bold uppercase tracking-wider"
+              >Dokumentasi</span
+            >
+            <ul class="space-y-1.5 text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Standar Editorial</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Studi Kasus</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kontak Konsultasi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Disclaimer & Copyright -->
+        <div
+          class="pt-4 border-t border-border-clean space-y-2 text-caption text-muted-slate font-caption"
+        >
+          <p class="leading-relaxed">
+            Pernyataan: AV Tech Journal dan situs editorial Harry Kusumo Negoro
+            merupakan platform edukasi teknis mandiri. Seluruh nama merek, model
+            produk, dan logo AVer merupakan hak cipta milik AVer Information
+            Inc. yang digunakan untuk keperluan referensi kompatibilitas teknis.
+          </p>
+          <p
+            class="font-label-telemetry text-label-telemetry pt-1 text-on-surface-variant font-medium"
+          >
+            © 2026 Harry Kusumo Negoro. All rights reserved. Enterprise
+            Collaboration &amp; Intelligent Tracking Systems.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Lightweight Inline JS for Theme Toggle Micro-interaction -->
+    <script>
+      const themeBtn = document.getElementById("theme-toggle");
+      if (themeBtn) {
+        themeBtn.addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+          const icon = themeBtn.querySelector(".material-symbols-outlined");
+          if (icon) {
+            icon.textContent = document.documentElement.classList.contains(
+              "dark",
+            )
+              ? "dark_mode"
+              : "light_mode";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

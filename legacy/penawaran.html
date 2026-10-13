@@ -1,0 +1,1419 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Minta Penawaran — Harry Kusumo Negoro | AVer Solutions Advisor
+    </title>
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              outline: "#6f7882",
+              "surface-alt": "#F4FAFD",
+              "inverse-surface": "#233144",
+              "surface-container-highest": "#d5e3fc",
+              "tertiary-fixed-dim": "#bbc9cf",
+              primary: "#006191",
+              "surface-bright": "#f8f9ff",
+              "inverse-on-surface": "#eaf1ff",
+              "secondary-fixed-dim": "#b5c8e3",
+              "dark-text": "#E6EEF5",
+              "border-clean": "#D9E8F2",
+              "on-tertiary-container": "#fafdff",
+              "surface-container-low": "#eff4ff",
+              "on-tertiary-fixed-variant": "#3c494e",
+              tertiary: "#515e64",
+              "status-warning": "#F59E0B",
+              "on-primary-fixed-variant": "#004b71",
+              error: "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "status-success": "#16A34A",
+              "on-background": "#0d1c2e",
+              "tertiary-fixed": "#d7e5ec",
+              "on-secondary-fixed-variant": "#36485e",
+              "inverse-primary": "#8fcdff",
+              "primary-dark": "#0077B6",
+              surface: "#f8f9ff",
+              "primary-container": "#007bb6",
+              "surface-variant": "#d5e3fc",
+              "tertiary-container": "#69777d",
+              "on-primary-container": "#fcfcff",
+              "on-primary": "#ffffff",
+              "secondary-container": "#cee1fc",
+              "on-secondary": "#ffffff",
+              "surface-tint": "#006495",
+              "dark-border": "#1B3752",
+              "on-secondary-fixed": "#081d30",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#101d22",
+              "on-surface-variant": "#3f4850",
+              "muted-slate": "#64748B",
+              "dark-surface": "#0D2236",
+              "surface-container-high": "#dce9ff",
+              "primary-fixed-dim": "#8fcdff",
+              "on-primary-fixed": "#001e30",
+              "surface-dim": "#ccdbf3",
+              background: "#f8f9ff",
+              "secondary-fixed": "#d1e4ff",
+              "status-danger": "#DC2626",
+              "surface-container": "#e6eeff",
+              "primary-fixed": "#cbe6ff",
+              "outline-variant": "#bec7d2",
+              "dark-bg": "#07131F",
+              "on-error-container": "#93000a",
+              "on-surface": "#0d1c2e",
+              secondary: "#4e6077",
+              "on-secondary-container": "#52647b",
+              "surface-container-lowest": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-md": "0.75rem",
+              "space-sm": "0.5rem",
+              margin: "3rem",
+              "space-xl": "2rem",
+              "space-2xl": "3rem",
+              "space-base": "1rem",
+              "space-3xl": "5rem",
+              "gutter-mobile": "1rem",
+              "space-xs": "0.25rem",
+              "margin-mobile": "1.5rem",
+              gutter: "1.5rem",
+              "space-lg": "1.5rem",
+            },
+            fontFamily: {
+              "display-mobile": ["Plus Jakarta Sans"],
+              "body-md": ["Inter"],
+              "headline-md": ["Plus Jakarta Sans"],
+              caption: ["Inter"],
+              "label-telemetry": ["JetBrains Mono"],
+              "body-sm": ["Inter"],
+              "body-article": ["Inter"],
+              "title-md": ["Plus Jakarta Sans"],
+              "label-mono": ["JetBrains Mono"],
+              display: ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "display-mobile": [
+                "38px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "headline-md": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              caption: ["13px", { lineHeight: "18px", fontWeight: "400" }],
+              "label-telemetry": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-sm": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "body-article": [
+                "18px",
+                { lineHeight: "31px", fontWeight: "400" },
+              ],
+              "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "label-mono": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "54px",
+                {
+                  lineHeight: "60px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+      .reticle-box {
+        position: relative;
+      }
+      .reticle-box::before,
+      .reticle-box::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+      }
+      .reticle-box::before {
+        top: -1px;
+        left: -1px;
+        border-top: 2px solid #006191;
+        border-left: 2px solid #006191;
+      }
+      .reticle-box::after {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 2px solid #006191;
+        border-right: 2px solid #006191;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface antialiased selection:bg-surface-container-highest"
+  >
+    <!-- 1. GLOBAL UTILITY BAR -->
+    <aside
+      aria-label="Informasi Situs"
+      class="bg-surface-alt border-b border-border-clean py-1.5 px-6 text-secondary text-caption font-caption"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-3">
+          <span
+            class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary font-semibold"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-status-success inline-block"
+            ></span>
+            Situs Personal · Harry Kusumo Negoro
+          </span>
+          <span class="text-border-clean">|</span>
+          <span
+            class="text-muted-slate text-body-sm font-body-sm hidden sm:inline"
+            >Membantu Anda memilih solusi kolaborasi terbaik</span
+          >
+        </div>
+        <div class="flex items-center gap-5 text-body-sm font-body-sm">
+          <a
+            class="hover:text-primary transition-colors flex items-center gap-1"
+            href="https://linkedin.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="font-label-mono text-label-mono">// LINKEDIN</span>
+          </a>
+          <a
+            class="hover:text-primary transition-colors flex items-center gap-1"
+            href="https://youtube.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="font-label-mono text-label-mono">// YOUTUBE</span>
+          </a>
+          <span class="text-border-clean">|</span>
+          <a class="hover:text-primary transition-colors" href="#newsletter"
+            >Newsletter</a
+          >
+          <span class="text-border-clean">|</span>
+          <div
+            class="inline-flex items-center gap-1 font-label-mono text-label-mono font-semibold"
+          >
+            <span class="text-primary font-bold">ID</span>
+            <span class="text-muted-slate">/</span>
+            <a
+              class="text-secondary hover:text-primary transition-colors"
+              href="#"
+              >EN</a
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- 2. GLOBAL STICKY HEADER -->
+    <header
+      class="docked full-width top-0 sticky z-50 bg-surface-container-lowest border-b border-border-clean shadow-sm transition-all duration-150 ease-in-out"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <!-- Monogram & Identity Anchor -->
+        <a class="flex items-center gap-3 group" href="/">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-alt border border-border-clean flex items-center justify-center font-title-md font-extrabold text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors"
+          >
+            HK
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="text-title-md font-title-md tracking-tight font-extrabold text-primary"
+              >Harry Kusumo</span
+            >
+            <span
+              class="text-label-mono font-label-mono text-muted-slate text-[11px] leading-tight"
+              >AVer Solutions Advisor</span
+            >
+          </div>
+        </a>
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7">
+          <a
+            class="text-secondary hover:text-primary transition-colors font-title-md text-body-sm font-body-sm"
+            href="#"
+            >Produk</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-title-md text-body-sm font-body-sm"
+            href="#"
+            >Artikel</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-title-md text-body-sm font-body-sm"
+            href="#"
+            >Solusi</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-title-md text-body-sm font-body-sm"
+            href="#"
+            >Panduan</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors font-title-md text-body-sm font-body-sm"
+            href="#"
+            >Tentang</a
+          >
+        </nav>
+        <!-- Trailing Action Cluster -->
+        <div class="flex items-center gap-3">
+          <button
+            aria-label="Cari"
+            class="p-2 rounded-lg text-secondary hover:text-primary hover:bg-surface-alt transition-colors"
+          >
+            <span class="material-symbols-outlined text-[20px]">search</span>
+          </button>
+          <button
+            aria-label="Ganti Mode Tampilan"
+            class="p-2 rounded-lg text-secondary hover:text-primary hover:bg-surface-alt transition-colors"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >light_mode</span
+            >
+          </button>
+          <a
+            class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm"
+            href="/penawaran"
+          >
+            Minta Penawaran
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- 3. BREADCRUMB -->
+    <nav
+      aria-label="Breadcrumb"
+      class="bg-surface-alt border-b border-border-clean py-3 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center gap-2 font-label-mono text-label-mono text-secondary"
+      >
+        <a class="hover:text-primary transition-colors" href="/">Beranda</a>
+        <span class="text-muted-slate">›</span>
+        <span class="text-primary font-bold">Minta Penawaran</span>
+      </div>
+    </nav>
+    <!-- 4. MAIN CONTENT SECTION -->
+    <main class="max-w-7xl mx-auto px-6 pt-20 pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- LEFT COLUMN: Sticky Architectural Context (5 Cols) -->
+        <div class="lg:col-span-5 lg:sticky lg:top-24 space-y-8">
+          <!-- Header & Reassurance Block -->
+          <div class="space-y-4">
+            <div
+              class="inline-block px-2.5 py-1 rounded bg-surface-alt border border-border-clean font-label-mono text-label-mono text-primary font-semibold"
+            >
+              // FORMULIR KONSULTASI &amp; ESTIMASI
+            </div>
+            <h1
+              class="text-headline-lg font-headline-lg text-on-background text-[38px] leading-[44px] tracking-tight"
+            >
+              Minta Penawaran Produk AVer
+            </h1>
+            <p
+              class="text-secondary font-body-article text-body-md leading-relaxed"
+            >
+              Sampaikan kebutuhan ruang rapat atau ruang kelas kolaborasi Anda.
+              Sebagai AVer Solutions Advisor, kami akan memetakan spesifikasi
+              teknis dan konfigurasi perangkat yang paling tepat tanpa estimasi
+              yang berlebihan.
+            </p>
+          </div>
+          <!-- 3-Step Guide -->
+          <div
+            class="p-6 rounded-xl bg-surface-container-lowest border border-border-clean reticle-box space-y-6"
+          >
+            <h2
+              class="text-title-md font-title-md text-on-background flex items-center justify-between"
+            >
+              <span>Apa yang Terjadi Selanjutnya</span>
+              <span
+                class="font-label-mono text-label-telemetry text-muted-slate"
+                >// PROSEDUR ESTIMASI</span
+              >
+            </h2>
+            <div class="space-y-5">
+              <div class="flex gap-4">
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary bg-surface-alt border border-border-clean w-8 h-8 rounded flex items-center justify-center shrink-0"
+                >
+                  01
+                </span>
+                <div>
+                  <h3
+                    class="text-body-md font-title-md text-on-background font-semibold"
+                  >
+                    Kirim Kebutuhan
+                  </h3>
+                  <p class="text-body-sm font-body-sm text-secondary mt-0.5">
+                    Isi formulir dengan ukuran ruang dan perangkat yang Anda
+                    pertimbangkan.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary bg-surface-alt border border-border-clean w-8 h-8 rounded flex items-center justify-center shrink-0"
+                >
+                  02
+                </span>
+                <div>
+                  <h3
+                    class="text-body-md font-title-md text-on-background font-semibold"
+                  >
+                    Analisis &amp; Rekomendasi
+                  </h3>
+                  <p class="text-body-sm font-body-sm text-secondary mt-0.5">
+                    Kami pelajari denah dan merekomendasikan topologi kamera
+                    serta audio AVer yang sesuai.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary bg-surface-alt border border-border-clean w-8 h-8 rounded flex items-center justify-center shrink-0"
+                >
+                  03
+                </span>
+                <div>
+                  <h3
+                    class="text-body-md font-title-md text-on-background font-semibold"
+                  >
+                    Penawaran Dikirim
+                  </h3>
+                  <p class="text-body-sm font-body-sm text-secondary mt-0.5">
+                    Penawaran harga resmi dan spesifikasi teknis lengkap
+                    dikirimkan ke email atau WhatsApp Anda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Response time Telemetry Badge -->
+            <div
+              class="pt-4 border-t border-border-clean flex items-center gap-2 text-label-mono font-label-mono text-[11px] text-muted-slate"
+            >
+              <span class="material-symbols-outlined text-[16px] text-primary"
+                >schedule</span
+              >
+              <span
+                >Perkiraan waktu respons: [isi dari tim advisor / dalam 1x24 jam
+                kerja]</span
+              >
+            </div>
+          </div>
+          <!-- Direct Contact Alternatives Card -->
+          <div
+            class="p-6 rounded-xl bg-surface-alt border border-border-clean space-y-4"
+          >
+            <div
+              class="font-label-mono text-label-mono text-primary font-semibold"
+            >
+              // SALURAN KOMUNIKASI LANGSUNG
+            </div>
+            <p class="text-body-sm font-body-sm text-secondary">
+              Perlu konfirmasi cepat atau konsultasi arsitektur AV secara
+              real-time? Hubungi kontak langsung di bawah ini:
+            </p>
+            <div class="space-y-3 pt-2">
+              <!-- WhatsApp Button -->
+              <a
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-[#25D366] text-white font-title-md text-body-sm font-semibold hover:opacity-95 transition-all shadow-sm"
+                href="https://wa.me/6281200000000"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                Chat via WhatsApp
+              </a>
+              <!-- Direct Email -->
+              <a
+                class="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-lg bg-surface-container-lowest border border-border-clean hover:border-primary transition-colors text-body-sm font-body-sm"
+                href="mailto:info@averadvisor.id"
+              >
+                <span class="flex items-center gap-2 text-secondary">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    >mail</span
+                  >
+                  info@averadvisor.id
+                </span>
+                <span
+                  class="font-label-mono text-label-telemetry text-muted-slate"
+                  >[Kirim Email]</span
+                >
+              </a>
+              <!-- LinkedIn Profile -->
+              <a
+                class="w-full inline-flex items-center justify-between px-4 py-2.5 rounded-lg bg-surface-container-lowest border border-border-clean hover:border-primary transition-colors text-body-sm font-body-sm"
+                href="https://linkedin.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="flex items-center gap-2 text-secondary">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    >person</span
+                  >
+                  Harry Kusumo Negoro
+                </span>
+                <span
+                  class="font-label-mono text-label-telemetry text-muted-slate"
+                  >[Profil Advisor]</span
+                >
+              </a>
+            </div>
+            <!-- Trust & Privacy Assurance -->
+            <div class="pt-2">
+              <p
+                class="text-[12px] leading-relaxed text-muted-slate font-caption"
+              >
+                <span class="font-semibold text-secondary"
+                  >Jaminan Privasi:</span
+                >
+                Informasi teknis dan data kontak Anda hanya digunakan untuk
+                keperluan penyusunan rekomendasi dan penawaran. Bebas spam
+                promosi massal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT COLUMN: Interactive Form Card (7 Cols) -->
+        <div class="lg:col-span-7 space-y-8">
+          <!-- Primary Form Card -->
+          <div
+            class="p-8 sm:p-10 rounded-2xl bg-surface-container-lowest border border-border-clean shadow-[0_4px_24px_rgba(11,31,51,0.06)] relative"
+          >
+            <div class="border-b border-border-clean pb-6 mb-8">
+              <div
+                class="font-label-mono text-label-mono text-primary font-semibold"
+              >
+                // DATA KEBUTUHAN RUANG
+              </div>
+              <h2
+                class="text-headline-sm font-headline-sm text-on-background mt-1"
+              >
+                Formulir Permintaan Penawaran
+              </h2>
+              <p class="text-body-sm font-body-sm text-secondary mt-1">
+                Lengkapi informasi di bawah ini untuk konsultasi spesifikasi dan
+                penawaran harga.
+              </p>
+            </div>
+            <form
+              action="#"
+              class="space-y-6"
+              method="POST"
+              onsubmit="
+                event.preventDefault();
+                document
+                  .getElementById('success-modal')
+                  .classList.remove('hidden');
+              "
+            >
+              <!-- 1. Nama Lengkap & 2. Perusahaan -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="nama"
+                  >
+                    Nama Lengkap <span class="text-status-danger">*</span>
+                  </label>
+                  <input
+                    class="w-full px-4 py-3 rounded-lg border border-border-clean text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-muted-slate"
+                    id="nama"
+                    name="nama"
+                    placeholder="Nama dan gelar Anda"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="perusahaan"
+                  >
+                    Perusahaan / Institusi
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <input
+                    class="w-full px-4 py-3 rounded-lg border border-border-clean text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-muted-slate"
+                    id="perusahaan"
+                    name="perusahaan"
+                    placeholder="Nama entitas atau organisasi"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- 3. Email Bisnis & 4. WhatsApp -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="email"
+                  >
+                    Email Bisnis <span class="text-status-danger">*</span>
+                  </label>
+                  <input
+                    class="w-full px-4 py-3 rounded-lg border border-border-clean text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-muted-slate"
+                    id="email"
+                    name="email"
+                    placeholder="nama@perusahaan.co.id"
+                    required=""
+                    type="email"
+                  />
+                </div>
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="telepon"
+                  >
+                    Nomor WhatsApp / Telepon
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <input
+                    class="w-full px-4 py-3 rounded-lg border border-border-clean text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-muted-slate"
+                    id="telepon"
+                    name="telepon"
+                    placeholder="+62 8..."
+                    required=""
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <!-- 5. Produk yang Diminati (Multi-Select Chips) -->
+              <div class="space-y-2 pt-2">
+                <div class="flex items-center justify-between">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                  >
+                    Produk yang Diminati
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <span
+                    class="font-label-mono text-label-telemetry text-muted-slate"
+                    >// PILIH MINIMAL SATU</span
+                  >
+                </div>
+                <div class="flex flex-wrap gap-2.5 pt-1">
+                  <label class="cursor-pointer">
+                    <input
+                      checked=""
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="CAM550"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer CAM550 (Dual-Lens)
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="CAM570"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer CAM570 (Audio Tracking)
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="CAM520-Pro3"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer CAM520 Pro3
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="VB342-Pro"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer VB342 Pro (Soundbar)
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="PTC310H"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer PTC310H (Pro AV PTZ)
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="FONE540"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      AVer FONE540 (Speakerphone)
+                    </span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input
+                      class="peer sr-only"
+                      name="produk"
+                      type="checkbox"
+                      value="Aksesori"
+                    />
+                    <span
+                      class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-secondary text-body-sm font-body-sm peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all"
+                    >
+                      Aksesori / Lainnya
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <!-- 6. Ukuran Ruang & 8. Jumlah Ruangan -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="ukuran_ruang"
+                  >
+                    Ukuran Ruang <span class="text-status-danger">*</span>
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full px-4 py-3 rounded-lg border border-border-clean bg-surface-container-lowest text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none appearance-none cursor-pointer"
+                      id="ukuran_ruang"
+                      name="ukuran_ruang"
+                      required=""
+                    >
+                      <option disabled="" selected="" value="">
+                        Pilih ukuran ruang
+                      </option>
+                      <option value="huddle">Huddle Room (2-6 orang)</option>
+                      <option value="medium">Ruang Sedang (6-12 orang)</option>
+                      <option value="boardroom">
+                        Boardroom Eksekutif (12-25+ orang)
+                      </option>
+                      <option value="auditorium">
+                        Auditorium &amp; Ruang Pelatihan (30+ orang)
+                      </option>
+                      <option value="multi">
+                        Multi-ruangan / Seluruh Kantor
+                      </option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-3 top-3.5 text-muted-slate pointer-events-none text-[20px]"
+                      >expand_more</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-1.5">
+                  <label
+                    class="block text-body-sm font-body-sm font-semibold text-on-background"
+                    for="jumlah_ruangan"
+                  >
+                    Jumlah Ruangan <span class="text-status-danger">*</span>
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="w-full px-4 py-3 rounded-lg border border-border-clean bg-surface-container-lowest text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none appearance-none cursor-pointer"
+                      id="jumlah_ruangan"
+                      name="jumlah_ruangan"
+                      required=""
+                    >
+                      <option disabled="" selected="" value="">
+                        Pilih alokasi ruangan
+                      </option>
+                      <option value="1">1 Ruang</option>
+                      <option value="2-5">2 - 5 Ruang</option>
+                      <option value="6-10">6 - 10 Ruang</option>
+                      <option value="&gt;10">Lebih dari 10 Ruang</option>
+                    </select>
+                    <span
+                      class="material-symbols-outlined absolute right-3 top-3.5 text-muted-slate pointer-events-none text-[20px]"
+                      >expand_more</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 7. Platform Konferensi Utama (Radio Grid) -->
+              <div class="space-y-2 pt-2">
+                <label
+                  class="block text-body-sm font-body-sm font-semibold text-on-background"
+                >
+                  Platform Konferensi Utama
+                  <span class="text-status-danger">*</span>
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <label
+                    class="p-3 rounded-lg border border-border-clean bg-surface-alt flex items-center gap-3 cursor-pointer hover:border-primary transition-colors"
+                  >
+                    <input
+                      checked=""
+                      class="w-4 h-4 text-primary focus:ring-primary border-border-clean"
+                      name="platform"
+                      type="radio"
+                      value="mtr"
+                    />
+                    <span
+                      class="text-body-sm font-body-sm text-on-background font-medium"
+                      >Microsoft Teams Rooms</span
+                    >
+                  </label>
+                  <label
+                    class="p-3 rounded-lg border border-border-clean bg-surface-alt flex items-center gap-3 cursor-pointer hover:border-primary transition-colors"
+                  >
+                    <input
+                      class="w-4 h-4 text-primary focus:ring-primary border-border-clean"
+                      name="platform"
+                      type="radio"
+                      value="zoom"
+                    />
+                    <span
+                      class="text-body-sm font-body-sm text-on-background font-medium"
+                      >Zoom Rooms</span
+                    >
+                  </label>
+                  <label
+                    class="p-3 rounded-lg border border-border-clean bg-surface-alt flex items-center gap-3 cursor-pointer hover:border-primary transition-colors"
+                  >
+                    <input
+                      class="w-4 h-4 text-primary focus:ring-primary border-border-clean"
+                      name="platform"
+                      type="radio"
+                      value="google"
+                    />
+                    <span
+                      class="text-body-sm font-body-sm text-on-background font-medium"
+                      >Google Meet</span
+                    >
+                  </label>
+                  <label
+                    class="p-3 rounded-lg border border-border-clean bg-surface-alt flex items-center gap-3 cursor-pointer hover:border-primary transition-colors"
+                  >
+                    <input
+                      class="w-4 h-4 text-primary focus:ring-primary border-border-clean"
+                      name="platform"
+                      type="radio"
+                      value="multi"
+                    />
+                    <span
+                      class="text-body-sm font-body-sm text-on-background font-medium"
+                      >Platform Lain / Multi-platform</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- 9. Catatan / Pesan Kebutuhan Khusus -->
+              <div class="space-y-1.5 pt-2">
+                <label
+                  class="block text-body-sm font-body-sm font-semibold text-on-background"
+                  for="catatan"
+                >
+                  Catatan / Kebutuhan Khusus
+                  <span class="font-normal text-muted-slate">(Opsional)</span>
+                </label>
+                <textarea
+                  class="w-full px-4 py-3 rounded-lg border border-border-clean text-body-sm font-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-muted-slate"
+                  id="catatan"
+                  name="catatan"
+                  placeholder="Ceritakan denah, kendala pencahayaan/akustik, atau target implementasi..."
+                  rows="3"
+                ></textarea>
+              </div>
+              <!-- 10. Unggah Denah Ruang (File Upload Dropzone) -->
+              <div class="space-y-1.5 pt-2">
+                <label
+                  class="block text-body-sm font-body-sm font-semibold text-on-background"
+                >
+                  Unggah Denah Ruang
+                  <span class="font-normal text-muted-slate">(Opsional)</span>
+                </label>
+                <div
+                  class="border-2 border-dashed border-border-clean rounded-xl p-6 text-center hover:border-primary transition-colors bg-surface-alt cursor-pointer relative group"
+                >
+                  <input
+                    accept=".pdf,.png,.dwg"
+                    class="absolute inset-0 opacity-0 cursor-pointer"
+                    type="file"
+                  />
+                  <div class="flex flex-col items-center justify-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-[32px] text-primary group-hover:scale-105 transition-transform"
+                      >upload_file</span
+                    >
+                    <div
+                      class="text-body-sm font-body-sm text-on-background font-medium"
+                    >
+                      Tarik berkas ke sini atau
+                      <span class="text-primary underline"
+                        >pilih dari komputer</span
+                      >
+                    </div>
+                    <div
+                      class="font-label-mono text-label-telemetry text-muted-slate"
+                    >
+                      Format didukung: .PDF, .PNG, .DWG (Maks. 10MB)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 11. Consent Checkbox -->
+              <div class="pt-2">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input
+                    class="w-4 h-4 rounded text-primary focus:ring-primary border-border-clean mt-1"
+                    required=""
+                    type="checkbox"
+                  />
+                  <span class="text-body-sm font-body-sm text-secondary">
+                    Saya setuju data saya digunakan untuk menanggapi permintaan
+                    ini dan menyusun rekomendasi teknis.
+                  </span>
+                </label>
+              </div>
+              <!-- 12. Submit Button -->
+              <button
+                class="w-full py-4 px-6 rounded-lg bg-primary text-on-primary font-title-md font-semibold text-body-md hover:bg-primary-dark transition-all flex items-center justify-center gap-2 shadow-sm"
+                type="submit"
+              >
+                <span>Kirim Permintaan Penawaran</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  >arrow_forward</span
+                >
+              </button>
+            </form>
+          </div>
+          <!-- DEMONSTRATION UI STATES (Preview Panels) -->
+          <div class="space-y-4 pt-4">
+            <div
+              class="font-label-mono text-label-telemetry text-muted-slate flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-[16px]"
+                >visibility</span
+              >
+              <span>// SIMULASI STATUS UI RESPON FORMULIR</span>
+            </div>
+            <!-- Error State Demonstration Card -->
+            <div
+              class="p-5 rounded-xl bg-error-container/20 border border-error/30 text-error space-y-2"
+            >
+              <div
+                class="flex items-center gap-2 font-title-md text-body-sm font-bold text-error"
+              >
+                <span class="material-symbols-outlined text-[20px]">error</span>
+                Contoh Validasi Bidang yang Tidak Sesuai
+              </div>
+              <ul
+                class="text-body-sm font-body-sm space-y-1 list-disc list-inside text-on-surface"
+              >
+                <li>
+                  <span class="font-mono text-[12px] text-error font-semibold"
+                    >Email:</span
+                  >
+                  Email harus diisi dengan format bisnis yang valid.
+                </li>
+                <li>
+                  <span class="font-mono text-[12px] text-error font-semibold"
+                    >Produk:</span
+                  >
+                  Pilih minimal satu kategori produk yang diminati.
+                </li>
+              </ul>
+            </div>
+            <!-- Interactive Success Confirmation Modal / Banner State -->
+            <div
+              class="hidden p-6 rounded-xl bg-surface-container-low border border-primary/40 space-y-3 relative"
+              id="success-modal"
+            >
+              <button
+                class="absolute top-4 right-4 text-muted-slate hover:text-on-surface"
+                onclick="
+                  document
+                    .getElementById('success-modal')
+                    .classList.add('hidden')
+                "
+              >
+                <span class="material-symbols-outlined text-[20px]">close</span>
+              </button>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-9 h-9 rounded-full bg-status-success text-white flex items-center justify-center shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >check</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="text-title-md font-title-md text-on-background font-bold"
+                  >
+                    Permintaan Anda Berhasil Dikirim!
+                  </h4>
+                  <p
+                    class="text-label-mono text-label-telemetry text-primary mt-0.5"
+                  >
+                    // STATUS TIKET: DITERIMA ADVISOR
+                  </p>
+                </div>
+              </div>
+              <p class="text-body-sm font-body-sm text-secondary">
+                Terima kasih telah menghubungi Harry Kusumo Negoro. Penawaran
+                dan analisis ruang akan segera dikirimkan ke kontak bisnis Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 5. FAQ ACCORDION SECTION (4 Questions) -->
+    <section class="border-t border-border-clean bg-surface-alt py-20 px-6">
+      <div class="max-w-4xl mx-auto space-y-10">
+        <div class="text-center space-y-2">
+          <div
+            class="font-label-mono text-label-mono text-primary font-semibold"
+          >
+            // INFORMASI KONSULTASI
+          </div>
+          <h2 class="text-headline-md font-headline-md text-on-background">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-body-sm font-body-sm text-secondary">
+            Transparansi alur kerja dan estimasi teknis solusi ruang AVer
+          </p>
+        </div>
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 cursor-pointer"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md font-semibold text-body-md text-on-background list-none"
+            >
+              <span
+                >Berapa lama waktu yang dibutuhkan untuk menerima penawaran
+                harga resmi?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-4 border-t border-border-clean text-body-sm font-body-sm text-secondary leading-relaxed"
+            >
+              Estimasi konfigurasi awal dan penawaran teknis biasanya selesai
+              dalam 1x24 jam kerja setelah parameter ruang kami terima. Jika
+              denah membutuhkan kalkulasi sudut tangkap FOV khusus atau
+              integrasi audio multi-speakerphone, kami akan mengonfirmasi detail
+              tambahan secara langsung.
+            </div>
+          </details>
+          <!-- FAQ 2 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 cursor-pointer"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md font-semibold text-body-md text-on-background list-none"
+            >
+              <span
+                >Apakah saya bisa meminta sesi demonstrasi unit sebelum
+                melakukan pembelian?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-4 border-t border-border-clean text-body-sm font-body-sm text-secondary leading-relaxed"
+            >
+              Ya. Bagi institusi atau korporasi yang sedang mengevaluasi
+              perangkat, kami dapat mengoordinasikan sesi demonstrasi kemampuan
+              pelacakan auto-framing dan audio tracking (seperti pada CAM550
+              atau CAM570) baik secara hybrid interaktif maupun on-site sesuai
+              ketersediaan unit demo.
+            </div>
+          </details>
+          <!-- FAQ 3 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 cursor-pointer"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md font-semibold text-body-md text-on-background list-none"
+            >
+              <span
+                >Apakah konsultasi denah dan penataan kamera ini dikenakan
+                biaya?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-4 border-t border-border-clean text-body-sm font-body-sm text-secondary leading-relaxed"
+            >
+              Sesi konsultasi denah, pemetaan jangkauan optik lensa, dan
+              rekomendasi model unit yang kami sediakan di situs ini bersifat
+              tanpa pungutan biaya. Layanan ini difokuskan untuk membantu klien
+              memilih perangkat yang tepat guna tanpa pemborosan anggaran.
+            </div>
+          </details>
+          <!-- FAQ 4 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl p-5 cursor-pointer"
+          >
+            <summary
+              class="flex items-center justify-between font-title-md font-semibold text-body-md text-on-background list-none"
+            >
+              <span
+                >Bagaimana jika organisasi saya belum mengetahui model AVer mana
+                yang dibutuhkan?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="mt-4 pt-4 border-t border-border-clean text-body-sm font-body-sm text-secondary leading-relaxed"
+            >
+              Anda cukup mengisikan dimensi perkiraan ruang serta jumlah peserta
+              rapat pada formulir di atas. Tim advisor kami yang akan
+              merekomendasikan apakah ruang Anda lebih optimal menggunakan model
+              All-in-One Soundbar, Dual-Lens PTZ, atau kombinasi mikrofon
+              ekstensi.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- 6. GLOBAL FINAL CTA BAND (Solid AVer Blue #0094DA) -->
+    <section class="bg-primary text-on-primary py-16 px-6">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <div class="space-y-2 text-center md:text-left">
+          <span
+            class="font-label-mono text-label-mono tracking-wider opacity-90"
+            >// KONSULTASI INSTAN</span
+          >
+          <h2 class="text-headline-md font-headline-md text-white">
+            Butuh konsultasi cepat via pesan langsung?
+          </h2>
+          <p class="text-body-md font-body-md opacity-90 max-w-xl">
+            Diskusikan denah dan kebutuhan perangkat Anda langsung bersama Harry
+            Kusumo Negoro untuk respons cepat.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
+          <a
+            class="px-6 py-3.5 rounded-lg bg-surface-container-lowest text-primary font-title-md text-body-sm font-bold hover:bg-surface-alt transition-colors shadow-sm"
+            href="#nama"
+          >
+            Minta Penawaran
+          </a>
+          <a
+            class="px-6 py-3.5 rounded-lg bg-[#25D366] text-white font-title-md text-body-sm font-bold hover:opacity-95 transition-all flex items-center gap-2 shadow-sm"
+            href="https://wa.me/6281200000000"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            Chat WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- 7. GLOBAL 4-COLUMN FOOTER -->
+    <footer class="bg-surface-alt border-t border-border-clean text-on-surface">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <!-- 4 Columns Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-border-clean"
+        >
+          <!-- Column 1: Produk -->
+          <div class="space-y-4">
+            <h3 class="font-title-md text-body-sm font-bold text-on-background">
+              Produk
+            </h3>
+            <ul class="space-y-2.5 text-body-sm font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kamera Ruang Rapat (CAM)</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Video Soundbar Kolaborasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Auto Tracking Kamera Pro AV</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Speakerphone &amp; Aksesori</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Aplikasi Pendukung AVer</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 2: Artikel -->
+          <div class="space-y-4">
+            <h3 class="font-title-md text-body-sm font-bold text-on-background">
+              Artikel
+            </h3>
+            <ul class="space-y-2.5 text-body-sm font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Perbandingan Topologi Kamera</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Panduan Audio Tracking</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Optimasi Microsoft Teams Rooms</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kamera PTZ untuk Auditorium</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Arsip Teknis AV</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 3: Solusi -->
+          <div class="space-y-4">
+            <h3 class="font-title-md text-body-sm font-bold text-on-background">
+              Solusi
+            </h3>
+            <ul class="space-y-2.5 text-body-sm font-body-sm text-secondary">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Huddle Room Pintar</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Boardroom Eksekutif</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Ruang Kelas Hybrid &amp; Edukasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Auditorium &amp; Acara Korporasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kalkulator Akustik &amp; FOV</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Column 4: Legal & Kontak -->
+          <div class="space-y-4">
+            <h3 class="font-title-md text-body-sm font-bold text-on-background">
+              Legal &amp; Kontak
+            </h3>
+            <ul class="space-y-2.5 text-body-sm font-body-sm text-secondary">
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="mailto:info@averadvisor.id"
+                  >info@averadvisor.id</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="/penawaran"
+                  >Formulir Penawaran</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Standar Editorial Advisor</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Profil Harry Kusumo Negoro</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Legal Disclaimer & Copyright -->
+        <div class="pt-8 space-y-4">
+          <p class="text-caption font-caption text-muted-slate leading-relaxed">
+            <span class="font-semibold text-secondary">Disclaimer:</span> Situs
+            personal Harry Kusumo Negoro. AVer adalah merek dagang AVer
+            Information Inc. Spesifikasi produk dapat berubah sewaktu-waktu;
+            selalu rujuk ke datasheet resmi AVer. Informasi yang disediakan di
+            halaman ini merupakan panduan konsultatif independen untuk efisiensi
+            ruang kolaborasi enterprise.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between gap-4 text-caption font-caption text-muted-slate pt-2 border-t border-border-clean/60"
+          >
+            <p>© 2026 Harry Kusumo Negoro. All rights reserved.</p>
+            <div
+              class="flex items-center gap-4 font-label-mono text-label-telemetry"
+            >
+              <span>AV SOLUTIONS ADVISOR</span>
+              <span>·</span>
+              <span>JAKARTA, INDONESIA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

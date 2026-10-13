@@ -1,0 +1,1132 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AVer CAM550 — Harry Kusumo Negoro | AV Tech Journal</title>
+    <!-- Material Symbols Outlined -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#006495",
+              "dark-border": "#1B3752",
+              "on-tertiary-fixed-variant": "#3c494e",
+              "status-danger": "#DC2626",
+              "inverse-on-surface": "#eaf1ff",
+              "muted-slate": "#64748B",
+              "on-surface-variant": "#3f4850",
+              "primary-fixed": "#cbe6ff",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#001e30",
+              "surface-container": "#e6eeff",
+              "on-background": "#0d1c2e",
+              surface: "#f8f9ff",
+              "tertiary-container": "#69777d",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#fafdff",
+              "surface-alt": "#F4FAFD",
+              "surface-bright": "#f8f9ff",
+              "secondary-fixed": "#d1e4ff",
+              "on-secondary-fixed": "#081d30",
+              "dark-bg": "#07131F",
+              "dark-surface": "#0D2236",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#eff4ff",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              outline: "#6f7882",
+              "on-tertiary-fixed": "#101d22",
+              "surface-dim": "#ccdbf3",
+              "on-surface": "#0d1c2e",
+              "surface-variant": "#d5e3fc",
+              "outline-variant": "#bec7d2",
+              "status-warning": "#F59E0B",
+              "dark-text": "#E6EEF5",
+              "on-secondary-container": "#52647b",
+              "secondary-container": "#cee1fc",
+              "tertiary-fixed-dim": "#bbc9cf",
+              tertiary: "#515e64",
+              "on-secondary-fixed-variant": "#36485e",
+              "on-primary-container": "#fcfcff",
+              "primary-dark": "#0077B6",
+              "on-error": "#ffffff",
+              "border-clean": "#D9E8F2",
+              "surface-container-highest": "#d5e3fc",
+              background: "#f8f9ff",
+              "on-secondary": "#ffffff",
+              "status-success": "#16A34A",
+              secondary: "#4e6077",
+              "primary-container": "#007bb6",
+              "on-primary-fixed-variant": "#004b71",
+              "secondary-fixed-dim": "#b5c8e3",
+              "tertiary-fixed": "#d7e5ec",
+              "surface-container-high": "#dce9ff",
+              "inverse-surface": "#233144",
+              "inverse-primary": "#8fcdff",
+              "primary-fixed-dim": "#8fcdff",
+              primary: "#006191",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              "body-article": ["Inter"],
+              "body-md": ["Inter"],
+              display: ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "label-telemetry": ["JetBrains Mono"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "display-mobile": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              caption: ["Inter"],
+              "label-mono": ["JetBrains Mono"],
+              "headline-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-article": [
+                "18px",
+                { lineHeight: "31px", fontWeight: "400" },
+              ],
+              "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              display: [
+                "54px",
+                {
+                  lineHeight: "60px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "body-sm": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-telemetry": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-md": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-mobile": [
+                "38px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg-mobile": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              caption: ["14px", { lineHeight: "20px", fontWeight: "400" }],
+              "label-mono": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-surface antialiased font-body-sm text-body-sm pb-28"
+  >
+    <!-- Mobile Viewport Wrapper (390px centered simulation) -->
+    <div
+      class="w-full max-w-[390px] mx-auto bg-surface-container-lowest min-h-screen border-x border-border-clean shadow-sm relative"
+    >
+      <!-- Sticky Header -->
+      <header
+        class="sticky top-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-border-clean px-4 h-14 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <button
+            aria-label="Menu navigasi"
+            class="p-1.5 text-secondary hover:text-primary transition-colors"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[24px]">menu</span>
+          </button>
+          <div class="flex flex-col">
+            <span
+              class="font-title-md text-body-sm leading-tight font-extrabold tracking-tight text-primary"
+              >AV TECH JOURNAL</span
+            >
+            <span
+              class="font-label-telemetry text-[10px] text-muted-slate uppercase tracking-wider"
+              >HARRY KUSUMO NEGORO</span
+            >
+          </div>
+        </div>
+        <div class="flex items-center gap-1">
+          <button
+            aria-label="Pencarian"
+            class="p-2 text-secondary hover:text-primary transition-colors"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]">search</span>
+          </button>
+          <button
+            aria-label="Tersimpan"
+            class="p-2 text-secondary hover:text-primary transition-colors"
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[20px]">bookmark</span>
+          </button>
+        </div>
+      </header>
+      <!-- Breadcrumb Hierarchy -->
+      <nav
+        aria-label="Jejak Navigasi"
+        class="px-4 py-2.5 bg-surface-alt border-b border-border-clean"
+      >
+        <ol
+          class="flex items-center space-x-1.5 font-label-mono text-label-mono text-muted-slate overflow-x-auto no-scrollbar whitespace-nowrap"
+        >
+          <li>
+            <a class="hover:text-primary transition-colors" href="#">Beranda</a>
+          </li>
+          <li class="flex items-center text-outline-variant">
+            <span class="material-symbols-outlined text-[14px]"
+              >chevron_right</span
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary transition-colors" href="#">Produk</a>
+          </li>
+          <li class="flex items-center text-outline-variant">
+            <span class="material-symbols-outlined text-[14px]"
+              >chevron_right</span
+            >
+          </li>
+          <li aria-current="page" class="text-primary font-semibold truncate">
+            AVer CAM550
+          </li>
+        </ol>
+      </nav>
+      <!-- Hero / Gallery Section -->
+      <section class="p-4 space-y-4">
+        <!-- Reticle Image Frame Container -->
+        <div
+          class="relative bg-surface-alt rounded-lg border border-border-clean p-2 overflow-hidden"
+        >
+          <!-- Reticle Graphic Overlay (Top Left & Top Right) -->
+          <span
+            class="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-primary z-20 pointer-events-none"
+          ></span>
+          <span
+            class="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-primary z-20 pointer-events-none"
+          ></span>
+          <!-- Reticle Graphic Overlay (Bottom Left & Bottom Right) -->
+          <span
+            class="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-primary z-20 pointer-events-none"
+          ></span>
+          <span
+            class="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-primary z-20 pointer-events-none"
+          ></span>
+          <!-- Telemetry Badge Overlaid on Hero -->
+          <div
+            class="absolute top-4 left-4 z-20 bg-surface-container-lowest/90 backdrop-blur-sm border border-border-clean px-2 py-0.5 rounded"
+          >
+            <span
+              class="font-label-telemetry text-label-telemetry text-primary font-semibold"
+              >// CAM550 · DUAL-LENS 4K</span
+            >
+          </div>
+          <div
+            class="absolute top-4 right-4 z-20 bg-surface-container-lowest/90 backdrop-blur-sm border border-border-clean px-2 py-0.5 rounded"
+          >
+            <span
+              class="font-label-telemetry text-label-telemetry text-muted-slate font-medium"
+              >1 / 3</span
+            >
+          </div>
+          <!-- Swipeable Image Container -->
+          <div
+            class="w-full aspect-[4/3] rounded overflow-hidden relative mt-1"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Modern enterprise PTZ conference camera hardware in metallic matte gray featuring dual optical lenses, positioned on a sleek glass podium in an illuminated clean technology studio. The composition showcases precise optical sensors, subtle blue LED power indicator accents, and architectural high-key studio lighting with ice-blue specular highlights against a crisp off-white backdrop."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYNOkoZElBMxlbPTJGsOcVJZ2PJyYYTLLcVSW2cw7UlmDrof10qN6CQyuzsClEMhECEHMT7M9LKIigjsEPsq3M12VWwmIak62juF04kgIdXRWxaEKZpqKfpTMAY4iRnY6zMUsBAgOnV4PI_-NXigRSUOCEjte35yxvb9K0iFy0Z6EgRMqMcekHn8a1Qj-YKBUQrS403KAXfN1YMmBfoDRLY8r99-lXly6gXle_64Ba--S2F6omaKzJWQ"
+            />
+          </div>
+          <!-- Gallery Pagination Dots -->
+          <div class="flex justify-center items-center gap-1.5 pt-3 pb-1">
+            <span class="w-5 h-1.5 bg-primary rounded-full"></span>
+            <span class="w-1.5 h-1.5 bg-border-clean rounded-full"></span>
+            <span class="w-1.5 h-1.5 bg-border-clean rounded-full"></span>
+          </div>
+        </div>
+        <!-- Title & Positioning -->
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <span
+              class="font-label-mono text-label-mono text-primary font-bold tracking-wider"
+              >// HARDWARE SPESIFIKASI</span
+            >
+          </div>
+          <h1
+            class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight"
+          >
+            AVer CAM550
+          </h1>
+          <p class="font-body-md text-body-md text-muted-slate leading-relaxed">
+            Dual-Lens 4K PTZ Camera dengan AI Gesture &amp; Audio Tracking
+            Terintegrasi
+          </p>
+        </div>
+        <!-- Spec Badges Row -->
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span
+            class="inline-flex items-center gap-1 font-label-mono text-label-mono px-2.5 py-1 rounded-full bg-surface-alt text-primary border border-border-clean"
+          >
+            <span class="material-symbols-outlined text-[14px]">videocam</span>
+            4K Dual-Lens
+          </span>
+          <span
+            class="inline-flex items-center gap-1 font-label-mono text-label-mono px-2.5 py-1 rounded-full bg-surface-alt text-primary border border-border-clean"
+          >
+            <span class="material-symbols-outlined text-[14px]">zoom_in</span>
+            24X Total Zoom
+          </span>
+          <span
+            class="inline-flex items-center gap-1 font-label-mono text-label-mono px-2.5 py-1 rounded-full bg-surface-alt text-primary border border-border-clean"
+          >
+            <span class="material-symbols-outlined text-[14px]"
+              >front_hand</span
+            >
+            SmartFrame &amp; Gesture
+          </span>
+          <span
+            class="inline-flex items-center gap-1 font-label-mono text-label-mono px-2.5 py-1 rounded-full bg-surface-alt text-primary border border-border-clean"
+          >
+            <span class="material-symbols-outlined text-[14px]">crop_free</span>
+            AI Dynamic Framing
+          </span>
+        </div>
+      </section>
+      <!-- Ringkasan Cepat (Editorial Callout) -->
+      <section class="px-4 py-2">
+        <div
+          class="bg-surface-alt border border-border-clean border-l-4 border-l-primary rounded-lg p-4 space-y-3"
+        >
+          <div class="flex items-center justify-between">
+            <h2
+              class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface"
+            >
+              Ringkasan Cepat
+            </h2>
+            <span class="font-label-mono text-label-mono text-muted-slate"
+              >// OVERVIEW</span
+            >
+          </div>
+          <div class="space-y-2 text-body-sm font-body-sm text-on-surface">
+            <div>
+              <span
+                class="font-label-mono text-label-mono text-primary font-bold"
+                >Kapasitas Ruang:</span
+              >
+              <p class="text-secondary mt-0.5">
+                Optimal untuk ruang konferensi skala menengah hingga besar (8–24
+                peserta).
+              </p>
+            </div>
+            <div class="pt-1">
+              <span
+                class="font-label-mono text-label-mono text-primary font-bold"
+                >3 Keunggulan Utama:</span
+              >
+              <ul class="mt-1 space-y-1.5 text-secondary pl-1">
+                <li class="flex items-start gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                    >check_circle</span
+                  >
+                  <span
+                    >Dual Optical Array: Lensa sekunder fixed AI 95° memindai
+                    pergerakan sementara lensa utama 4K PTZ membidik
+                    subjek.</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                    >check_circle</span
+                  >
+                  <span
+                    >Kendali Gestur Bebas Sentuh: Mengaktifkan dan menghentikan
+                    penjejakan otomatis cukup dengan gestur tangan.</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                    >check_circle</span
+                  >
+                  <span
+                    >Integrasi Preset Framing Cerdas: Menyimpan area meja rapat
+                    dan melakukan pembingkaian adaptif berbasis suara.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="pt-1 border-t border-border-clean text-muted-slate font-caption text-caption"
+            >
+              Catatan: Mendukung koneksi serentak HDMI, USB 3.1, dan IP
+              streaming RTSP/RTMP.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Storytelling Blocks (Stacked Mobile Layout) -->
+      <section class="p-4 space-y-4">
+        <div class="border-b border-border-clean pb-2">
+          <span class="font-label-mono text-label-mono text-primary font-bold"
+            >// FITUR UTAMA</span
+          >
+          <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            Teknologi Pelacakan Cerdas
+          </h2>
+        </div>
+        <!-- Feature Card 1 -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-lg overflow-hidden"
+        >
+          <div class="relative w-full aspect-[16/9] bg-surface-alt">
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Clean corporate meeting room setup demonstrating dual lens conference camera framing participants automatically. The wide angle optical sensor maps eight seated professionals while the primary optical lens captures a speaker presenting at the end of the boardroom table. Ice blue framing graphics indicate digital bounding zones over active speakers."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFse2VPJk5QlVfXW3UQnwSETx92nPG-CyauAn38oitOg5qG1seh2R6LrHZa8972jSpugTzAx57wiQw6Znl6puqwLm0V4jTP0eRHPcQVgnc205pN1KgYj30uLPePov0__BJNV-vuNm2le-hWIR59U5TBiFrt_GWF4ptYB-qxo0xFr5NEtpuu95hMJpp38DQZ7kU-qtpd_XaLCayBiHLQ3KqrZKmLkH634n9UpMlxxn0TcvVBLNJFa-D_Q"
+            />
+            <div
+              class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-primary font-label-mono text-label-mono border border-border-clean"
+            >
+              LENSA GANDA SINERGIS
+            </div>
+          </div>
+          <div class="p-4 space-y-1.5">
+            <h3 class="font-title-md text-title-md text-on-surface">
+              Dual Lens Architecture
+            </h3>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Kamera utama 4K dengan 24X total zoom berkolaborasi dengan lensa
+              panoramik AI 95° FOV. Kamera kedua mendeteksi kehadiran peserta
+              baru tanpa mengganggu framing presenter utama.
+            </p>
+          </div>
+        </article>
+        <!-- Feature Card 2 -->
+        <article
+          class="bg-surface-container-lowest border border-border-clean rounded-lg overflow-hidden"
+        >
+          <div class="relative w-full aspect-[16/9] bg-surface-alt">
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Close up view of a professional presenter in an enterprise executive room raising an open palm gesture to command a wall mounted PTZ conference camera. Architectural corporate setting with soft daylight illumination, balanced glass walls, and minimalistic technology displays indicating gesture recognition feedback."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8gyt0UtH8zT7MgAt2oWC-PwNwbHsX97psO7f_JwZJMk1cmHevQIXN6QHTFh1J0uAY-WQ_dGBNuQ2ovL2z-_vxx3RKPLOlrHdu_hKLDvF_7pTlpB4sfh2cIv-N5aBtpGEsi4QS8qO7Nap7i0oB4-HpzzQJX8k_YE-DEdhZt6GwBF76xZOehd4k-FQyOHEEAZGpu1mD7s-Yw6e-msu6ULMK-QrZZFWhCBis30r96Hw57nWwlIfJb769g"
+            />
+            <div
+              class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-primary font-label-mono text-label-mono border border-border-clean"
+            >
+              GESTURE RECOGNITION
+            </div>
+          </div>
+          <div class="p-4 space-y-1.5">
+            <h3 class="font-title-md text-title-md text-on-surface">
+              Kontrol Gestur Alami
+            </h3>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Pengguna dapat mengunci atau membebaskan target penjejakan dengan
+              mengangkat telapak tangan tanpa menyentuh remote control atau
+              perangkat lunak kontrol pihak ketiga.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Collapsible Specification Groups -->
+      <section class="p-4 space-y-3">
+        <div
+          class="flex items-center justify-between border-b border-border-clean pb-2"
+        >
+          <div>
+            <span class="font-label-mono text-label-mono text-primary font-bold"
+              >// TEKNIKAL</span
+            >
+            <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+              Spesifikasi Lengkap
+            </h2>
+          </div>
+          <span
+            class="font-label-telemetry text-label-telemetry text-muted-slate text-right"
+          >
+            Pembaruan: Feb 2026
+          </span>
+        </div>
+        <!-- Spec Accordion 1: Kamera -->
+        <details
+          class="group bg-surface-container-lowest border border-border-clean rounded-lg open:border-primary/50 transition-all"
+          open=""
+        >
+          <summary
+            class="flex items-center justify-between p-3.5 cursor-pointer list-none select-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >photo_camera</span
+              >
+              <span
+                class="font-title-md text-body-md font-semibold text-on-surface"
+                >Kamera &amp; Optik</span
+              >
+            </div>
+            <span
+              class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+              >expand_more</span
+            >
+          </summary>
+          <div
+            class="border-t border-border-clean divide-y divide-border-clean font-body-sm"
+          >
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Sensor Utama</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Sony 4K Exmor CMOS</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Lensa Sekunder</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >AI Lens 95° FOV</span
+              >
+            </div>
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Zoom Ratio</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >24X (12X Optik + 2X Digital)</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Sudut Pandang Utama</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >DFOV 85° / HFOV 76°</span
+              >
+            </div>
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Pan &amp; Tilt</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Pan ±170°, Tilt +90°/-30°</span
+              >
+            </div>
+          </div>
+        </details>
+        <!-- Spec Accordion 2: Audio & Framing -->
+        <details
+          class="group bg-surface-container-lowest border border-border-clean rounded-lg open:border-primary/50 transition-all"
+        >
+          <summary
+            class="flex items-center justify-between p-3.5 cursor-pointer list-none select-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >graphic_eq</span
+              >
+              <span
+                class="font-title-md text-body-md font-semibold text-on-surface"
+                >AI &amp; Audio Telemetri</span
+              >
+            </div>
+            <span
+              class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+              >expand_more</span
+            >
+          </summary>
+          <div
+            class="border-t border-border-clean divide-y divide-border-clean font-body-sm"
+          >
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Algoritma AI</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >SmartFrame, Gesture Tracking</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Integrasi Mikrofon</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Kompatibel Shure, Sennheiser, Yamaha</span
+              >
+            </div>
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Audio Tracking Mode</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Audio Tracking &amp; Presentation Mode</span
+              >
+            </div>
+          </div>
+        </details>
+        <!-- Spec Accordion 3: Konektivitas -->
+        <details
+          class="group bg-surface-container-lowest border border-border-clean rounded-lg open:border-primary/50 transition-all"
+        >
+          <summary
+            class="flex items-center justify-between p-3.5 cursor-pointer list-none select-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >cable</span
+              >
+              <span
+                class="font-title-md text-body-md font-semibold text-on-surface"
+                >Konektivitas &amp; Port</span
+              >
+            </div>
+            <span
+              class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+              >expand_more</span
+            >
+          </summary>
+          <div
+            class="border-t border-border-clean divide-y divide-border-clean font-body-sm"
+          >
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Port USB</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >USB 3.1 Type-B (UVC/UAC)</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Output Video</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >HDMI 1.4b (4K @ 30fps)</span
+              >
+            </div>
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Jaringan</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >RJ45 (IP RTSP / RTMP)</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Kontrol Serial</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >RS232 (VISCA / Pelco)</span
+              >
+            </div>
+          </div>
+        </details>
+        <!-- Spec Accordion 4: Fisik & Daya -->
+        <details
+          class="group bg-surface-container-lowest border border-border-clean rounded-lg open:border-primary/50 transition-all"
+        >
+          <summary
+            class="flex items-center justify-between p-3.5 cursor-pointer list-none select-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >straighten</span
+              >
+              <span
+                class="font-title-md text-body-md font-semibold text-on-surface"
+                >Dimensi &amp; Daya</span
+              >
+            </div>
+            <span
+              class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+              >expand_more</span
+            >
+          </summary>
+          <div
+            class="border-t border-border-clean divide-y divide-border-clean font-body-sm"
+          >
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Dimensi Unit</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >180 x 145 x 188 mm</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Berat Bersih</span
+              >
+              <span class="font-medium text-right text-on-surface">1.7 kg</span>
+            </div>
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Catu Daya</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >DC 12V / 2A / PoE+</span
+              >
+            </div>
+          </div>
+        </details>
+        <!-- Spec Accordion 5: Sertifikasi & Ekosistem -->
+        <details
+          class="group bg-surface-container-lowest border border-border-clean rounded-lg open:border-primary/50 transition-all"
+        >
+          <summary
+            class="flex items-center justify-between p-3.5 cursor-pointer list-none select-none"
+          >
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-[20px]"
+                >verified_user</span
+              >
+              <span
+                class="font-title-md text-body-md font-semibold text-on-surface"
+                >Kesesuaian Platform</span
+              >
+            </div>
+            <span
+              class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform"
+              >expand_more</span
+            >
+          </summary>
+          <div
+            class="border-t border-border-clean divide-y divide-border-clean font-body-sm"
+          >
+            <div class="flex justify-between p-3 bg-surface-alt">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Ekosistem Konferensi</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Microsoft Teams Rooms, Zoom Rooms</span
+              >
+            </div>
+            <div class="flex justify-between p-3">
+              <span class="font-label-mono text-label-mono text-muted-slate"
+                >Sistem Operasi</span
+              >
+              <span class="font-medium text-right text-on-surface"
+                >Windows 10/11, macOS 10.14+</span
+              >
+            </div>
+          </div>
+        </details>
+      </section>
+      <!-- Cocok untuk Ruang Apa Section -->
+      <section class="p-4 space-y-3">
+        <div class="border-b border-border-clean pb-2">
+          <span class="font-label-mono text-label-mono text-primary font-bold"
+            >// PENEMPATAN RUANG</span
+          >
+          <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            Cocok untuk Ruang Apa?
+          </h2>
+        </div>
+        <div class="space-y-3">
+          <!-- Card 1: Huddle -->
+          <div
+            class="border border-border-clean rounded-lg p-3.5 bg-surface-container-lowest"
+          >
+            <div class="flex items-center justify-between">
+              <span class="font-title-md text-title-md text-on-surface"
+                >Huddle Room</span
+              >
+              <span
+                class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container text-secondary"
+                >2–6 Orang</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-secondary mt-1.5">
+              Bisa digunakan berkat lensa ultra-wide 95°, namun kemampuan 24X
+              zoom kurang terutilisasi optimal pada ruang sangat sempit.
+            </p>
+          </div>
+          <!-- Card 2: Medium (Highlighted) -->
+          <div
+            class="border-2 border-primary bg-surface-alt rounded-lg p-3.5 relative"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1.5">
+                <span class="font-title-md text-title-md text-primary font-bold"
+                  >Medium Room</span
+                >
+                <span
+                  class="bg-primary text-on-primary font-label-mono text-[10px] px-1.5 py-0.5 rounded"
+                  >REKOMENDASI</span
+                >
+              </div>
+              <span
+                class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed"
+                >8–15 Orang</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-secondary mt-1.5">
+              Format paling pas. AI SmartFrame mendeteksi perpindahan audiens di
+              meja panjang tanpa lag, dengan jangkauan tracking hingga 7 meter.
+            </p>
+          </div>
+          <!-- Card 3: Large Room -->
+          <div
+            class="border border-border-clean rounded-lg p-3.5 bg-surface-container-lowest"
+          >
+            <div class="flex items-center justify-between">
+              <span class="font-title-md text-title-md text-on-surface"
+                >Large Boardroom</span
+              >
+              <span
+                class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container text-secondary"
+                >16–24+ Orang</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-secondary mt-1.5">
+              Optical zoom 12X memberikan pembesaran jernih hingga ujung meja
+              panjang tanpa kompresi artefak gambar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Horizontally Scrollable Comparison Table -->
+      <section class="p-4 space-y-3">
+        <div class="border-b border-border-clean pb-2">
+          <span class="font-label-mono text-label-mono text-primary font-bold"
+            >// PERBANDINGAN MODEL</span
+          >
+          <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            Komparasi Seri Kamera
+          </h2>
+        </div>
+        <!-- Scroll Container -->
+        <div
+          class="overflow-x-auto no-scrollbar border border-border-clean rounded-lg bg-surface-container-lowest"
+        >
+          <table class="w-full text-left border-collapse min-w-[420px]">
+            <thead>
+              <tr
+                class="bg-surface-alt border-b border-border-clean font-label-mono text-label-mono"
+              >
+                <th class="p-3 text-muted-slate">Fitur</th>
+                <th class="p-3 text-primary bg-primary-fixed/20">CAM550</th>
+                <th class="p-3 text-secondary">CAM570</th>
+                <th class="p-3 text-secondary">CAM520 Pro3</th>
+              </tr>
+            </thead>
+            <tbody class="font-body-sm divide-y divide-border-clean">
+              <tr>
+                <td
+                  class="p-3 font-label-mono text-label-mono text-muted-slate bg-surface-alt/50"
+                >
+                  Lensa
+                </td>
+                <td class="p-3 font-semibold text-primary bg-primary-fixed/10">
+                  Dual 4K
+                </td>
+                <td class="p-3 text-secondary">Dual 4K + Audio</td>
+                <td class="p-3 text-secondary">Single 4K</td>
+              </tr>
+              <tr>
+                <td
+                  class="p-3 font-label-mono text-label-mono text-muted-slate bg-surface-alt/50"
+                >
+                  Total Zoom
+                </td>
+                <td class="p-3 font-semibold text-primary bg-primary-fixed/10">
+                  24X (12X Optik)
+                </td>
+                <td class="p-3 text-secondary">36X (12X Optik)</td>
+                <td class="p-3 text-secondary">36X (12X Optik)</td>
+              </tr>
+              <tr>
+                <td
+                  class="p-3 font-label-mono text-label-mono text-muted-slate bg-surface-alt/50"
+                >
+                  Voice Tracking
+                </td>
+                <td class="p-3 font-semibold text-primary bg-primary-fixed/10">
+                  Via Mic Pihak Ketiga
+                </td>
+                <td class="p-3 text-secondary">Sensor Audio Built-in</td>
+                <td class="p-3 text-secondary">Smart Composition</td>
+              </tr>
+              <tr>
+                <td
+                  class="p-3 font-label-mono text-label-mono text-muted-slate bg-surface-alt/50"
+                >
+                  Gesture Control
+                </td>
+                <td class="p-3 font-semibold text-primary bg-primary-fixed/10">
+                  Tersedia
+                </td>
+                <td class="p-3 text-secondary">Tersedia</td>
+                <td class="p-3 text-secondary">Tidak Tersedia</td>
+              </tr>
+              <tr>
+                <td
+                  class="p-3 font-label-mono text-label-mono text-muted-slate bg-surface-alt/50"
+                >
+                  HDMI Output
+                </td>
+                <td class="p-3 font-semibold text-primary bg-primary-fixed/10">
+                  Ya
+                </td>
+                <td class="p-3 text-secondary">Ya</td>
+                <td class="p-3 text-secondary">Ya</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-right">
+          <span class="font-caption text-caption text-muted-slate"
+            >← Geser tabel secara horizontal →</span
+          >
+        </div>
+      </section>
+      <!-- FAQ Accordion (3 Items) -->
+      <section class="p-4 space-y-3">
+        <div class="border-b border-border-clean pb-2">
+          <span class="font-label-mono text-label-mono text-primary font-bold"
+            >// PERTANYAAN UMUM</span
+          >
+          <h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            FAQ Teknis
+          </h2>
+        </div>
+        <div class="space-y-2">
+          <!-- FAQ 1 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-lg p-3"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md text-body-md font-semibold text-on-surface list-none"
+            >
+              <span>Bagaimana cara kerja dual-lens pada CAM550?</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <p
+              class="font-body-sm text-body-sm text-secondary mt-2.5 pt-2 border-t border-border-clean"
+            >
+              Lensa sekunder terus-menerus memindai keseluruhan ruangan dengan
+              sudut 95°. Saat orang baru masuk atau berdiri, sensor AI
+              menginstruksikan lensa utama PTZ untuk melakukan reposisi
+              pembingkaian tanpa kehilangan fokus subjek aktif.
+            </p>
+          </details>
+          <!-- FAQ 2 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-lg p-3"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md text-body-md font-semibold text-on-surface list-none"
+            >
+              <span
+                >Apakah memerlukan driver khusus untuk dihubungkan ke PC?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <p
+              class="font-body-sm text-body-sm text-secondary mt-2.5 pt-2 border-t border-border-clean"
+            >
+              Tidak. Kamera ini kompatibel dengan standar plug-and-play UVC/UAC,
+              sehingga langsung dikenali oleh sistem operasi Windows maupun
+              macOS pada aplikasi konferensi seperti Teams, Zoom, dan Google
+              Meet.
+            </p>
+          </details>
+          <!-- FAQ 3 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-lg p-3"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer font-title-md text-body-md font-semibold text-on-surface list-none"
+            >
+              <span
+                >Apakah mendukung instalasi posisi terbalik (ceiling
+                mount)?</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform text-[20px]"
+                >expand_more</span
+              >
+            </summary>
+            <p
+              class="font-body-sm text-body-sm text-secondary mt-2.5 pt-2 border-t border-border-clean"
+            >
+              Ya, didukung secara penuh. Fungsi image flip dapat diatur melalui
+              perangkat lunak manajemen PTZApp 2 atau menu web GUI internal
+              untuk instalasi di plafon menggunakan braket mounting yang
+              disertakan.
+            </p>
+          </details>
+        </div>
+      </section>
+      <!-- Stacked Mobile Footer -->
+      <footer
+        class="bg-surface-alt border-t border-border-clean px-4 py-8 space-y-6"
+      >
+        <div class="space-y-2">
+          <span
+            class="font-title-md text-body-md font-extrabold text-primary block"
+            >AV TECH JOURNAL</span
+          >
+          <p class="font-body-sm text-body-sm text-muted-slate">
+            Dokumentasi teknis integrasi audio visual enterprise dan sistem
+            kamera tracking cerdas oleh Harry Kusumo Negoro.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-3 font-body-sm text-body-sm">
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="#"
+            >Standar Editorial</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="#"
+            >Arsitektur Ruang</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="#"
+            >Studi Kasus</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="#"
+            >Kebijakan Privasi</a
+          >
+        </div>
+        <div class="pt-4 border-t border-border-clean space-y-2">
+          <p class="font-label-telemetry text-label-telemetry text-muted-slate">
+            © 2026 Harry Kusumo Negoro. Seluruh hak cipta dilindungi.
+          </p>
+          <p
+            class="font-label-telemetry text-[11px] text-muted-slate leading-relaxed"
+          >
+            Pemberitahuan: Seluruh merek dagang, nama produk AVer, dan logo
+            adalah hak milik dari AVer Information Inc. Publikasi ini merupakan
+            dokumentasi teknis independen.
+          </p>
+        </div>
+      </footer>
+      <!-- Fixed Bottom Bar for Mobile -->
+      <div
+        class="fixed bottom-0 left-0 right-0 z-50 flex justify-center pointer-events-none"
+      >
+        <div
+          class="w-full max-w-[390px] bg-surface-container-lowest/95 backdrop-blur-md border-t border-border-clean p-3 flex items-center gap-2 pointer-events-auto shadow-md"
+        >
+          <!-- WhatsApp CTA -->
+          <a
+            class="flex-1 inline-flex items-center justify-center gap-1.5 bg-[#25D366] text-white py-2.5 px-3 rounded-lg font-title-md text-body-sm font-semibold active:opacity-90 transition-opacity"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>Chat WhatsApp</span>
+          </a>
+          <!-- Minta Penawaran CTA (#0094DA) -->
+          <a
+            class="flex-1 inline-flex items-center justify-center gap-1.5 bg-[#0094DA] text-white py-2.5 px-3 rounded-lg font-title-md text-body-sm font-semibold active:opacity-90 transition-opacity"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[18px]"
+              >request_quote</span
+            >
+            <span>Minta Penawaran</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

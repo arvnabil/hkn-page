@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#F8F9FF" />
+    <title>AVer Editorial Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/theme.css" />
+    <script src="assets/theme.js"></script>
+    <!-- harus sinkron di <head>: mencegah flash saat dark mode -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/tailwind.config.js"></script>
+    <script src="assets/layout.js" defer></script>
+  </head>
+  <body>
+    <aver-header active="produk"></aver-header>
+
+    <main
+      id="main"
+      class="mx-auto max-w-page space-y-space-2xl px-gutter-mobile py-space-2xl md:px-gutter md:py-space-3xl"
+    >
+      <header>
+        <p class="font-mono text-label-telemetry text-muted-slate">
+          DESIGN SYSTEM
+        </p>
+        <h1 class="mt-2 font-display text-display-mobile md:text-display">
+          AVer Editorial Showcase
+        </h1>
+        <p class="mt-4 max-w-2xl text-body-md text-on-surface-variant">
+          Semua komponen di bawah memakai satu set class. Tekan ikon
+          bulan/matahari di header untuk melihat dua mode.
+        </p>
+      </header>
+
+      <section aria-labelledby="h-warna">
+        <h2 id="h-warna" class="font-display text-headline-sm">Warna</h2>
+        <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="overflow-hidden rounded-xl border border-border-clean">
+            <div class="bg-brand p-4 text-white">
+              <b class="font-mono text-label-mono">Primary</b><br /><span
+                class="font-mono text-label-telemetry"
+                >#0094DA</span
+              >
+            </div>
+            <div class="flex h-8">
+              <i class="flex-1 bg-primary"></i
+              ><i class="flex-1 bg-primary-container"></i
+              ><i class="flex-1 bg-primary-fixed"></i>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-xl border border-border-clean">
+            <div class="bg-[#0B1F33] p-4 text-white">
+              <b class="font-mono text-label-mono">Secondary</b><br /><span
+                class="font-mono text-label-telemetry"
+                >#0B1F33</span
+              >
+            </div>
+            <div class="flex h-8">
+              <i class="flex-1 bg-secondary"></i
+              ><i class="flex-1 bg-secondary-container"></i
+              ><i class="flex-1 bg-surface-container"></i>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-xl border border-border-clean">
+            <div class="bg-accent p-4 text-white">
+              <b class="font-mono text-label-mono">Tertiary</b><br /><span
+                class="font-mono text-label-telemetry"
+                >#CC7802</span
+              >
+            </div>
+            <div class="flex h-8">
+              <i class="flex-1 bg-tertiary"></i><i class="flex-1 bg-accent"></i
+              ><i class="flex-1 bg-tertiary-container"></i>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-xl border border-border-clean">
+            <div class="bg-[#475569] p-4 text-white">
+              <b class="font-mono text-label-mono">Neutral</b><br /><span
+                class="font-mono text-label-telemetry"
+                >#475569</span
+              >
+            </div>
+            <div class="flex h-8">
+              <i class="flex-1 bg-outline"></i
+              ><i class="flex-1 bg-outline-variant"></i
+              ><i class="flex-1 bg-border-clean"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="h-tipe" class="grid gap-3 md:grid-cols-3">
+        <h2 id="h-tipe" class="sr-only">Tipografi</h2>
+        <div class="rounded-xl bg-surface-container p-5">
+          <p class="font-mono text-label-telemetry text-muted-slate">
+            Headline · Plus Jakarta Sans
+          </p>
+          <p class="mt-2 font-display text-[72px] leading-none text-on-surface">
+            Aa
+          </p>
+        </div>
+        <div class="rounded-xl bg-surface-container p-5">
+          <p class="font-mono text-label-telemetry text-muted-slate">
+            Body · Inter
+          </p>
+          <p
+            class="mt-2 font-body text-[72px] leading-none text-on-surface-variant"
+          >
+            Aa
+          </p>
+        </div>
+        <div class="rounded-xl bg-surface-container p-5">
+          <p class="font-mono text-label-telemetry text-muted-slate">
+            Label · JetBrains Mono
+          </p>
+          <p
+            class="mt-2 font-mono text-[72px] leading-none text-on-surface-variant"
+          >
+            Aa
+          </p>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="h-komp"
+        class="grid gap-3 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <h2 id="h-komp" class="sr-only">Komponen</h2>
+
+        <div class="grid grid-cols-2 gap-2 rounded-xl bg-surface-container p-5">
+          <button
+            class="h-11 rounded-lg bg-primary font-mono text-label-mono text-on-primary"
+          >
+            Primary
+          </button>
+          <button
+            class="h-11 rounded-lg bg-secondary-container font-mono text-label-mono text-on-secondary-container"
+          >
+            Secondary
+          </button>
+          <button
+            class="h-11 rounded-lg bg-inverse-surface font-mono text-label-mono text-inverse-on-surface"
+          >
+            Inverted
+          </button>
+          <button
+            class="h-11 rounded-lg border border-outline font-mono text-label-mono text-on-surface"
+          >
+            Outlined
+          </button>
+        </div>
+
+        <div class="flex items-center rounded-xl bg-surface-container p-5">
+          <label
+            class="flex h-11 w-full items-center gap-2 rounded-lg border border-outline-variant bg-surface-container-high px-3 focus-within:border-brand"
+          >
+            <span
+              class="material-symbols-outlined text-outline"
+              aria-hidden="true"
+              >search</span
+            >
+            <input
+              type="search"
+              placeholder="Search"
+              class="w-full border-0 bg-transparent p-0 font-mono text-body-sm text-on-surface placeholder:text-outline focus:ring-0"
+            />
+          </label>
+        </div>
+
+        <div
+          class="space-y-3 rounded-xl bg-surface-container p-5"
+          role="img"
+          aria-label="Contoh progress bar"
+        >
+          <div class="h-1.5 rounded-full bg-surface-container-highest">
+            <div class="h-full w-[70%] rounded-full bg-primary"></div>
+          </div>
+          <div class="h-1.5 rounded-full bg-surface-container-highest">
+            <div class="h-full w-[85%] rounded-full bg-secondary"></div>
+          </div>
+          <div class="h-1.5 rounded-full bg-surface-container-highest">
+            <div class="h-full w-[55%] rounded-full bg-tertiary"></div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-3 rounded-xl bg-surface-container p-5"
+        >
+          <button
+            class="grid h-11 w-11 place-items-center rounded-lg bg-accent text-white"
+            aria-label="Edit"
+          >
+            <span class="material-symbols-outlined">edit</span>
+          </button>
+          <button
+            class="inline-flex h-11 items-center gap-2 rounded-lg bg-primary-container px-4 font-mono text-label-mono text-on-primary-container"
+          >
+            <span class="material-symbols-outlined text-[18px]">edit</span>Label
+          </button>
+        </div>
+
+        <div
+          class="flex items-center justify-center gap-3 rounded-xl bg-surface-container p-5"
+        >
+          <button
+            class="grid h-11 w-11 place-items-center rounded-full bg-primary text-on-primary"
+            aria-label="Magic"
+          >
+            <span class="material-symbols-outlined">auto_fix_high</span>
+          </button>
+          <button
+            class="grid h-11 w-11 place-items-center rounded-full bg-secondary text-on-primary"
+            aria-label="Kategori"
+          >
+            <span class="material-symbols-outlined">category</span>
+          </button>
+          <button
+            class="grid h-11 w-11 place-items-center rounded-full bg-tertiary text-on-tertiary"
+            aria-label="Tag"
+          >
+            <span class="material-symbols-outlined">sell</span>
+          </button>
+          <button
+            class="grid h-11 w-11 place-items-center rounded-full bg-error text-on-error"
+            aria-label="Hapus"
+          >
+            <span class="material-symbols-outlined">delete</span>
+          </button>
+        </div>
+
+        <article
+          class="reticle rounded-xl border border-border-clean bg-surface-container-lowest p-6"
+        >
+          <p class="font-mono text-label-telemetry text-muted-slate">
+            KARTU DENGAN RETICLE
+          </p>
+          <h3 class="mt-2 font-display text-headline-sm">AVer CAM550</h3>
+          <p class="mt-2 text-body-sm text-on-surface-variant">
+            Aksen sudut kamera khas brand, otomatis mengikuti tema.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aver-footer active="produk"></aver-footer>
+  </body>
+</html>

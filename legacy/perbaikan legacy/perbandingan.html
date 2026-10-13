@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#F8F9FF" />
+    <title>Perbandingan Kamera Konferensi AVer — Harry Kusumo Negoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/theme.css" />
+    <script src="assets/theme.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/tailwind.config.js"></script>
+    <script src="assets/layout.js" defer></script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        vertical-align: middle;
+        line-height: 1;
+      }
+      .reticle-corner-tl,
+      .reticle-corner-tr,
+      .reticle-corner-bl,
+      .reticle-corner-br {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-color: var(--primary, #0094da);
+      }
+      .reticle-corner-tl {
+        top: 8px;
+        left: 8px;
+        border-top: 2px solid var(--primary, #0094da);
+        border-left: 2px solid var(--primary, #0094da);
+      }
+      .reticle-corner-tr {
+        top: 8px;
+        right: 8px;
+        border-top: 2px solid var(--primary, #0094da);
+        border-right: 2px solid var(--primary, #0094da);
+      }
+      .reticle-corner-bl {
+        bottom: 8px;
+        left: 8px;
+        border-bottom: 2px solid var(--primary, #0094da);
+        border-left: 2px solid var(--primary, #0094da);
+      }
+      .reticle-corner-br {
+        bottom: 8px;
+        right: 8px;
+        border-bottom: 2px solid var(--primary, #0094da);
+        border-right: 2px solid var(--primary, #0094da);
+      }
+      body.show-only-diff .spec-identical {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface antialiased min-h-screen selection:bg-primary selection:text-on-primary">
+    <aver-header active="produk"></aver-header>
+
+    <main id="main" class="mx-auto max-w-page px-gutter-mobile py-space-2xl md:px-gutter md:py-space-3xl">
+      <section class="space-y-6">
+        <nav class="flex flex-wrap items-center gap-2 text-caption text-muted-slate" aria-label="Breadcrumb">
+          <a class="transition-colors hover:text-primary" href="index.html">Beranda</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <a class="transition-colors hover:text-primary" href="product.html">Produk</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span class="font-medium text-on-surface">Perbandingan Kamera Konferensi AVer</span>
+        </nav>
+
+        <div class="font-mono text-label-mono uppercase tracking-[0.08em] text-primary">
+          // Matriks Perbandingan Perangkat // Kamera Konferensi PTZ
+        </div>
+
+        <h1 class="max-w-4xl font-display text-display-mobile md:text-display text-on-surface">
+          Perbandingan Kamera Konferensi AVer: CAM550, CAM570 &amp; CAM520 Pro3
+        </h1>
+
+        <p class="max-w-4xl text-body-md text-on-surface-variant">
+          Evaluasi berdampingan matriks spesifikasi optik, sensor AI, dan konektivitas untuk menentukan perangkat yang selaras dengan dimensi ruang serta kebutuhan kolaborasi organisasi Anda.
+        </p>
+
+        <div class="flex flex-col gap-4 rounded-xl border border-border-clean bg-surface-container-lowest p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+          <label class="flex cursor-pointer items-center gap-3 select-none">
+            <input id="diffToggle" class="h-5 w-5 cursor-pointer rounded border-border-clean text-primary focus:ring-primary" type="checkbox" />
+            <span class="flex items-center gap-2 text-body-md font-semibold text-on-surface">
+              <span class="material-symbols-outlined text-[20px] text-primary">filter_list</span>
+              Tampilkan hanya perbedaan
+            </span>
+          </label>
+
+          <div class="flex items-center gap-2 text-body-sm text-muted-slate">
+            <span class="material-symbols-outlined text-[16px]">verified</span>
+            <span>Spesifikasi diverifikasi dari datasheet resmi per [tanggal pembaruan]</span>
+          </div>
+        </div>
+      </section>
+      <!-- 4. COMPARISON TABLE -->
+      <section class="mx-auto max-w-page px-gutter-mobile pb-20 md:px-gutter">
+        <div
+          class="bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden shadow-sm"
+        >
+          <!-- Sticky Product Header Columns -->
+          <div
+            class="sticky top-16 z-40 bg-surface-container-lowest border-b border-border-clean grid grid-cols-4 divide-x divide-border-clean shadow-sm"
+          >
+            <!-- Col 1 Header -->
+            <div class="p-6 bg-surface-alt flex flex-col justify-end">
+              <span
+                class="font-label-mono text-label-mono text-muted-slate uppercase tracking-wider mb-1"
+                >// PARAMETER LAB</span
+              >
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold"
+              >
+                Fitur &amp; Spesifikasi
+              </h3>
+              <p class="font-body-sm text-body-sm text-secondary mt-1">
+                Matriks perbandingan mendalam kamera kolaborasi.
+              </p>
+            </div>
+            <!-- Col 2: CAM550 -->
+            <div
+              class="p-6 flex flex-col justify-between relative bg-surface-container-lowest"
+            >
+              <div>
+                <div
+                  class="relative w-full h-44 bg-surface-alt rounded-lg border border-border-clean p-3 mb-4 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="reticle-corner-tl"></div>
+                  <div class="reticle-corner-tr"></div>
+                  <div class="reticle-corner-bl"></div>
+                  <div class="reticle-corner-br"></div>
+                  <img
+                    class="h-36 object-contain"
+                    data-alt="A clean, precision engineering studio product photograph of the AVer CAM550 dual-lens enterprise video conferencing camera. The matte dark-navy camera unit rests on a pure ice-blue background with soft, technical studio lighting. Sharp details highlight the secondary wide-angle AI lens beneath the motorized PTZ optic, embodying pro-AV equipment standards."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgb5HIB65RZb6LDoW9RylsJBB_Uly6x-Pxa8vrR3tkKJ8VFd9xo4zLmPfLZVJha6pf4l-vLC-kMJ0W_7lI2ph6amVRwvZIEy-pu15KESPcdvl07E-BWUKvaqgDg3p4W-s92W0Cx-CxjkBgv_liq3rgbv4gaW1414d2QE6ZCZnXgoRDOUtPO6cSoDDIb9GwsvoG8T-pCjR6ttRrOO7ARoFACkMOOMabtnY16MrLnlQ5r49yUkXo5YMv4g"
+                  />
+                  <span
+                    class="absolute top-2 right-2 font-label-mono text-[10px] bg-primary text-on-primary px-2 py-0.5 rounded-full font-bold"
+                    >AI DUAL-LENS</span
+                  >
+                </div>
+                <span
+                  class="font-label-mono text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                  >// DUAL 4K CAMERA</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1"
+                >
+                  AVer CAM550
+                </h2>
+                <p class="font-body-sm text-body-sm text-muted-slate mb-4">
+                  Dual-Lens 4K AI Tracking Camera
+                </p>
+              </div>
+              <div class="space-y-2 pt-2">
+                <a
+                  class="w-full bg-primary hover:bg-primary-dark text-on-primary text-center font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                  href="#penawaran"
+                >
+                  Minta Penawaran
+                </a>
+                <a
+                  class="w-full text-center text-primary font-medium text-body-sm py-1 block hover:underline flex items-center justify-center gap-1"
+                  href="#"
+                >
+                  Lihat Detail
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Col 3: CAM570 -->
+            <div
+              class="p-6 flex flex-col justify-between relative bg-surface-alt/40"
+            >
+              <div>
+                <div
+                  class="relative w-full h-44 bg-surface-alt rounded-lg border border-border-clean p-3 mb-4 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="reticle-corner-tl"></div>
+                  <div class="reticle-corner-tr"></div>
+                  <div class="reticle-corner-bl"></div>
+                  <div class="reticle-corner-br"></div>
+                  <img
+                    class="h-36 object-contain"
+                    data-alt="High precision studio product shot of the AVer CAM570 conference camera resting centered against a clean ice-blue reflective surface. Crisp white and soft blue studio rim lighting outlines the dual-optic camera frame and integrated audio sensor beamforming array, capturing authentic high-end commercial AV conference hardware."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN6nHDNK7n7l_8qqvhQwOd0JzKHd61uCckoDAQPOUF3Hx6IV_Rix_TkPx33ILY3CJiBzhtD1n4QQ0GtsBJF_Qq_NASjaf7uFSmEXIY0Z4t6VZ0Ax1joahIDS_C7nzl14t5zAEm0zSgXMueY6tAAFG9XIvRWQ26qVW2aQQLiMKBErST_6xTXmSGHb6AKCba2-wC7-7hL5xKT4pWW-P9t8KWqNGRo--vxRgwtbGXv0V_3GGDfz2fTPP8FA"
+                  />
+                  <span
+                    class="absolute top-2 right-2 font-label-mono text-[10px] bg-primary text-on-primary px-2 py-0.5 rounded-full font-bold"
+                    >VOICE TRACKING</span
+                  >
+                </div>
+                <span
+                  class="font-label-mono text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                  >// AUDIO-VISUAL AI</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1"
+                >
+                  AVer CAM570
+                </h2>
+                <p class="font-body-sm text-body-sm text-muted-slate mb-4">
+                  Dual-Lens 4K Audio Tracking &amp; Voice Camera
+                </p>
+              </div>
+              <div class="space-y-2 pt-2">
+                <a
+                  class="w-full bg-primary hover:bg-primary-dark text-on-primary text-center font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                  href="#penawaran"
+                >
+                  Minta Penawaran
+                </a>
+                <a
+                  class="w-full text-center text-primary font-medium text-body-sm py-1 block hover:underline flex items-center justify-center gap-1"
+                  href="#"
+                >
+                  Lihat Detail
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Col 4: CAM520 Pro3 -->
+            <div
+              class="p-6 flex flex-col justify-between relative bg-surface-container-lowest"
+            >
+              <div>
+                <div
+                  class="relative w-full h-44 bg-surface-alt rounded-lg border border-border-clean p-3 mb-4 flex items-center justify-center overflow-hidden"
+                >
+                  <div class="reticle-corner-tl"></div>
+                  <div class="reticle-corner-tr"></div>
+                  <div class="reticle-corner-bl"></div>
+                  <div class="reticle-corner-br"></div>
+                  <img
+                    class="h-36 object-contain"
+                    data-alt="Detailed technical product capture of the enterprise AVer CAM520 Pro3 single-lens PTZ camera. The camera sits in a minimalist studio environment with high-key balanced daylight, highlighting the precision optical zoom barrel, solid black chassis, and clean mechanical pan-tilt mount against an ice-blue technical backdrop."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdotoftyjtXNyBJRREemzavMxW9K3b1uxZDBBUIYoNConP659z6WpzvZPJxGSXgnazDKOXHIRk0g4D1dgse8KZUZNPtGNm8ZMYXYD4SokIs_5pvMRj00r-Lq6-paJSqY_G2SrZSrd4C11A3uN_9Zaj7D63PSBfdjPtjXi_IbV2Dq5rbRbdj6tAp6vpR6UqDCe_1mevZtJZgMVgiHs22rXJzeJC8ng9rw34azpODG3UU_2dFyxlTCyi_A"
+                  />
+                  <span
+                    class="absolute top-2 right-2 font-label-mono text-[10px] bg-secondary text-on-primary px-2 py-0.5 rounded-full font-bold"
+                    >36X ZOOM</span
+                  >
+                </div>
+                <span
+                  class="font-label-mono text-label-telemetry text-primary font-bold uppercase tracking-wider"
+                  >// ENTERPRISE PTZ</span
+                >
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1"
+                >
+                  AVer CAM520 Pro3
+                </h2>
+                <p class="font-body-sm text-body-sm text-muted-slate mb-4">
+                  Enterprise Grade PTZ Camera 36X Total Zoom
+                </p>
+              </div>
+              <div class="space-y-2 pt-2">
+                <a
+                  class="w-full bg-primary hover:bg-primary-dark text-on-primary text-center font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                  href="#penawaran"
+                >
+                  Minta Penawaran
+                </a>
+                <a
+                  class="w-full text-center text-primary font-medium text-body-sm py-1 block hover:underline flex items-center justify-center gap-1"
+                  href="#"
+                >
+                  Lihat Detail
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- SPEC GROUPS CONTAINER -->
+          <div class="divide-y divide-border-clean">
+            <!-- GROUP 1: KAMERA -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: KAMERA</span
+                >
+              </div>
+              <!-- Row: Konfigurasi Lensa (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Konfigurasi Lensa</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-primary">
+                  Dual-Lens (Kamera Utama PTZ + Lensa AI Sekunder panorama)
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  Dual-Lens (Kamera Utama PTZ + Lensa AI Sekunder panorama)
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Single-Lens PTZ Presisi Tinggi
+                </div>
+              </div>
+              <!-- Row: Sensor Gambar & Resolusi (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Sensor Gambar &amp; Resolusi
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Sensor 4K Sony Exmor]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Sensor 4K Sony Exmor]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Sensor 4K Sony Exmor]
+                </div>
+              </div>
+              <!-- Row: Kemampuan Zoom (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Kemampuan Zoom</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  [isi dari datasheet resmi: 24X Total Zoom]
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  [isi dari datasheet resmi: 36X Total Zoom]
+                </div>
+                <div class="p-4 text-body-sm font-medium text-primary">
+                  [isi dari datasheet resmi: 36X Total Zoom (12X Optik)]
+                </div>
+              </div>
+              <!-- Row: Sudut Pandang (FOV) (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Sudut Pandang (FOV)</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  [isi dari datasheet resmi: 85° DFOV / 95° Lensa Panorama]
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  [isi dari datasheet resmi: 86° DFOV / 95° Lensa Sekunder]
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  [isi dari datasheet resmi: 80.5° DFOV]
+                </div>
+              </div>
+              <!-- Row: Mekanisme Pan & Tilt (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Mekanisme Pan &amp; Tilt
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Pan ±170°, Tilt +90°/-30°]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Pan ±170°, Tilt +90°/-30°]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: Pan ±170°, Tilt +90°/-30°]
+                </div>
+              </div>
+              <!-- Row: Preset Kamera (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Preset Kamera
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 10 preset via remote / 128 via IP]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 10 preset via remote / 128 via IP]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 10 preset via remote / 128 via IP]
+                </div>
+              </div>
+            </div>
+            <!-- GROUP 2: TEKNOLOGI AI & TRACKING -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: TEKNOLOGI AI &amp; TRACKING</span
+                >
+              </div>
+              <!-- Row: Tipe Pelacakan Otomatis (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Tipe Pelacakan Otomatis</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  SmartFrame, Gesture Control, Preset Framing
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  Voice Tracking, Audio Fence, SmartFrame, Gesture Control
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  SmartFrame, Preset Framing
+                </div>
+              </div>
+              <!-- Row: Sensor Suara Terintegrasi (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Sensor Suara Terintegrasi</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Tidak ada sensor audio pada kamera
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  Array Mikrofon Beamforming Terintegrasi untuk Pelacakan Suara
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Tidak ada sensor audio pada kamera
+                </div>
+              </div>
+              <!-- Row: Deteksi Gestur Tubuh (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Deteksi Gestur Tubuh</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-primary">
+                  Didukung
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  Didukung
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Tidak didukung / via kontrol perangkat lunak
+                </div>
+              </div>
+            </div>
+            <!-- GROUP 3: AUDIO -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: AUDIO</span
+                >
+              </div>
+              <!-- Row: Solusi Audio Pendukung (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Solusi Audio Pendukung</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Membutuhkan speakerphone eksternal (rekomendasi FONE540)
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  Sensor pelacak audio internal + kompatibel mikrofon eksternal
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  Membutuhkan mikrofon/speakerphone eksternal
+                </div>
+              </div>
+              <!-- Row: Kompatibilitas Daisy-Chain Audio (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Kompatibilitas Daisy-Chain Audio
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi]
+                </div>
+              </div>
+            </div>
+            <!-- GROUP 4: KONEKTIVITAS & ANTARMUKA -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: KONEKTIVITAS &amp; ANTARMUKA</span
+                >
+              </div>
+              <!-- Row: Port Output Video (DIFFERENCE) -->
+              <div
+                class="spec-row spec-diff grid grid-cols-4 divide-x divide-border-clean bg-surface-alt/30 transition-colors"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-semibold text-on-surface flex items-center justify-between"
+                >
+                  <span>Port Output Video</span>
+                  <span
+                    class="font-label-telemetry text-[10px] bg-primary/10 text-primary border border-primary/20 px-1.5 py-0.5 rounded"
+                    >BEDA</span
+                  >
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  USB 3.1 Type-B, IP (RTSP/RTMP), HDMI
+                </div>
+                <div
+                  class="p-4 text-body-sm font-medium text-primary bg-primary/5"
+                >
+                  USB 3.1, IP Streaming, HDMI, Audio In/Out 3.5mm
+                </div>
+                <div class="p-4 text-body-sm font-medium text-secondary">
+                  USB 3.1 Type-B, IP (RTSP/RTMP), HDMI
+                </div>
+              </div>
+              <!-- Row: Kontrol Antarmuka (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Kontrol Antarmuka
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: IP (Web UI), VISCA/Pelco over
+                  RS232, UVC/UAC]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: IP (Web UI), VISCA/Pelco over
+                  RS232, UVC/UAC]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: IP (Web UI), VISCA/Pelco over
+                  RS232, UVC/UAC]
+                </div>
+              </div>
+              <!-- Row: Daya (Power) (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Daya (Power)
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 12V/2A DC Adapter &amp; PoE+]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 12V/2A DC Adapter &amp; PoE+]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: 12V/2A DC Adapter &amp; PoE+]
+                </div>
+              </div>
+            </div>
+            <!-- GROUP 5: PLATFORM & SERTIFIKASI -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: PLATFORM &amp; SERTIFIKASI</span
+                >
+              </div>
+              <!-- Row: Kompatibilitas Sistem (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Kompatibilitas Sistem
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Microsoft Teams Rooms, Zoom Rooms, Google Meet, Cisco Webex,
+                  Skype for Business
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Microsoft Teams Rooms, Zoom Rooms, Google Meet, Cisco Webex,
+                  Skype for Business
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Microsoft Teams Rooms, Zoom Rooms, Google Meet, Cisco Webex,
+                  Skype for Business
+                </div>
+              </div>
+              <!-- Row: Protokol Komunikasi (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Protokol Komunikasi
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  UVC 1.1 / UAC 1.0 Plug and Play
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  UVC 1.1 / UAC 1.0 Plug and Play
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  UVC 1.1 / UAC 1.0 Plug and Play
+                </div>
+              </div>
+              <!-- Row: Sertifikasi Perangkat Lunak (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Sertifikasi Perangkat Lunak
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [nama sertifikasi dari vendor platform]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [nama sertifikasi dari vendor platform]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [nama sertifikasi dari vendor platform]
+                </div>
+              </div>
+            </div>
+            <!-- GROUP 6: FISIK & DIMENSI -->
+            <div>
+              <div
+                class="bg-surface-alt px-6 py-3 border-y border-border-clean flex items-center gap-2"
+              >
+                <span
+                  class="font-label-mono text-label-mono font-bold text-primary"
+                  >// KATEGORI: FISIK &amp; DIMENSI</span
+                >
+              </div>
+              <!-- Row: Berat & Dimensi (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Berat &amp; Dimensi
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: mm x mm x mm]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: mm x mm x mm]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari datasheet resmi: mm x mm x mm]
+                </div>
+              </div>
+              <!-- Row: Opsi Pemasangan (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Opsi Pemasangan
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Dudukan Dinding, Meja, Tripod, Braket Langit-langit
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Dudukan Dinding, Meja, Tripod, Braket Langit-langit
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  Dudukan Dinding, Meja, Tripod, Braket Langit-langit
+                </div>
+              </div>
+              <!-- Row: Garansi Standar (IDENTICAL) -->
+              <div
+                class="spec-row spec-identical grid grid-cols-4 divide-x divide-border-clean bg-surface-container-lowest"
+              >
+                <div
+                  class="p-4 font-headline-sm text-body-md font-medium text-on-surface"
+                >
+                  Garansi Standar
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari kebijakan resmi AVer]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari kebijakan resmi AVer]
+                </div>
+                <div class="p-4 text-body-sm text-secondary">
+                  [isi dari kebijakan resmi AVer]
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BOTTOM CTA ROW OF THE TABLE -->
+          <div
+            class="grid grid-cols-4 divide-x divide-border-clean bg-surface-alt p-6 border-t border-border-clean"
+          >
+            <div class="flex items-center">
+              <span
+                class="font-headline-sm text-body-md font-bold text-on-surface"
+                >Langkah Selanjutnya</span
+              >
+            </div>
+            <!-- Bottom CTA CAM550 -->
+            <div class="px-4 space-y-2 text-center">
+              <a
+                class="w-full bg-primary hover:bg-primary-dark text-on-primary font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                href="#penawaran"
+              >
+                Minta Penawaran
+              </a>
+              <a
+                class="font-body-sm text-caption text-primary hover:underline flex items-center justify-center gap-1 font-medium"
+                href="https://wa.me/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[16px] text-status-success">chat</span>
+                Konsultasi Teknis via WhatsApp
+              </a>
+            </div>
+            <!-- Bottom CTA CAM570 -->
+            <div class="px-4 space-y-2 text-center">
+              <a
+                class="w-full bg-primary hover:bg-primary-dark text-on-primary font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                href="#penawaran"
+              >
+                Minta Penawaran
+              </a>
+              <a
+                class="font-body-sm text-caption text-primary hover:underline flex items-center justify-center gap-1 font-medium"
+                href="https://wa.me/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[16px] text-status-success">chat</span>
+                Konsultasi Teknis via WhatsApp
+              </a>
+            </div>
+            <!-- Bottom CTA CAM520 Pro3 -->
+            <div class="px-4 space-y-2 text-center">
+              <a
+                class="w-full bg-primary hover:bg-primary-dark text-on-primary font-semibold text-body-sm py-2.5 rounded-lg block transition-colors"
+                href="#penawaran"
+              >
+                Minta Penawaran
+              </a>
+              <a
+                class="font-body-sm text-caption text-primary hover:underline flex items-center justify-center gap-1 font-medium"
+                href="https://wa.me/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[16px] text-status-success">chat</span>
+                Konsultasi Teknis via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. REKOMENDASI SESUAI UKURAN RUANG -->
+      <section class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="mb-10 text-center max-w-3xl mx-auto">
+          <div
+            class="font-label-mono text-label-mono text-primary font-semibold mb-2 tracking-wider"
+          >
+            // PANDUAN PENGAMBILAN KEPUTUSAN // ANALISIS KEBUTUHAN RUANG
+          </div>
+          <h2
+            class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight"
+          >
+            Pilih yang Mana? Panduan Singkat Sesuai Karakteristik Ruang
+          </h2>
+          <p class="font-body-md text-body-md text-secondary mt-2">
+            Pencocokan karakteristik optik dan kecerdasan sensor terhadap
+            dinamika tata letak dan interaksi audiens.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-8 flex flex-col justify-between hover:border-primary/50 transition-all"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="font-label-mono text-label-telemetry bg-surface-alt border border-border-clean px-2.5 py-1 rounded text-primary font-bold"
+                >
+                  RUANG SEDANG - BESAR
+                </span>
+                <span class="font-caption text-caption text-muted-slate"
+                  >6–15 Orang</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+              >
+                Pilih AVer CAM550 Jika...
+              </h3>
+              <p
+                class="font-body-md text-body-sm text-secondary leading-relaxed mb-6"
+              >
+                Ruang Rapat Sedang hingga Besar (6–15 orang) yang membutuhkan
+                otomasi framing visual tanpa ketergantungan operator, dengan
+                fleksibilitas lensa ganda panorama.
+              </p>
+              <div class="border-t border-border-clean pt-4 space-y-2">
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span>Framing peserta dinamis secara simultan</span>
+                </div>
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span>Kendali gestur tanpa sentuh (Gesture Control)</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <a
+                class="w-full bg-surface-alt hover:bg-surface-container border border-border-clean text-primary font-semibold text-body-sm py-2.5 rounded-lg block text-center transition-colors"
+                href="#penawaran"
+              >
+                Pilih Konfigurasi CAM550
+              </a>
+            </div>
+          </div>
+          <!-- Card 2 (Recommended Highlight) -->
+          <div
+            class="bg-surface-container-lowest border-2 border-primary rounded-xl p-8 flex flex-col justify-between relative shadow-sm"
+          >
+            <div
+              class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary font-label-mono text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider"
+            >
+              Solusi Audio Tracking Terintegrasi
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 mt-1">
+                <span
+                  class="font-label-mono text-label-telemetry bg-primary/10 border border-primary/20 px-2.5 py-1 rounded text-primary font-bold"
+                >
+                  KOLABORATIF DINAMIS
+                </span>
+                <span class="font-caption text-caption text-muted-slate"
+                  >Diskusi Interaktif</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+              >
+                Pilih AVer CAM570 Jika...
+              </h3>
+              <p
+                class="font-body-md text-body-sm text-secondary leading-relaxed mb-6"
+              >
+                Ruang Rapat Kolaboratif Dinamis yang membutuhkan pelacakan
+                pembicara berbasis suara aktif (Voice Tracking) langsung dari
+                unit kamera, ideal untuk meja interaktif dan ruang diskusi tanpa
+                audio eksternal tambahan yang rumit.
+              </p>
+              <div class="border-t border-border-clean pt-4 space-y-2">
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span>Array beamforming audio tersemat di kamera</span>
+                </div>
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span>Transisi pembicara otomatis berbasis sensor vokal</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <a
+                class="w-full bg-primary hover:bg-primary-dark text-on-primary font-semibold text-body-sm py-2.5 rounded-lg block text-center transition-colors shadow-sm"
+                href="#penawaran"
+              >
+                Pilih Konfigurasi CAM570
+              </a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-lowest border border-border-clean rounded-xl p-8 flex flex-col justify-between hover:border-primary/50 transition-all"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="font-label-mono text-label-telemetry bg-surface-alt border border-border-clean px-2.5 py-1 rounded text-primary font-bold"
+                >
+                  BOARDROOM PANJANG
+                </span>
+                <span class="font-caption text-caption text-muted-slate"
+                  >12–25+ Orang</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface font-bold mb-3"
+              >
+                Pilih AVer CAM520 Pro3 Jika...
+              </h3>
+              <p
+                class="font-body-md text-body-sm text-secondary leading-relaxed mb-6"
+              >
+                Boardroom Eksekutif &amp; Ruang Rapat Memanjang (12–25+ orang)
+                yang mengutamakan kualitas zoom optik superior hingga 36X total
+                zoom untuk menangkap ekspresi peserta di ujung terjauh meja
+                rapat dengan presisi kristal.
+              </p>
+              <div class="border-t border-border-clean pt-4 space-y-2">
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span>12X Pembesaran optik tanpa degradasi piksel</span>
+                </div>
+                <div class="flex items-start gap-2 text-body-sm text-secondary">
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >check_circle</span
+                  >
+                  <span
+                    >Jangkauan tajam untuk meja konferensi ultra-panjang</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <a
+                class="w-full bg-surface-alt hover:bg-surface-container border border-border-clean text-primary font-semibold text-body-sm py-2.5 rounded-lg block text-center transition-colors"
+                href="#penawaran"
+              >
+                Pilih Konfigurasi CAM520 Pro3
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Free Consultation Action Box -->
+        <div
+          class="mt-8 bg-surface-alt border border-border-clean rounded-xl p-6 flex items-center justify-between"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-lg bg-surface-container-lowest border border-border-clean flex items-center justify-center text-primary"
+            >
+              <span class="material-symbols-outlined text-[28px]"
+                >architecture</span
+              >
+            </div>
+            <div>
+              <h4
+                class="font-headline-sm text-body-md font-bold text-on-surface"
+              >
+                Masih ragu menentukan pilihan?
+              </h4>
+              <p class="font-body-sm text-body-sm text-secondary">
+                Diskusikan ukuran dimensi dan tata ruang Anda bersama AVer
+                Solutions Advisor.
+              </p>
+            </div>
+          </div>
+          <a
+            class="bg-status-success hover:opacity-90 text-on-primary font-semibold text-body-sm px-5 py-2.5 rounded-lg flex items-center gap-2 transition-colors"
+            href="https://wa.me/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined text-[20px] text-on-primary">chat</span>
+            Konsultasi Denah Gratis via WhatsApp
+          </a>
+        </div>
+      </section>
+      <!-- 6. FAQ ACCORDION -->
+      <section class="max-w-4xl mx-auto px-6 pb-24">
+        <div class="text-center mb-10">
+          <div
+            class="font-label-mono text-label-mono text-primary font-semibold mb-2 tracking-wider"
+          >
+            // TANYA JAWAB TEKNIS
+          </div>
+          <h2
+            class="font-headline-md text-headline-md text-on-surface font-bold"
+          >
+            Pertanyaan Umum Terkait Perbandingan
+          </h2>
+        </div>
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden transition-all duration-150 open:border-primary/40"
+          >
+            <summary
+              class="flex items-center justify-between p-5 cursor-pointer font-headline-sm text-body-md font-bold text-on-surface list-none"
+            >
+              <span
+                >1. Apa perbedaan utama antara sistem lensa ganda CAM550/CAM570
+                dengan kamera PTZ tunggal CAM520 Pro3?</span
+              >
+              <span
+                class="material-symbols-outlined text-muted-slate group-open:rotate-180 transition-transform duration-150"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-5 pb-5 font-body-sm text-body-sm text-secondary leading-relaxed border-t border-border-clean/50 pt-4"
+            >
+              Model lensa ganda (CAM550 &amp; CAM570) memiliki lensa sekunder
+              sudut lebar (panoramic/AI lens) di bagian bawah bodi yang
+              terus-menerus memindai keseluruhan ruang secara real-time. Hal ini
+              memungkinkan lensa utama PTZ melakukan transisi zoom dan tracking
+              secara instan tanpa perlu bolak-balik memeriksa perimeter ruangan.
+              Sebaliknya, CAM520 Pro3 mengandalkan lensa tunggal mekanis bermutu
+              tinggi dengan kapabilitas zoom optik jarak jauh yang lebih masif
+              (12X optik, 36X total), sangat ideal untuk presisi fokus di ruang
+              yang panjang.
+            </div>
+          </details>
+          <!-- FAQ 2 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden transition-all duration-150 open:border-primary/40"
+          >
+            <summary
+              class="flex items-center justify-between p-5 cursor-pointer font-headline-sm text-body-md font-bold text-on-surface list-none"
+            >
+              <span
+                >2. Apakah AVer CAM570 dapat bekerja secara mandiri tanpa
+                mikrofon tambahan di meja rapat?</span
+              >
+              <span
+                class="material-symbols-outlined text-muted-slate group-open:rotate-180 transition-transform duration-150"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-5 pb-5 font-body-sm text-body-sm text-secondary leading-relaxed border-t border-border-clean/50 pt-4"
+            >
+              Array mikrofon beamforming terintegrasi pada CAM570 dirancang
+              khusus untuk mendeteksi posisi sumber suara pembicara (Voice
+              Tracking) dalam radius efektif kamera. Namun untuk transmisi suara
+              konferensi dua arah berkualitas jernih ke peserta remote pada
+              platform Microsoft Teams atau Zoom, penambahan speakerphone
+              eksternal (seperti seri FONE540 atau mikrofon ekspansi) tetap
+              direkomendasikan guna memastikan ketajaman akustik menyeluruh di
+              meja rapat.
+            </div>
+          </details>
+          <!-- FAQ 3 -->
+          <details
+            class="group bg-surface-container-lowest border border-border-clean rounded-xl overflow-hidden transition-all duration-150 open:border-primary/40"
+          >
+            <summary
+              class="flex items-center justify-between p-5 cursor-pointer font-headline-sm text-body-md font-bold text-on-surface list-none"
+            >
+              <span
+                >3. Bagaimana cara menentukan apakah ruangan saya membutuhkan
+                zoom optik tinggi atau lensa ultra-wide?</span
+              >
+              <span
+                class="material-symbols-outlined text-muted-slate group-open:rotate-180 transition-transform duration-150"
+                >expand_more</span
+              >
+            </summary>
+            <div
+              class="px-5 pb-5 font-body-sm text-body-sm text-secondary leading-relaxed border-t border-border-clean/50 pt-4"
+            >
+              Aturan dasarnya merujuk pada rasio panjang berbanding lebar ruang:
+              Jika jarak antara kamera dan kursi peserta terjauh melebihi 6–8
+              meter (tipe ruang rapat panjang/boardroom), kemampuan zoom optik
+              CAM520 Pro3 atau CAM570 sangat krusial agar gambar tidak pecah
+              saat diperbesar. Jika tata letak meja berbentuk lebar melintang
+              atau peserta duduk dekat dengan kamera (ruang sedang melebar),
+              sudut pandang ultra-wide dan lensa panorama ganda pada CAM550
+              menjadi pilihan yang lebih ergonomis.
+            </div>
+          </details>
+        </div>
+      </section>
+      <!-- 7. FINAL CTA BAND -->
+      <section class="bg-primary text-on-primary py-16 px-6" id="penawaran">
+        <div class="max-w-4xl mx-auto text-center">
+          <span
+            class="font-label-mono text-label-mono bg-primary/10 text-on-primary px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block font-semibold"
+          >
+            // KONSULTASI SPESIFIKASI PROYEK
+          </span>
+          <h2
+            class="font-headline-lg text-headline-lg font-bold tracking-tight mb-4 text-on-primary"
+          >
+            Butuh rekomendasi produk AVer untuk ruangan Anda?
+          </h2>
+          <p
+            class="font-body-md text-body-md text-on-primary/90 max-w-2xl mx-auto mb-8 leading-relaxed"
+          >
+            Konsultasikan denah ruang, jumlah peserta, dan platform kolaborasi
+            Anda bersama Harry Kusumo Negoro untuk menemukan konfigurasi kamera
+            yang paling tepat guna.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <button
+              class="bg-surface-container-lowest hover:bg-surface-alt text-primary font-headline-sm text-body-md font-bold px-8 py-3.5 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-[20px]"
+                >request_quote</span
+              >
+              Minta Penawaran
+            </button>
+            <a
+              class="bg-status-success hover:opacity-90 text-on-primary font-headline-sm text-body-md font-bold px-8 py-3.5 rounded-lg shadow-sm transition-all duration-150 flex items-center gap-2"
+              href="https://wa.me/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined text-[20px] text-on-primary">chat</span>
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aver-footer></aver-footer>
+    <!-- Micro-interaction script for differences toggle -->
+    <script>
+      const diffToggle = document.getElementById("diffToggle");
+      if (diffToggle) {
+        diffToggle.addEventListener("change", function () {
+          document.body.classList.toggle("show-only-diff", this.checked);
+        });
+      }
+    </script>
+  </body>
+</html>
