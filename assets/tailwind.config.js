@@ -1,4 +1,4 @@
-﻿/* Satu config untuk semua halaman. Dipakai via CDN (window.tailwind) maupun build (module.exports). */
+/* Satu config untuk semua halaman. Dipakai via CDN (window.tailwind) maupun build (module.exports). */
 const v = (name) => `rgb(var(--c-${name}) / <alpha-value>)`;
 const names = [
   "background",
@@ -55,6 +55,8 @@ Object.assign(colors, {
     "aver-red": "#E52421",
   "aver-blue": "#0094DA",
   "aver-navy": "#0B1F33",
+  "act-primary": "#E52421",
+  "act-primary-hover": "#c81e1b",
   whatsapp: "#25D366",
   "whatsapp-dark": "#1EBE5D",
 });
