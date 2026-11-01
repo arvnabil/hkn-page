@@ -93,8 +93,6 @@ class SeoResolver
         $crumbs = [['name' => 'Home', 'item' => config('app.url')]];
         if ($model instanceof \Modules\News\Models\News) {
             $crumbs[] = ['name' => 'News', 'item' => config('app.url') . '/news'];
-        } elseif ($model instanceof \Modules\Services\Models\Service) {
-            $crumbs[] = ['name' => 'Services', 'item' => config('app.url') . '/services'];
         }
         $crumbs[] = ['name' => $model->title ?? $model->name, 'item' => $data['url']];
 

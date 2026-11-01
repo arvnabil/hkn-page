@@ -5,14 +5,11 @@ namespace Modules\SEO\Services;
 use Modules\News\Models\News;
 use Modules\News\Models\NewsCategory;
 use Modules\CMS\Models\Page;
-use Modules\Projects\Models\Project;
 use Modules\SEO\Models\SeoMeta;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Route;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 
 class ActivePublicRouteDetector
 {
@@ -55,8 +52,6 @@ class ActivePublicRouteDetector
     {
         $namedRoutes = [
             ['name' => 'about', 'model' => 'Static:About', 'priority' => 0.8, 'changefreq' => 'weekly'],
-            ['name' => 'services.index', 'model' => 'Static:Services', 'priority' => 0.8, 'changefreq' => 'weekly'],
-            ['name' => 'projects.index', 'model' => 'Static:Projects', 'priority' => 0.7, 'changefreq' => 'weekly'],
             ['name' => 'news.index', 'model' => 'Static:News', 'priority' => 0.7, 'changefreq' => 'weekly'],
             ['name' => 'partners', 'model' => 'Static:Partners', 'priority' => 0.7, 'changefreq' => 'weekly'],
             ['name' => 'products', 'model' => 'Static:Products', 'priority' => 0.7, 'changefreq' => 'weekly'],
@@ -84,7 +79,6 @@ class ActivePublicRouteDetector
             ['class' => Page::class, 'priority' => 0.8, 'freq' => 'weekly'],
             ['class' => Brand::class, 'priority' => 0.6, 'freq' => 'monthly'],
             ['class' => News::class, 'priority' => 0.7, 'freq' => 'weekly'],
-            ['class' => Project::class, 'priority' => 0.6, 'freq' => 'monthly'],
         ];
 
         foreach ($models as $config) {
@@ -165,48 +159,6 @@ class ActivePublicRouteDetector
                         'is_noindex' => (bool) ($product->seo->noindex ?? false),
                         'seo_score' => (int) ($product->seo->seo_score ?? 0),
                         'canonical_url' => $product->seo->canonical_url ?? null,
-                    ]);
-                }
-            } catch (\Exception $e) {
-            }
-        });
-
-        // Services (Main)
-        Service::with('seo')->get()->each(function ($service) use (&$results, $includeNoindex) {
-            if (!$includeNoindex && ($service->seo && $service->seo->noindex)) return;
-            try {
-                if (Route::has('services.detail')) {
-                    $results->push([
-                        'id' => $service->id,
-                        'url' => route('services.detail', $service->slug),
-                        'model' => 'Service',
-                        'priority' => 0.8,
-                        'changefreq' => 'weekly',
-                        'updated_at' => $service->updated_at,
-                        'is_noindex' => (bool) ($service->seo->noindex ?? false),
-                        'seo_score' => (int) ($service->seo->seo_score ?? 0),
-                        'canonical_url' => $service->seo->canonical_url ?? null,
-                    ]);
-                }
-            } catch (\Exception $e) {
-            }
-        });
-
-        // Service Solutions (Sub-services)
-        ServiceSolution::with(['seo', 'service'])->get()->each(function ($solution) use (&$results, $includeNoindex) {
-            if (!$includeNoindex && ($solution->seo && $solution->seo->noindex)) return;
-            try {
-                if ($solution->service && Route::has('services.item.detail')) {
-                    $results->push([
-                        'id' => $solution->id,
-                        'url' => route('services.item.detail', [$solution->service->slug, $solution->slug]),
-                        'model' => 'ServiceSolution',
-                        'priority' => 0.7,
-                        'changefreq' => 'weekly',
-                        'updated_at' => $solution->updated_at,
-                        'is_noindex' => (bool) ($solution->seo->noindex ?? false),
-                        'seo_score' => (int) ($solution->seo->seo_score ?? 0),
-                        'canonical_url' => $solution->seo->canonical_url ?? null,
                     ]);
                 }
             } catch (\Exception $e) {

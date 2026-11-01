@@ -58,3 +58,4 @@ export default function DynamicPage({ page, sections = [], seo }) {
     </AppLayout>
   );
 }
+

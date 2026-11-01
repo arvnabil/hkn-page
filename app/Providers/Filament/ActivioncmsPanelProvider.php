@@ -48,17 +48,12 @@ class ActivioncmsPanelProvider extends PanelProvider
             ->discoverResources(in: base_path('Modules/Inquiry/Filament/Resources'), for: 'Modules\\Inquiry\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/ProductCatalog/Filament/Resources'), for: 'Modules\\ProductCatalog\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/News/Filament/Resources'), for: 'Modules\\News\\Filament\\Resources')
-            ->discoverResources(in: base_path('Modules/Services/Filament/Resources'), for: 'Modules\\Services\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/FormBuilder/Filament/Resources'), for: 'Modules\\FormBuilder\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/Settings/Filament/Resources'), for: 'Modules\\Settings\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/SEO/Filament/Resources'), for: 'Modules\\SEO\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/Menu/Filament/Resources'), for: 'Modules\\Menu\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/Analytics/Filament/Resources'), for: 'Modules\\Analytics\\Filament\\Resources')
             ->discoverResources(in: base_path('Modules/CMS/Filament/Resources'), for: 'Modules\\CMS\\Filament\\Resources')
-
-            // ─── CLOSED/EXCLUDED Modules (Campaign, Events, Projects, Clients, AI) ──
-            // Modules\Campaign, Modules\Events, Modules\Projects, Modules\Clients, Modules\AI
-            // intentionally NOT registered — not relevant to AVer B2B advisor website
 
             // ─── Active Pages ───────────────────────────────────────────────────
             ->discoverPages(in: app_path('Filament/Activioncms/Pages'), for: 'App\\Filament\\Activioncms\\Pages')

@@ -29,24 +29,18 @@ class AppServiceProvider extends ServiceProvider
         Schema::DefaultStringLength(191);
 
         \Illuminate\Database\Eloquent\Relations\Relation::morphMap([
-            'service'          => \Modules\Services\Models\Service::class,
-            'service_solution' => \Modules\Services\Models\ServiceSolution::class,
-            'product'          => \Modules\ProductCatalog\Models\Product::class,
-            'brand'            => \Modules\ProductCatalog\Models\Brand::class,
-            'news'             => \Modules\News\Models\News::class,
-            'project'          => \Modules\Projects\Models\Project::class,
-            'page'             => \Modules\CMS\Models\Page::class,
-            'client'           => \Modules\Clients\Models\Client::class,
-            'slider'           => \Modules\CMS\Models\Page::class,
-            'global'           => \Modules\CMS\Models\Page::class,
-            'contact'          => \Modules\CMS\Models\Page::class,
-            'partnership'      => \Modules\CMS\Models\Page::class,
-            
+            'product'     => \Modules\ProductCatalog\Models\Product::class,
+            'brand'       => \Modules\ProductCatalog\Models\Brand::class,
+            'news'        => \Modules\News\Models\News::class,
+            'page'        => \Modules\CMS\Models\Page::class,
+            'slider'      => \Modules\CMS\Models\Page::class,
+            'global'      => \Modules\CMS\Models\Page::class,
+            'contact'     => \Modules\CMS\Models\Page::class,
+            'partnership' => \Modules\CMS\Models\Page::class,
+
             // Legacy Aliases for database backwards compatibility
-            'App\Models\News'    => \Modules\News\Models\News::class,
-            'App\Models\Project' => \Modules\Projects\Models\Project::class,
-            'App\Models\Page'    => \Modules\CMS\Models\Page::class,
-            'App\Models\Client'  => \Modules\Clients\Models\Client::class,
+            'App\Models\News' => \Modules\News\Models\News::class,
+            'App\Models\Page' => \Modules\CMS\Models\Page::class,
 
             // Core Module Legacy Aliases (database backwards compatibility)
             'Modules\Core\Models\Product' => \Modules\ProductCatalog\Models\Product::class,

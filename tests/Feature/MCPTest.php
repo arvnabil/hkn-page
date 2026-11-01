@@ -8,7 +8,6 @@ use Modules\Settings\Models\ApiKey;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\ProductCategory;
-use Modules\Services\Models\Service;
 use Modules\News\Models\News;
 use Modules\News\Models\NewsCategory;
 use Modules\News\Models\NewsTag;
@@ -153,12 +152,10 @@ class MCPTest extends TestCase
     public function test_mcp_products_list_tool()
     {
         $brand = Brand::create(['name' => 'Test Brand', 'slug' => 'test-brand']);
-        $service = Service::create(['name' => 'Test Service', 'slug' => 'test-service']);
         Product::create([
             'name' => 'Awesome Product',
             'slug' => 'awesome-product',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
             'is_active' => true,
         ]);
 
@@ -182,12 +179,10 @@ class MCPTest extends TestCase
     public function test_mcp_product_get_tool()
     {
         $brand = Brand::create(['name' => 'Brand Get', 'slug' => 'brand-get']);
-        $service = Service::create(['name' => 'Service Get', 'slug' => 'service-get']);
         Product::create([
             'name' => 'Get Me Product',
             'slug' => 'get-me-product',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
             'is_active' => true,
         ]);
 
@@ -234,12 +229,10 @@ class MCPTest extends TestCase
     public function test_mcp_product_delete_tool()
     {
         $brand = Brand::create(['name' => 'Brand Del', 'slug' => 'brand-del']);
-        $service = Service::create(['name' => 'Service Del', 'slug' => 'service-del']);
         $product = Product::create([
             'name' => 'Delete Me Product',
             'slug' => 'delete-me-product',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
             'is_active' => true,
         ]);
 

@@ -29,8 +29,6 @@ class DatabaseSeeder extends Seeder
         // Legacy root seeders have been migrated to their respective modules
         // and will be executed by the auto-discovery loop below.
 
-        // $this->call(\Modules\Services\Database\Seeders\ProductConfiguratorSeeder::class);
-
         // Auto-discover and run Module seeders
         $modules = glob(base_path('Modules/*'), GLOB_ONLYDIR);
         foreach ($modules as $modulePath) {

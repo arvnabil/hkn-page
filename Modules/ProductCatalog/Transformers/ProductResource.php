@@ -4,8 +4,6 @@ namespace Modules\ProductCatalog\Transformers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\JsonApi\JsonApiResource;
-use Modules\Services\Transformers\ServiceResource;
-use Modules\Services\Transformers\ServiceSolutionResource;
 use Modules\SEO\Transformers\SeoMetaResource;
 
 class ProductResource extends JsonApiResource
@@ -77,9 +75,7 @@ class ProductResource extends JsonApiResource
     {
         return [
             'brand' => BrandResource::class,
-            'service' => ServiceResource::class,
             'categories' => ProductCategoryResource::class,
-            'solutions' => ServiceSolutionResource::class,
             'seo' => SeoMetaResource::class,
         ];
     }

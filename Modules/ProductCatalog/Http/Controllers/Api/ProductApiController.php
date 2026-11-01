@@ -74,7 +74,7 @@ class ProductApiController extends Controller
             'name'         => 'required|string|max:255',
             'slug'         => 'required|string|max:255',
             'brand_name'   => 'required|string|max:255',
-            'service_name' => 'required|string|max:255',
+            'service_name' => 'nullable|string|max:255',
         ]);
 
         try {

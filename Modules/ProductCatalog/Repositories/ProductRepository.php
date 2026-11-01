@@ -11,7 +11,7 @@ class ProductRepository
      */
     public function getBaseQuery()
     {
-        return Product::with(['brand', 'service', 'categories'])
+        return Product::with(['brand', 'categories'])
             ->where('is_active', true);
     }
 
@@ -32,12 +32,6 @@ class ProductRepository
 
         if (!empty($filters['brand'])) {
             $query->where('brand_id', $filters['brand']);
-        }
-
-        if (!empty($filters['solution'])) {
-            $query->whereHas('solutions', function($q) use ($filters) {
-                $q->where('service_solutions.id', $filters['solution']);
-            });
         }
 
         if (!empty($filters['category'])) {
@@ -63,22 +57,25 @@ class ProductRepository
      */
     public function findBySlug(string $slug)
     {
-        return Product::with(['brand', 'service', 'solutions', 'categories'])
+        return Product::with(['brand', 'categories'])
             ->where('slug', $slug)
             ->where('is_active', true)
             ->firstOrFail();
     }
 
     /**
-     * Get related products based on service_id
+     * Get related products based on brand_id
      */
-    public function getRelatedProducts(int $serviceId, int $excludeProductId, int $limit = 4)
+    public function getRelatedProducts(?int $brandId, int $excludeProductId, int $limit = 4)
     {
-        return Product::with(['brand', 'service', 'categories'])
-            ->where('service_id', $serviceId)
+        $query = Product::with(['brand', 'categories'])
             ->where('is_active', true)
-            ->where('id', '!=', $excludeProductId)
-            ->limit($limit)
-            ->get();
+            ->where('id', '!=', $excludeProductId);
+
+        if ($brandId) {
+            $query->where('brand_id', $brandId);
+        }
+
+        return $query->limit($limit)->get();
     }
 }

@@ -41,11 +41,6 @@ return [
             'provider' => 'users',
         ],
 
-        'event' => [
-            'driver' => 'session',
-            'provider' => 'event_users',
-        ],
-
         'api' => [
             'driver' => 'jwt',
             'provider' => 'users',
@@ -73,11 +68,6 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
-        ],
-
-        'event_users' => [
-            'driver' => 'eloquent',
-            'model' => Modules\Events\Models\EventUser::class,
         ],
 
         // 'users' => [

@@ -9,10 +9,8 @@ use Illuminate\Support\Number;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\ProductCategory;
-use Modules\Services\Models\Service;
 use Illuminate\Support\Str;
 use Modules\SEO\Models\SeoMeta;
-use Modules\Services\Models\ServiceSolution;
 
 class ProductImporter extends Importer
 {
@@ -103,32 +101,6 @@ class ProductImporter extends Importer
                     // Do nothing here, allow afterSave to handle
                 })
                 ->example('Video Conferencing, Audio Device'),
-            ImportColumn::make('service_name')
-                ->label('Service')
-                ->rules(['required', 'string', 'max:255'])
-                ->fillRecordUsing(function ($record, $state) {
-                    $state = trim($state);
-                    $slug = Str::slug($state);
-                    $item = Service::firstOrCreate(
-                        ['slug' => $slug],
-                        ['name' => $state]
-                    );
-                    $record->service()->associate($item);
-                })
-                ->example('Communication'),
-            
-            // M2M Relationship (Comma Separated)
-            // M2M Relationship (Comma Separated)
-            ImportColumn::make('solutions')
-                ->label('Solutions (Separate by comma)')
-                ->fillRecordUsing(function ($record) {
-                    // Explicitly unset if it was accidentally set
-                    if (isset($record->solutions)) {
-                        unset($record->solutions);
-                    }
-                })
-                ->example('Microsoft Teams, Zoom Rooms'),
-            
             // Market Links
             ImportColumn::make('link_accommerce')
                 ->label('Acommerce Link')
@@ -218,20 +190,7 @@ class ProductImporter extends Importer
             $record->categories()->sync($catIds);
         }
 
-        // 1. Handle M2M Solutions
-        try {
-            if (!empty($data['solutions'])) {
-                $solutionNames = array_map('trim', explode(',', $data['solutions']));
-                $solutionIds = ServiceSolution::whereIn('title', $solutionNames)->pluck('id')->toArray();
-                $record->solutions()->sync($solutionIds);
-            }
-        } catch (\Throwable $e) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
-                'solutions' => "Gagal menghubungkan Solusi: " . $e->getMessage(),
-            ]);
-        }
-
-        // 2. Handle Thumbnail Auto-Download from URL or Local Fallback
+        // Handle Thumbnail Auto-Download from URL or Local Fallback
         if (isset($data['image_path'])) {
             $thumbnailPath = trim($data['image_path']);
             

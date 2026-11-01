@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 use Modules\SEO\Services\SeoResolver;
 
 class BrandController extends Controller
@@ -40,32 +38,8 @@ class BrandController extends Controller
             ];
         });
 
-        // 3. Dynamic Service Solutions (Existing logic preserved & optimized)
-        $serviceSolutions = $brand->serviceSolutions()->with('service')->orderBy('sort_order')->get();
-
-        $groupedServices = $serviceSolutions->groupBy('service_id')->map(function ($group) {
-            $firstItem = $group->first();
-            if (!$firstItem || !$firstItem->service) {
-                return null;
-            }
-            $service = $firstItem->service;
-            return [
-                'id' => $service->id,
-                'name' => $service->name,
-                'slug' => $service->slug ?? \Illuminate\Support\Str::slug($service->name),
-                'image' => $service->thumbnail,
-                'title' => $service->name . ' Products',
-                'sub_title' => 'Product By ' . $service->name,
-                'solutions' => $group->map(function ($sol) {
-                    return [
-                        'title' => $sol->title,
-                        'slug' => $sol->slug,
-                        'image' => $sol->thumbnail,
-                        'desc' => $sol->subtitle ?? \Illuminate\Support\Str::limit($sol->description, 50)
-                    ];
-                })->values()
-            ];
-        })->filter()->values();
+        // 3. Dynamic Service Solutions (No longer tied to legacy Services module)
+        $groupedServices = [];
 
         // 4. Real "Latest Products" (Filtered by New Arrival)
         // Frontend expects: { name, image_path, price, category (service name), is_active, is_new }
@@ -121,7 +95,7 @@ class BrandController extends Controller
         }
 
         // Base Query
-        $query = $brand->products()->where('is_active', true)->with(['service', 'categories']);
+        $query = $brand->products()->where('is_active', true)->with(['categories']);
 
         // Filter by Search Term
         if ($request->filled('search')) {
@@ -137,14 +111,6 @@ class BrandController extends Controller
             $categorySlug = $request->input('category');
             $query->whereHas('categories', function ($q) use ($categorySlug) {
                  $q->where('slug', $categorySlug);
-            });
-        }
-
-        // Filter by Service Item (ServiceSolution)
-        if ($request->filled('service_item')) {
-            $solutionSlug = $request->input('service_item');
-            $query->whereHas('solutions', function ($q) use ($solutionSlug) {
-                 $q->where('slug', $solutionSlug);
             });
         }
 
@@ -173,30 +139,7 @@ class BrandController extends Controller
         });
 
         // Service Solutions available for this brand
-        $serviceSolutions = ServiceSolution::whereHas('products', function($q) use ($brand, $request) {
-              $q->where('brand_id', $brand->id)->where('is_active', true);
-              if ($request->filled('category')) {
-                  $q->whereHas('categories', fn($c) => $c->where('slug', $request->input('category')));
-              }
-        })
-        ->get()
-        ->map(function($sol) use ($brand, $request) {
-            $countQuery = Product::where('brand_id', $brand->id)->where('is_active', true);
-            $countQuery->whereHas('solutions', fn($s) => $s->where('service_solutions.id', $sol->id));
-
-            if ($request->filled('category')) {
-                $countQuery->whereHas('categories', fn($c) => $c->where('slug', $request->input('category')));
-            }
-
-            return [
-               'id' => $sol->id,
-               'name' => $sol->title,
-               'slug' => $sol->slug,
-               'count' => $countQuery->count()
-            ];
-        })
-        ->filter(function($item) { return $item['count'] > 0; })
-        ->values();
+        $serviceSolutions = [];
 
         return Inertia::render('Partners/BrandProductList', [
             'brand' => $brand,

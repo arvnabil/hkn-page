@@ -58,10 +58,7 @@ class SeoMonitoringService
             'Page' => \Modules\CMS\Models\Page::class,
             'Brand' => \Modules\ProductCatalog\Models\Brand::class,
             'News' => \Modules\News\Models\News::class,
-            'Project' => \Modules\Projects\Models\Project::class,
             'Product' => \Modules\ProductCatalog\Models\Product::class,
-            'Service' => \Modules\Services\Models\Service::class,
-            'ServiceSolution' => \Modules\Services\Models\ServiceSolution::class,
             'NewsCategory' => \Modules\News\Models\NewsCategory::class,
         ];
 

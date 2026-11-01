@@ -18,30 +18,9 @@ class PageBuilderController extends Controller
             $query->orderBy('position', 'asc');
         }]);
 
-        // Load global data for builder context (e.g. Services, Projects)
+        // Global data for builder context
         $allServices = [];
-        if (class_exists(\Modules\Services\Models\Service::class)) {
-            $allServices = \Modules\Services\Models\Service::orderBy('sort_order', 'asc')->get();
-        }
-
-        // Load Projects for builder context
         $allProjects = [];
-        if (class_exists(\Modules\Projects\Models\Project::class)) {
-            // Map the projects to the format expected by ProjectSection.jsx
-            $allProjects = \Modules\Projects\Models\Project::where('status', 'published')
-                ->latest('published_at')
-                ->limit(8)
-                ->get()
-                ->map(function ($p) {
-                    return [
-                        'title' => $p->title,
-                        'subtitle' => $p->title,
-                        'category' => $p->is_featured ? 'Featured' : 'Project',
-                        'image' => $p->thumbnail ? "/storage/{$p->thumbnail}" : null,
-                        'link' => "/projects/{$p->slug}",
-                    ];
-                });
-        }
 
         // Resolve sections with defaults using SectionDataResolver
         $sectionDataResolver = app(\Modules\CMS\Services\SectionDataResolver::class);

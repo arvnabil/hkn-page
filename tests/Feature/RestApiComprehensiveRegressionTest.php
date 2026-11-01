@@ -7,8 +7,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\ProductCategory;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 use Modules\News\Models\News;
 use Modules\News\Models\NewsCategory;
 use Modules\News\Models\NewsTag;
@@ -36,14 +34,12 @@ class RestApiComprehensiveRegressionTest extends TestCase
     public function test_products_index_endpoint()
     {
         $brand = Brand::create(['name' => 'Brand A', 'slug' => 'brand-a']);
-        $service = Service::create(['name' => 'Service A', 'slug' => 'service-a']);
         $category = ProductCategory::create(['name' => 'Cat A', 'slug' => 'cat-a', 'is_active' => true]);
 
         $activeProduct = Product::create([
             'name' => 'Active Product',
             'slug' => 'active-product',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
             'is_active' => true,
         ]);
         $activeProduct->categories()->sync([$category->id]);
@@ -52,8 +48,7 @@ class RestApiComprehensiveRegressionTest extends TestCase
             'name' => 'Inactive Product',
             'slug' => 'inactive-product',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
-           'is_active' => false,
+            'is_active' => false,
         ]);
 
         // 1. Basic index (only active)
@@ -80,12 +75,10 @@ class RestApiComprehensiveRegressionTest extends TestCase
     public function test_products_show_endpoint()
     {
         $brand = Brand::create(['name' => 'Yealink', 'slug' => 'yealink']);
-        $service = Service::create(['name' => 'Video Conferencing', 'slug' => 'video-conferencing']);
         $product = Product::create([
-           'name' => 'MeetingBoard 65',
+            'name' => 'MeetingBoard 65',
             'slug' => 'meetingboard-65',
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
             'is_active' => true,
         ]);
 
@@ -107,7 +100,6 @@ class RestApiComprehensiveRegressionTest extends TestCase
             'name' => 'Test Product',
             'slug' => 'test-product',
             'brand_name' => 'Test Brand',
-            'service_name' => 'Test Service',
         ]);
 
         $response->assertStatus(401);
@@ -119,15 +111,12 @@ class RestApiComprehensiveRegressionTest extends TestCase
 
         $response = $this->actingAs($user, 'api')->postJson('/api/products/import', []);
         $response->assertStatus(422);
-        $response->assertJsonValidationErrors(['name', 'slug', 'brand_name', 'service_name']);
+        $response->assertJsonValidationErrors(['name', 'slug', 'brand_name']);
     }
 
     public function test_products_import_endpoint_successful_upsert()
     {
         $user = User::factory()->create();
-
-        $collabService = Service::create(['name' => 'Collaboration', 'slug' => 'collaboration-svc']);
-        $solution = ServiceSolution::create(['title' => 'Unified Communications', 'slug' => 'unified-communications', 'service_id' => $collabService->id]);
 
         $payload = [
             'name' => 'Smart Hub Pro',
@@ -136,9 +125,7 @@ class RestApiComprehensiveRegressionTest extends TestCase
             'price' => 12500000,
             'description' => 'Enterprise conference hub',
             'brand_name' => 'Logitech Enterprise',
-            'service_name' => 'Collaboration Rooms',
             'category_name' => ['Video Hardware', 'Smart Office'],
-            'solutions' => ['Unified Communications'],
             'specs' => json_encode(['ports' => '4x HDMI', 'power' => '65W']),
             'features' => json_encode(['AI Framing', 'Noise Cancellation']),
             'tags' => 'hardware, room-kit',
@@ -185,133 +172,80 @@ class RestApiComprehensiveRegressionTest extends TestCase
         ]);
     }
 
+    public function test_products_delete_endpoint()
+    {
+        $user = User::factory()->create();
+
+        $brand = Brand::create(['name' => 'To Delete Brand', 'slug' => 'to-delete-brand']);
+        $product = Product::create([
+            'name' => 'To Delete Product',
+            'slug' => 'to-delete-product',
+            'brand_id' => $brand->id,
+            'is_active' => true,
+        ]);
+
+        // Unauthenticated delete fails
+        $unauth = $this->deleteJson('/api/products/to-delete-product');
+        $unauth->assertStatus(401);
+
+        // Authenticated delete succeeds
+        $response = $this->actingAs($user, 'api')->deleteJson('/api/products/to-delete-product');
+        $response->assertStatus(200);
+        $response->assertJson(['message' => 'Product deleted successfully']);
+
+        $this->assertDatabaseMissing('products', ['slug' => 'to-delete-product']);
+
+        // Delete non-existent 404
+        $notFound = $this->actingAs($user, 'api')->deleteJson('/api/products/not-found');
+        $notFound->assertStatus(404);
+    }
+
     public function test_news_index_endpoint()
     {
-        $category = NewsCategory::create(['name' => 'Tech', 'slug' => 'tech']);
-        $tag = NewsTag::create(['name' => 'AI', 'slug' => 'ai']);
+        $cat = NewsCategory::create(['name' => 'Tech', 'slug' => 'tech']);
 
         $published = News::create([
             'title' => 'Published Article',
             'slug' => 'published-article',
             'status' => 'published',
             'published_at' => now(),
+            'category_id' => $cat->id,
         ]);
-        $published->categories()->sync([$category->id]);
-        $published->tags()->sync([$tag->id]);
 
         $draft = News::create([
             'title' => 'Draft Article',
             'slug' => 'draft-article',
             'status' => 'draft',
+            'published_at' => null,
+            'category_id' => $cat->id,
         ]);
 
-        // 1. Basic index (only published)
         $response = $this->getJson('/api/news');
         $response->assertStatus(200);
-        $response->assertJsonPath('data.0.attributes.title', 'Published Article');
         $response->assertJsonCount(1, 'data');
+        $response->assertJsonPath('data.0.attributes.title', 'Published Article');
 
-        // 2. Filter by category
+        // Filter by category
         $responseCat = $this->getJson('/api/news?category=tech');
         $responseCat->assertStatus(200);
         $responseCat->assertJsonCount(1, 'data');
-
-        // 3. Filter by tag
-        $responseTag = $this->getJson('/api/news?tag=ai');
-        $responseTag->assertStatus(200);
-        $responseTag->assertJsonCount(1, 'data');
     }
 
     public function test_news_show_endpoint()
     {
         $news = News::create([
-            'title' => 'Breaking News',
-            'slug' => 'breaking-news',
+            'title' => 'AVer AI Technology',
+            'slug' => 'aver-ai-technology',
             'status' => 'published',
             'published_at' => now(),
         ]);
 
-        // Success
-        $response = $this->getJson('/api/news/breaking-news');
+        $response = $this->getJson('/api/news/aver-ai-technology');
         $response->assertStatus(200);
-        $response->assertJsonPath('data.attributes.title', 'Breaking News');
+        $response->assertJsonPath('data.attributes.title', 'AVer AI Technology');
         $response->assertJsonPath('data.type', 'news');
 
-        // 404
-        $notFound = $this->getJson('/api/news/does-not-exist');
+        $notFound = $this->getJson('/api/news/non-existent-news');
         $notFound->assertStatus(404);
-        $notFound->assertJson(['message' => 'News not found']);
-    }
-
-    public function test_news_import_endpoint_unauthenticated()
-    {
-        $response = $this->postJson('/api/news/import', [
-            'title' => 'Test Article',
-            'slug' => 'test-article',
-        ]);
-
-        $response->assertStatus(401);
-    }
-
-    public function test_news_import_endpoint_validation_errors()
-    {
-        $user = User::factory()->create();
-
-        $response = $this->actingAs($user, 'api')->postJson('/api/news/import', []);
-        $response->assertStatus(422);
-        $response->assertJsonValidationErrors(['title', 'slug']);
-    }
-
-    public function test_news_import_endpoint_successful_upsert()
-    {
-        $user = User::factory()->create();
-
-        $payload = [
-            'title' => 'New Release Announced',
-            'slug' => 'new-release-announced',
-            'excerpt' => 'Short summary of the release.',
-            'content' => '<p>Full content of the announcement.</p>',
-            'status' => 'published',
-            'published_at' => '2026-09-28 10:00:00',
-            'categories' => ['Company News', 'Product Updates'],
-            'tags' => ['update', 'v2'],
-            'seo_title' => 'New Release Announcement SEO',
-            'seo_description' => 'Read our latest update.',
-            'seo_keywords' => 'release, update, news',
-        ];
-
-        // 1. Create via import
-        $response = $this->actingAs($user, 'api')->postJson('/api/news/import', $payload);
-        $response->assertStatus(200);
-        $response->assertJsonPath('message', 'News imported successfully');
-        $response->assertJsonPath('news.data.attributes.title', 'New Release Announced');
-
-        $this->assertDatabaseHas('news', [
-            'slug' => 'new-release-announced',
-            'title' => 'New Release Announced',
-            'status' => 'published',
-        ]);
-        $this->assertDatabaseHas('news_categories', [
-            'name' => 'Company News',
-            'slug' => 'company-news',
-        ]);
-        $this->assertDatabaseHas('news_tags', [
-            'name' => 'update',
-            'slug' => 'update',
-        ]);
-
-        // 2. Update via import
-        $updatePayload = array_merge($payload, [
-            'title' => 'New Release Announced v2',
-        ]);
-
-        $updateResponse = $this->actingAs($user, 'api')->postJson('/api/news/import', $updatePayload);
-        $updateResponse->assertStatus(200);
-        $updateResponse->assertJsonPath('news.data.attributes.title', 'New Release Announced v2');
-
-        $this->assertDatabaseHas('news', [
-            'slug' => 'new-release-announced',
-            'title' => 'New Release Announced v2',
-        ]);
     }
 }

@@ -8,8 +8,6 @@ use Illuminate\Support\Facades\Cache;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\ProductCategory;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 use Modules\News\Models\News;
 use Modules\News\Models\NewsCategory;
 use Modules\News\Models\NewsTag;
@@ -45,21 +43,10 @@ class JsonApiResourceTest extends TestCase
             'slug' => 'brand-activ',
         ]);
 
-        $service = Service::create([
-            'name' => 'Logitech Rooms',
-            'slug' => 'logitech-rooms',
-        ]);
-
         $category = ProductCategory::create([
             'name' => 'Video Conference',
             'slug' => 'video-conference',
             'is_active' => true,
-        ]);
-
-        $solution = ServiceSolution::create([
-            'title' => 'Meeting Room Solution',
-            'slug' => 'meeting-room-solution',
-            'service_id' => $service->id,
         ]);
 
         $product = Product::create([
@@ -71,11 +58,9 @@ class JsonApiResourceTest extends TestCase
             'is_active' => true,
             'is_featured' => true,
             'brand_id' => $brand->id,
-            'service_id' => $service->id,
         ]);
 
         $product->categories()->sync([$category->id]);
-        $product->solutions()->sync([$solution->id]);
 
         // Create SEO metadata
         $product->seo()->create([
@@ -117,9 +102,7 @@ class JsonApiResourceTest extends TestCase
                     ],
                     'relationships' => [
                         'brand' => ['data'],
-                        'service' => ['data'],
                         'categories' => ['data'],
-                        'solutions' => ['data'],
                         'seo' => ['data'],
                     ]
                 ]

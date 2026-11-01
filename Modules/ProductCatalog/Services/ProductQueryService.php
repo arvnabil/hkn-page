@@ -27,7 +27,7 @@ class ProductQueryService
      */
     public function list(array $filters): LengthAwarePaginator
     {
-        $query = Product::with(['brand', 'service', 'categories', 'solutions', 'seo'])
+        $query = Product::with(['brand', 'categories', 'seo'])
             ->where('is_active', true);
 
         if (!empty($filters['category'])) {
@@ -55,7 +55,7 @@ class ProductQueryService
      */
     public function findBySlug(string $slug): ?Product
     {
-        return Product::with(['brand', 'service', 'categories', 'solutions', 'seo'])
+        return Product::with(['brand', 'categories', 'seo'])
             ->where('slug', $slug)
             ->first();
     }

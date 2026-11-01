@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\Brand;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 use Illuminate\Http\Request;
 
 /*
@@ -24,14 +22,3 @@ Route::get('/products', [\Modules\ProductCatalog\Http\Controllers\ProductControl
 
 // Fallback detail product route
 Route::get('/products/{slug}', [\Modules\ProductCatalog\Http\Controllers\ProductController::class, 'show'])->name('products.show');
-
-// Configurator API for Modal
-Route::get('/configurator/product-details/{id}', function ($id) {
-    return Product::with(['brand', 'service'])->where('is_active', true)->findOrFail($id);
-});
-
-// Brand Product List Page
-// Brand Landing Page is now handled by the Global Dynamic Resolver (DynamicResolverController)
-// which delegates to BrandController.
-
-// Brand Product List Route moved to main routes/web.php to avoid catch-all conflict.

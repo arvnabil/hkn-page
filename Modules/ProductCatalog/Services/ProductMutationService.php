@@ -10,8 +10,6 @@ use Illuminate\Support\Str;
 use Modules\ProductCatalog\Models\Brand;
 use Modules\ProductCatalog\Models\Product;
 use Modules\ProductCatalog\Models\ProductCategory;
-use Modules\Services\Models\Service;
-use Modules\Services\Models\ServiceSolution;
 
 /**
  * Application service for ProductCatalog mutation operations.
@@ -75,16 +73,6 @@ class ProductMutationService
                 $product->brand_id = $brand->id;
             }
 
-            // Handle Service upsert
-            if (!empty($data['service_name'])) {
-                $serviceName = trim($data['service_name']);
-                $service = Service::firstOrCreate(
-                    ['slug' => Str::slug($serviceName)],
-                    ['name' => $serviceName]
-                );
-                $product->service_id = $service->id;
-            }
-
             // Handle Image processing
             if (!empty($data['image_path'])) {
                 $imagePath = trim($data['image_path']);
@@ -133,15 +121,6 @@ class ProductMutationService
                 $product->categories()->sync($catIds);
             }
 
-            // Sync M2M Solutions
-            if (!empty($data['solutions'])) {
-                $solutionNames = is_array($data['solutions'])
-                    ? $data['solutions']
-                    : array_map('trim', explode(',', $data['solutions']));
-                $solutionIds = ServiceSolution::whereIn('title', $solutionNames)->pluck('id')->toArray();
-                $product->solutions()->sync($solutionIds);
-            }
-
             // Upsert SEO metadata
             $seoKeys = !empty($data['seo_keywords'])
                 ? (is_array($data['seo_keywords'])
@@ -178,7 +157,7 @@ class ProductMutationService
                 $product->syncBrandToSolutions();
             }
 
-            return $product->load(['brand', 'service', 'categories', 'solutions', 'seo']);
+            return $product->load(['brand', 'categories', 'seo']);
         });
     }
 

@@ -34,11 +34,6 @@ class Brand extends Model
         return $this->hasMany(Product::class);
     }
 
-    public function serviceSolutions()
-    {
-        return $this->belongsToMany(\Modules\Services\Models\ServiceSolution::class, 'service_solution_brand');
-    }
-
     public function seo()
     {
         return $this->morphOne(\Modules\SEO\Models\SeoMeta::class, 'seoable');
