@@ -66,7 +66,7 @@ function App() {
 
     // Route: Solusi
     if (clean === '/solusi' || clean === '/solutions') {
-      return <Solutions solutions={solutionsData} site={siteData} />;
+      return <Solutions solutions={solutionsData} products={productsData} site={siteData} />;
     }
 
     // Route: Penawaran / Inquiry

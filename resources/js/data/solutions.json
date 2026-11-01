@@ -1,54 +1,105 @@
-[
+﻿[
     {
         "id":  "huddle",
-        "challenge":  "Jarak meja sangat dekat dengan layar monitor; kamera standar membuat peserta di pinggir meja terpotong.",
-        "recommended":  "AVer VB130 atau VB342 Pro",
-        "dimension":  "3m × 4m (hingga 12m²)",
         "keySpecs":  [
-                         "FOV 120° bebas distorsi",
-                         "Kabel tunggal USB plug-and-play",
-                         "Audio terpadu tanpa speakerphone terpisah"
+                         "FOV 120° bebas distorsi ruang sempit",
+                         "Kabel tunggal USB 3.1 plug-and-play",
+                         "10-beamforming mic array terintegrasi",
+                         "SmartGallery framing peserta individual"
                      ],
-        "solution":  "Kamera sudut ultra-lebar (FOV 120°) atau All-in-One video bar ringkas terpasang tepat di bawah monitor.",
-        "title":  "Huddle Space (2–6 Orang)"
+        "cameraFov":  120,
+        "challenge":  "Jarak meja sangat dekat dengan layar monitor (1.2m); kamera standar membuat peserta di sudut pinggir meja terpotong dan distorsi cembung.",
+        "recommended":  "AVer VB342 Pro atau VB130",
+        "title":  "Huddle Space",
+        "cameraPlacement":  "Di bawah layar (ketinggian 1.1m)",
+        "tableDistance":  "1.2 meter dari layar",
+        "products":  [
+                         "vb342-pro"
+                     ],
+        "acousticTips":  "Gunakan material akustik karpet atau panel fabric di dinding depan untuk meminimalisir pantulan suara video bar.",
+        "area":  "12 m²",
+        "icon":  "meeting_room",
+        "capacity":  "2–6 Orang",
+        "micRange":  "5 meter",
+        "solution":  "Kamera sudut ultra-lebar (FOV 120°) All-in-One video bar terpasang tepat di bawah monitor, dilengkapi audio beamforming 10-unsur tanpa kabel terpisah.",
+        "dimension":  "3m × 4m"
     },
     {
         "id":  "medium",
-        "challenge":  "Peserta di ujung meja kejauhan; suara bergema dari dinding kaca atau meja kayu panjang.",
-        "recommended":  "AVer CAM550 + FONE540 atau VB342 Pro + Expansion Mic",
-        "dimension":  "5m × 7m (hingga 35m²)",
         "keySpecs":  [
-                         "Dual-Lens AI Framing",
-                         "12X Optical Zoom",
-                         "Acoustic Echo Cancellation"
+                         "Dual-Lens AI Framing (PTZ + Panorama)",
+                         "12X Optical Zoom (24X Total Zoom)",
+                         "Sensor sekunder deteksi pendatang baru",
+                         "Acoustic Echo Cancellation aktif"
                      ],
-        "solution":  "Kamera Motorized Optical Zoom PTZ dipadukan dengan mikrofon meja terdistribusi atau expansion mic.",
-        "title":  "Ruang Rapat Sedang (6–12 Orang)"
+        "cameraFov":  85,
+        "challenge":  "Peserta di ujung meja kejauhan dari kamera statis; suara bergema dari dinding kaca pembatas atau meja kayu panjang konferensi.",
+        "recommended":  "AVer CAM550 + FONE540 atau VB342 Pro + Expansion Mic",
+        "title":  "Ruang Rapat Sedang",
+        "cameraPlacement":  "Di bawah layar (ketinggian 1.3m)",
+        "tableDistance":  "1.8 meter dari layar",
+        "products":  [
+                         "cam550",
+                         "vb342-pro"
+                     ],
+        "acousticTips":  "Pasang mikrofon ekspansi di titik 2/3 panjang meja untuk memastikan peserta di ujung belakang terdengar setara dengan ketua rapat.",
+        "area":  "35 m²",
+        "icon":  "groups",
+        "capacity":  "6–12 Orang",
+        "micRange":  "8 meter",
+        "solution":  "Kamera Motorized Optical Zoom PTZ Dual-Lens dipadukan dengan SmartFrame AI otomatis serta mikrofon meja terdistribusi ekspansi.",
+        "dimension":  "5m × 7m"
     },
     {
         "id":  "boardroom",
-        "challenge":  "Meja U-shape atau meja oval panjang; pembicara sering bergantian cepat dari berbagai sudut.",
-        "recommended":  "AVer CAM570 + Shure Microflex Ceiling Array via Dante",
-        "dimension":  "7m × 12m (hingga 84m²)",
         "keySpecs":  [
-                         "Audio Tracking Array 10m",
-                         "36X Total Zoom",
-                         "Integrasi DSP Dante / IP Network"
+                         "Audio Tracking Sensor Array built-in 10m",
+                         "Dual 4K Sony Sensor kualitas visual tertinggi",
+                         "36X Total Zoom untuk close-up tajam ujung meja",
+                         "Integrasi DSP Dante \u0026 IP PoE+ Control"
                      ],
-        "solution":  "Dual-lens camera dengan audio tracking otomatis dan mikrofon ceiling array terintegrasi.",
-        "title":  "Executive Boardroom (12–25 Orang)"
+        "cameraFov":  86,
+        "challenge":  "Meja U-shape atau meja oval panjang; pembicara sering bergantian cepat dari berbagai sudut meja eksekutif tanpa sempat kontrol remote manual.",
+        "recommended":  "AVer CAM570 + Shure Microflex Ceiling Array via Dante",
+        "title":  "Executive Boardroom",
+        "cameraPlacement":  "Di bawah atau atas dual display (ketinggian 1.5m)",
+        "tableDistance":  "2.5 meter dari layar",
+        "products":  [
+                         "cam570",
+                         "cam550"
+                     ],
+        "acousticTips":  "Kombinasikan dengan ceiling microphone array terhubung Dante DSP agar meja rapat eksekutif bebas kabel (clean table policy).",
+        "area":  "84 m²",
+        "icon":  "co_present",
+        "capacity":  "12–25 Orang",
+        "micRange":  "10 meter",
+        "solution":  "Dual-lens camera dengan sensor array audio bawaan 10 meter yang otomatis mengarahkan lensa optik ke arah suara pembicara aktif seketika.",
+        "dimension":  "7m × 12m"
     },
     {
         "id":  "classroom",
-        "challenge":  "Dosen atau presenter terus bergerak di depan panggung tanpa operator kamera manual.",
-        "recommended":  "AVer DL30 atau CAM550",
-        "dimension":  "10m × 15m ke atas",
         "keySpecs":  [
-                         "Presenter AI Tracking tanpa lanyard",
-                         "Zone Tracking papan tulis",
-                         "Streaming IP RTSP / RTMP"
+                         "Presenter AI Tracking tanpa sensor lanyard",
+                         "Zone Tracking khusus area papan tulis",
+                         "SmartComposition grid wajah peserta",
+                         "Streaming IP RTSP / RTMP langsung ke YouTube/LMS"
                      ],
-        "solution":  "Kamera Auto-Tracking AI yang mengunci postur tubuh presenter di sepanjang papan tulis dan mimbar.",
-        "title":  "Smart Classroom \u0026 Auditorium (30+ Peserta)"
+        "cameraFov":  90,
+        "challenge":  "Dosen atau presenter terus bergerak aktif di depan panggung dan papan tulis tanpa operator kamera manual untuk mengarahkan lensa.",
+        "recommended":  "AVer CAM520 Pro3 atau DL30 Auto Tracking",
+        "title":  "Smart Classroom \u0026 Auditorium",
+        "cameraPlacement":  "Dinding belakang auditorium atau samping panggung (2.2m)",
+        "tableDistance":  "4 meter dari panggung",
+        "products":  [
+                         "cam520-pro3",
+                         "cam550"
+                     ],
+        "acousticTips":  "Gunakan wireless lapel mic atau mikrofon shotgun terhubung langsung ke audio-in kamera untuk transmisi suara pengajar yang jernih.",
+        "area":  "150 m²+",
+        "icon":  "school",
+        "capacity":  "30+ Peserta",
+        "micRange":  "15 meter",
+        "solution":  "Kamera Auto-Tracking AI berbasis computer vision yang mengunci siluet tubuh presenter secara presisi di sepanjang area papan tulis dan mimbar.",
+        "dimension":  "10m × 15m ke atas"
     }
 ]
