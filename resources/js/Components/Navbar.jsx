@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, usePage } from '@inertiajs/react';
 import AVerLogo from './AVerLogo';
+import ThemeToggle from './ThemeToggle';
 import siteData from '../data/site.json';
 
 export default function Navbar({ site = siteData }) {
@@ -53,8 +54,11 @@ export default function Navbar({ site = siteData }) {
           })}
         </nav>
 
-        {/* Right Actions */}
+        {/* Right Actions: Theme Toggle & CTA */}
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* Theme Switcher Button */}
+          <ThemeToggle />
+
           <Link
             href={site.cta.href}
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary font-title-md text-body-sm font-bold shadow-sm hover:opacity-95 transition-opacity"
