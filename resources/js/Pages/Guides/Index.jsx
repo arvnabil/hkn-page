@@ -35,7 +35,7 @@ export default function GuidesIndex({
         <section className="mb-10">
           <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-alt border border-border-clean font-mono text-xs text-primary mb-3">
             <span className="material-symbols-outlined text-sm">menu_book</span>
-            <span>// KNOWLEDGE BASE</span>
+            <span>KNOWLEDGE BASE</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-heading font-extrabold text-on-surface mb-3">
             Panduan & Topik Pembahasan

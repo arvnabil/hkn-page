@@ -125,7 +125,7 @@ export default function GuidesShow({
             {/* Related Guides */}
             {related.length > 0 && (
               <div className="ui-card p-5">
-                <h3 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-4">// PANDUAN TERKAIT</h3>
+                <h3 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-4">PANDUAN TERKAIT</h3>
                 <div className="space-y-4">
                   {related.map((g) => (
                     <Link
@@ -153,7 +153,7 @@ export default function GuidesShow({
 
             {/* Product CTA */}
             <div className="ui-card p-5">
-              <h3 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">// LIHAT PRODUK</h3>
+              <h3 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">LIHAT PRODUK</h3>
               <p className="font-body-md text-xs text-secondary mb-3 leading-relaxed">
                 Temukan kamera konferensi AVer yang tepat untuk ruang rapat Anda.
               </p>

@@ -58,7 +58,7 @@ export default function ProductsShow({
               <div className="absolute top-4 left-4 z-10">
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm border border-border-clean font-mono text-xs text-primary">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  // {product.badge}
+                  {product.badge}
                 </span>
               </div>
 
@@ -159,7 +159,7 @@ export default function ProductsShow({
             {/* Key Features */}
             {product.features && product.features.length > 0 && (
               <div>
-                <h2 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">// FITUR UTAMA</h2>
+                <h2 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">FITUR UTAMA</h2>
                 <ul className="space-y-2">
                   {product.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -174,7 +174,7 @@ export default function ProductsShow({
             {/* Certifications */}
             {product.certifications && product.certifications.length > 0 && (
               <div>
-                <h2 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">// SERTIFIKASI</h2>
+                <h2 className="font-mono text-xs text-muted-slate uppercase tracking-widest mb-3">SERTIFIKASI</h2>
                 <div className="flex flex-wrap gap-2">
                   {product.certifications.map((cert) => {
                     const info = CERT_ICONS[cert];

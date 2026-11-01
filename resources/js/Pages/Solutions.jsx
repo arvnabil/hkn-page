@@ -79,7 +79,7 @@ export default function Solutions({
             {/* 1. INTERACTIVE ROOM SELECTOR CARDS */}
             <section className="mb-10">
               <div className="flex items-center justify-between mb-3 font-mono text-xs text-secondary">
-                <span className="uppercase font-bold text-primary">// 1. PILIH TIPE RUANG RAPAT:</span>
+                <span className="uppercase font-bold text-primary">1. PILIH TIPE RUANG RAPAT:</span>
                 <span className="hidden sm:inline">Pilih salah satu denah untuk melihat simulasi penataan</span>
               </div>
 
@@ -140,7 +140,7 @@ export default function Solutions({
                 {/* Left (7 Cols): SVG Interactive Blueprint Visualizer */}
                 <div className="lg:col-span-7">
                   <div className="flex items-center justify-between mb-3 font-mono text-xs">
-                    <span className="uppercase font-bold text-primary">// 2. SIMULASI PENATAAN & SUDUT PANDANG OPTIK:</span>
+                    <span className="uppercase font-bold text-primary">2. SIMULASI PENATAAN & SUDUT PANDANG OPTIK:</span>
                     <span className="text-secondary text-[11px]">FOV: {activeSolution.cameraFov}° | Audio: {activeSolution.micRange}</span>
                   </div>
                   <RoomBlueprint solution={activeSolution} />

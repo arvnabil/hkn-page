@@ -53,7 +53,7 @@ export default function RoomBlueprint({ solution }) {
       <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-border-clean dark:border-[#1B3752] text-xs font-mono">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
-          <span className="text-primary dark:text-[#8FCDFF] font-bold tracking-wider">// DENAH TEKNIKAL: {title.toUpperCase()}</span>
+          <span className="text-primary dark:text-[#8FCDFF] font-bold tracking-wider">DENAH TEKNIKAL: {title.toUpperCase()}</span>
           <span className="text-secondary dark:text-[#6582A0]">| {dimension} ({area})</span>
         </div>
         
