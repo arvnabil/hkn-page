@@ -1,0 +1,9 @@
+{
+    "name": "Inquiry",
+    "alias": "inquiry",
+    "description": "B2B Lead management for AVer room solutions",
+    "version": "1.0.0",
+    "providers": [
+        "Modules\\Inquiry\\Providers\\InquiryServiceProvider"
+    ]
+}

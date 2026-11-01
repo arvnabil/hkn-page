@@ -108,11 +108,29 @@ export function Head({ title, children }) {
   return <>{children}</>;
 }
 
+export function createInertiaApp({ resolve, setup }) {
+  if (typeof document !== 'undefined') {
+    const el = document.getElementById('app');
+    if (el) {
+      const pageData = JSON.parse(el.dataset.page || '{"component":"Home","props":{}}');
+      Promise.resolve(resolve(pageData.component || 'Home')).then((component) => {
+        const Comp = component.default || component;
+        setup({
+          el,
+          App: () => React.createElement(Comp, pageData.props || {}),
+          props: pageData.props || {},
+        });
+      });
+    }
+  }
+}
+
 export default {
   Link,
   usePage,
   router,
   Head,
   InertiaProvider,
+  createInertiaApp,
 };
 

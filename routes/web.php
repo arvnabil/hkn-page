@@ -1,0 +1,107 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
+
+// ─── Auth ───────────────────────────────────────────────
+Route::get('/login', function () {
+    return redirect()->route('filament.activioncms.auth.login');
+})->name('login');
+
+// ─── Harry Public Pages (AVer Solutions Advisor) ──────────
+Route::get('/', function () {
+    return Inertia::render('Home');
+})->name('home');
+
+Route::get('/tentang', function () {
+    return Inertia::render('About');
+})->name('about');
+
+Route::get('/solusi', function () {
+    return Inertia::render('Solutions');
+})->name('solutions');
+
+Route::get('/penawaran', function () {
+    return Inertia::render('Inquiry');
+})->name('inquiry');
+
+Route::get('/produk', function () {
+    return Inertia::render('Products/Index');
+})->name('products.index');
+
+Route::get('/produk/{id}', function ($id) {
+    return Inertia::render('Products/Show', ['id' => $id]);
+})->name('products.show');
+
+Route::get('/perbandingan', function () {
+    return Inertia::render('Comparison');
+})->name('comparison');
+
+Route::get('/artikel', function () {
+    return Inertia::render('Articles/Index');
+})->name('articles.index');
+
+Route::get('/artikel/{slug}', function ($slug) {
+    return Inertia::render('Articles/Show', ['slug' => $slug]);
+})->name('articles.show');
+
+Route::get('/panduan', function () {
+    return Inertia::render('Guides/Index');
+})->name('guides.index');
+
+Route::get('/panduan/{slug}', function ($slug) {
+    return Inertia::render('Guides/Show', ['slug' => $slug]);
+})->name('guides.show');
+
+// ─── Search ─────────────────────────────────────────────
+// Moved to Modules/Search/Routes/web.php
+
+// ─── Form Submission ────────────────────────────────────
+// Moved to Modules/FormBuilder/Routes/web.php
+
+// ─── WhatsApp ───────────────────────────────────────────
+// Moved to Modules/WhatsApp/Routes/web.php
+
+// ─── Projects ───────────────────────────────────────────
+// Moved to Modules/Projects/Routes/web.php
+
+// ─── Clients ────────────────────────────────────────────
+// Moved to Modules/Clients/Routes/web.php
+
+// ─── News ───────────────────────────────────────────────
+// Moved to Modules/News/Routes/web.php
+
+// ─── Static Configurators ───────────────────────────────
+Route::get('/room-configurator', function () {
+    return Inertia::render('Configurator/RoomConfigurator');
+})->name('room.configurator');
+
+Route::match(['get', 'post'], '/room-configurator/complete', [\Modules\Services\Http\Controllers\ConfiguratorController::class, 'simpleComplete'])->name('room.configurator.complete');
+
+Route::get('/server-configurator', function () {
+    return Inertia::render('Configurator/ServerConfigurator');
+})->name('server.configurator');
+
+Route::match(['get', 'post'], '/server-configurator/complete', [\Modules\Services\Http\Controllers\ConfiguratorController::class, 'simpleComplete'])->name('server.configurator.complete');
+
+Route::get('/surveillance-configurator', function () {
+    return Inertia::render('Configurator/SurveillanceConfigurator');
+})->name('surveillance.configurator');
+
+Route::match(['get', 'post'], '/surveillance-configurator/complete', [\Modules\Services\Http\Controllers\ConfiguratorController::class, 'simpleComplete'])->name('surveillance.configurator.complete');
+
+// ─── Dynamic Configurator ───────────────────────────────
+Route::get('/configurator/{slug}', [\Modules\Services\Http\Controllers\DynamicConfiguratorController::class, 'show'])->name('configurator.show');
+Route::match(['get', 'post'], '/configurator/complete', [\Modules\Services\Http\Controllers\ConfiguratorController::class, 'complete'])->name('configurator.complete');
+
+// ─── Brand Product List ─────────────────────────────────
+Route::get('/{brandSlug}/products', [\Modules\ProductCatalog\Http\Controllers\BrandController::class, 'productList'])->name('brand.products');
+
+// ─── Page Builder (Admin) ───────────────────────────────
+// Moved to Modules/CMS/Routes/web.php
+
+// ─── Catch-All Dynamic Pages (MUST BE LAST) ────────────────
+// Route::get('/', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('home');
+Route::get('/{slug}', [\Modules\CMS\Http\Controllers\DynamicResolverController::class, 'resolve'])
+    ->name('dynamic.resolve')
+    ->where('slug', '^(?!events|services|products|configurator|activioncms|admin|nova|api|storage|build|assets|favicon|docs|solusi|penawaran|perbandingan|artikel|panduan|tentang).*$');

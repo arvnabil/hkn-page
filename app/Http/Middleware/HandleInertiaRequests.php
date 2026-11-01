@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Illuminate\Http\Request;
+use Inertia\Middleware;
+use Modules\Menu\Services\MenuResolver;
+use Modules\SEO\Helpers\SeoHelper;
+use Modules\Settings\Models\Setting;
+use Modules\WhatsApp\Models\WhatsAppSetting;
+
+class HandleInertiaRequests extends Middleware
+{
+    /**
+     * The root template that's loaded on the first page visit.
+     *
+     * @see https://inertiajs.com/server-side-setup#root-template
+     *
+     * @var string
+     */
+    protected $rootView = 'app';
+
+    /**
+     * Determines the current asset version.
+     *
+     * @see https://inertiajs.com/asset-versioning
+     */
+    public function version(Request $request): ?string
+    {
+        return parent::version($request);
+    }
+
+    /**
+     * Define the props that are shared by default.
+     *
+     * @see https://inertiajs.com/shared-data
+     *
+     * @return array<string, mixed>
+     */
+    public function share(Request $request): array
+    {
+        // return [
+        //     ...parent::share($request),
+        //     //
+        // ];
+        $menuResolver = app(MenuResolver::class);
+
+        return array_merge(parent::share($request), [
+            'auth' => [
+                'user' => $request->user(),
+            ],
+            'flash' => [
+                'success' => fn () => $request->session()->get('success'),
+                'error' => fn () => $request->session()->get('error'),
+                'warning' => fn () => $request->session()->get('warning'),
+            ],
+            'menus' => [
+                'primary' => $menuResolver->resolve('primary', $request->user()),
+                'footer' => $menuResolver->resolve('footer', $request->user()),
+                'top_header' => $menuResolver->resolve('top_header', $request->user()),
+            ],
+            'settings' => collect(Setting::getPublicSettings())
+                ->mapWithKeys(function ($value, $key) {
+                    $data = [$key => $value];
+                    if (str_ends_with($key, '_url') || $key === 'header_button_url') {
+                        $data[$key.'_rel'] = SeoHelper::get_rel($value);
+                    }
+
+                    return $data;
+                })->toArray(),
+            'whatsapp_bubble' => WhatsAppSetting::getInstance(),
+        ]);
+    }
+}

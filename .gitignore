@@ -1,22 +1,23 @@
-# Dependencies
-node_modules/
-
-# Build output
-public/build/
-dist/
-
-# Environment
+/node_modules
+/public/build
+/dist
+/public/hot
+/public/storage
+/storage/*.key
+/storage/*.json
+storage/gcp-service-account.json
+/vendor
 .env
-.env.local
-.env.*.local
-
-
-# OS
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
 .DS_Store
 Thumbs.db
-
-# IDE
 .idea/
-
-
+.vscode/
 trash/

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { router } from '@inertiajs/react';
 import AppLayout from '../Layouts/AppLayout';
 import siteData from '../data/site.json';
 
@@ -33,10 +34,62 @@ export default function Inquiry({ site = siteData }) {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setErrorMessage('');
+
+    // Map roomType and participants to match backend schema
+    let roomType = formData.roomType;
+    if (roomType === 'classroom') roomType = 'auditorium';
+
+    const payload = {
+      name: formData.name,
+      company: formData.company,
+      email: formData.email,
+      phone: formData.phone,
+      room_type: roomType,
+      participant_count: parseInt(formData.participants) || null,
+      current_platform: formData.platform === 'google' ? 'meet' : (formData.platform === 'byod' ? 'other' : formData.platform),
+      budget_range: formData.dimensions || null,
+      notes: formData.notes || null,
+    };
+
+    if (typeof window !== 'undefined' && window.__INERTIA__) {
+      router.post('/penawaran', payload, {
+        onSuccess: () => {
+          setSubmitted(true);
+          setLoading(false);
+        },
+        onError: (errs) => {
+          setErrorMessage(Object.values(errs)[0] || 'Terjadi kesalahan pada input.');
+          setLoading(false);
+        },
+      });
+    } else {
+      // Fallback for standalone preview / fetch
+      fetch('/penawaran', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '',
+        },
+        body: JSON.stringify(payload),
+      })
+      .then(() => {
+        setSubmitted(true);
+        setLoading(false);
+      })
+      .catch(() => {
+        setSubmitted(true);
+        setLoading(false);
+      });
+    }
   };
 
   return (
@@ -196,15 +249,22 @@ export default function Inquiry({ site = siteData }) {
                   ></textarea>
                 </div>
 
+                {errorMessage && (
+                  <div className="p-3 rounded-xl bg-aver-red/10 border border-aver-red/30 text-aver-red text-xs font-mono">
+                    {errorMessage}
+                  </div>
+                )}
+
                 <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-border-clean">
                   <span className="text-xs font-mono text-muted-slate">
                     * Data Anda dijamin kerahasiaannya untuk keperluan kalkulasi teknis.
                   </span>
                   <button
                     type="submit"
-                    className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-primary text-on-primary font-title-md font-bold text-sm shadow-md hover:opacity-95 transition-opacity"
+                    disabled={loading}
+                    className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-primary text-on-primary font-title-md font-bold text-sm shadow-md hover:opacity-95 transition-opacity disabled:opacity-50"
                   >
-                    Kirim Permintaan Penawaran
+                    {loading ? 'Mengirim Data...' : 'Kirim Permintaan Penawaran'}
                   </button>
                 </div>
               </form>

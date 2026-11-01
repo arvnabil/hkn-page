@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
+import { createInertiaApp } from '@inertiajs/react';
 
 // CSS Design Tokens & Tailwind
 import '../../assets/theme.css';
@@ -129,10 +130,27 @@ function App() {
   );
 }
 
-const container = document.getElementById('root');
-if (container) {
-  const root = createRoot(container);
-  root.render(<App />);
+const inertiaContainer = document.getElementById('app');
+if (inertiaContainer) {
+  const pages = import.meta.glob('./Pages/**/*.jsx', { eager: true });
+  createInertiaApp({
+    resolve: (name) => {
+      const page = pages[`./Pages/${name}.jsx`];
+      if (!page) {
+        throw new Error(`Inertia page not found: ${name}`);
+      }
+      return page.default || page;
+    },
+    setup({ el, App, props }) {
+      createRoot(el).render(<App {...props} />);
+    },
+  });
+} else {
+  const container = document.getElementById('root');
+  if (container) {
+    const root = createRoot(container);
+    root.render(<App />);
+  }
 }
 
 export default App;
