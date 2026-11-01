@@ -1,0 +1,93 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: harry_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    environment:
+      APP_NAME: "${APP_NAME:-Harry Kusumo Negoro}"
+      APP_ENV: "${APP_ENV:-local}"
+      APP_KEY: "${APP_KEY}"
+      APP_DEBUG: "${APP_DEBUG:-true}"
+      APP_URL: "${APP_URL:-http://localhost:8000}"
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: "${DB_DATABASE:-harry_db}"
+      DB_USERNAME: "${DB_USERNAME:-harry_user}"
+      DB_PASSWORD: "${DB_PASSWORD:-harry_secret}"
+      SESSION_DRIVER: database
+      QUEUE_CONNECTION: database
+      CACHE_STORE: file
+      REDIS_HOST: redis
+      FILESYSTEM_DISK: public
+      FILAMENT_FILESYSTEM_DISK: public
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+      - /var/www/html/node_modules
+    networks:
+      - harry_network
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    image: nginx:alpine
+    container_name: harry_web
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html:ro
+      - ./.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - harry_network
+    depends_on:
+      - app
+
+  db:
+    image: mysql:8.0
+    container_name: harry_db
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: "${DB_DATABASE:-harry_db}"
+      MYSQL_USER: "${DB_USERNAME:-harry_user}"
+      MYSQL_PASSWORD: "${DB_PASSWORD:-harry_secret}"
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD:-root_secret}"
+    volumes:
+      - harry_mysql_data:/var/lib/mysql
+    networks:
+      - harry_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-root_secret}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  redis:
+    image: redis:alpine
+    container_name: harry_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - harry_redis_data:/data
+    networks:
+      - harry_network
+
+networks:
+  harry_network:
+    driver: bridge
+
+volumes:
+  harry_mysql_data:
+    driver: local
+  harry_redis_data:
+    driver: local
+
