@@ -29,7 +29,9 @@ class ApiKeyResourceTest extends TestCase
             $this->artisan('migrate', ['--path' => $relativePath]);
         }
 
-        $this->user = User::factory()->create();
+        $this->user = User::factory()->create(['is_active' => true]);
+        \Spatie\Permission\Models\Role::firstOrCreate(['name' => 'administrator']);
+        $this->user->assignRole('administrator');
     }
 
     public function test_can_render_list_api_keys_page(): void

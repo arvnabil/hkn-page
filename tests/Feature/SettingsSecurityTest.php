@@ -43,6 +43,14 @@ class SettingsSecurityTest extends TestCase
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
     }
 
+    protected function createAdminUser(): User
+    {
+        $user = User::factory()->create(['is_active' => true]);
+        \Spatie\Permission\Models\Role::firstOrCreate(['name' => 'administrator']);
+        $user->assignRole('administrator');
+        return $user;
+    }
+
     protected function seedSensitiveSettings(): void
     {
         Setting::updateOrCreate(
@@ -154,7 +162,7 @@ class SettingsSecurityTest extends TestCase
         $this->seedSensitiveSettings();
         $this->seedPublicSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
 
         $response = $this->actingAs($user)
             ->get(ManageSeoSettings::getUrl(panel: 'activioncms'));
@@ -171,7 +179,7 @@ class SettingsSecurityTest extends TestCase
     {
         $this->seedSensitiveSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
 
         Livewire::actingAs($user)
             ->test(ManageSeoSettings::class)
@@ -197,7 +205,7 @@ class SettingsSecurityTest extends TestCase
             'token_uri' => 'https://oauth2.googleapis.com/token',
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
 
         Livewire::actingAs($user)
             ->test(ManageSeoSettings::class)
@@ -216,7 +224,7 @@ class SettingsSecurityTest extends TestCase
     {
         $this->seedSensitiveSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
 
         Livewire::actingAs($user)
             ->test(ManageSeoSettings::class)
@@ -256,7 +264,7 @@ class SettingsSecurityTest extends TestCase
     {
         $this->seedSensitiveSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
         $record = Setting::where('key', 'seo_ga4_service_account_json')->firstOrFail();
 
         Livewire::actingAs($user)
@@ -270,7 +278,7 @@ class SettingsSecurityTest extends TestCase
     {
         $this->seedSensitiveSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
         $record = Setting::where('key', 'recaptcha_secret_key')->firstOrFail();
 
         // Blank submission keeps the existing credential.
@@ -301,7 +309,7 @@ class SettingsSecurityTest extends TestCase
     {
         $this->seedPublicSettings();
 
-        $user = User::factory()->create();
+        $user = $this->createAdminUser();
         $record = Setting::where('key', 'whatsapp_number')->firstOrFail();
 
         Livewire::actingAs($user)
