@@ -209,8 +209,8 @@ class RestApiComprehensiveRegressionTest extends TestCase
             'slug' => 'published-article',
             'status' => 'published',
             'published_at' => now(),
-            'category_id' => $cat->id,
         ]);
+        $published->categories()->attach($cat->id);
 
         $draft = News::create([
             'title' => 'Draft Article',

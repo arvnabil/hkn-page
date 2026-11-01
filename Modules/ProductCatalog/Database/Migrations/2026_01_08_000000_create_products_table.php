@@ -13,7 +13,7 @@ return new class extends Migration
             // Note: services table is in ServiceSolutions module, ensure that migration runs first.
             // If strict foreign key fails, we might need to rely on logical link or Move Services to Core too.
             // For now, assuming ServiceSolutions migration runs before this date.
-            $table->foreignId('service_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('service_id')->nullable();
             $table->foreignId('brand_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('slug')->unique();

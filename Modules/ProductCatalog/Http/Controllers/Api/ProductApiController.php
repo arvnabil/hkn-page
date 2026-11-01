@@ -91,4 +91,20 @@ class ProductApiController extends Controller
             ], 500);
         }
     }
+
+    /**
+     * Delete the specified product via API.
+     *
+     * DELETE /api/products/{slug}
+     */
+    public function destroy(string $slug)
+    {
+        $deleted = $this->mutationService->delete($slug);
+
+        if (!$deleted) {
+            return response()->json(['message' => 'Product not found'], 404);
+        }
+
+        return response()->json(['message' => 'Product deleted successfully'], 200);
+    }
 }

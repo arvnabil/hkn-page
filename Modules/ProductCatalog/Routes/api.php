@@ -11,5 +11,6 @@ Route::group(['prefix' => 'products'], function () {
     // Protected routes
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('/import', [ProductApiController::class, 'import']);
+        Route::delete('/{slug}', [ProductApiController::class, 'destroy']);
     });
 });
