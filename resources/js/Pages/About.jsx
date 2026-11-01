@@ -1,6 +1,7 @@
 import React from 'react';
 import AppLayout from '../Layouts/AppLayout';
 import AdvisorHUDCard from '../Components/AdvisorHUDCard';
+import AVerLogo from '../Components/AVerLogo';
 import defaultAdvisor from '../data/advisor.json';
 
 export default function About({ advisor = defaultAdvisor }) {
@@ -13,9 +14,12 @@ export default function About({ advisor = defaultAdvisor }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-alt border border-border-clean rounded-full font-mono text-xs text-primary">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                <span>PROFIL ADVISOR · AVER SOLUTIONS ADVISOR</span>
+              <div className="flex items-center gap-3">
+                <AVerLogo size="sm" withSubtitle={false} />
+                <span className="h-4 w-px bg-border-clean" />
+                <span className="font-mono text-xs text-primary font-bold uppercase tracking-wider">
+                  CERTIFIED VIDEO COLLABORATION SPECIALIST
+                </span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-on-surface tracking-tight leading-tight">

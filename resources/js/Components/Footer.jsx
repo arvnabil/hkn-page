@@ -1,29 +1,45 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
+import AVerLogo from './AVerLogo';
 import siteData from '../data/site.json';
 
 export default function Footer({ site = siteData }) {
   return (
     <footer className="bg-surface-alt border-t border-border-clean mt-space-3xl pb-20 md:pb-12 text-on-surface">
       <div className="mx-auto max-w-page px-gutter-mobile md:px-gutter py-12">
+        
+        {/* Top Trust & Certification Banner (AVer Ecosystem) */}
+        <div className="p-6 rounded-2xl bg-surface-container-lowest border border-border-clean mb-12 grid grid-cols-2 sm:grid-cols-4 gap-4 items-center text-center">
+          <div className="flex flex-col items-center">
+            <span className="material-symbols-outlined text-primary text-2xl mb-1">verified_user</span>
+            <span className="font-heading font-bold text-xs text-on-surface">Garansi 3+2 Tahun</span>
+            <span className="font-mono text-[10px] text-muted-slate">Standar Industri AVer</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="material-symbols-outlined text-primary text-2xl mb-1">groups</span>
+            <span className="font-heading font-bold text-xs text-on-surface">Microsoft Teams</span>
+            <span className="font-mono text-[10px] text-muted-slate">Certified Rooms System</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="material-symbols-outlined text-primary text-2xl mb-1">videocam</span>
+            <span className="font-heading font-bold text-xs text-on-surface">Zoom Rooms</span>
+            <span className="font-mono text-[10px] text-muted-slate">Certified Hardware</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="material-symbols-outlined text-primary text-2xl mb-1">support_agent</span>
+            <span className="font-heading font-bold text-xs text-on-surface">Dedicated PoC</span>
+            <span className="font-mono text-[10px] text-muted-slate">Uji Coba Denah Gratis</span>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
-          {/* Brand Info */}
+          {/* Brand Info with Official AVer Logotype */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-base shadow-sm">
-                {site.initials}
-              </div>
-              <div>
-                <div className="font-heading font-extrabold text-lg text-on-surface leading-none">
-                  {site.title || site.name}
-                </div>
-                <div className="font-mono text-xs text-primary font-medium mt-1">
-                  {site.role}
-                </div>
-              </div>
+              <AVerLogo size="md" subtitle={site.role} />
             </div>
             <p className="font-body-sm text-body-sm text-secondary leading-relaxed max-w-sm">
-              Situs independen kurasi panduan teknis, pengujian optik, dan konsultasi konfigurasi ekosistem video conference AVer untuk kebutuhan korporasi dan institusi pendidikan.
+              Pusat kurasi solusi video konferensi, pengujian komparatif optik, dan penataan ruang rapat berbasis ekosistem AVer Information Inc. untuk korporasi dan institusi pendidikan.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a

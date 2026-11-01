@@ -189,6 +189,15 @@ export default function ProductsShow({
               </div>
             )}
 
+            {/* AVer Official Guarantee Badge */}
+            <div className="flex items-center gap-3 p-3.5 rounded-xl bg-surface-alt border border-border-clean">
+              <span className="material-symbols-outlined text-[#E52421] text-2xl">verified_user</span>
+              <div className="text-xs">
+                <span className="font-heading font-bold text-on-surface block">Garansi Resmi AVer 3+2 Tahun</span>
+                <span className="font-body-sm text-secondary">Dukungan teknis lokal dan program uji coba Proof of Concept (PoC) gratis di lokasi Anda.</span>
+              </div>
+            </div>
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a

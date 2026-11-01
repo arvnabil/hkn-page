@@ -18,8 +18,9 @@ export default function AdvisorHUDCard({ advisor = advisorData }) {
           </span>
           <span>[ADVISOR ID: {advisor.idCode}]</span>
         </span>
-        <span className="bg-surface-container-lowest px-2 py-0.5 rounded border border-border-clean text-secondary">
-          OPTICAL TRACKING
+        <span className="bg-surface-container-lowest px-2 py-0.5 rounded border border-border-clean font-bold text-[10px] text-on-surface flex items-center gap-0.5">
+          <span className="text-[#0B1F33] dark:text-white">AV</span><span className="text-[#E52421]">e</span><span className="text-[#0B1F33] dark:text-white">r</span>
+          <span className="text-secondary ml-1 font-mono">OPTICS</span>
         </span>
       </div>
 

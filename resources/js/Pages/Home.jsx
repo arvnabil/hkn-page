@@ -112,6 +112,32 @@ export default function Home({
           </div>
         </section>
 
+        {/* AVER ALLIANCE & CERTIFIED ECOSYSTEM STRIP */}
+        <section className="mb-14 py-4 px-6 rounded-2xl bg-surface-alt border border-border-clean flex flex-wrap items-center justify-between gap-6">
+          <div className="flex items-center gap-2">
+            <span className="font-heading font-black text-sm text-[#0B1F33]">AV<span className="text-[#E52421]">e</span>r</span>
+            <span className="font-mono text-xs text-primary font-bold uppercase tracking-wider">ECOSYSTEM ALLIANCE</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-6 sm:gap-8 font-mono text-xs text-secondary">
+            <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm text-blue-600">groups</span>
+              Microsoft Teams Certified
+            </span>
+            <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm text-blue-500">videocam</span>
+              Zoom Rooms Certified
+            </span>
+            <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm text-green-600">meet_now</span>
+              Google Meet Compatible
+            </span>
+            <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-sm text-amber-600">verified_user</span>
+              3+2 Years Warranty
+            </span>
+          </div>
+        </section>
+
         {/* ADVISOR INTRODUCTION SECTION */}
         <section className="mb-16 py-12 border-y border-border-clean bg-surface-container-low/40 rounded-3xl p-6 sm:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

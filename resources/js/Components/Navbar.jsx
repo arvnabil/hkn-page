@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, usePage } from '@inertiajs/react';
+import AVerLogo from './AVerLogo';
 import siteData from '../data/site.json';
 
 export default function Navbar({ site = siteData }) {
@@ -15,16 +16,17 @@ export default function Navbar({ site = siteData }) {
   return (
     <header className="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-border-clean">
       <div className="mx-auto max-w-page px-gutter-mobile md:px-gutter h-16 flex items-center justify-between">
-        {/* Brand Logo */}
+        
+        {/* Brand Logo with Official AVer Signature */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-105 transition-transform">
-            {site.initials}
-          </div>
+          <AVerLogo size="sm" withSubtitle={false} />
+          <div className="h-6 w-px bg-border-clean" />
           <div>
-            <div className="font-heading font-extrabold text-on-surface text-base leading-none">
-              {site.name}
+            <div className="font-heading font-extrabold text-on-surface text-sm leading-none flex items-center gap-1.5">
+              <span>{site.name}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-aver-red" title="AVer Certified Specialist" />
             </div>
-            <div className="font-mono text-[11px] text-primary font-medium mt-1">
+            <div className="font-mono text-[10px] text-primary font-medium mt-0.5 tracking-tight">
               {site.role}
             </div>
           </div>
