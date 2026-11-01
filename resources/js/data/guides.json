@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "cara-kerja-ai-auto-tracking",
+    "title": "Cara Kerja AI Auto Tracking pada Kamera Konferensi",
+    "excerpt": "Pelajari arsitektur computer vision dan algoritma pelacakan di balik teknologi AI Auto Tracking AVer — dari deteksi wajah hingga framing real-time.",
+    "topic": "AI Auto Tracking",
+    "topicSlug": "ai-auto-tracking",
+    "publishedAt": "15 Okt 2024",
+    "readTime": "8 menit baca",
+    "icon": "target",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuC1dFleS-WMD68oyG_eU9x_ZzG_2DIOqC8-IMtOpmPKcFP1JJVxFqOq3TC9M110QIGy4xxIK0LH23HkWJXEy9staRkbj88Gi8iDJVC-FcNB9uH_MPyRXbf8WJXTJV-sYCFJbtrKa39z2YHUrpxh67qZHTWf02DZ7EhrdbRoVneXGh9oubkwoYT3b9S4-muZrcQryWOP-ZoR4hIUjPmutweXfmON_CUPGfhGSNy7V-VTsRkvP1Y7r1G8Mg",
+    "content": "<h2>Apa itu AI Auto Tracking?</h2><p>AI Auto Tracking adalah teknologi yang memungkinkan kamera konferensi secara otomatis mengikuti gerakan pembicara tanpa memerlukan operator. Teknologi ini menggabungkan computer vision, machine learning, dan sistem motorized PTZ untuk memberikan pengalaman rapat yang lebih dinamis dan profesional.</p><h2>Komponen Utama Sistem</h2><p>Sistem AI Auto Tracking pada kamera AVer terdiri dari tiga komponen utama: sensor kamera resolusi tinggi, prosesor AI onboard, dan motor PTZ presisi tinggi. Ketiganya bekerja secara sinergis untuk menghasilkan framing yang optimal.</p><h2>Algoritma Deteksi Wajah</h2><p>AVer menggunakan model deep learning berbasis neural network untuk mendeteksi dan melacak wajah manusia dalam frame. Model ini ditraining dengan jutaan data wajah dari berbagai sudut, pencahayaan, dan kondisi ruangan.</p><h2>SmartFrame Technology</h2><p>SmartFrame adalah algoritma proprietary AVer yang secara cerdas memutuskan komposisi frame terbaik berdasarkan jumlah peserta, posisi mereka, dan ukuran ruangan. Teknologi ini memastikan semua peserta selalu terlihat jelas dalam frame.</p>"
+  },
+  {
+    "slug": "memilih-kamera-aver-yang-tepat",
+    "title": "Panduan Memilih Kamera AVer yang Tepat untuk Ruang Rapat Anda",
+    "excerpt": "Temukan kamera AVer yang paling sesuai berdasarkan ukuran ruangan, jumlah peserta, platform video konferensi, dan anggaran yang Anda miliki.",
+    "topic": "Panduan Pembelian",
+    "topicSlug": "panduan-pembelian",
+    "publishedAt": "20 Okt 2024",
+    "readTime": "10 menit baca",
+    "icon": "help_center",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCjXxgPTQghOAPsj7JVfegCs7gd8V8hchbQ3axIYDuc9FxgsGaxyDQKMMfZlyqdlNlEbC5Y3dLpiHDfI1LVjrz3jr6sRnCCwaRQ3kFG716rrIyzEorIb7TILWppDWb7Bx-1GMgLT1fSLISopqu3Sb7oIeBAWXAalxslWy-t3hxuFCVdrlOQ8Ih8HOn2kEIf2sOXWXh1i4xSI1AsZ4B92hZKq1eRxNYTlYHkXS6StvkwnkMtE63ORJCgcQ",
+    "content": "<h2>Tentukan Ukuran Ruangan Terlebih Dahulu</h2><p>Langkah pertama dalam memilih kamera konferensi adalah mengukur dimensi ruang rapat Anda. Panjang, lebar, dan tinggi ruangan sangat mempengaruhi jenis kamera yang diperlukan.</p><h2>Huddle Space (2-6 Orang)</h2><p>Untuk ruang kecil seperti huddle space, kamera all-in-one seperti AVer VB342 Pro adalah pilihan ideal. Desain soundbar yang compact namun memiliki kemampuan PTZ dan audio terintegrasi membuatnya sempurna untuk ruangan kecil.</p><h2>Ruang Rapat Sedang (6-15 Orang)</h2><p>AVer CAM550 dengan teknologi dual-lens adalah pilihan terbaik untuk ruang rapat berukuran sedang. Lensa panorama 95° memastikan semua peserta terlihat, sementara PTZ zoom memberikan close-up yang tajam.</p><h2>Boardroom Besar (15-25 Orang)</h2><p>Untuk boardroom atau ruang rapat besar, AVer CAM570 dengan audio tracking terintegrasi memberikan performa terbaik. Sensor audio array memastikan kamera selalu mengikuti pembicara aktif secara otomatis.</p>"
+  },
+  {
+    "slug": "setup-kamera-microsoft-teams",
+    "title": "Setup Kamera AVer untuk Microsoft Teams Rooms",
+    "excerpt": "Panduan langkah demi langkah mengkonfigurasi kamera AVer dengan Microsoft Teams Rooms — dari koneksi fisik hingga pengaturan software.",
+    "topic": "Instalasi & Setup",
+    "topicSlug": "instalasi-setup",
+    "publishedAt": "25 Okt 2024",
+    "readTime": "12 menit baca",
+    "icon": "settings",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuB40SVuLsi_0ARlnUErQ6WHO4mXcjXm_Q0zNGhyWisdw1s3lGCq50IDD5VU-8MXzr4KkT6lQ1yrKwJ-yQotpF7nn_4Q3jNr8SFAo1bAdksk46jLarkxWnMCHK3x7nsdeE9YTOlfKlrVV9q9pd8XwwlDPaJDaw2tZ4Jm8AbYAEIHABuKtUVzmAsRUMkjyZY4GjLfL_Xq5_NvY6yic0lr-sK-Pv_UFVMWwsoyvOe7ZyrXuj1FySZxyQ-8Lw",
+    "content": "<h2>Persyaratan Sistem</h2><p>Sebelum memulai instalasi, pastikan Anda memiliki: PC atau compute bar yang menjalankan Microsoft Teams Rooms, kabel USB 3.1 atau koneksi IP via PoE+, dan akun Microsoft Teams dengan lisensi Rooms yang aktif.</p><h2>Koneksi Fisik</h2><p>Hubungkan kamera ke PC menggunakan kabel USB 3.1 Type-B ke Type-A, atau gunakan koneksi IP melalui kabel ethernet ke switch PoE+. Pastikan PoE+ memberikan daya minimal 25.5W untuk kamera PTZ.</p><h2>Konfigurasi Teams Rooms</h2><p>Buka Teams Rooms Settings, pilih Camera, dan pastikan kamera AVer terdeteksi. Aktifkan fitur Intelligent Camera jika tersedia untuk mengintegrasikan AI tracking dengan Teams.</p><h2>Kalibrasi Preset</h2><p>Gunakan AVer PTZApp 2 untuk mengatur preset framing yang optimal — termasuk posisi default, zoom level, dan area tracking. Simpan preset ke memori kamera untuk deployment yang konsisten.</p>"
+  }
+]
+

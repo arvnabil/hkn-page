@@ -70,6 +70,7 @@ const config = {
     extend: {
       colors,
       borderRadius: {
+        custom: "1rem",
         DEFAULT: "0.25rem",
         lg: "0.5rem",
         xl: "0.75rem",
@@ -132,3 +133,5 @@ const config = {
 
 if (typeof tailwind !== "undefined") tailwind.config = config;
 if (typeof module !== "undefined") module.exports = config;
+
+export default config;

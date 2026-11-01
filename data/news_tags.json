@@ -1,0 +1,5399 @@
+[
+  {
+    "id": 1,
+    "name": "\"cara mengisi survei lingkungan belajar\"",
+    "slug": "cara-mengisi-survei-lingkungan-belajar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "name": "\"jadwal survei lingkungan belajar\"",
+    "slug": "jadwal-survei-lingkungan-belajar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "name": "\"link sulingjar 2025\"",
+    "slug": "link-sulingjar-2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "name": "\"manfaat sulingjar\"",
+    "slug": "manfaat-sulingjar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "name": "\"tujuan survei lingkungan belajar\"",
+    "slug": "tujuan-survei-lingkungan-belajar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "name": "#BusinessTech",
+    "slug": "businesstech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "name": "#GoogleMeet #Logitech #VideoConference #HybridWork #ITInfrastructure #RallyBar #ChromeOS #AndroidAppliance #LogitechTap",
+    "slug": "googlemeet-logitech-videoconference-hybridwork-itinfrastructure-rallybar-chromeos-androidappliance-logitechtap",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "name": "#HybridWork",
+    "slug": "hybridwork",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "name": "#ITAdmin",
+    "slug": "itadmin",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "name": "#ITInfrastructure",
+    "slug": "itinfrastructure",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "name": "#LiveStreaming",
+    "slug": "livestreaming",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "name": "#Logitech #VideoConferencing #BYOD #HybridWork #ITInfrastructure #LogitechSwytch #LogitechExtend",
+    "slug": "logitech-videoconferencing-byod-hybridwork-itinfrastructure-logitechswytch-logitechextend",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "name": "#LogitechBrio105 #WebcamBisnis #LogitechIndonesia #VideoConference #WFHIndonesia #ReviewTeknologi",
+    "slug": "logitechbrio105-webcambisnis-logitechindonesia-videoconference-wfhindonesia-reviewteknologi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "name": "#LogitechRally #VideoConference #ITInfrastructure #SmartMeetingRoom #AudioSolutions #TechReview #MicPod #RallyMicPod",
+    "slug": "logitechrally-videoconference-itinfrastructure-smartmeetingroom-audiosolutions-techreview-micpod-rallymicpod",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 15,
+    "name": "#LogitechTapScheduler",
+    "slug": "logitechtapscheduler",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 16,
+    "name": "#MeetingRoomSetup",
+    "slug": "meetingroomsetup",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 17,
+    "name": "#MevoCamera",
+    "slug": "mevocamera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 18,
+    "name": "#MevoCore",
+    "slug": "mevocore",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 19,
+    "name": "#MicrosoftTeams",
+    "slug": "microsoftteams",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 20,
+    "name": "#MTRLicensing",
+    "slug": "mtrlicensing",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 21,
+    "name": "#OfficeProductivit",
+    "slug": "officeproductivit",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 22,
+    "name": "#RallyAICamera",
+    "slug": "rallyaicamera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 23,
+    "name": "#RoomBooking",
+    "slug": "roombooking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 24,
+    "name": "#SysAdmin",
+    "slug": "sysadmin",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 25,
+    "name": "#TeamsSharedDevices",
+    "slug": "teamsshareddevices",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 26,
+    "name": "#UnifiedCommunications",
+    "slug": "unifiedcommunications",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 27,
+    "name": "#VideoProduction",
+    "slug": "videoproduction",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 28,
+    "name": "08",
+    "slug": "08",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 29,
+    "name": "aceh tamiang",
+    "slug": "aceh-tamiang",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 30,
+    "name": "Advanced Call Clarity",
+    "slug": "advanced-call-clarity",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 31,
+    "name": "AI",
+    "slug": "ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 32,
+    "name": "AI Companion di Zoom Workplace",
+    "slug": "ai-companion-di-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 33,
+    "name": "AI noise cancellation",
+    "slug": "ai-noise-cancellation",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 34,
+    "name": "AI untuk industri keuangan",
+    "slug": "ai-untuk-industri-keuangan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 35,
+    "name": "AMD",
+    "slug": "amd",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 36,
+    "name": "Anak Purbaya Yudhi Sadewa",
+    "slug": "anak-purbaya-yudhi-sadewa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 37,
+    "name": "analisa teknikal AI",
+    "slug": "analisa-teknikal-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 38,
+    "name": "apa itu CollabOS",
+    "slug": "apa-itu-collabos",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "name": "Apa itu LoRaWAN",
+    "slug": "apa-itu-lorawan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "name": "Apakah Zoom Workplace gratis?",
+    "slug": "apakah-zoom-workplace-gratis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 41,
+    "name": "Aplikasi AI di perbankan",
+    "slug": "aplikasi-ai-di-perbankan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 42,
+    "name": "Aplikasi Conference",
+    "slug": "aplikasi-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 43,
+    "name": "aplikasi Zoom.",
+    "slug": "aplikasi-zoom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 44,
+    "name": "apple",
+    "slug": "apple",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 45,
+    "name": "Audio",
+    "slug": "audio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 46,
+    "name": "Audio Modular",
+    "slug": "audio-modular",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 47,
+    "name": "Audio Video Conference",
+    "slug": "audio-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 48,
+    "name": "B2B IT Solutions.",
+    "slug": "b2b-it-solutions",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 49,
+    "name": "barco wireless presentation",
+    "slug": "barco-wireless-presentation",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 50,
+    "name": "BCC950",
+    "slug": "bcc950",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 51,
+    "name": "Biamp",
+    "slug": "biamp",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 52,
+    "name": "biaya maintenance proyektor kantor",
+    "slug": "biaya-maintenance-proyektor-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 53,
+    "name": "Bisnis",
+    "slug": "bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 54,
+    "name": "biycoin",
+    "slug": "biycoin",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 55,
+    "name": "Bose",
+    "slug": "bose",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 56,
+    "name": "budaya kerja hybrid",
+    "slug": "budaya-kerja-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 57,
+    "name": "Budaya Perusahaan",
+    "slug": "budaya-perusahaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 58,
+    "name": "Business",
+    "slug": "business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 59,
+    "name": "BusinessGadget",
+    "slug": "businessgadget",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 60,
+    "name": "BYOD passthrough.",
+    "slug": "byod-passthrough",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 61,
+    "name": "Camera AI",
+    "slug": "camera-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 62,
+    "name": "Cara Efektif Melindungi Data Pribadi Anda",
+    "slug": "cara-efektif-melindungi-data-pribadi-anda",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 63,
+    "name": "cara instalasi logitech rally plus",
+    "slug": "cara-instalasi-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 64,
+    "name": "Cara Installasi Logitech MeetUp 2",
+    "slug": "cara-installasi-logitech-meetup-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 65,
+    "name": "cara installasi rally plus",
+    "slug": "cara-installasi-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 66,
+    "name": "Cara kerja LoRaWAN",
+    "slug": "cara-kerja-lorawan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 67,
+    "name": "Cara LoA menurut Islam",
+    "slug": "cara-loa-menurut-islam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 68,
+    "name": "Cara menggunakan Zoom Workplace",
+    "slug": "cara-menggunakan-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 69,
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 70,
+    "name": "cisco webex",
+    "slug": "cisco-webex",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 71,
+    "name": "Classroom",
+    "slug": "classroom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 72,
+    "name": "Cloud",
+    "slug": "cloud",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 73,
+    "name": "Cloud Contact Center",
+    "slug": "cloud-contact-center",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 74,
+    "name": "Cloud office suite terbaik untuk bisnis",
+    "slug": "cloud-office-suite-terbaik-untuk-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 75,
+    "name": "Codec Video",
+    "slug": "codec-video",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 76,
+    "name": "Collaboration Tools",
+    "slug": "collaboration-tools",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 77,
+    "name": "CollabOS",
+    "slug": "collabos",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 78,
+    "name": "CollabOS 1.11",
+    "slug": "collabos-1-11",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 79,
+    "name": "Command Center",
+    "slug": "command-center",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 80,
+    "name": "Command Center Solution",
+    "slug": "command-center-solution",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 81,
+    "name": "conference",
+    "slug": "conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 82,
+    "name": "ConferenceCam",
+    "slug": "conferencecam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 83,
+    "name": "conferencing video",
+    "slug": "conferencing-video",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 84,
+    "name": "Cons",
+    "slug": "cons",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 85,
+    "name": "contact center",
+    "slug": "contact-center",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 86,
+    "name": "Contact Center as a Service (CCaaS)",
+    "slug": "contact-center-as-a-service-ccaas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 87,
+    "name": "Content",
+    "slug": "content",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 88,
+    "name": "Contoh AI di finance",
+    "slug": "contoh-ai-di-finance",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 89,
+    "name": "controller video conference",
+    "slug": "controller-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 90,
+    "name": "COVID19",
+    "slug": "covid19",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 91,
+    "name": "CPU",
+    "slug": "cpu",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 92,
+    "name": "credit scoring AI",
+    "slug": "credit-scoring-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 93,
+    "name": "crestron logitech",
+    "slug": "crestron-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 94,
+    "name": "crypto",
+    "slug": "crypto",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 95,
+    "name": "Culture",
+    "slug": "culture",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 96,
+    "name": "Customer Experience",
+    "slug": "customer-experience",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 97,
+    "name": "dan",
+    "slug": "dan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 98,
+    "name": "Dapat",
+    "slug": "dapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 99,
+    "name": "Dasar",
+    "slug": "dasar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 100,
+    "name": "Daya",
+    "slug": "daya",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 101,
+    "name": "dell interactive monitor",
+    "slug": "dell-interactive-monitor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 102,
+    "name": "desk booking",
+    "slug": "desk-booking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 103,
+    "name": "Desktop",
+    "slug": "desktop",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 104,
+    "name": "deteksi penipuan dengan AI",
+    "slug": "deteksi-penipuan-dengan-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 105,
+    "name": "Device Management",
+    "slug": "device-management",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 106,
+    "name": "Digital",
+    "slug": "digital",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 107,
+    "name": "Digital Marketing Tools",
+    "slug": "digital-marketing-tools",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 108,
+    "name": "Digital Signage",
+    "slug": "digital-signage",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 109,
+    "name": "Dipertimbangkan",
+    "slug": "dipertimbangkan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 110,
+    "name": "Disesuaikan",
+    "slug": "disesuaikan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 111,
+    "name": "Display ruang rapat",
+    "slug": "display-ruang-rapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 112,
+    "name": "distibutor logitech indonesia",
+    "slug": "distibutor-logitech-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 113,
+    "name": "distibutor logitech jakarta",
+    "slug": "distibutor-logitech-jakarta",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 114,
+    "name": "distributor logitech rally plus indonesia",
+    "slug": "distributor-logitech-rally-plus-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 115,
+    "name": "Distributor resmi Samsung Flip Jakarta Surabaya Bali",
+    "slug": "distributor-resmi-samsung-flip-jakarta-surabaya-bali",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 116,
+    "name": "Ditanyakan",
+    "slug": "ditanyakan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 117,
+    "name": "e-learning korporat",
+    "slug": "e-learning-korporat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 118,
+    "name": "Editing Video",
+    "slug": "editing-video",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 119,
+    "name": "education",
+    "slug": "education",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 120,
+    "name": "Efektivitas",
+    "slug": "efektivitas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 121,
+    "name": "Efisiensi Bisnis",
+    "slug": "efisiensi-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 122,
+    "name": "Efisiensi Kerja",
+    "slug": "efisiensi-kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 123,
+    "name": "Efisiensi Sales",
+    "slug": "efisiensi-sales",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 124,
+    "name": "Ekonomi Digital",
+    "slug": "ekonomi-digital",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 125,
+    "name": "EMAS",
+    "slug": "emas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 126,
+    "name": "Entanglement",
+    "slug": "entanglement",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 127,
+    "name": "enterprise video conference",
+    "slug": "enterprise-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 128,
+    "name": "epson interactive projector",
+    "slug": "epson-interactive-projector",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 129,
+    "name": "Equa",
+    "slug": "equa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 130,
+    "name": "Ergonomis",
+    "slug": "ergonomis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 131,
+    "name": "Ericsson",
+    "slug": "ericsson",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 132,
+    "name": "Expandability",
+    "slug": "expandability",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 133,
+    "name": "External Audio Systems with the Rally Bar and Rally Bar Mini",
+    "slug": "external-audio-systems-with-the-rally-bar-and-rally-bar-mini",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 134,
+    "name": "extron",
+    "slug": "extron",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 135,
+    "name": "extron logitech",
+    "slug": "extron-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 136,
+    "name": "Faktor",
+    "slug": "faktor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 137,
+    "name": "Fashion",
+    "slug": "fashion",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 138,
+    "name": "Fasilitas Kantor",
+    "slug": "fasilitas-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 139,
+    "name": "firmware Logitech",
+    "slug": "firmware-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 140,
+    "name": "Fisika Kuantum",
+    "slug": "fisika-kuantum",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 141,
+    "name": "Fitur",
+    "slug": "fitur",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 142,
+    "name": "fitur baru Zoom",
+    "slug": "fitur-baru-zoom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 143,
+    "name": "fitur zoom workplace",
+    "slug": "fitur-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 144,
+    "name": "Gadget",
+    "slug": "gadget",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 145,
+    "name": "Gadget Review",
+    "slug": "gadget-review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 146,
+    "name": "Game",
+    "slug": "game",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 147,
+    "name": "Genesys Indonesia",
+    "slug": "genesys-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 148,
+    "name": "Google Calendar integration",
+    "slug": "google-calendar-integration",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 149,
+    "name": "Google Gemini",
+    "slug": "google-gemini",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 150,
+    "name": "Google Gemini vs ChatGPT",
+    "slug": "google-gemini-vs-chatgpt",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 151,
+    "name": "google meet",
+    "slug": "google-meet",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 152,
+    "name": "google meet hardware",
+    "slug": "google-meet-hardware",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 153,
+    "name": "Google Meet on Android",
+    "slug": "google-meet-on-android",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 154,
+    "name": "Google Meet Room",
+    "slug": "google-meet-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 155,
+    "name": "google meeting",
+    "slug": "google-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 156,
+    "name": "Google Quantum",
+    "slug": "google-quantum",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 157,
+    "name": "Google Workspace",
+    "slug": "google-workspace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 158,
+    "name": "Google Workspace Individual",
+    "slug": "google-workspace-individual",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 159,
+    "name": "Google Workspace vs Microsoft 365",
+    "slug": "google-workspace-vs-microsoft-365",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 160,
+    "name": "GPU",
+    "slug": "gpu",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 161,
+    "name": "Gratis",
+    "slug": "gratis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 162,
+    "name": "Grid View",
+    "slug": "grid-view",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 163,
+    "name": "Guru",
+    "slug": "guru",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 164,
+    "name": "Hardware",
+    "slug": "hardware",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 165,
+    "name": "Hardware PC",
+    "slug": "hardware-pc",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 166,
+    "name": "hardware untuk AI",
+    "slug": "hardware-untuk-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 167,
+    "name": "Harga BBM Terbaru",
+    "slug": "harga-bbm-terbaru",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 168,
+    "name": "Harga Google Workspace 2024",
+    "slug": "harga-google-workspace-2024",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 169,
+    "name": "harga Logitech Rally Bar",
+    "slug": "harga-logitech-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 170,
+    "name": "harga logitech rally plus",
+    "slug": "harga-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 171,
+    "name": "harga logitech sight",
+    "slug": "harga-logitech-sight",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 172,
+    "name": "harga Logitech Zone Wired 2",
+    "slug": "harga-logitech-zone-wired-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 173,
+    "name": "Harga Microsoft Teams Rooms Logitech Lenovo",
+    "slug": "harga-microsoft-teams-rooms-logitech-lenovo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 174,
+    "name": "Harga Minyak",
+    "slug": "harga-minyak",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 175,
+    "name": "Harga Samsung Flip Pro 55 inch / 65 inch / 75 inch / 85 inch",
+    "slug": "harga-samsung-flip-pro-55-inch-65-inch-75-inch-85-inch",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 176,
+    "name": "harga zoom workplace",
+    "slug": "harga-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 177,
+    "name": "Harus",
+    "slug": "harus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 178,
+    "name": "Headphone",
+    "slug": "headphone",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 179,
+    "name": "Headset",
+    "slug": "headset",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 180,
+    "name": "Headset ANC",
+    "slug": "headset-anc",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 181,
+    "name": "Headset B2B",
+    "slug": "headset-b2b",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 182,
+    "name": "headset bisnis terbaik",
+    "slug": "headset-bisnis-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 183,
+    "name": "Headset Contact Center Terbaik",
+    "slug": "headset-contact-center-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 184,
+    "name": "Headset Kabel",
+    "slug": "headset-kabel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 185,
+    "name": "Headset satu telinga",
+    "slug": "headset-satu-telinga",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 186,
+    "name": "headset untuk kerja hybrid",
+    "slug": "headset-untuk-kerja-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 187,
+    "name": "Headset Wireless",
+    "slug": "headset-wireless",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 188,
+    "name": "heatset",
+    "slug": "heatset",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 189,
+    "name": "Herman",
+    "slug": "herman",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 190,
+    "name": "herman miller",
+    "slug": "herman-miller",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 191,
+    "name": "Host",
+    "slug": "host",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 192,
+    "name": "huddle room",
+    "slug": "huddle-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 193,
+    "name": "Husnuzan kepada Allah",
+    "slug": "husnuzan-kepada-allah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 194,
+    "name": "Hybrid Learning",
+    "slug": "hybrid-learning",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 195,
+    "name": "Hybrid Meeting",
+    "slug": "hybrid-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 196,
+    "name": "Hybrid Work",
+    "slug": "hybrid-work",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 197,
+    "name": "HybridMeeting",
+    "slug": "hybridmeeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 198,
+    "name": "IBM Quantum",
+    "slug": "ibm-quantum",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 199,
+    "name": "implementasi AI di bank",
+    "slug": "implementasi-ai-di-bank",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 200,
+    "name": "Info TKDN",
+    "slug": "info-tkdn",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 201,
+    "name": "Infrastruktur IT",
+    "slug": "infrastruktur-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 202,
+    "name": "Ini",
+    "slug": "ini",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 203,
+    "name": "inklusivitas kantor",
+    "slug": "inklusivitas-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 204,
+    "name": "inovasi IT",
+    "slug": "inovasi-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 205,
+    "name": "Instalasi Kabel LAN",
+    "slug": "instalasi-kabel-lan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 206,
+    "name": "installasi logitech rally plus",
+    "slug": "installasi-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 207,
+    "name": "integrasi AV",
+    "slug": "integrasi-av",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 208,
+    "name": "integrasi conference room profesional",
+    "slug": "integrasi-conference-room-profesional",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 209,
+    "name": "Integrasi Logitech Rally Bar",
+    "slug": "integrasi-logitech-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 210,
+    "name": "integrasi video conference",
+    "slug": "integrasi-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 211,
+    "name": "Intel",
+    "slug": "intel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 212,
+    "name": "intel nuc",
+    "slug": "intel-nuc",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 213,
+    "name": "Interactive",
+    "slug": "interactive",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 214,
+    "name": "interactive flat panel",
+    "slug": "interactive-flat-panel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 215,
+    "name": "Interactive Flat Panel (IFP) terbaik 2025",
+    "slug": "interactive-flat-panel-ifp-terbaik-2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 216,
+    "name": "Interactive Flat Panel vs Projector",
+    "slug": "interactive-flat-panel-vs-projector",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 217,
+    "name": "Interaktif",
+    "slug": "interaktif",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 218,
+    "name": "Interior",
+    "slug": "interior",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 219,
+    "name": "Internet",
+    "slug": "internet",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 220,
+    "name": "Internet of Things",
+    "slug": "internet-of-things",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 221,
+    "name": "Investasi Bisnis",
+    "slug": "investasi-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 222,
+    "name": "Investasi Digital Anak Menteri",
+    "slug": "investasi-digital-anak-menteri",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 223,
+    "name": "Investasi saham AI",
+    "slug": "investasi-saham-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 224,
+    "name": "iPhone 17",
+    "slug": "iphone-17",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 225,
+    "name": "IPO",
+    "slug": "ipo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 226,
+    "name": "IT blogger",
+    "slug": "it-blogger",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 227,
+    "name": "IT Hardware",
+    "slug": "it-hardware",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 228,
+    "name": "IT Infrastructure",
+    "slug": "it-infrastructure",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 229,
+    "name": "IT Management",
+    "slug": "it-management",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 230,
+    "name": "IT Peripherals",
+    "slug": "it-peripherals",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 231,
+    "name": "IT Solutions",
+    "slug": "it-solutions",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 232,
+    "name": "Itu",
+    "slug": "itu",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 233,
+    "name": "IWB",
+    "slug": "iwb",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 234,
+    "name": "Jam",
+    "slug": "jam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 235,
+    "name": "jarak jauh",
+    "slug": "jarak-jauh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 236,
+    "name": "Jaringan IoT",
+    "slug": "jaringan-iot",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 237,
+    "name": "Jaringan Komunikasi",
+    "slug": "jaringan-komunikasi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 238,
+    "name": "Jawab",
+    "slug": "jawab",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 239,
+    "name": "Jenis",
+    "slug": "jenis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 240,
+    "name": "John Herdman",
+    "slug": "john-herdman",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 241,
+    "name": "jual logitech rally bar",
+    "slug": "jual-logitech-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 242,
+    "name": "jual logitech rally plus",
+    "slug": "jual-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 243,
+    "name": "jual logitech sight indonesia",
+    "slug": "jual-logitech-sight-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 244,
+    "name": "Judi Online",
+    "slug": "judi-online",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 245,
+    "name": "Judol",
+    "slug": "judol",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 246,
+    "name": "Kamera 200MP",
+    "slug": "kamera-200mp",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 247,
+    "name": "Kamera 4K",
+    "slug": "kamera-4k",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 248,
+    "name": "Kamera NDI",
+    "slug": "kamera-ndi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 249,
+    "name": "kamera PTZ AVer",
+    "slug": "kamera-ptz-aver",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 250,
+    "name": "Kamera Ruang Rapat",
+    "slug": "kamera-ruang-rapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 251,
+    "name": "Kamera Streaming",
+    "slug": "kamera-streaming",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 252,
+    "name": "Kamera Streaming Wireless",
+    "slug": "kamera-streaming-wireless",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 253,
+    "name": "Kamera video conference terbaik",
+    "slug": "kamera-video-conference-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 254,
+    "name": "Kantor",
+    "slug": "kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 255,
+    "name": "Kartu Grafis",
+    "slug": "kartu-grafis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 256,
+    "name": "keagamaan",
+    "slug": "keagamaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 257,
+    "name": "Keamanan Data.",
+    "slug": "keamanan-data",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 258,
+    "name": "Keamanan Nirkabel",
+    "slug": "keamanan-nirkabel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 259,
+    "name": "Kebutuhan",
+    "slug": "kebutuhan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 260,
+    "name": "Kecil",
+    "slug": "kecil",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 261,
+    "name": "Kehidupan",
+    "slug": "kehidupan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 262,
+    "name": "Kekuatan Doa dan Syukur",
+    "slug": "kekuatan-doa-dan-syukur",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 263,
+    "name": "Kelas",
+    "slug": "kelas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 264,
+    "name": "kelebihan IFP dibanding proyektor",
+    "slug": "kelebihan-ifp-dibanding-proyektor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 265,
+    "name": "kelebihan logitech rally plus",
+    "slug": "kelebihan-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 266,
+    "name": "Kelebihan LoRaWAN",
+    "slug": "kelebihan-lorawan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 267,
+    "name": "Kelebihan Microsoft 365",
+    "slug": "kelebihan-microsoft-365",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 268,
+    "name": "Kematian",
+    "slug": "kematian",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 269,
+    "name": "KemenKeu",
+    "slug": "kemenkeu",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 270,
+    "name": "Kepemimpinan",
+    "slug": "kepemimpinan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 271,
+    "name": "Kerja",
+    "slug": "kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 272,
+    "name": "kerja hybrid",
+    "slug": "kerja-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 273,
+    "name": "Kerlink Gateway",
+    "slug": "kerlink-gateway",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 274,
+    "name": "Keunggulan",
+    "slug": "keunggulan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 275,
+    "name": "Keunggulan Zoom Workplace",
+    "slug": "keunggulan-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 276,
+    "name": "keyboard ramah lingkungan",
+    "slug": "keyboard-ramah-lingkungan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 277,
+    "name": "keyboard wireless tanpa baterai",
+    "slug": "keyboard-wireless-tanpa-baterai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 278,
+    "name": "Kiosk AI",
+    "slug": "kiosk-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 279,
+    "name": "kolaborasi digital",
+    "slug": "kolaborasi-digital",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 280,
+    "name": "kolaborasi hybrid",
+    "slug": "kolaborasi-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 281,
+    "name": "kolaborasi jarak jauh",
+    "slug": "kolaborasi-jarak-jauh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 282,
+    "name": "Komponen Komputer",
+    "slug": "komponen-komputer",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 283,
+    "name": "Kompresi Audio",
+    "slug": "kompresi-audio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 284,
+    "name": "Komputasi Kuantum",
+    "slug": "komputasi-kuantum",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 285,
+    "name": "Komunikasi",
+    "slug": "komunikasi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 286,
+    "name": "komunikasi efektif tim hybrid",
+    "slug": "komunikasi-efektif-tim-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 287,
+    "name": "Konferensi",
+    "slug": "konferensi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 288,
+    "name": "konfigurasi Logitech Sync",
+    "slug": "konfigurasi-logitech-sync",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 289,
+    "name": "konfigurasi Microsoft Teams Rooms",
+    "slug": "konfigurasi-microsoft-teams-rooms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 290,
+    "name": "konsultasi virtual",
+    "slug": "konsultasi-virtual",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 291,
+    "name": "Kontra",
+    "slug": "kontra",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 292,
+    "name": "Kriptografi",
+    "slug": "kriptografi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 293,
+    "name": "Krisis Energi",
+    "slug": "krisis-energi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 294,
+    "name": "Kuat",
+    "slug": "kuat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 295,
+    "name": "Kursi",
+    "slug": "kursi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 296,
+    "name": "Laptop",
+    "slug": "laptop",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 297,
+    "name": "lark",
+    "slug": "lark",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 298,
+    "name": "Layar",
+    "slug": "layar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 299,
+    "name": "LCD Panel",
+    "slug": "lcd-panel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 300,
+    "name": "LED Display",
+    "slug": "led-display",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 301,
+    "name": "Lenovo",
+    "slug": "lenovo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 302,
+    "name": "Lenovo ThinkSmart Core",
+    "slug": "lenovo-thinksmart-core",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 303,
+    "name": "lenovo tiny pc",
+    "slug": "lenovo-tiny-pc",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 304,
+    "name": "Lenovo Tiny PC MTR",
+    "slug": "lenovo-tiny-pc-mtr",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 305,
+    "name": "Letak",
+    "slug": "letak",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 306,
+    "name": "lg interactive digital board",
+    "slug": "lg-interactive-digital-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 307,
+    "name": "Lifestyle",
+    "slug": "lifestyle",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 308,
+    "name": "lisensi Zoom 2025",
+    "slug": "lisensi-zoom-2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 309,
+    "name": "Live Streaming",
+    "slug": "live-streaming",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 310,
+    "name": "Live Streaming Gear",
+    "slug": "live-streaming-gear",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 311,
+    "name": "Live Streaming Setup",
+    "slug": "live-streaming-setup",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 312,
+    "name": "Logi Bolt",
+    "slug": "logi-bolt",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 313,
+    "name": "logi connect",
+    "slug": "logi-connect",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 314,
+    "name": "Logi Dock",
+    "slug": "logi-dock",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 315,
+    "name": "logitech",
+    "slug": "logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 316,
+    "name": "Logitech B2B",
+    "slug": "logitech-b2b",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 317,
+    "name": "logitech bcc950",
+    "slug": "logitech-bcc950",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 318,
+    "name": "logitech brio",
+    "slug": "logitech-brio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 319,
+    "name": "logitech brio 100",
+    "slug": "logitech-brio-100",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 320,
+    "name": "logitech brio 105",
+    "slug": "logitech-brio-105",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 321,
+    "name": "logitech brio 300",
+    "slug": "logitech-brio-300",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 322,
+    "name": "logitech brio 305",
+    "slug": "logitech-brio-305",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 323,
+    "name": "Logitech Brio 4K",
+    "slug": "logitech-brio-4k",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 324,
+    "name": "Logitech Brio 4K vs MX Brio 705",
+    "slug": "logitech-brio-4k-vs-mx-brio-705",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 325,
+    "name": "Logitech Brio 705",
+    "slug": "logitech-brio-705",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 326,
+    "name": "Logitech Brio Business",
+    "slug": "logitech-brio-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 327,
+    "name": "Logitech Business",
+    "slug": "logitech-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 328,
+    "name": "Logitech Business 2026",
+    "slug": "logitech-business-2026",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 329,
+    "name": "logitech c270",
+    "slug": "logitech-c270",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 330,
+    "name": "logitech c270 vs logitech c505e",
+    "slug": "logitech-c270-vs-logitech-c505e",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 331,
+    "name": "Logitech C505e",
+    "slug": "logitech-c505e",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 332,
+    "name": "Logitech C930e",
+    "slug": "logitech-c930e",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 333,
+    "name": "Logitech Camera",
+    "slug": "logitech-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 334,
+    "name": "Logitech Camera Setting",
+    "slug": "logitech-camera-setting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 335,
+    "name": "logitech cc3000e",
+    "slug": "logitech-cc3000e",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 336,
+    "name": "Logitech Collaboration Program",
+    "slug": "logitech-collaboration-program",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 337,
+    "name": "Logitech CollabOS",
+    "slug": "logitech-collabos",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 338,
+    "name": "logitech conference camera",
+    "slug": "logitech-conference-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 339,
+    "name": "logitech conferencecam connect",
+    "slug": "logitech-conferencecam-connect",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 340,
+    "name": "logitech connect",
+    "slug": "logitech-connect",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 341,
+    "name": "Logitech Essential",
+    "slug": "logitech-essential",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 342,
+    "name": "Logitech Extend",
+    "slug": "logitech-extend",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 343,
+    "name": "Logitech for Business",
+    "slug": "logitech-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 344,
+    "name": "Logitech for Business Indonesia",
+    "slug": "logitech-for-business-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 345,
+    "name": "Logitech for Creators",
+    "slug": "logitech-for-creators",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 346,
+    "name": "Logitech G915",
+    "slug": "logitech-g915",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 347,
+    "name": "logitech google meet",
+    "slug": "logitech-google-meet",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 348,
+    "name": "logitech group",
+    "slug": "logitech-group",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 349,
+    "name": "Logitech H570e Mono",
+    "slug": "logitech-h570e-mono",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 350,
+    "name": "Logitech Indonesia",
+    "slug": "logitech-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 351,
+    "name": "Logitech K980+",
+    "slug": "logitech-k980",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 352,
+    "name": "Logitech Logi Dock Flex",
+    "slug": "logitech-logi-dock-flex",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 353,
+    "name": "Logitech Logitech M650 for Business",
+    "slug": "logitech-logitech-m650-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 354,
+    "name": "Logitech LoRaWAN Gateway",
+    "slug": "logitech-lorawan-gateway",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 355,
+    "name": "logitech M240",
+    "slug": "logitech-m240",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 356,
+    "name": "logitech M240 for Business",
+    "slug": "logitech-m240-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 357,
+    "name": "Logitech M650 for Business",
+    "slug": "logitech-m650-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 358,
+    "name": "Logitech M650 vs M650 for Business",
+    "slug": "logitech-m650-vs-m650-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 359,
+    "name": "Logitech Mago integration",
+    "slug": "logitech-mago-integration",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 360,
+    "name": "logitech meetup",
+    "slug": "logitech-meetup",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 361,
+    "name": "logitech meetup 2",
+    "slug": "logitech-meetup-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 362,
+    "name": "Logitech MeetUp 2 BYOD mode",
+    "slug": "logitech-meetup-2-byod-mode",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 363,
+    "name": "Logitech MeetUp 2 Indonesia",
+    "slug": "logitech-meetup-2-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 364,
+    "name": "logitech meetup vs logitech meetup 2",
+    "slug": "logitech-meetup-vs-logitech-meetup-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 365,
+    "name": "Logitech Mevo Core",
+    "slug": "logitech-mevo-core",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 366,
+    "name": "Logitech Mevo Start",
+    "slug": "logitech-mevo-start",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 367,
+    "name": "logitech mouse",
+    "slug": "logitech-mouse",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 368,
+    "name": "Logitech MX Brio",
+    "slug": "logitech-mx-brio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 369,
+    "name": "Logitech MX Brio 705",
+    "slug": "logitech-mx-brio-705",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 370,
+    "name": "Logitech MX Keys",
+    "slug": "logitech-mx-keys",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 371,
+    "name": "logitech mx master",
+    "slug": "logitech-mx-master",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 372,
+    "name": "logitech mx master 4",
+    "slug": "logitech-mx-master-4",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 373,
+    "name": "logitech mx master 4 for business",
+    "slug": "logitech-mx-master-4-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 374,
+    "name": "logitech ptz pro2",
+    "slug": "logitech-ptz-pro2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 375,
+    "name": "logitech rally",
+    "slug": "logitech-rally",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 376,
+    "name": "Logitech Rally AI Camera",
+    "slug": "logitech-rally-ai-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 377,
+    "name": "Logitech Rally AI Camera Pro",
+    "slug": "logitech-rally-ai-camera-pro",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 378,
+    "name": "logitech rally bar",
+    "slug": "logitech-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 379,
+    "name": "logitech rally bar huddle",
+    "slug": "logitech-rally-bar-huddle",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 380,
+    "name": "logitech rally bar mini",
+    "slug": "logitech-rally-bar-mini",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 381,
+    "name": "Logitech Rally Bar Specs",
+    "slug": "logitech-rally-bar-specs",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 382,
+    "name": "logitech rally board",
+    "slug": "logitech-rally-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 383,
+    "name": "logitech rally plus",
+    "slug": "logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 384,
+    "name": "Logitech RightSight 2",
+    "slug": "logitech-rightsight-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 385,
+    "name": "Logitech Room Booking",
+    "slug": "logitech-room-booking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 386,
+    "name": "logitech room solution",
+    "slug": "logitech-room-solution",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 387,
+    "name": "logitech scribe",
+    "slug": "logitech-scribe",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 388,
+    "name": "logitech sight",
+    "slug": "logitech-sight",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 389,
+    "name": "Logitech Sight Compatibility",
+    "slug": "logitech-sight-compatibility",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 390,
+    "name": "Logitech Sight Compatibility and Certification Information",
+    "slug": "logitech-sight-compatibility-and-certification-information",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 391,
+    "name": "Logitech Signature Slim Solar K980+",
+    "slug": "logitech-signature-slim-solar-k980",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 392,
+    "name": "Logitech Spot",
+    "slug": "logitech-spot",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 393,
+    "name": "Logitech Swytch",
+    "slug": "logitech-swytch",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 394,
+    "name": "logitech sync",
+    "slug": "logitech-sync",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 395,
+    "name": "logitech tap",
+    "slug": "logitech-tap",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 396,
+    "name": "logitech tap 2nd",
+    "slug": "logitech-tap-2nd",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 397,
+    "name": "logitech tap ip",
+    "slug": "logitech-tap-ip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 398,
+    "name": "Logitech Tap IP review",
+    "slug": "logitech-tap-ip-review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 399,
+    "name": "Logitech Tap vs Tap IP",
+    "slug": "logitech-tap-vs-tap-ip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 400,
+    "name": "logitech teams meeting room",
+    "slug": "logitech-teams-meeting-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 401,
+    "name": "logitech teams room system",
+    "slug": "logitech-teams-room-system",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 402,
+    "name": "Logitech untuk customer service",
+    "slug": "logitech-untuk-customer-service",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 403,
+    "name": "logitech video conference",
+    "slug": "logitech-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 404,
+    "name": "logitech video conference indonesia",
+    "slug": "logitech-video-conference-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 405,
+    "name": "Logitech Webcam",
+    "slug": "logitech-webcam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 406,
+    "name": "logitech zone wired 2",
+    "slug": "logitech-zone-wired-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 407,
+    "name": "Logitech Zone Wireless",
+    "slug": "logitech-zone-wireless",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 408,
+    "name": "Logitech Zone Wireless 2 ES",
+    "slug": "logitech-zone-wireless-2-es",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 409,
+    "name": "LOGITECH ZONE WIRELESS HEAD",
+    "slug": "logitech-zone-wireless-head",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 410,
+    "name": "Logitech Zone Wireless headset",
+    "slug": "logitech-zone-wireless-headset",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 411,
+    "name": "Logitech Zone Wireless Plus",
+    "slug": "logitech-zone-wireless-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 412,
+    "name": "LogitechRallyBar",
+    "slug": "logitechrallybar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 413,
+    "name": "logitechtap",
+    "slug": "logitechtap",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 414,
+    "name": "logitechtap2nd",
+    "slug": "logitechtap2nd",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 415,
+    "name": "logitechtapip",
+    "slug": "logitechtapip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 416,
+    "name": "LoRaWAN Gateway",
+    "slug": "lorawan-gateway",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 417,
+    "name": "lot",
+    "slug": "lot",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 418,
+    "name": "M715q",
+    "slug": "m715q",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 419,
+    "name": "M910x",
+    "slug": "m910x",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 420,
+    "name": "Mago Microsoft Teams",
+    "slug": "mago-microsoft-teams",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 421,
+    "name": "Mago Room Solution",
+    "slug": "mago-room-solution",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 422,
+    "name": "Mago Zoom",
+    "slug": "mago-zoom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 423,
+    "name": "Manajemen Aset",
+    "slug": "manajemen-aset",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 424,
+    "name": "manajemen perangkat Logitech",
+    "slug": "manajemen-perangkat-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 425,
+    "name": "manajemen ruang meeting",
+    "slug": "manajemen-ruang-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 426,
+    "name": "Manajemen Tim",
+    "slug": "manajemen-tim",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 427,
+    "name": "Manajemen tim jarak jauh",
+    "slug": "manajemen-tim-jarak-jauh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 428,
+    "name": "Manfaat",
+    "slug": "manfaat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 429,
+    "name": "manfaat desk booking",
+    "slug": "manfaat-desk-booking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 430,
+    "name": "Manfaat kecerdasan buatan untuk layanan perbankan",
+    "slug": "manfaat-kecerdasan-buatan-untuk-layanan-perbankan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 431,
+    "name": "Marketing",
+    "slug": "marketing",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 432,
+    "name": "Masa Depan Teknologi",
+    "slug": "masa-depan-teknologi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 433,
+    "name": "Media Periklanan",
+    "slug": "media-periklanan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 434,
+    "name": "meeting all-in-one",
+    "slug": "meeting-all-in-one",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 435,
+    "name": "meeting online",
+    "slug": "meeting-online",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 436,
+    "name": "Meeting Room",
+    "slug": "meeting-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 437,
+    "name": "Meeting Room Solutions",
+    "slug": "meeting-room-solutions",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 438,
+    "name": "Memilih",
+    "slug": "memilih",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 439,
+    "name": "Menarik Rezeki dengan Cara Islam",
+    "slug": "menarik-rezeki-dengan-cara-islam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 440,
+    "name": "Menggunakan",
+    "slug": "menggunakan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 441,
+    "name": "Mengoptimalkan",
+    "slug": "mengoptimalkan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 442,
+    "name": "menteri keuangan",
+    "slug": "menteri-keuangan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 443,
+    "name": "Mevo",
+    "slug": "mevo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 444,
+    "name": "Mevo Multicam",
+    "slug": "mevo-multicam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 445,
+    "name": "mic pod",
+    "slug": "mic-pod",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 446,
+    "name": "Mic Pod CAT Coupler",
+    "slug": "mic-pod-cat-coupler",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 447,
+    "name": "Micro Four Thirds",
+    "slug": "micro-four-thirds",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 448,
+    "name": "microsoft",
+    "slug": "microsoft",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 449,
+    "name": "microsoft team",
+    "slug": "microsoft-team",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 450,
+    "name": "microsoft team rooms",
+    "slug": "microsoft-team-rooms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 451,
+    "name": "microsoft teams",
+    "slug": "microsoft-teams",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 452,
+    "name": "Microsoft teams room",
+    "slug": "microsoft-teams-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 453,
+    "name": "microsoft teams rooms",
+    "slug": "microsoft-teams-rooms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 454,
+    "name": "Microsoft Teams Rooms (MTR)",
+    "slug": "microsoft-teams-rooms-mtr",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 455,
+    "name": "Microsoft Teams Rooms Pro",
+    "slug": "microsoft-teams-rooms-pro",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 456,
+    "name": "Miliarder Kripto",
+    "slug": "miliarder-kripto",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 457,
+    "name": "Miller",
+    "slug": "miller",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 458,
+    "name": "modular audio",
+    "slug": "modular-audio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 459,
+    "name": "Moodle LMS",
+    "slug": "moodle-lms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 460,
+    "name": "mouse",
+    "slug": "mouse",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 461,
+    "name": "Mouse Logitech for Business",
+    "slug": "mouse-logitech-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 462,
+    "name": "Mouse Silent",
+    "slug": "mouse-silent",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 463,
+    "name": "Mouse Wireless",
+    "slug": "mouse-wireless",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 464,
+    "name": "MS Office",
+    "slug": "ms-office",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 465,
+    "name": "MS Office Toolbars",
+    "slug": "ms-office-toolbars",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 466,
+    "name": "MTR",
+    "slug": "mtr",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 467,
+    "name": "Muhasabah Diri",
+    "slug": "muhasabah-diri",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 468,
+    "name": "MX Brio",
+    "slug": "mx-brio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 469,
+    "name": "mx master",
+    "slug": "mx-master",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 470,
+    "name": "mx master 4",
+    "slug": "mx-master-4",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 471,
+    "name": "MXA920",
+    "slug": "mxa920",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 472,
+    "name": "MXBrio",
+    "slug": "mxbrio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 473,
+    "name": "Namun",
+    "slug": "namun",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 474,
+    "name": "Nature",
+    "slug": "nature",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 475,
+    "name": "Networking",
+    "slug": "networking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 476,
+    "name": "Nirkabel",
+    "slug": "nirkabel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 477,
+    "name": "NVIDIA",
+    "slug": "nvidia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 478,
+    "name": "office 365",
+    "slug": "office-365",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 479,
+    "name": "Office 365 Calendar integration",
+    "slug": "office-365-calendar-integration",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 480,
+    "name": "Omnichannel Contact Center",
+    "slug": "omnichannel-contact-center",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 481,
+    "name": "On-Premise",
+    "slug": "on-premise",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 482,
+    "name": "Online",
+    "slug": "online",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 483,
+    "name": "Organisasi",
+    "slug": "organisasi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 484,
+    "name": "PABX Tradisional",
+    "slug": "pabx-tradisional",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 485,
+    "name": "pada",
+    "slug": "pada",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 486,
+    "name": "Paket meeting room Samsung Logitech",
+    "slug": "paket-meeting-room-samsung-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 487,
+    "name": "Paket MTR ruang rapat kecil",
+    "slug": "paket-mtr-ruang-rapat-kecil",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 488,
+    "name": "Pandemi",
+    "slug": "pandemi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 489,
+    "name": "Panduan",
+    "slug": "panduan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 490,
+    "name": "Panduan IT",
+    "slug": "panduan-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 491,
+    "name": "Papan",
+    "slug": "papan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 492,
+    "name": "Papan tulis digital interaktif untuk kantor",
+    "slug": "papan-tulis-digital-interaktif-untuk-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 493,
+    "name": "PapanTulisDigital",
+    "slug": "papantulisdigital",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 494,
+    "name": "PBX on cloud",
+    "slug": "pbx-on-cloud",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 495,
+    "name": "PC Gaming",
+    "slug": "pc-gaming",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 496,
+    "name": "Pelatihan",
+    "slug": "pelatihan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 497,
+    "name": "pelatihan bisnis",
+    "slug": "pelatihan-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 498,
+    "name": "pelayanan publik",
+    "slug": "pelayanan-publik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 499,
+    "name": "Pembelajaran",
+    "slug": "pembelajaran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 500,
+    "name": "Pendidikan",
+    "slug": "pendidikan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 501,
+    "name": "Pengantar",
+    "slug": "pengantar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 502,
+    "name": "Pengetahuan",
+    "slug": "pengetahuan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 503,
+    "name": "Penggunaan",
+    "slug": "penggunaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 504,
+    "name": "Pengingat Kematian",
+    "slug": "pengingat-kematian",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 505,
+    "name": "pengusaha online",
+    "slug": "pengusaha-online",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 506,
+    "name": "Penjualan",
+    "slug": "penjualan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 507,
+    "name": "Penting",
+    "slug": "penting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 508,
+    "name": "Penuh",
+    "slug": "penuh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 509,
+    "name": "Peran",
+    "slug": "peran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 510,
+    "name": "Perangkat",
+    "slug": "perangkat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 511,
+    "name": "perangkat CollabOS",
+    "slug": "perangkat-collabos",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 512,
+    "name": "Perangkat IT Perusahaan",
+    "slug": "perangkat-it-perusahaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 513,
+    "name": "Perangkat Kerja",
+    "slug": "perangkat-kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 514,
+    "name": "Perangkat Kerja Hybrid",
+    "slug": "perangkat-kerja-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 515,
+    "name": "Perangkat Kerja IT",
+    "slug": "perangkat-kerja-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 516,
+    "name": "perangkat lunak",
+    "slug": "perangkat-lunak",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 517,
+    "name": "perangkat meeting online",
+    "slug": "perangkat-meeting-online",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 518,
+    "name": "perangkat pendukung frontliner bank",
+    "slug": "perangkat-pendukung-frontliner-bank",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 519,
+    "name": "Perangkat Ruang Meeting",
+    "slug": "perangkat-ruang-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 520,
+    "name": "perangkat video conference",
+    "slug": "perangkat-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 521,
+    "name": "Perawatan",
+    "slug": "perawatan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 522,
+    "name": "Perbandingan Google Workspace dan Microsoft 365",
+    "slug": "perbandingan-google-workspace-dan-microsoft-365",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 523,
+    "name": "perbandingan Logitech Rally",
+    "slug": "perbandingan-logitech-rally",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 524,
+    "name": "perbandingan logitech rally plus vs rally bar",
+    "slug": "perbandingan-logitech-rally-plus-vs-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 525,
+    "name": "perbandingan webcam",
+    "slug": "perbandingan-webcam",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 526,
+    "name": "Perbedaan Logitech M650 vs M650 for Business",
+    "slug": "perbedaan-logitech-m650-vs-m650-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 527,
+    "name": "perbedaan Logitech Rally Bar dan Rally Plus",
+    "slug": "perbedaan-logitech-rally-bar-dan-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 528,
+    "name": "perbedaan Logitech Swytch dan Extend",
+    "slug": "perbedaan-logitech-swytch-dan-extend",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 529,
+    "name": "perbedaan Logitech Tap",
+    "slug": "perbedaan-logitech-tap",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 530,
+    "name": "Perbedaan Zoom Meetings dan Zoom Workplace",
+    "slug": "perbedaan-zoom-meetings-dan-zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 531,
+    "name": "Periferal Kantor",
+    "slug": "periferal-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 532,
+    "name": "Peripheral Kantor",
+    "slug": "peripheral-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 533,
+    "name": "Pertanyaan",
+    "slug": "pertanyaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 534,
+    "name": "pesan Nabi Muhammad tentang kehidupan sehari hari",
+    "slug": "pesan-nabi-muhammad-tentang-kehidupan-sehari-hari",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 535,
+    "name": "Pintar",
+    "slug": "pintar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 536,
+    "name": "pjj",
+    "slug": "pjj",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 537,
+    "name": "Plant",
+    "slug": "plant",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 538,
+    "name": "Platform",
+    "slug": "platform",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 539,
+    "name": "Platform Mago",
+    "slug": "platform-mago",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 540,
+    "name": "Podcasting",
+    "slug": "podcasting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 541,
+    "name": "Populer",
+    "slug": "populer",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 542,
+    "name": "Powerful",
+    "slug": "powerful",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 543,
+    "name": "Prabowo",
+    "slug": "prabowo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 544,
+    "name": "Prabowo Subianto",
+    "slug": "prabowo-subianto",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 545,
+    "name": "prediksi harga saham AI",
+    "slug": "prediksi-harga-saham-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 546,
+    "name": "presales IT",
+    "slug": "presales-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 547,
+    "name": "Presiden",
+    "slug": "presiden",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 548,
+    "name": "Pro",
+    "slug": "pro",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 549,
+    "name": "Productivity Gear",
+    "slug": "productivity-gear",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 550,
+    "name": "Produk",
+    "slug": "produk",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 551,
+    "name": "Produktivitas",
+    "slug": "produktivitas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 552,
+    "name": "produktivitas kantor",
+    "slug": "produktivitas-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 553,
+    "name": "produktivitas kerja",
+    "slug": "produktivitas-kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 554,
+    "name": "Profil Yudo Sadewa",
+    "slug": "profil-yudo-sadewa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 555,
+    "name": "Projector vs Smart TV untuk Meeting Room",
+    "slug": "projector-vs-smart-tv-untuk-meeting-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 556,
+    "name": "Pros",
+    "slug": "pros",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 557,
+    "name": "ptz camera",
+    "slug": "ptz-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 558,
+    "name": "PTZ camera 4K",
+    "slug": "ptz-camera-4k",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 559,
+    "name": "Purbaya Yudhi Sadewa",
+    "slug": "purbaya-yudhi-sadewa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 560,
+    "name": "QSC",
+    "slug": "qsc",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 561,
+    "name": "Quantum Computing",
+    "slug": "quantum-computing",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 562,
+    "name": "Qubit",
+    "slug": "qubit",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 563,
+    "name": "Quranic Law of Attraction",
+    "slug": "quranic-law-of-attraction",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 564,
+    "name": "rahasia internet",
+    "slug": "rahasia-internet",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 565,
+    "name": "Rally AI Camera",
+    "slug": "rally-ai-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 566,
+    "name": "Rally AI Camera Pro",
+    "slug": "rally-ai-camera-pro",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 567,
+    "name": "rally bar",
+    "slug": "rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 568,
+    "name": "Rally Bar CollabOS",
+    "slug": "rally-bar-collabos",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 569,
+    "name": "Rally Bar Huddle",
+    "slug": "rally-bar-huddle",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 570,
+    "name": "Rally Bar Mini vs Rally Camera",
+    "slug": "rally-bar-mini-vs-rally-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 571,
+    "name": "Rally Bar Review",
+    "slug": "rally-bar-review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 572,
+    "name": "Rally Bar vs Rally Plus",
+    "slug": "rally-bar-vs-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 573,
+    "name": "rally board",
+    "slug": "rally-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 574,
+    "name": "rally camera",
+    "slug": "rally-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 575,
+    "name": "Rally Plus",
+    "slug": "rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 576,
+    "name": "Rapat Virtual",
+    "slug": "rapat-virtual",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 577,
+    "name": "Remote UI",
+    "slug": "remote-ui",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 578,
+    "name": "Review",
+    "slug": "review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 579,
+    "name": "Review Gadget",
+    "slug": "review-gadget",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 580,
+    "name": "Review Gadget IT",
+    "slug": "review-gadget-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 581,
+    "name": "review keyboard solar",
+    "slug": "review-keyboard-solar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 582,
+    "name": "Review Logitech MeetUp 2",
+    "slug": "review-logitech-meetup-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 583,
+    "name": "Review Logitech MX Brio",
+    "slug": "review-logitech-mx-brio",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 584,
+    "name": "Review Logitech Rally",
+    "slug": "review-logitech-rally",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 585,
+    "name": "Review Logitech Rally AI",
+    "slug": "review-logitech-rally-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 586,
+    "name": "review logitech rally plus",
+    "slug": "review-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 587,
+    "name": "review Logitech Zone Wireless 2 ES",
+    "slug": "review-logitech-zone-wireless-2-es",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 588,
+    "name": "Review Produk",
+    "slug": "review-produk",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 589,
+    "name": "review Rally Board",
+    "slug": "review-rally-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 590,
+    "name": "Review Zoom Workplace Indonesia",
+    "slug": "review-zoom-workplace-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 591,
+    "name": "ricoh display panel",
+    "slug": "ricoh-display-panel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 592,
+    "name": "RightSense",
+    "slug": "rightsense",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 593,
+    "name": "RightSight 2",
+    "slug": "rightsight-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 594,
+    "name": "RightSound 2",
+    "slug": "rightsound-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 595,
+    "name": "robo advisor Indonesia",
+    "slug": "robo-advisor-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 596,
+    "name": "ROI desk booking",
+    "slug": "roi-desk-booking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 597,
+    "name": "ROI implementasi AI",
+    "slug": "roi-implementasi-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 598,
+    "name": "Room",
+    "slug": "room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 599,
+    "name": "room booking",
+    "slug": "room-booking",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 600,
+    "name": "Room Booking System",
+    "slug": "room-booking-system",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 601,
+    "name": "room solution",
+    "slug": "room-solution",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 602,
+    "name": "Ruang",
+    "slug": "ruang",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 603,
+    "name": "Ruang Rapat Hybrid.",
+    "slug": "ruang-rapat-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 604,
+    "name": "Rumah",
+    "slug": "rumah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 605,
+    "name": "Saat",
+    "slug": "saat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 606,
+    "name": "samsung",
+    "slug": "samsung",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 607,
+    "name": "samsung flip interactive board",
+    "slug": "samsung-flip-interactive-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 608,
+    "name": "samsung flip interactive display",
+    "slug": "samsung-flip-interactive-display",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 609,
+    "name": "samsung interactive display",
+    "slug": "samsung-interactive-display",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 610,
+    "name": "SamsungFlipPro",
+    "slug": "samsungflippro",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 611,
+    "name": "Sangat",
+    "slug": "sangat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 612,
+    "name": "Sedekah",
+    "slug": "sedekah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 613,
+    "name": "Sejarah",
+    "slug": "sejarah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 614,
+    "name": "Sejarah Shure",
+    "slug": "sejarah-shure",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 615,
+    "name": "Sekolah",
+    "slug": "sekolah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 616,
+    "name": "Seluler",
+    "slug": "seluler",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 617,
+    "name": "Sendiri",
+    "slug": "sendiri",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 618,
+    "name": "Sennheiser",
+    "slug": "sennheiser",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 619,
+    "name": "Sensor IoT Ruang Kerja",
+    "slug": "sensor-iot-ruang-kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 620,
+    "name": "SEO spesialis",
+    "slug": "seo-spesialis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 621,
+    "name": "server AI untuk finansial",
+    "slug": "server-ai-untuk-finansial",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 622,
+    "name": "Setup Logitech MeetUp 2",
+    "slug": "setup-logitech-meetup-2",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 623,
+    "name": "setup ruang meeting modern",
+    "slug": "setup-ruang-meeting-modern",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 624,
+    "name": "Setup Streaming",
+    "slug": "setup-streaming",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 625,
+    "name": "Shalat",
+    "slug": "shalat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 626,
+    "name": "Shure",
+    "slug": "shure",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 627,
+    "name": "Shure Indonesia",
+    "slug": "shure-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 628,
+    "name": "Shure Microflex Advance",
+    "slug": "shure-microflex-advance",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 629,
+    "name": "Shure MXA920",
+    "slug": "shure-mxa920",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 630,
+    "name": "Shure X Logitech",
+    "slug": "shure-x-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 631,
+    "name": "sight",
+    "slug": "sight",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 632,
+    "name": "sistem AV",
+    "slug": "sistem-av",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 633,
+    "name": "sistem booking meja kantor",
+    "slug": "sistem-booking-meja-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 634,
+    "name": "sistem operasi video conference",
+    "slug": "sistem-operasi-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 635,
+    "name": "Sistem Rapat Hybrid",
+    "slug": "sistem-rapat-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 636,
+    "name": "sistem telepon PBX",
+    "slug": "sistem-telepon-pbx",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 637,
+    "name": "Siswa",
+    "slug": "siswa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 638,
+    "name": "skema kabel video conference bar",
+    "slug": "skema-kabel-video-conference-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 639,
+    "name": "skype for business",
+    "slug": "skype-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 640,
+    "name": "SMART",
+    "slug": "smart",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 641,
+    "name": "smart board",
+    "slug": "smart-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 642,
+    "name": "Smart Camera AI",
+    "slug": "smart-camera-ai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 643,
+    "name": "smart classroom",
+    "slug": "smart-classroom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 644,
+    "name": "Smart Control Room",
+    "slug": "smart-control-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 645,
+    "name": "Smart Office",
+    "slug": "smart-office",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 646,
+    "name": "smart tv",
+    "slug": "smart-tv",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 647,
+    "name": "Smart TV untuk presentasi bisnis",
+    "slug": "smart-tv-untuk-presentasi-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 648,
+    "name": "smartboard",
+    "slug": "smartboard",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 649,
+    "name": "SmartOffice",
+    "slug": "smartoffice",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 650,
+    "name": "Smartphone Flagship 2026",
+    "slug": "smartphone-flagship-2026",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 651,
+    "name": "SmartTV",
+    "slug": "smarttv",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 652,
+    "name": "Snapdragon 8 Elite Gen 5",
+    "slug": "snapdragon-8-elite-gen-5",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 653,
+    "name": "software kantor modern",
+    "slug": "software-kantor-modern",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 654,
+    "name": "Software Review",
+    "slug": "software-review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 655,
+    "name": "software saham terbaik",
+    "slug": "software-saham-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 656,
+    "name": "solusi AV meeting room",
+    "slug": "solusi-av-meeting-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 657,
+    "name": "solusi bisnis Zoom",
+    "slug": "solusi-bisnis-zoom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 658,
+    "name": "solusi BYOD ruang meeting",
+    "slug": "solusi-byod-ruang-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 659,
+    "name": "Solusi CCaaS",
+    "slug": "solusi-ccaas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 660,
+    "name": "Solusi Hybrid Meeting Indonesia",
+    "slug": "solusi-hybrid-meeting-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 661,
+    "name": "Solusi IT Perusahaan",
+    "slug": "solusi-it-perusahaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 662,
+    "name": "Solusi Microsoft Teams Rooms entry level",
+    "slug": "solusi-microsoft-teams-rooms-entry-level",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 663,
+    "name": "solusi rapat hybrid",
+    "slug": "solusi-rapat-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 664,
+    "name": "solusi ruang meeting Logitech",
+    "slug": "solusi-ruang-meeting-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 665,
+    "name": "solusi ruang rapat",
+    "slug": "solusi-ruang-rapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 666,
+    "name": "Solusi Video Conference",
+    "slug": "solusi-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 667,
+    "name": "Solusi video conference Logitech Rally Bar",
+    "slug": "solusi-video-conference-logitech-rally-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 668,
+    "name": "Solusi WFH",
+    "slug": "solusi-wfh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 669,
+    "name": "Sony",
+    "slug": "sony",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 670,
+    "name": "Space",
+    "slug": "space",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 671,
+    "name": "spesifikasi logitech rally plus",
+    "slug": "spesifikasi-logitech-rally-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 672,
+    "name": "Spesifikasi Samsung Flip Pro WM55B WM65B",
+    "slug": "spesifikasi-samsung-flip-pro-wm55b-wm65b",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 673,
+    "name": "Spesifikasi Webcam Meeting",
+    "slug": "spesifikasi-webcam-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 674,
+    "name": "Strategi",
+    "slug": "strategi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 675,
+    "name": "Strategi Bisnis 2026",
+    "slug": "strategi-bisnis-2026",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 676,
+    "name": "Strategi Content Marketing Terbaik",
+    "slug": "strategi-content-marketing-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 677,
+    "name": "Sukses",
+    "slug": "sukses",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 678,
+    "name": "Superposisi",
+    "slug": "superposisi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 679,
+    "name": "tap2nd",
+    "slug": "tap2nd",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 680,
+    "name": "tapip",
+    "slug": "tapip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 681,
+    "name": "team meeting",
+    "slug": "team-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 682,
+    "name": "teams meeting",
+    "slug": "teams-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 683,
+    "name": "Tech Review",
+    "slug": "tech-review",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 684,
+    "name": "TechReview",
+    "slug": "techreview",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 685,
+    "name": "Teknik",
+    "slug": "teknik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 686,
+    "name": "Teknologi",
+    "slug": "teknologi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 687,
+    "name": "Teknologi Contact Center 2026",
+    "slug": "teknologi-contact-center-2026",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 688,
+    "name": "Teknologi Disrupti",
+    "slug": "teknologi-disrupti",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 689,
+    "name": "Teknologi Kantor",
+    "slug": "teknologi-kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 690,
+    "name": "Teknologi LoRaWAN",
+    "slug": "teknologi-lorawan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 691,
+    "name": "teknologi rapat",
+    "slug": "teknologi-rapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 692,
+    "name": "teknologi Zoom 2025",
+    "slug": "teknologi-zoom-2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 693,
+    "name": "TeknologiPendidikan",
+    "slug": "teknologipendidikan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 694,
+    "name": "teleconference",
+    "slug": "teleconference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 695,
+    "name": "telehealth",
+    "slug": "telehealth",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 696,
+    "name": "telepon",
+    "slug": "telepon",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 697,
+    "name": "Terbaik",
+    "slug": "terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 698,
+    "name": "ThinkPad",
+    "slug": "thinkpad",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 699,
+    "name": "Tim Hybrid",
+    "slug": "tim-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 700,
+    "name": "timnas indonesia",
+    "slug": "timnas-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 701,
+    "name": "Tip Presentasi Powerpoint",
+    "slug": "tip-presentasi-powerpoint",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 702,
+    "name": "Tips",
+    "slug": "tips",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 703,
+    "name": "Tips Mengelola Tim Hybrid",
+    "slug": "tips-mengelola-tim-hybrid",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 704,
+    "name": "tools trading saham otomatis",
+    "slug": "tools-trading-saham-otomatis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 705,
+    "name": "Topologi Microsoft Teams Rooms",
+    "slug": "topologi-microsoft-teams-rooms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 706,
+    "name": "Trader Kripto Muda",
+    "slug": "trader-kripto-muda",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 707,
+    "name": "Travel",
+    "slug": "travel",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 708,
+    "name": "TrueConf",
+    "slug": "trueconf",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 709,
+    "name": "Tutorial IT",
+    "slug": "tutorial-it",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 710,
+    "name": "UC Platform",
+    "slug": "uc-platform",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 711,
+    "name": "unboxing Logitech Rally Board",
+    "slug": "unboxing-logitech-rally-board",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 712,
+    "name": "Unified Communications",
+    "slug": "unified-communications",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 713,
+    "name": "update fireware logitech group",
+    "slug": "update-fireware-logitech-group",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 714,
+    "name": "usaha sukses",
+    "slug": "usaha-sukses",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 715,
+    "name": "usb video conference",
+    "slug": "usb-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 716,
+    "name": "Ustadz Hilman Fauzi",
+    "slug": "ustadz-hilman-fauzi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 717,
+    "name": "VGA",
+    "slug": "vga",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 718,
+    "name": "video bar",
+    "slug": "video-bar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 719,
+    "name": "Video Bar untuk Ruang Rapat",
+    "slug": "video-bar-untuk-ruang-rapat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 720,
+    "name": "Video Collaboration",
+    "slug": "video-collaboration",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 721,
+    "name": "video conference",
+    "slug": "video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 722,
+    "name": "Video conference aman",
+    "slug": "video-conference-aman",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 723,
+    "name": "Video Conference Camera",
+    "slug": "video-conference-camera",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 724,
+    "name": "Video conference camera 4K",
+    "slug": "video-conference-camera-4k",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 725,
+    "name": "video conference Logitech",
+    "slug": "video-conference-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 726,
+    "name": "video conference ruang rapat besar",
+    "slug": "video-conference-ruang-rapat-besar",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 727,
+    "name": "Video Conference untuk Pemerintah",
+    "slug": "video-conference-untuk-pemerintah",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 728,
+    "name": "Video Conferencing",
+    "slug": "video-conferencing",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 729,
+    "name": "video conferencing Indonesia",
+    "slug": "video-conferencing-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 730,
+    "name": "Video Viral",
+    "slug": "video-viral",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 731,
+    "name": "Video Wall",
+    "slug": "video-wall",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 732,
+    "name": "Video Wall Integration",
+    "slug": "video-wall-integration",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 733,
+    "name": "VideoConference",
+    "slug": "videoconference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 734,
+    "name": "videotron",
+    "slug": "videotron",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 735,
+    "name": "vivo",
+    "slug": "vivo",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 736,
+    "name": "vivo Indonesia",
+    "slug": "vivo-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 737,
+    "name": "vivo X300 Ultra",
+    "slug": "vivo-x300-ultra",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 738,
+    "name": "VoIP",
+    "slug": "voip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 739,
+    "name": "VoIP bisnis",
+    "slug": "voip-bisnis",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 740,
+    "name": "VoIP for Business",
+    "slug": "voip-for-business",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 741,
+    "name": "Web",
+    "slug": "web",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 742,
+    "name": "Webcam 4K Terbaik",
+    "slug": "webcam-4k-terbaik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 743,
+    "name": "Webcam untuk WFH",
+    "slug": "webcam-untuk-wfh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 744,
+    "name": "Webcam4K",
+    "slug": "webcam4k",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 745,
+    "name": "WFH",
+    "slug": "wfh",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 746,
+    "name": "WFH Indonesia",
+    "slug": "wfh-indonesia",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 747,
+    "name": "Whiteboard",
+    "slug": "whiteboard",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 748,
+    "name": "whiteboard digital Mago",
+    "slug": "whiteboard-digital-mago",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 749,
+    "name": "windows 11",
+    "slug": "windows-11",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 750,
+    "name": "Wireless Plus",
+    "slug": "wireless-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 751,
+    "name": "Work From Anywhere",
+    "slug": "work-from-anywhere",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 752,
+    "name": "Work From Home",
+    "slug": "work-from-home",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 753,
+    "name": "Workforce Engagement Management (WEM)",
+    "slug": "workforce-engagement-management-wem",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 754,
+    "name": "yang",
+    "slug": "yang",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 755,
+    "name": "Yudo Achilles Sadewa",
+    "slug": "yudo-achilles-sadewa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 756,
+    "name": "zone wireless",
+    "slug": "zone-wireless",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 757,
+    "name": "Zone Wireless Plus",
+    "slug": "zone-wireless-plus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 758,
+    "name": "zoom",
+    "slug": "zoom",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 759,
+    "name": "Zoom AI Companion",
+    "slug": "zoom-ai-companion",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 760,
+    "name": "zoom call",
+    "slug": "zoom-call",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 761,
+    "name": "zoom cloud meeting",
+    "slug": "zoom-cloud-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 762,
+    "name": "zoom logitech",
+    "slug": "zoom-logitech",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 763,
+    "name": "zoom meeting",
+    "slug": "zoom-meeting",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 764,
+    "name": "zoom one",
+    "slug": "zoom-one",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 765,
+    "name": "zoom phone",
+    "slug": "zoom-phone",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 766,
+    "name": "zoom room",
+    "slug": "zoom-room",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 767,
+    "name": "zoom rooms",
+    "slug": "zoom-rooms",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 768,
+    "name": "Zoom terbaru",
+    "slug": "zoom-terbaru",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 769,
+    "name": "zoom tip",
+    "slug": "zoom-tip",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 770,
+    "name": "zoom video conference",
+    "slug": "zoom-video-conference",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 771,
+    "name": "Zoom Workplace",
+    "slug": "zoom-workplace",
+    "created_at": null,
+    "updated_at": null
+  }
+]

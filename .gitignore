@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+public/build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+
+trash/

@@ -1,0 +1,7009 @@
+[
+  {
+    "id": 1,
+    "news_id": 1,
+    "news_category_id": 7,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "news_id": 2,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "news_id": 3,
+    "news_category_id": 8,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "news_id": 3,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "news_id": 3,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "news_id": 4,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "news_id": 4,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "news_id": 5,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "news_id": 5,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "news_id": 5,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "news_id": 6,
+    "news_category_id": 8,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "news_id": 6,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "news_id": 7,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "news_id": 7,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 15,
+    "news_id": 8,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 16,
+    "news_id": 8,
+    "news_category_id": 15,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 17,
+    "news_id": 8,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 18,
+    "news_id": 9,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 19,
+    "news_id": 10,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 20,
+    "news_id": 10,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 21,
+    "news_id": 11,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 22,
+    "news_id": 11,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 23,
+    "news_id": 12,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 24,
+    "news_id": 12,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 25,
+    "news_id": 13,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 26,
+    "news_id": 14,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 27,
+    "news_id": 15,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 28,
+    "news_id": 16,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 29,
+    "news_id": 17,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 30,
+    "news_id": 18,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 31,
+    "news_id": 18,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 32,
+    "news_id": 19,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 33,
+    "news_id": 19,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 34,
+    "news_id": 20,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 35,
+    "news_id": 20,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 36,
+    "news_id": 21,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 37,
+    "news_id": 21,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 38,
+    "news_id": 22,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "news_id": 22,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "news_id": 23,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 41,
+    "news_id": 23,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 42,
+    "news_id": 24,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 43,
+    "news_id": 24,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 44,
+    "news_id": 25,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 45,
+    "news_id": 25,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 46,
+    "news_id": 26,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 47,
+    "news_id": 26,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 48,
+    "news_id": 27,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 49,
+    "news_id": 27,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 50,
+    "news_id": 28,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 51,
+    "news_id": 29,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 52,
+    "news_id": 30,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 53,
+    "news_id": 31,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 54,
+    "news_id": 32,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 55,
+    "news_id": 33,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 56,
+    "news_id": 34,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 57,
+    "news_id": 35,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 58,
+    "news_id": 36,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 59,
+    "news_id": 36,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 60,
+    "news_id": 37,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 61,
+    "news_id": 38,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 62,
+    "news_id": 38,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 63,
+    "news_id": 39,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 64,
+    "news_id": 40,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 65,
+    "news_id": 41,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 66,
+    "news_id": 42,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 67,
+    "news_id": 43,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 68,
+    "news_id": 43,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 69,
+    "news_id": 44,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 70,
+    "news_id": 44,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 71,
+    "news_id": 45,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 72,
+    "news_id": 45,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 73,
+    "news_id": 46,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 74,
+    "news_id": 46,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 75,
+    "news_id": 47,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 76,
+    "news_id": 47,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 77,
+    "news_id": 48,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 78,
+    "news_id": 49,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 79,
+    "news_id": 49,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 80,
+    "news_id": 50,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 81,
+    "news_id": 50,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 82,
+    "news_id": 51,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 83,
+    "news_id": 51,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 84,
+    "news_id": 52,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 85,
+    "news_id": 52,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 86,
+    "news_id": 53,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 87,
+    "news_id": 53,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 88,
+    "news_id": 54,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 89,
+    "news_id": 54,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 90,
+    "news_id": 55,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 91,
+    "news_id": 55,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 92,
+    "news_id": 56,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 93,
+    "news_id": 56,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 94,
+    "news_id": 57,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 95,
+    "news_id": 57,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 96,
+    "news_id": 58,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 97,
+    "news_id": 58,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 98,
+    "news_id": 59,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 99,
+    "news_id": 60,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 100,
+    "news_id": 61,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 101,
+    "news_id": 62,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 102,
+    "news_id": 63,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 103,
+    "news_id": 64,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 104,
+    "news_id": 65,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 105,
+    "news_id": 66,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 106,
+    "news_id": 67,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 107,
+    "news_id": 68,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 108,
+    "news_id": 69,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 109,
+    "news_id": 70,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 110,
+    "news_id": 71,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 111,
+    "news_id": 72,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 112,
+    "news_id": 73,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 113,
+    "news_id": 74,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 114,
+    "news_id": 75,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 115,
+    "news_id": 76,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 116,
+    "news_id": 77,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 117,
+    "news_id": 78,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 118,
+    "news_id": 79,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 119,
+    "news_id": 80,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 120,
+    "news_id": 81,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 121,
+    "news_id": 82,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 122,
+    "news_id": 83,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 123,
+    "news_id": 84,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 124,
+    "news_id": 85,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 125,
+    "news_id": 86,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 126,
+    "news_id": 87,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 127,
+    "news_id": 88,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 128,
+    "news_id": 89,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 129,
+    "news_id": 90,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 130,
+    "news_id": 91,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 131,
+    "news_id": 92,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 132,
+    "news_id": 93,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 133,
+    "news_id": 94,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 134,
+    "news_id": 95,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 135,
+    "news_id": 96,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 136,
+    "news_id": 97,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 137,
+    "news_id": 98,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 138,
+    "news_id": 99,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 139,
+    "news_id": 100,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 140,
+    "news_id": 101,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 141,
+    "news_id": 102,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 142,
+    "news_id": 103,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 143,
+    "news_id": 104,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 144,
+    "news_id": 105,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 145,
+    "news_id": 106,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 146,
+    "news_id": 107,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 147,
+    "news_id": 108,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 148,
+    "news_id": 109,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 149,
+    "news_id": 110,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 150,
+    "news_id": 111,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 151,
+    "news_id": 112,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 152,
+    "news_id": 113,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 153,
+    "news_id": 114,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 154,
+    "news_id": 115,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 155,
+    "news_id": 116,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 156,
+    "news_id": 117,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 157,
+    "news_id": 118,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 158,
+    "news_id": 119,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 159,
+    "news_id": 120,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 160,
+    "news_id": 121,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 161,
+    "news_id": 122,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 162,
+    "news_id": 123,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 163,
+    "news_id": 124,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 164,
+    "news_id": 125,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 165,
+    "news_id": 126,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 166,
+    "news_id": 127,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 167,
+    "news_id": 128,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 168,
+    "news_id": 129,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 169,
+    "news_id": 130,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 170,
+    "news_id": 131,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 171,
+    "news_id": 132,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 172,
+    "news_id": 133,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 173,
+    "news_id": 134,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 174,
+    "news_id": 135,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 175,
+    "news_id": 136,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 176,
+    "news_id": 137,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 177,
+    "news_id": 138,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 178,
+    "news_id": 139,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 179,
+    "news_id": 140,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 180,
+    "news_id": 141,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 181,
+    "news_id": 142,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 182,
+    "news_id": 143,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 183,
+    "news_id": 144,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 184,
+    "news_id": 145,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 185,
+    "news_id": 146,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 186,
+    "news_id": 147,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 187,
+    "news_id": 148,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 188,
+    "news_id": 149,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 189,
+    "news_id": 150,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 190,
+    "news_id": 151,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 191,
+    "news_id": 152,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 192,
+    "news_id": 153,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 193,
+    "news_id": 154,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 194,
+    "news_id": 155,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 195,
+    "news_id": 156,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 196,
+    "news_id": 157,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 197,
+    "news_id": 158,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 198,
+    "news_id": 159,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 199,
+    "news_id": 160,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 200,
+    "news_id": 161,
+    "news_category_id": 30,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 201,
+    "news_id": 162,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 202,
+    "news_id": 163,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 203,
+    "news_id": 164,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 204,
+    "news_id": 165,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 205,
+    "news_id": 165,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 206,
+    "news_id": 165,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 207,
+    "news_id": 166,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 208,
+    "news_id": 166,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 209,
+    "news_id": 166,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 210,
+    "news_id": 167,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 211,
+    "news_id": 168,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 212,
+    "news_id": 169,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 213,
+    "news_id": 170,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 214,
+    "news_id": 171,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 215,
+    "news_id": 172,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 216,
+    "news_id": 173,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 217,
+    "news_id": 174,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 218,
+    "news_id": 174,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 219,
+    "news_id": 175,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 220,
+    "news_id": 175,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 221,
+    "news_id": 176,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 222,
+    "news_id": 176,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 223,
+    "news_id": 177,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 224,
+    "news_id": 178,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 225,
+    "news_id": 179,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 226,
+    "news_id": 180,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 227,
+    "news_id": 181,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 228,
+    "news_id": 182,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 229,
+    "news_id": 183,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 230,
+    "news_id": 184,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 231,
+    "news_id": 185,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 232,
+    "news_id": 186,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 233,
+    "news_id": 187,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 234,
+    "news_id": 188,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 235,
+    "news_id": 189,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 236,
+    "news_id": 190,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 237,
+    "news_id": 191,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 238,
+    "news_id": 192,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 239,
+    "news_id": 193,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 240,
+    "news_id": 194,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 241,
+    "news_id": 195,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 242,
+    "news_id": 196,
+    "news_category_id": 30,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 243,
+    "news_id": 197,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 244,
+    "news_id": 198,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 245,
+    "news_id": 199,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 246,
+    "news_id": 200,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 247,
+    "news_id": 201,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 248,
+    "news_id": 201,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 249,
+    "news_id": 202,
+    "news_category_id": 10,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 250,
+    "news_id": 203,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 251,
+    "news_id": 204,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 252,
+    "news_id": 205,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 253,
+    "news_id": 206,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 254,
+    "news_id": 207,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 255,
+    "news_id": 208,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 256,
+    "news_id": 209,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 257,
+    "news_id": 210,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 258,
+    "news_id": 211,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 259,
+    "news_id": 212,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 260,
+    "news_id": 212,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 261,
+    "news_id": 213,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 262,
+    "news_id": 213,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 263,
+    "news_id": 214,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 264,
+    "news_id": 214,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 265,
+    "news_id": 215,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 266,
+    "news_id": 216,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 267,
+    "news_id": 216,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 268,
+    "news_id": 217,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 269,
+    "news_id": 217,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 270,
+    "news_id": 218,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 271,
+    "news_id": 218,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 272,
+    "news_id": 219,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 273,
+    "news_id": 219,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 274,
+    "news_id": 220,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 275,
+    "news_id": 221,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 276,
+    "news_id": 222,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 277,
+    "news_id": 223,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 278,
+    "news_id": 224,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 279,
+    "news_id": 225,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 280,
+    "news_id": 226,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 281,
+    "news_id": 227,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 282,
+    "news_id": 228,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 283,
+    "news_id": 229,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 284,
+    "news_id": 230,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 285,
+    "news_id": 231,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 286,
+    "news_id": 232,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 287,
+    "news_id": 233,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 288,
+    "news_id": 234,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 289,
+    "news_id": 235,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 290,
+    "news_id": 236,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 291,
+    "news_id": 237,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 292,
+    "news_id": 238,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 293,
+    "news_id": 239,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 294,
+    "news_id": 240,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 295,
+    "news_id": 241,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 296,
+    "news_id": 242,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 297,
+    "news_id": 243,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 298,
+    "news_id": 244,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 299,
+    "news_id": 245,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 300,
+    "news_id": 246,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 301,
+    "news_id": 247,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 302,
+    "news_id": 248,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 303,
+    "news_id": 249,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 304,
+    "news_id": 250,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 305,
+    "news_id": 251,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 306,
+    "news_id": 252,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 307,
+    "news_id": 253,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 308,
+    "news_id": 254,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 309,
+    "news_id": 255,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 310,
+    "news_id": 256,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 311,
+    "news_id": 257,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 312,
+    "news_id": 258,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 313,
+    "news_id": 259,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 314,
+    "news_id": 260,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 315,
+    "news_id": 261,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 316,
+    "news_id": 262,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 317,
+    "news_id": 263,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 318,
+    "news_id": 264,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 319,
+    "news_id": 265,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 320,
+    "news_id": 266,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 321,
+    "news_id": 267,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 322,
+    "news_id": 268,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 323,
+    "news_id": 269,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 324,
+    "news_id": 270,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 325,
+    "news_id": 271,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 326,
+    "news_id": 271,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 327,
+    "news_id": 272,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 328,
+    "news_id": 273,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 329,
+    "news_id": 274,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 330,
+    "news_id": 275,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 331,
+    "news_id": 276,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 332,
+    "news_id": 277,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 333,
+    "news_id": 277,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 334,
+    "news_id": 278,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 335,
+    "news_id": 279,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 336,
+    "news_id": 280,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 337,
+    "news_id": 280,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 338,
+    "news_id": 281,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 339,
+    "news_id": 282,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 340,
+    "news_id": 283,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 341,
+    "news_id": 284,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 342,
+    "news_id": 285,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 343,
+    "news_id": 286,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 344,
+    "news_id": 287,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 345,
+    "news_id": 288,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 346,
+    "news_id": 289,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 347,
+    "news_id": 290,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 348,
+    "news_id": 291,
+    "news_category_id": 23,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 349,
+    "news_id": 292,
+    "news_category_id": 7,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 350,
+    "news_id": 293,
+    "news_category_id": 23,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 351,
+    "news_id": 294,
+    "news_category_id": 23,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 352,
+    "news_id": 295,
+    "news_category_id": 7,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 353,
+    "news_id": 296,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 354,
+    "news_id": 297,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 355,
+    "news_id": 298,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 356,
+    "news_id": 298,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 357,
+    "news_id": 299,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 358,
+    "news_id": 300,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 359,
+    "news_id": 300,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 360,
+    "news_id": 300,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 361,
+    "news_id": 300,
+    "news_category_id": 30,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 362,
+    "news_id": 300,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 363,
+    "news_id": 300,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 364,
+    "news_id": 300,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 365,
+    "news_id": 300,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 366,
+    "news_id": 300,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 367,
+    "news_id": 301,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 368,
+    "news_id": 301,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 369,
+    "news_id": 301,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 370,
+    "news_id": 301,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 371,
+    "news_id": 301,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 372,
+    "news_id": 301,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 373,
+    "news_id": 302,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 374,
+    "news_id": 303,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 375,
+    "news_id": 304,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 376,
+    "news_id": 305,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 377,
+    "news_id": 306,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 378,
+    "news_id": 307,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 379,
+    "news_id": 308,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 380,
+    "news_id": 309,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 381,
+    "news_id": 310,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 382,
+    "news_id": 311,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 383,
+    "news_id": 312,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 384,
+    "news_id": 313,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 385,
+    "news_id": 314,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 386,
+    "news_id": 315,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 387,
+    "news_id": 316,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 388,
+    "news_id": 317,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 389,
+    "news_id": 318,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 390,
+    "news_id": 319,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 391,
+    "news_id": 320,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 392,
+    "news_id": 321,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 393,
+    "news_id": 322,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 394,
+    "news_id": 323,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 395,
+    "news_id": 324,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 396,
+    "news_id": 325,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 397,
+    "news_id": 326,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 398,
+    "news_id": 327,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 399,
+    "news_id": 328,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 400,
+    "news_id": 329,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 401,
+    "news_id": 330,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 402,
+    "news_id": 331,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 403,
+    "news_id": 332,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 404,
+    "news_id": 333,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 405,
+    "news_id": 334,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 406,
+    "news_id": 335,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 407,
+    "news_id": 336,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 408,
+    "news_id": 337,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 409,
+    "news_id": 338,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 410,
+    "news_id": 339,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 411,
+    "news_id": 340,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 412,
+    "news_id": 341,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 413,
+    "news_id": 342,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 414,
+    "news_id": 343,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 415,
+    "news_id": 344,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 416,
+    "news_id": 345,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 417,
+    "news_id": 346,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 418,
+    "news_id": 347,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 419,
+    "news_id": 348,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 420,
+    "news_id": 349,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 421,
+    "news_id": 350,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 422,
+    "news_id": 351,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 423,
+    "news_id": 352,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 424,
+    "news_id": 353,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 425,
+    "news_id": 354,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 426,
+    "news_id": 355,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 427,
+    "news_id": 356,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 428,
+    "news_id": 357,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 429,
+    "news_id": 358,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 430,
+    "news_id": 359,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 431,
+    "news_id": 360,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 432,
+    "news_id": 361,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 433,
+    "news_id": 362,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 434,
+    "news_id": 363,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 435,
+    "news_id": 364,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 436,
+    "news_id": 365,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 437,
+    "news_id": 366,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 438,
+    "news_id": 367,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 439,
+    "news_id": 368,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 440,
+    "news_id": 369,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 441,
+    "news_id": 370,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 442,
+    "news_id": 371,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 443,
+    "news_id": 372,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 444,
+    "news_id": 373,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 445,
+    "news_id": 374,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 446,
+    "news_id": 375,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 447,
+    "news_id": 376,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 448,
+    "news_id": 377,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 449,
+    "news_id": 378,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 450,
+    "news_id": 379,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 451,
+    "news_id": 380,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 452,
+    "news_id": 381,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 453,
+    "news_id": 382,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 454,
+    "news_id": 383,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 455,
+    "news_id": 384,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 456,
+    "news_id": 385,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 457,
+    "news_id": 386,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 458,
+    "news_id": 387,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 459,
+    "news_id": 388,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 460,
+    "news_id": 389,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 461,
+    "news_id": 390,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 462,
+    "news_id": 391,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 463,
+    "news_id": 392,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 464,
+    "news_id": 393,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 465,
+    "news_id": 393,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 466,
+    "news_id": 394,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 467,
+    "news_id": 395,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 468,
+    "news_id": 396,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 469,
+    "news_id": 397,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 470,
+    "news_id": 398,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 471,
+    "news_id": 399,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 472,
+    "news_id": 400,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 473,
+    "news_id": 401,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 474,
+    "news_id": 402,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 475,
+    "news_id": 403,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 476,
+    "news_id": 404,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 477,
+    "news_id": 405,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 478,
+    "news_id": 406,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 479,
+    "news_id": 407,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 480,
+    "news_id": 408,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 481,
+    "news_id": 409,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 482,
+    "news_id": 410,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 483,
+    "news_id": 411,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 484,
+    "news_id": 412,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 485,
+    "news_id": 413,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 486,
+    "news_id": 414,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 487,
+    "news_id": 415,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 488,
+    "news_id": 415,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 489,
+    "news_id": 416,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 490,
+    "news_id": 417,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 491,
+    "news_id": 418,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 492,
+    "news_id": 419,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 493,
+    "news_id": 420,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 494,
+    "news_id": 421,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 495,
+    "news_id": 422,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 496,
+    "news_id": 423,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 497,
+    "news_id": 424,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 498,
+    "news_id": 425,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 499,
+    "news_id": 426,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 500,
+    "news_id": 427,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 501,
+    "news_id": 428,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 502,
+    "news_id": 429,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 503,
+    "news_id": 430,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 504,
+    "news_id": 431,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 505,
+    "news_id": 432,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 506,
+    "news_id": 433,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 507,
+    "news_id": 434,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 508,
+    "news_id": 435,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 509,
+    "news_id": 436,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 510,
+    "news_id": 437,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 511,
+    "news_id": 438,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 512,
+    "news_id": 439,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 513,
+    "news_id": 440,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 514,
+    "news_id": 441,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 515,
+    "news_id": 441,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 516,
+    "news_id": 442,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 517,
+    "news_id": 442,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 518,
+    "news_id": 443,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 519,
+    "news_id": 443,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 520,
+    "news_id": 444,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 521,
+    "news_id": 444,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 522,
+    "news_id": 445,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 523,
+    "news_id": 446,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 524,
+    "news_id": 447,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 525,
+    "news_id": 448,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 526,
+    "news_id": 449,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 527,
+    "news_id": 450,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 528,
+    "news_id": 451,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 529,
+    "news_id": 452,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 530,
+    "news_id": 453,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 531,
+    "news_id": 454,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 532,
+    "news_id": 455,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 533,
+    "news_id": 455,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 534,
+    "news_id": 456,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 535,
+    "news_id": 457,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 536,
+    "news_id": 458,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 537,
+    "news_id": 458,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 538,
+    "news_id": 459,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 539,
+    "news_id": 460,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 540,
+    "news_id": 461,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 541,
+    "news_id": 462,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 542,
+    "news_id": 463,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 543,
+    "news_id": 464,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 544,
+    "news_id": 465,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 545,
+    "news_id": 466,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 546,
+    "news_id": 467,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 547,
+    "news_id": 468,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 548,
+    "news_id": 469,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 549,
+    "news_id": 470,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 550,
+    "news_id": 471,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 551,
+    "news_id": 472,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 552,
+    "news_id": 473,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 553,
+    "news_id": 474,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 554,
+    "news_id": 475,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 555,
+    "news_id": 476,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 556,
+    "news_id": 477,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 557,
+    "news_id": 478,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 558,
+    "news_id": 479,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 559,
+    "news_id": 480,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 560,
+    "news_id": 481,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 561,
+    "news_id": 482,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 562,
+    "news_id": 483,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 563,
+    "news_id": 484,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 564,
+    "news_id": 485,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 565,
+    "news_id": 486,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 566,
+    "news_id": 487,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 567,
+    "news_id": 487,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 568,
+    "news_id": 487,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 569,
+    "news_id": 488,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 570,
+    "news_id": 489,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 571,
+    "news_id": 490,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 572,
+    "news_id": 491,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 573,
+    "news_id": 492,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 574,
+    "news_id": 493,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 575,
+    "news_id": 494,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 576,
+    "news_id": 495,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 577,
+    "news_id": 496,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 578,
+    "news_id": 497,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 579,
+    "news_id": 498,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 580,
+    "news_id": 499,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 581,
+    "news_id": 500,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 582,
+    "news_id": 501,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 583,
+    "news_id": 502,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 584,
+    "news_id": 503,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 585,
+    "news_id": 504,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 586,
+    "news_id": 505,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 587,
+    "news_id": 506,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 588,
+    "news_id": 507,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 589,
+    "news_id": 508,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 590,
+    "news_id": 509,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 591,
+    "news_id": 510,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 592,
+    "news_id": 511,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 593,
+    "news_id": 512,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 594,
+    "news_id": 513,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 595,
+    "news_id": 514,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 596,
+    "news_id": 515,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 597,
+    "news_id": 516,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 598,
+    "news_id": 517,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 599,
+    "news_id": 518,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 600,
+    "news_id": 519,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 601,
+    "news_id": 520,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 602,
+    "news_id": 521,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 603,
+    "news_id": 522,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 604,
+    "news_id": 523,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 605,
+    "news_id": 524,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 606,
+    "news_id": 525,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 607,
+    "news_id": 526,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 608,
+    "news_id": 527,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 609,
+    "news_id": 528,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 610,
+    "news_id": 528,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 611,
+    "news_id": 529,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 612,
+    "news_id": 530,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 613,
+    "news_id": 531,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 614,
+    "news_id": 532,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 615,
+    "news_id": 533,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 616,
+    "news_id": 534,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 617,
+    "news_id": 535,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 618,
+    "news_id": 535,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 619,
+    "news_id": 536,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 620,
+    "news_id": 537,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 621,
+    "news_id": 538,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 622,
+    "news_id": 539,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 623,
+    "news_id": 540,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 624,
+    "news_id": 541,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 625,
+    "news_id": 542,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 626,
+    "news_id": 543,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 627,
+    "news_id": 544,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 628,
+    "news_id": 545,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 629,
+    "news_id": 546,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 630,
+    "news_id": 547,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 631,
+    "news_id": 548,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 632,
+    "news_id": 549,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 633,
+    "news_id": 550,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 634,
+    "news_id": 551,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 635,
+    "news_id": 552,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 636,
+    "news_id": 553,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 637,
+    "news_id": 554,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 638,
+    "news_id": 555,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 639,
+    "news_id": 556,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 640,
+    "news_id": 557,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 641,
+    "news_id": 558,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 642,
+    "news_id": 559,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 643,
+    "news_id": 560,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 644,
+    "news_id": 561,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 645,
+    "news_id": 562,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 646,
+    "news_id": 563,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 647,
+    "news_id": 564,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 648,
+    "news_id": 565,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 649,
+    "news_id": 566,
+    "news_category_id": 8,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 650,
+    "news_id": 566,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 651,
+    "news_id": 566,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 652,
+    "news_id": 567,
+    "news_category_id": 8,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 653,
+    "news_id": 567,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 654,
+    "news_id": 567,
+    "news_category_id": 15,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 655,
+    "news_id": 567,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 656,
+    "news_id": 568,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 657,
+    "news_id": 568,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 658,
+    "news_id": 568,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 659,
+    "news_id": 569,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 660,
+    "news_id": 569,
+    "news_category_id": 31,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 661,
+    "news_id": 569,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 662,
+    "news_id": 569,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 663,
+    "news_id": 570,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 664,
+    "news_id": 570,
+    "news_category_id": 19,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 665,
+    "news_id": 571,
+    "news_category_id": 31,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 666,
+    "news_id": 572,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 667,
+    "news_id": 572,
+    "news_category_id": 15,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 668,
+    "news_id": 573,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 669,
+    "news_id": 573,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 670,
+    "news_id": 574,
+    "news_category_id": 12,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 671,
+    "news_id": 575,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 672,
+    "news_id": 576,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 673,
+    "news_id": 577,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 674,
+    "news_id": 578,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 675,
+    "news_id": 579,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 676,
+    "news_id": 579,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 677,
+    "news_id": 580,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 678,
+    "news_id": 580,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 679,
+    "news_id": 581,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 680,
+    "news_id": 582,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 681,
+    "news_id": 582,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 682,
+    "news_id": 582,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 683,
+    "news_id": 582,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 684,
+    "news_id": 583,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 685,
+    "news_id": 583,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 686,
+    "news_id": 583,
+    "news_category_id": 30,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 687,
+    "news_id": 583,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 688,
+    "news_id": 584,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 689,
+    "news_id": 584,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 690,
+    "news_id": 585,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 691,
+    "news_id": 585,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 692,
+    "news_id": 586,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 693,
+    "news_id": 586,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 694,
+    "news_id": 586,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 695,
+    "news_id": 587,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 696,
+    "news_id": 587,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 697,
+    "news_id": 588,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 698,
+    "news_id": 589,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 699,
+    "news_id": 589,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 700,
+    "news_id": 590,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 701,
+    "news_id": 590,
+    "news_category_id": 29,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 702,
+    "news_id": 591,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 703,
+    "news_id": 592,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 704,
+    "news_id": 593,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 705,
+    "news_id": 594,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 706,
+    "news_id": 595,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 707,
+    "news_id": 595,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 708,
+    "news_id": 596,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 709,
+    "news_id": 596,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 710,
+    "news_id": 597,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 711,
+    "news_id": 597,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 712,
+    "news_id": 598,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 713,
+    "news_id": 598,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 714,
+    "news_id": 598,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 715,
+    "news_id": 599,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 716,
+    "news_id": 600,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 717,
+    "news_id": 600,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 718,
+    "news_id": 600,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 719,
+    "news_id": 601,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 720,
+    "news_id": 602,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 721,
+    "news_id": 603,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 722,
+    "news_id": 603,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 723,
+    "news_id": 604,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 724,
+    "news_id": 604,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 725,
+    "news_id": 605,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 726,
+    "news_id": 605,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 727,
+    "news_id": 606,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 728,
+    "news_id": 607,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 729,
+    "news_id": 607,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 730,
+    "news_id": 607,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 731,
+    "news_id": 608,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 732,
+    "news_id": 608,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 733,
+    "news_id": 609,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 734,
+    "news_id": 609,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 735,
+    "news_id": 610,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 736,
+    "news_id": 610,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 737,
+    "news_id": 610,
+    "news_category_id": 41,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 738,
+    "news_id": 610,
+    "news_category_id": 43,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 739,
+    "news_id": 611,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 740,
+    "news_id": 611,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 741,
+    "news_id": 612,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 742,
+    "news_id": 612,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 743,
+    "news_id": 612,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 744,
+    "news_id": 612,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 745,
+    "news_id": 613,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 746,
+    "news_id": 614,
+    "news_category_id": 7,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 747,
+    "news_id": 615,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 748,
+    "news_id": 615,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 749,
+    "news_id": 615,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 750,
+    "news_id": 615,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 751,
+    "news_id": 615,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 752,
+    "news_id": 615,
+    "news_category_id": 29,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 753,
+    "news_id": 615,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 754,
+    "news_id": 616,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 755,
+    "news_id": 616,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 756,
+    "news_id": 616,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 757,
+    "news_id": 617,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 758,
+    "news_id": 617,
+    "news_category_id": 9,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 759,
+    "news_id": 617,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 760,
+    "news_id": 617,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 761,
+    "news_id": 617,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 762,
+    "news_id": 618,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 763,
+    "news_id": 619,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 764,
+    "news_id": 620,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 765,
+    "news_id": 620,
+    "news_category_id": 13,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 766,
+    "news_id": 620,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 767,
+    "news_id": 620,
+    "news_category_id": 35,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 768,
+    "news_id": 621,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 769,
+    "news_id": 621,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 770,
+    "news_id": 621,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 771,
+    "news_id": 621,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 772,
+    "news_id": 622,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 773,
+    "news_id": 622,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 774,
+    "news_id": 623,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 775,
+    "news_id": 623,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 776,
+    "news_id": 623,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 777,
+    "news_id": 624,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 778,
+    "news_id": 624,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 779,
+    "news_id": 624,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 780,
+    "news_id": 625,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 781,
+    "news_id": 625,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 782,
+    "news_id": 626,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 783,
+    "news_id": 626,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 784,
+    "news_id": 626,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 785,
+    "news_id": 626,
+    "news_category_id": 20,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 786,
+    "news_id": 626,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 787,
+    "news_id": 626,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 788,
+    "news_id": 626,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 789,
+    "news_id": 626,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 790,
+    "news_id": 626,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 791,
+    "news_id": 627,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 792,
+    "news_id": 627,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 793,
+    "news_id": 627,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 794,
+    "news_id": 627,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 795,
+    "news_id": 627,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 796,
+    "news_id": 627,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 797,
+    "news_id": 627,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 798,
+    "news_id": 628,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 799,
+    "news_id": 629,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 800,
+    "news_id": 630,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 801,
+    "news_id": 630,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 802,
+    "news_id": 630,
+    "news_category_id": 21,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 803,
+    "news_id": 630,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 804,
+    "news_id": 630,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 805,
+    "news_id": 631,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 806,
+    "news_id": 631,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 807,
+    "news_id": 632,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 808,
+    "news_id": 632,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 809,
+    "news_id": 632,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 810,
+    "news_id": 632,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 811,
+    "news_id": 633,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 812,
+    "news_id": 633,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 813,
+    "news_id": 633,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 814,
+    "news_id": 633,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 815,
+    "news_id": 634,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 816,
+    "news_id": 634,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 817,
+    "news_id": 634,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 818,
+    "news_id": 634,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 819,
+    "news_id": 634,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 820,
+    "news_id": 634,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 821,
+    "news_id": 634,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 822,
+    "news_id": 635,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 823,
+    "news_id": 635,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 824,
+    "news_id": 635,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 825,
+    "news_id": 636,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 826,
+    "news_id": 637,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 827,
+    "news_id": 638,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 828,
+    "news_id": 638,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 829,
+    "news_id": 638,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 830,
+    "news_id": 638,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 831,
+    "news_id": 638,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 832,
+    "news_id": 638,
+    "news_category_id": 36,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 833,
+    "news_id": 639,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 834,
+    "news_id": 639,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 835,
+    "news_id": 639,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 836,
+    "news_id": 639,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 837,
+    "news_id": 639,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 838,
+    "news_id": 640,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 839,
+    "news_id": 640,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 840,
+    "news_id": 640,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 841,
+    "news_id": 641,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 842,
+    "news_id": 641,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 843,
+    "news_id": 642,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 844,
+    "news_id": 642,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 845,
+    "news_id": 642,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 846,
+    "news_id": 643,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 847,
+    "news_id": 643,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 848,
+    "news_id": 644,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 849,
+    "news_id": 644,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 850,
+    "news_id": 644,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 851,
+    "news_id": 645,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 852,
+    "news_id": 646,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 853,
+    "news_id": 646,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 854,
+    "news_id": 646,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 855,
+    "news_id": 647,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 856,
+    "news_id": 647,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 857,
+    "news_id": 648,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 858,
+    "news_id": 648,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 859,
+    "news_id": 648,
+    "news_category_id": 37,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 860,
+    "news_id": 649,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 861,
+    "news_id": 649,
+    "news_category_id": 14,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 862,
+    "news_id": 650,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 863,
+    "news_id": 650,
+    "news_category_id": 27,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 864,
+    "news_id": 651,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 865,
+    "news_id": 651,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 866,
+    "news_id": 652,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 867,
+    "news_id": 652,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 868,
+    "news_id": 653,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 869,
+    "news_id": 654,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 870,
+    "news_id": 655,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 871,
+    "news_id": 655,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 872,
+    "news_id": 656,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 873,
+    "news_id": 656,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 874,
+    "news_id": 657,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 875,
+    "news_id": 657,
+    "news_category_id": 5,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 876,
+    "news_id": 657,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 877,
+    "news_id": 657,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 878,
+    "news_id": 658,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 879,
+    "news_id": 658,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 880,
+    "news_id": 658,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 881,
+    "news_id": 658,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 882,
+    "news_id": 658,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 883,
+    "news_id": 658,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 884,
+    "news_id": 659,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 885,
+    "news_id": 660,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 886,
+    "news_id": 661,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 887,
+    "news_id": 661,
+    "news_category_id": 22,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 888,
+    "news_id": 661,
+    "news_category_id": 35,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 889,
+    "news_id": 662,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 890,
+    "news_id": 663,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 891,
+    "news_id": 663,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 892,
+    "news_id": 664,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 893,
+    "news_id": 665,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 894,
+    "news_id": 665,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 895,
+    "news_id": 665,
+    "news_category_id": 28,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 896,
+    "news_id": 666,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 897,
+    "news_id": 666,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 898,
+    "news_id": 667,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 899,
+    "news_id": 667,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 900,
+    "news_id": 667,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 901,
+    "news_id": 668,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 902,
+    "news_id": 668,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 903,
+    "news_id": 669,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 904,
+    "news_id": 669,
+    "news_category_id": 6,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 905,
+    "news_id": 669,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 906,
+    "news_id": 670,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 907,
+    "news_id": 670,
+    "news_category_id": 6,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 908,
+    "news_id": 670,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 909,
+    "news_id": 671,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 910,
+    "news_id": 671,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 911,
+    "news_id": 672,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 912,
+    "news_id": 672,
+    "news_category_id": 41,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 913,
+    "news_id": 673,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 914,
+    "news_id": 673,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 915,
+    "news_id": 674,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 916,
+    "news_id": 675,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 917,
+    "news_id": 675,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 918,
+    "news_id": 675,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 919,
+    "news_id": 675,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 920,
+    "news_id": 676,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 921,
+    "news_id": 676,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 922,
+    "news_id": 676,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 923,
+    "news_id": 676,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 924,
+    "news_id": 677,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 925,
+    "news_id": 677,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 926,
+    "news_id": 677,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 927,
+    "news_id": 678,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 928,
+    "news_id": 679,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 929,
+    "news_id": 679,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 930,
+    "news_id": 679,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 931,
+    "news_id": 680,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 932,
+    "news_id": 681,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 933,
+    "news_id": 682,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 934,
+    "news_id": 682,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 935,
+    "news_id": 682,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 936,
+    "news_id": 682,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 937,
+    "news_id": 683,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 938,
+    "news_id": 684,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 939,
+    "news_id": 684,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 940,
+    "news_id": 685,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 941,
+    "news_id": 685,
+    "news_category_id": 24,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 942,
+    "news_id": 685,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 943,
+    "news_id": 685,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 944,
+    "news_id": 686,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 945,
+    "news_id": 686,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 946,
+    "news_id": 686,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 947,
+    "news_id": 686,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 948,
+    "news_id": 687,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 949,
+    "news_id": 687,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 950,
+    "news_id": 687,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 951,
+    "news_id": 688,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 952,
+    "news_id": 688,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 953,
+    "news_id": 688,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 954,
+    "news_id": 689,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 955,
+    "news_id": 690,
+    "news_category_id": 26,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 956,
+    "news_id": 691,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 957,
+    "news_id": 691,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 958,
+    "news_id": 692,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 959,
+    "news_id": 692,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 960,
+    "news_id": 692,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 961,
+    "news_id": 693,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 962,
+    "news_id": 693,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 963,
+    "news_id": 693,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 964,
+    "news_id": 694,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 965,
+    "news_id": 694,
+    "news_category_id": 4,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 966,
+    "news_id": 694,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 967,
+    "news_id": 695,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 968,
+    "news_id": 696,
+    "news_category_id": 38,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 969,
+    "news_id": 697,
+    "news_category_id": 3,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 970,
+    "news_id": 697,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 971,
+    "news_id": 698,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 972,
+    "news_id": 699,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 973,
+    "news_id": 700,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 974,
+    "news_id": 700,
+    "news_category_id": 34,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 975,
+    "news_id": 701,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 976,
+    "news_id": 701,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 977,
+    "news_id": 702,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 978,
+    "news_id": 702,
+    "news_category_id": 18,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 979,
+    "news_id": 702,
+    "news_category_id": 39,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 980,
+    "news_id": 702,
+    "news_category_id": 42,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 981,
+    "news_id": 703,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 982,
+    "news_id": 703,
+    "news_category_id": 17,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 983,
+    "news_id": 704,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 984,
+    "news_id": 705,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 985,
+    "news_id": 706,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 986,
+    "news_id": 706,
+    "news_category_id": 16,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 987,
+    "news_id": 707,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 988,
+    "news_id": 707,
+    "news_category_id": 32,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 989,
+    "news_id": 707,
+    "news_category_id": 33,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 990,
+    "news_id": 708,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 991,
+    "news_id": 709,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 992,
+    "news_id": 709,
+    "news_category_id": 11,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 993,
+    "news_id": 710,
+    "news_category_id": 1,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 994,
+    "news_id": 710,
+    "news_category_id": 40,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 995,
+    "news_id": 711,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 996,
+    "news_id": 712,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 997,
+    "news_id": 713,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 998,
+    "news_id": 713,
+    "news_category_id": 25,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 999,
+    "news_id": 714,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1000,
+    "news_id": 715,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 1001,
+    "news_id": 716,
+    "news_category_id": 2,
+    "created_at": null,
+    "updated_at": null
+  }
+]

@@ -1,0 +1,183 @@
+﻿{
+    "initials":  "HK",
+    "cta":  {
+                "label":  "Minta Penawaran",
+                "icon":  "request_quote",
+                "href":  "/penawaran",
+                "route":  "inquiry"
+            },
+    "whatsapp":  "https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
+    "avatar":  "/assets/harry.png",
+    "linkedin":  "https://linkedin.com",
+    "navigation":  [
+                       {
+                           "label":  "Beranda",
+                           "icon":  "home",
+                           "href":  "/",
+                           "route":  "home"
+                       },
+                       {
+                           "label":  "Produk",
+                           "icon":  "videocam",
+                           "href":  "/produk",
+                           "route":  "products.index"
+                       },
+                       {
+                           "label":  "Artikel",
+                           "icon":  "article",
+                           "href":  "/artikel",
+                           "route":  "articles.index"
+                       },
+                       {
+                           "label":  "Solusi",
+                           "icon":  "meeting_room",
+                           "href":  "/solusi",
+                           "route":  "solutions"
+                       },
+                       {
+                           "label":  "Panduan",
+                           "icon":  "menu_book",
+                           "href":  "/panduan",
+                           "route":  "guides.index"
+                       },
+                       {
+                           "label":  "Tentang",
+                           "icon":  "person",
+                           "href":  "/tentang",
+                           "route":  "about"
+                       }
+                   ],
+    "footer":  [
+                   {
+                       "links":  [
+                                     {
+                                         "href":  "/produk/cam550",
+                                         "label":  "CAM550 Dual-Lens PTZ"
+                                     },
+                                     {
+                                         "href":  "/produk/cam570",
+                                         "label":  "CAM570 Audio Tracking"
+                                     },
+                                     {
+                                         "href":  "/produk/cam520-pro3",
+                                         "label":  "CAM520 Pro3 Enterprise PTZ"
+                                     },
+                                     {
+                                         "href":  "/produk/vb342-pro",
+                                         "label":  "VB342 Pro All-in-One Bar"
+                                     },
+                                     {
+                                         "href":  "/perbandingan",
+                                         "label":  "Bandingkan Semua Kamera"
+                                     }
+                                 ],
+                       "title":  "Produk AVer"
+                   },
+                   {
+                       "links":  [
+                                     {
+                                         "href":  "/solusi#huddle",
+                                         "label":  "Huddle Space (2â€“6 Orang)"
+                                     },
+                                     {
+                                         "href":  "/solusi#medium",
+                                         "label":  "Ruang Rapat Sedang (6â€“12 Orang)"
+                                     },
+                                     {
+                                         "href":  "/solusi#boardroom",
+                                         "label":  "Executive Boardroom (12â€“25 Orang)"
+                                     },
+                                     {
+                                         "href":  "/solusi#classroom",
+                                         "label":  "Smart Classroom \u0026 Auditorium"
+                                     }
+                                 ],
+                       "title":  "Solusi Ruang"
+                   },
+                   {
+                       "links":  [
+                                     {
+                                         "href":  "/artikel",
+                                         "label":  "Semua Artikel \u0026 Analisis"
+                                     },
+                                     {
+                                         "href":  "/panduan/memilih-kamera-aver",
+                                         "label":  "Panduan Memilih Kamera"
+                                     },
+                                     {
+                                         "href":  "/artikel/panduan-konfigurasi-microsoft-teams-rooms-2026",
+                                         "label":  "Konfigurasi Teams Rooms"
+                                     },
+                                     {
+                                         "href":  "/artikel/cara-installasi-logitech-meetup-2-byod",
+                                         "label":  "Skema BYOD MeetUp 2"
+                                     }
+                                 ],
+                       "title":  "Artikel \u0026 Panduan"
+                   },
+                   {
+                       "links":  [
+                                     {
+                                         "href":  "/tentang",
+                                         "label":  "Profil Harry Kusumo"
+                                     },
+                                     {
+                                         "href":  "/penawaran",
+                                         "label":  "Minta Form Penawaran"
+                                     },
+                                     {
+                                         "href":  "https://wa.me/6281200000000",
+                                         "label":  "Chat Langsung WhatsApp"
+                                     },
+                                     {
+                                         "href":  "https://linkedin.com",
+                                         "label":  "Profil Bisnis LinkedIn"
+                                     }
+                                 ],
+                       "title":  "Konsultasi \u0026 Kontak"
+                   }
+               ],
+    "role":  "AVer Solutions Advisor",
+    "name":  "Harry Kusumo",
+    "title":  "Harry Kusumo Negoro",
+    "youtube":  "https://youtube.com",
+    "email":  "info@averadvisor.id",
+    "inquiry":  {
+                    "roomTypes":  [
+                                      {
+                                          "value":  "huddle",
+                                          "label":  "Huddle (2-6 Orang)"
+                                      },
+                                      {
+                                          "value":  "medium",
+                                          "label":  "Ruang Sedang (6-12 Orang)"
+                                      },
+                                      {
+                                          "value":  "boardroom",
+                                          "label":  "Boardroom (12-25 Orang)"
+                                      },
+                                      {
+                                          "value":  "classroom",
+                                          "label":  "Classroom / Auditorium"
+                                      }
+                                  ],
+                    "platforms":  [
+                                      {
+                                          "value":  "teams",
+                                          "label":  "Microsoft Teams"
+                                      },
+                                      {
+                                          "value":  "zoom",
+                                          "label":  "Zoom Rooms"
+                                      },
+                                      {
+                                          "value":  "google",
+                                          "label":  "Google Meet"
+                                      },
+                                      {
+                                          "value":  "byod",
+                                          "label":  "BYOD / Multi-platform"
+                                      }
+                                  ]
+                }
+}

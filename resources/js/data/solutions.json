@@ -1,0 +1,54 @@
+[
+    {
+        "id":  "huddle",
+        "challenge":  "Jarak meja sangat dekat dengan layar monitor; kamera standar membuat peserta di pinggir meja terpotong.",
+        "recommended":  "AVer VB130 atau VB342 Pro",
+        "dimension":  "3m × 4m (hingga 12m²)",
+        "keySpecs":  [
+                         "FOV 120° bebas distorsi",
+                         "Kabel tunggal USB plug-and-play",
+                         "Audio terpadu tanpa speakerphone terpisah"
+                     ],
+        "solution":  "Kamera sudut ultra-lebar (FOV 120°) atau All-in-One video bar ringkas terpasang tepat di bawah monitor.",
+        "title":  "Huddle Space (2–6 Orang)"
+    },
+    {
+        "id":  "medium",
+        "challenge":  "Peserta di ujung meja kejauhan; suara bergema dari dinding kaca atau meja kayu panjang.",
+        "recommended":  "AVer CAM550 + FONE540 atau VB342 Pro + Expansion Mic",
+        "dimension":  "5m × 7m (hingga 35m²)",
+        "keySpecs":  [
+                         "Dual-Lens AI Framing",
+                         "12X Optical Zoom",
+                         "Acoustic Echo Cancellation"
+                     ],
+        "solution":  "Kamera Motorized Optical Zoom PTZ dipadukan dengan mikrofon meja terdistribusi atau expansion mic.",
+        "title":  "Ruang Rapat Sedang (6–12 Orang)"
+    },
+    {
+        "id":  "boardroom",
+        "challenge":  "Meja U-shape atau meja oval panjang; pembicara sering bergantian cepat dari berbagai sudut.",
+        "recommended":  "AVer CAM570 + Shure Microflex Ceiling Array via Dante",
+        "dimension":  "7m × 12m (hingga 84m²)",
+        "keySpecs":  [
+                         "Audio Tracking Array 10m",
+                         "36X Total Zoom",
+                         "Integrasi DSP Dante / IP Network"
+                     ],
+        "solution":  "Dual-lens camera dengan audio tracking otomatis dan mikrofon ceiling array terintegrasi.",
+        "title":  "Executive Boardroom (12–25 Orang)"
+    },
+    {
+        "id":  "classroom",
+        "challenge":  "Dosen atau presenter terus bergerak di depan panggung tanpa operator kamera manual.",
+        "recommended":  "AVer DL30 atau CAM550",
+        "dimension":  "10m × 15m ke atas",
+        "keySpecs":  [
+                         "Presenter AI Tracking tanpa lanyard",
+                         "Zone Tracking papan tulis",
+                         "Streaming IP RTSP / RTMP"
+                     ],
+        "solution":  "Kamera Auto-Tracking AI yang mengunci postur tubuh presenter di sepanjang papan tulis dan mimbar.",
+        "title":  "Smart Classroom \u0026 Auditorium (30+ Peserta)"
+    }
+]

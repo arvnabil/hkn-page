@@ -1,0 +1,36 @@
+{
+  "name": "Harry Kusumo Negoro",
+  "shortName": "Harry Kusumo",
+  "idCode": "HKN-AV",
+  "role": "AVer Solutions Advisor",
+  "tagline": "Membantu Anda memilih solusi kolaborasi terbaik",
+  "photo": "/assets/harry.png",
+  "whatsapp": "https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
+  "linkedin": "https://linkedin.com",
+  "bio": "Berdedikasi mendampingi organisasi, institusi pendidikan, dan konsultan arsitektur ruang dalam merancang ekosistem video konferensi modern. Fokus utama pada pemilihan konfigurasi kamera optik presisi dan teknologi AI tracking AVer yang selaras dengan dimensi fisik dan kebutuhan interaksi pengguna.",
+  "metrics": {
+    "specialty": "AVer Optics & PTZ Systems",
+    "roomFocus": "Huddle Space hingga Auditorium",
+    "approach": "Konsultatif Edukatif & Audit Fisik",
+    "platforms": "Microsoft Teams / Zoom Rooms / Google Meet / UVC",
+    "status": "SIAP KONSULTASI"
+  },
+  "services": [
+    {
+      "title": "Konsultasi Penataan Ruang",
+      "desc": "Analisis dimensi meja, sudut elevasi kamera, dan rasio kedalaman ruang."
+    },
+    {
+      "title": "Rekomendasi Hardware AVer",
+      "desc": "Pemilihan tipe kamera (fixed vs optical PTZ vs all-in-one bar) sesuai anggaran."
+    },
+    {
+      "title": "Audit Akustik & Pencahayaan",
+      "desc": "Verifikasi eliminasi gema kaca dan penyesuaian lux cahaya wajah peserta."
+    },
+    {
+      "title": "Proof of Concept (PoC)",
+      "desc": "Uji coba perangkat langsung di ruangan Anda sebelum pengadaan final."
+    }
+  ]
+}

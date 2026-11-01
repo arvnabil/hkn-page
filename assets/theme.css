@@ -1,19 +1,20 @@
 /* AVer Editorial — design tokens (RGB triplets agar bisa dipakai dengan opacity: bg-primary/10) */
 :root {
-  --c-background: 248 249 255;
-  --c-surface: 248 249 255;
+  --c-background: 235 244 250;
+  --c-surface: 235 244 250;
   --c-surface-container-lowest: 255 255 255;
-  --c-surface-container-low: 239 244 255;
-  --c-surface-container: 230 238 255;
-  --c-surface-container-high: 220 233 255;
-  --c-surface-container-highest: 213 227 252;
-  --c-surface-alt: 244 250 253;
+  --c-surface-container-low: 226 241 250;
+  --c-surface-container: 213 233 246;
+  --c-surface-container-high: 197 224 241;
+  --c-surface-container-highest: 181 215 236;
+  --c-surface-alt: 238 248 253;
   --c-on-surface: 13 28 46;
   --c-on-surface-variant: 63 72 80;
   --c-muted-slate: 88 103 126;
   --c-outline: 111 120 130;
   --c-outline-variant: 190 199 210;
-  --c-border-clean: 217 232 242;
+  --c-border-clean: 198 220 234;
+  --c-card-border: 202 219 230;
 
   --c-brand: 0 148 218; /* #0094DA — Primary swatch */
   --c-primary: 0 97 145; /* teks/tombol di light (kontras AA) */
@@ -62,6 +63,7 @@
   --c-outline: 107 130 153;
   --c-outline-variant: 36 64 92;
   --c-border-clean: 27 55 82; /* #1B3752 */
+  --c-card-border: 40 63 82;
 
   --c-brand: 0 148 218;
   --c-primary: 143 205 255; /* #8FCDFF seperti tombol Primary di mockup dark */
@@ -102,6 +104,10 @@ html {
 }
 body {
   background: rgb(var(--c-background));
+  background-image:
+    radial-gradient(ellipse 70rem 42rem at 0 0, rgb(var(--c-brand) / 0.12), transparent 75%),
+    radial-gradient(ellipse 52rem 38rem at 100% 28rem, rgb(var(--c-accent) / 0.07), transparent 75%);
+  background-repeat: no-repeat;
   color: rgb(var(--c-on-surface));
   font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -109,6 +115,37 @@ body {
   transition:
     background-color 0.2s,
     color 0.2s;
+}
+
+/* Sorotan artikel utama mengikuti palet light dan dark. */
+[data-purpose="featured-story"] {
+  background-color: rgb(var(--c-surface-alt));
+  background-image: linear-gradient(
+    135deg,
+    rgb(var(--c-brand) / 0.13),
+    transparent 55%,
+    rgb(var(--c-brand) / 0.04)
+  );
+}
+
+/* Kartu konten: satu border, radius, dan perilaku interaksi di semua halaman. */
+.ui-card {
+  border: 1px solid rgb(var(--c-card-border));
+  border-radius: 1rem;
+  box-shadow: none;
+}
+.ui-card--interactive {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.ui-card--interactive:focus-within {
+  border-color: rgb(var(--c-primary) / 0.55);
+  box-shadow: 0 8px 24px -16px rgb(var(--c-on-surface) / 0.3);
+}
+@media (hover: hover) and (pointer: fine) {
+  .ui-card--interactive:hover {
+    border-color: rgb(var(--c-primary) / 0.55);
+    box-shadow: 0 8px 24px -16px rgb(var(--c-on-surface) / 0.3);
+  }
 }
 h1,
 h2,
