@@ -17,15 +17,15 @@
         "name":  "AVer CAM550",
         "specs":  {
                       "audioIntegration":  "Line-in untuk mikrofon eksternal",
-                      "motor":  "Pan Â±170Â°, Tilt +90Â°/-30Â°",
+                      "motor":  "Pan ±170°, Tilt +90°/-30°",
                       "sensor":  "Sony 4K EXMOR",
                       "ports":  "USB 3.1 Type-B, HDMI, RJ45 (PoE+), RS232"
                   },
         "tagline":  "Kamera Konferensi Dual-Lens 4K untuk Ruang Menengah hingga Besar",
-        "roomSize":  "Ruang Rapat Sedang - Besar (8â€“20 Orang)",
+        "roomSize":  "Ruang Rapat Sedang - Besar (8-20 Orang)",
         "zoom":  "24X Total Zoom (12X Optik)",
         "categoryLabel":  "Kamera PTZ",
-        "fov":  "85Â° DFOV / 95Â° Panorama",
+        "fov":  "85° DFOV / 95° Panorama",
         "resolution":  "Dual 4K Ultra HD",
         "images":  [
                        "https://lh3.googleusercontent.com/aida-public/AB6AXuBCAlNuII3oZ0Lj9HUw-zCNsWrA931DlnqDfvXP0QJ8a273eVtNvWdZ1DvEUQzZtroO9gWuGkKK9XsY-61aVMZt9FaMcc-yzoQ4k-Lc7TnC2oi12vqEoWMtX-dlZ1rZwxSzwwR9_fvH1lu1zcxH06aILpGr9JSAL3IU2Sx-9VWVr0w0EIOG8ZcHvb7lKntcTLYh9HK-qdMJAnRpN8kHc--Tk3sffhgEEOq-C8RVP4wX79nXnUFXoHYA8g",
@@ -57,10 +57,10 @@
                       "ports":  "USB 3.1, HDMI, IP RJ45 PoE+, Audio in"
                   },
         "tagline":  "Kamera 4K Dual-Lens dengan Sensor Audio Tracking Terintegrasi",
-        "roomSize":  "Boardroom \u0026 Ruang Rapat Besar (10â€“25 Orang)",
+        "roomSize":  "Boardroom \u0026 Ruang Rapat Besar (10-25 Orang)",
         "zoom":  "36X Total Zoom (12X Optik)",
         "categoryLabel":  "Kamera PTZ",
-        "fov":  "86Â° DFOV / 95Â° Sensor AI",
+        "fov":  "86° DFOV / 95° Sensor AI",
         "resolution":  "Dual 4K Ultra HD",
         "images":  [
                        "https://lh3.googleusercontent.com/aida-public/AB6AXuCjXxgPTQghOAPsj7JVfegCs7gd8V8hchbQ3axIYDuc9FxgsGaxyDQKMMfZlyqdlNlEbC5Y3dLpiHDfI1LVjrz3jr6sRnCCwaRQ3kFG716rrIyzEorIb7TILWppDWb7Bx-1GMgLT1fSLISopqu3Sb7oIeBAWXAalxslWy-t3hxuFCVdrlOQ8Ih8HOn2kEIf2sOXWXh1i4xSI1AsZ4B92hZKq1eRxNYTlYHkXS6StvkwnkMtE63ORJCgcQ",
@@ -91,10 +91,10 @@
                       "ports":  "USB Type-B 3.1, HDMI out to TV, Line-in/out, RJ45"
                   },
         "tagline":  "Soundbar Konferensi 4K PTZ All-in-One untuk Ruang Rapat Huddle \u0026 Medium",
-        "roomSize":  "Huddle Space hingga Ruang Sedang (3â€“10 Orang)",
+        "roomSize":  "Huddle Space hingga Ruang Sedang (3-10 Orang)",
         "zoom":  "15X Total Zoom (3X Optik)",
         "categoryLabel":  "Soundbar All-in-One",
-        "fov":  "84Â° DFOV Motorized PTZ",
+        "fov":  "84° DFOV Motorized PTZ",
         "resolution":  "4K Ultra HD",
         "images":  [
                        "https://lh3.googleusercontent.com/aida-public/AB6AXuB40SVuLsi_0ARlnUErQ6WHO4mXcjXm_Q0zNGhyWisdw1s3lGCq50IDD5VU-8MXzr4KkT6lQ1yrKwJ-yQotpF7nn_4Q3jNr8SFAo1bAdksk46jLarkxWnMCHK3x7nsdeE9YTOlfKlrVV9q9pd8XwwlDPaJDaw2tZ4Jm8AbYAEIHABuKtUVzmAsRUMkjyZY4GjLfL_Xq5_NvY6yic0lr-sK-Pv_UFVMWwsoyvOe7ZyrXuj1FySZxyQ-8Lw",
@@ -123,10 +123,10 @@
                       "ports":  "USB 3.1, HDMI, IP RJ45 PoE+, RS232"
                   },
         "tagline":  "Kamera PTZ Profesional dengan 36X Total Zoom dan SmartComposition",
-        "roomSize":  "Ruang Rapat Sedang hingga Besar (8â€“20 Orang)",
+        "roomSize":  "Ruang Rapat Sedang hingga Besar (8-20 Orang)",
         "zoom":  "36X Total Zoom (12X Optik)",
         "categoryLabel":  "Kamera PTZ",
-        "fov":  "80.5Â° DFOV",
+        "fov":  "80.5° DFOV",
         "resolution":  "Sony 4K Sensor (Full HD 60fps streaming)",
         "images":  [
                        "https://lh3.googleusercontent.com/aida-public/AB6AXuC1dFleS-WMD68oyG_eU9x_ZzG_2DIOqC8-IMtOpmPKcFP1JJVxFqOq3TC9M110QIGy4xxIK0LH23HkWJXEy9staRkbj88Gi8iDJVC-FcNB9uH_MPyRXbf8WJXTJV-sYCFJbtrKa39z2YHUrpxh67qZHTWf02DZ7EhrdbRoVneXGh9oubkwoYT3b9S4-muZrcQryWOP-ZoR4hIUjPmutweXfmON_CUPGfhGSNy7V-VTsRkvP1Y7r1G8Mg",
