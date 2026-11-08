@@ -4,6 +4,7 @@ import AppLayout from '../Layouts/AppLayout';
 import ArticleCard from '../Components/ArticleCard';
 import ProductCard from '../Components/ProductCard';
 import AdvisorHUDCard from '../Components/AdvisorHUDCard';
+import { MonitorCheck, ShieldCheck, UsersRound, Video } from 'lucide-react';
 
 import defaultArticles from '../data/articles.json';
 import defaultProducts from '../data/products.json';
@@ -14,9 +15,10 @@ export default function Home({
   products = defaultProducts,
   advisor = defaultAdvisor,
 }) {
-  const featured = articles[0];
-  const sideHighlights = articles.slice(1, 5);
-  const archiveList = articles.slice(0, 6);
+  const safeArticles = Array.isArray(articles) && articles.length > 0 ? articles : defaultArticles;
+  const featured = safeArticles[0];
+  const sideHighlights = safeArticles.slice(1, 5);
+  const archiveList = safeArticles.slice(0, 6);
 
   return (
     <AppLayout title="AVer Solutions Magazine">
@@ -34,7 +36,7 @@ export default function Home({
                   <span>LIPUTAN UTAMA · {featured.category}</span>
                 </div>
 
-                <Link href={`/artikel/${featured.id}`} className="block group/title">
+                <Link href={`/artikel/${featured.slug || featured.id}`} className="block group/title">
                   <h1 className="text-2xl sm:text-4xl font-heading font-extrabold text-on-surface leading-tight tracking-tight mb-4 group-hover/title:text-primary transition-colors">
                     {featured.title}
                   </h1>
@@ -73,7 +75,7 @@ export default function Home({
                 </div>
 
                 <Link
-                  href={`/artikel/${featured.id}`}
+                  href={`/artikel/${featured.slug || featured.id}`}
                   className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-primary-dark"
                 >
                   <span>Baca Selengkapnya</span>
@@ -91,7 +93,7 @@ export default function Home({
                 {sideHighlights.map((art) => (
                   <Link
                     key={art.id}
-                    href={`/artikel/${art.id}`}
+                    href={`/artikel/${art.slug || art.id}`}
                     className="ui-card ui-card--interactive p-4 bg-surface-container-lowest block group"
                   >
                     <div className="flex items-center justify-between text-[11px] font-mono text-muted-slate mb-1">
@@ -120,19 +122,19 @@ export default function Home({
           </div>
           <div className="flex flex-wrap items-center gap-6 sm:gap-8 font-mono text-xs text-secondary">
             <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm text-blue-600">groups</span>
+              <UsersRound aria-hidden="true" size={16} className="text-blue-600" />
               Microsoft Teams Certified
             </span>
             <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm text-blue-500">videocam</span>
+              <Video aria-hidden="true" size={16} className="text-blue-500" />
               Zoom Rooms Certified
             </span>
             <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm text-green-600">meet_now</span>
+              <MonitorCheck aria-hidden="true" size={16} className="text-green-600" />
               Google Meet Compatible
             </span>
             <span className="flex items-center gap-1.5 hover:text-primary transition-colors">
-              <span className="material-symbols-outlined text-sm text-amber-600">verified_user</span>
+              <ShieldCheck aria-hidden="true" size={16} className="text-amber-600" />
               3+2 Years Warranty
             </span>
           </div>

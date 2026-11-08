@@ -4,7 +4,7 @@ namespace Modules\ProductCatalog\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class CoreDatabaseSeeder extends Seeder
+class ProductCatalogDatabaseSeeder extends Seeder
 {
     public function run(): void
     {

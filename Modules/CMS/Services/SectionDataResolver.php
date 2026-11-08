@@ -465,15 +465,15 @@ class SectionDataResolver
     protected function resolveContact(array $config): array
     {
         $defaults = [
-            'title' => "Contact Information",
-            'subtitle' => "Let's Collaborate",
-            'intro_text' => "We appreciate your interest in ACTiV. Our team is ready to discuss how we can support your business goals. Please contact us via the channels below.",
-            'phone' => "(+62) 2150110987",
+            'title' => "Informasi Kontak",
+            'subtitle' => "Konsultasi Bersama Harry",
+            'intro_text' => "Kami mengapresiasi minat Anda terhadap solusi Harry & AVer. Tim kami siap mendiskusikan kebutuhan ruang rapat dan kolaborasi organisasi Anda. Silakan hubungi kami melalui saluran di bawah ini.",
+            'phone' => "(+62) 21-50110987",
             'whatsapp' => "(+62) 851-6299-4602",
-            'email' => "sales@activ.co.id",
-            'address_office' => "Infinity Office, Belleza BSA 1st Floor Unit 106, Jl. Letjen Soepeno, Keb. Lama Jakarta Selatan 12210",
-            'address_representative' => "Ruko Golden Boulevard Blok S 28, Jl Pahlawan Seribu, BSD City, Kec. , Tangerang, 15119, Kota Tangerang Selatan, Banten 15119",
-            'map_embed_url' => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9894.100972827648!2d106.66287000000001!3d-6.276524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb227ca11a57%3A0x1d99e2c09955d44d!2sPT%20Alfa%20Cipta%20Teknologi%20Virtual%20(ACTiV)!5e1!3m2!1sid!2sid!4v1765353648986!5m2!1sid!2sid",
+            'email' => "contact@harryaver.com",
+            'address_office' => "Jakarta Selatan, DKI Jakarta 12210, Indonesia",
+            'address_representative' => "Tangerang Selatan, Banten 15318, Indonesia",
+            'map_embed_url' => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2831252033!2d106.759478!3d-6.2297465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1716968007353!5m2!1sid!2sid",
             'enable_recaptcha' => true,
             'form_fields' => [
                 [

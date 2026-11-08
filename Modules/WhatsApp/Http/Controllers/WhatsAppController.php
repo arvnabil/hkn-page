@@ -28,7 +28,7 @@ class WhatsAppController extends Controller
             return redirect('/')->with('error', 'WhatsApp number not configured.');
         }
 
-        $text = $request->input('text', 'Halo ACTiV, saya ingin bertanya mengenai layanan Anda.');
+        $text = $request->input('text', 'Halo Harry, saya ingin bertanya mengenai solusi AVer.');
 
         // Clean WhatsApp number
         $number = preg_replace('/[^0-9]/', '', $whatsappNumber);

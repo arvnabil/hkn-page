@@ -3,9 +3,10 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 export const InertiaContext = createContext({
   url: typeof window !== 'undefined' ? window.location.pathname : '/',
   navigate: () => {},
+  props: {},
 });
 
-export function InertiaProvider({ children }) {
+export function InertiaProvider({ children, pageProps = {} }) {
   const [url, setUrl] = useState(
     typeof window !== 'undefined' ? window.location.pathname : '/'
   );
@@ -43,7 +44,7 @@ export function InertiaProvider({ children }) {
   };
 
   return (
-    <InertiaContext.Provider value={{ url, navigate }}>
+    <InertiaContext.Provider value={{ url, navigate, props: pageProps }}>
       {children}
     </InertiaContext.Provider>
   );
@@ -55,7 +56,7 @@ export function usePage() {
   return {
     url: currentUrl,
     component: '',
-    props: {},
+    props: ctx?.props || {},
   };
 }
 
@@ -67,6 +68,7 @@ export function Link({ href, children, className, onClick, ...rest }) {
     if (e.defaultPrevented) return;
 
     if (
+      !document.getElementById('app') &&
       !rest.target &&
       href &&
       !href.startsWith('http://') &&
@@ -117,7 +119,11 @@ export function createInertiaApp({ resolve, setup }) {
         const Comp = component.default || component;
         setup({
           el,
-          App: () => React.createElement(Comp, pageData.props || {}),
+          App: () => React.createElement(
+            InertiaProvider,
+            { pageProps: pageData.props || {} },
+            React.createElement(Comp, pageData.props || {})
+          ),
           props: pageData.props || {},
         });
       });

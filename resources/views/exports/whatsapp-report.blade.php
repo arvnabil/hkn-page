@@ -39,7 +39,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">ACTiV <span style="font-weight: normal; color: #333;">Analytics</span></div>
+        <div class="logo">Harry <span style="font-weight: normal; color: #333;">Analytics</span></div>
         <div class="subtitle">WhatsApp Interaction Report</div>
         <div style="font-size: 11px; font-weight: bold; margin-top: 5px; color: #555;">
             Period: {{ $dateRange['from'] ? $dateRange['from']->format('d M Y') : 'N/A' }} 

@@ -17,7 +17,7 @@ class ServicesPageSeeder extends Seeder
         $page = Page::updateOrCreate(
             ['slug' => 'services'],
             [
-                'title' => 'Our Services',
+                'title' => 'Layanan & Solusi AVer',
                 'type' => 'dynamic',
                 'status' => 'published',
                 'show_breadcrumb' => true,
@@ -33,30 +33,21 @@ class ServicesPageSeeder extends Seeder
             [
                 'section_key' => 'service_list',
                 'config' => [
-                    'title' => 'Dealing in all professional IT services',
-                    'subtitle' => 'What We’re Offering',
-                    'description' => "IT solutions refer to a broad range of services and technologies designed to address specific business needs, streamline operations, and drive growth.",
-                    'limit' => 12, // Show more services by default
+                    'title' => 'Layanan Konsultasi & Integrasi Audio Visual AVer',
+                    'subtitle' => 'Layanan Profesional Kami',
+                    'description' => "Harry menghadirkan rangkaian layanan terpadu mulai dari asesmen denah ruang, pengujian akustik & FOV kamera, hingga pendampingan instalasi perangkat video conference AVer.",
+                    'limit' => 12,
                     'order' => 'asc',
                 ],
             ],
-            // 3. Clients
-            [
-                'section_key' => 'service_clients',
-                'config' => [
-                    'title' => 'Our Clients',
-                    'subtitle' => 'Clients',
-                    'limit' => 20,
-                ],
-            ],
-            // 4. Solution
+            // 2. Solution
             [
                 'section_key' => 'service_solution',
                 'config' => [
-                    'title' => 'Our Solution',
-                    'subtitle' => 'Projects', // "Projects" based on HTML
-                    'description' => "At ACTiV, we don't just develop technology; we engineer powerful digital solutions that drive real business transformation. Explore our portfolio to see how we leverage cutting-edge ICT to help our clients achieve greater productivity, visibility, and growth.",
-                    'btn_text' => 'Explore Case Studies',
+                    'title' => 'Solusi Ruang Rapat Cerdas',
+                    'subtitle' => 'Arsitektur Ruang',
+                    'description' => "Bersama Harry dan teknologi AVer, kami merancang ruang kolaborasi cerdas yang mengintegrasikan kamera AI auto tracking, mikrofon beamforming, dan tampilan interaktif untuk pengalaman meeting terbaik.",
+                    'btn_text' => 'Konsultasi Ruang Sekarang',
                     'btn_url' => '/contact',
                     'images' => [
                         '/assets/img/choose/choose_4_1.jpg',
@@ -64,23 +55,23 @@ class ServicesPageSeeder extends Seeder
                         '/assets/img/choose/choose_4_3.jpg',
                     ],
                     'features' => [
-                        ['text' => 'Room Solution'],
-                        ['text' => 'Server IP PBX'],
-                        ['text' => 'Storage & Data Solution'],
-                        ['text' => 'Meeting cloud'],
-                        ['text' => 'CCTV & Access Control'],
+                        ['text' => 'Huddle & Medium Room Solution'],
+                        ['text' => 'Boardroom & Executive Conference'],
+                        ['text' => 'Auditorium & Townhall PTZ System'],
+                        ['text' => 'Smart Classroom & Distance Learning'],
+                        ['text' => 'Akustik & Mikrofon Beamforming'],
                     ],
                 ],
             ],
-            // 5. CTA
+            // 3. CTA
             [
                 'section_key' => 'service_cta',
                 'config' => [
-                    'title' => 'Have any project to work with us',
-                    'subtitle' => 'Grab up to 35% off',
-                    'description' => "Limited time offer, don't miss the opportunity",
-                    'btn_text' => 'Contact With Us',
-                    'btn_url' => '/contact',
+                    'title' => 'Rencanakan Ruang Rapat Anda Bersama Harry',
+                    'subtitle' => 'Konsultasi Spesifikasi & Penawaran',
+                    'description' => "Diskusikan kebutuhan ruang rapat Anda untuk rekomendasi spesifikasi teknis dan penawaran resmi perangkat AVer.",
+                    'btn_text' => 'Hubungi Kami via WhatsApp',
+                    'btn_url' => 'https://wa.me/6285162994602',
                     'bg_image' => '/assets/img/normal/cta-img-6.jpg',
                 ],
             ],

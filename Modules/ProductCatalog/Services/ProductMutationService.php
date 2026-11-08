@@ -152,11 +152,6 @@ class ProductMutationService
                 $seoData
             );
 
-            // Sync brand to associated solutions if model supports it
-            if (method_exists($product, 'syncBrandToSolutions')) {
-                $product->syncBrandToSolutions();
-            }
-
             return $product->load(['brand', 'categories', 'seo']);
         });
     }

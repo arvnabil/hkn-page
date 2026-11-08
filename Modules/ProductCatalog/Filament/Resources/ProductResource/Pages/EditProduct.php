@@ -16,11 +16,6 @@ class EditProduct extends EditRecord
         ];
     }
 
-    protected function afterSave(): void
-    {
-        $this->getRecord()->syncBrandToSolutions();
-    }
-
     protected function mutateFormDataBeforeFill(array $data): array
     {
         $data['specs'] = \App\Helpers\JsonHelper::toRepeater($data['specs'] ?? []);

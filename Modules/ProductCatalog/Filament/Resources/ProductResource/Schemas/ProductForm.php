@@ -17,9 +17,6 @@ use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
 use Modules\SEO\Filament\Resources\SeoMetaResource\Schemas\SeoForm;
 use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Builder;
-use Filament\Forms\Components\CheckboxList;
-use Filament\Schemas\Components\Utilities\Get;
 
 class ProductForm
 {
@@ -43,13 +40,6 @@ class ProductForm
                                                 ->unique(ignoreRecord: true),
                                             TextInput::make('sku')
                                                 ->label('SKU'),
-                                            Select::make('service_id')
-                                                ->relationship('service', 'name')
-                                                ->required()
-                                                ->searchable()
-                                                ->preload()
-                                                ->live()
-                                                ->afterStateUpdated(fn (Set $set) => $set('solutions', [])),
                                             Select::make('brand_id')
                                                 ->relationship('brand', 'name')
                                                 ->required()
@@ -65,13 +55,6 @@ class ProductForm
                                             TextInput::make('price')
                                                 ->numeric()
                                                 ->prefix('IDR'),
-                                            CheckboxList::make('solutions')
-                                                ->relationship('solutions', 'title', modifyQueryUsing: fn (Builder $query, Get $get) => $query->where('service_id', $get('service_id')))
-                                                ->label('Applicable Solutions')
-                                                ->columns(2)
-                                                ->gridDirection('row')
-                                                ->visible(fn (Get $get) => filled($get('service_id')))
-                                                ->columnSpanFull(),
                                             TextInput::make('solution_type')
                                                 ->label('Legacy Type (Deprecated)')
                                                 ->visible(false),

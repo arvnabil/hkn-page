@@ -12,4 +12,8 @@ Route::group(['prefix' => 'news'], function () {
     Route::group(['middleware' => 'auth:api'], function () {
         Route::post('/import', [NewsApiController::class, 'import']);
     });
+
+    // Protected image downloader/uploader for mirroring news images locally.
+    Route::post('/sync-image', \Modules\News\Http\Controllers\Api\NewsImageSyncController::class)
+        ->middleware(\App\Http\Middleware\VerifyApiKey::class);
 });

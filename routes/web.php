@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 // ─── Auth ───────────────────────────────────────────────
@@ -10,7 +11,22 @@ Route::get('/login', function () {
 
 // ─── Harry Public Pages (AVer Solutions Advisor) ──────────
 Route::get('/', function () {
-    return Inertia::render('Home');
+    $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
+    $imagesBySlug = DB::table('news')
+        ->whereIn('slug', array_column($articles, 'slug'))
+        ->pluck('featured_image', 'slug');
+
+    foreach ($articles as &$article) {
+        $image = $imagesBySlug[$article['slug']] ?? null;
+        if ($image) {
+            $article['thumbnail'] = str_starts_with($image, 'http')
+                ? $image
+                : asset('storage/'.ltrim($image, '/'));
+        }
+    }
+    unset($article);
+
+    return Inertia::render('Home', ['articles' => $articles]);
 })->name('home');
 
 Route::get('/tentang', function () {
@@ -42,7 +58,21 @@ Route::get('/artikel', function () {
 })->name('articles.index');
 
 Route::get('/artikel/{slug}', function ($slug) {
-    return Inertia::render('Articles/Show', ['slug' => $slug]);
+    $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
+    $article = collect($articles)->first(fn ($item) => ($item['slug'] ?? null) === $slug);
+
+    // Keep old links such as /artikel/681 working, then canonicalize them.
+    if (!$article && ctype_digit((string) $slug)) {
+        $article = collect($articles)->first(fn ($item) => (string) ($item['id'] ?? '') === (string) $slug);
+
+        if ($article) {
+            return redirect()->route('articles.show', ['slug' => $article['slug']], 301);
+        }
+    }
+
+    abort_unless($article, 404);
+
+    return Inertia::render('Articles/Show', ['article' => $article]);
 })->name('articles.show');
 
 Route::get('/panduan', function () {

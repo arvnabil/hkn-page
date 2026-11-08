@@ -124,14 +124,13 @@ class RolesAndPermissionsSeeder extends Seeder
         $viewerRole = Role::firstOrCreate(['name' => 'viewer']);
         $viewerRole->syncPermissions([
             'view_any_news', 'view_news',
-            'view_any_project', 'view_project',
             'view_any_page', 'view_page',
             'view_analytics',
         ]);
 
         // Create default admin user if not exists
         $admin = User::firstOrCreate(
-            ['email' => 'admin@activoncms.com'],
+            ['email' => 'admin@harryaver.com'],
             [
                 'name' => 'Super Administrator',
                 'password' => bcrypt('password'),
@@ -140,12 +139,6 @@ class RolesAndPermissionsSeeder extends Seeder
             ]
         );
         $admin->assignRole('administrator');
-
-        // Assign administrator role to nabil@activ.co.id if exists
-        $nabil = User::where('email', 'nabil@activ.co.id')->first();
-        if ($nabil) {
-            $nabil->assignRole('administrator');
-        }
 
         $this->command->info('Roles & Permissions seeded successfully!');
         $this->command->table(

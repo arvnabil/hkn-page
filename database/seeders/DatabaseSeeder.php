@@ -18,13 +18,18 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::firstOrCreate(
-            ['email' => 'nabil@activ.co.id'],
+            ['email' => 'admin@harryaver.com'],
             [
-                'name' => 'Nabil',
+                'name' => 'Harry Admin',
                 'password' => \Illuminate\Support\Facades\Hash::make('123123123'),
+                'is_active' => true,
                 'email_verified_at' => now(),
             ]
         );
+
+        // Ensure the seeded account receives the administrator role required
+        // by User::canAccessPanel() before it tries to sign in to Filament.
+        $this->call(RolesAndPermissionsSeeder::class);
 
         // Legacy root seeders have been migrated to their respective modules
         // and will be executed by the auto-discovery loop below.

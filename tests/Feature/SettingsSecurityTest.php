@@ -36,9 +36,9 @@ class SettingsSecurityTest extends TestCase
 
         $this->serviceAccountJson = json_encode([
             'type' => 'service_account',
-            'project_id' => 'activ-test-project',
+            'project_id' => 'harry-test-project',
             'private_key' => "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDsTESTKEYONLY\n-----END PRIVATE KEY-----\n",
-            'client_email' => 'ga-viewer@activ-test-project.iam.gserviceaccount.com',
+            'client_email' => 'ga-viewer@harry-test-project.iam.gserviceaccount.com',
             'token_uri' => 'https://oauth2.googleapis.com/token',
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
     }
@@ -171,7 +171,7 @@ class SettingsSecurityTest extends TestCase
         $response->assertDontSee('BEGIN PRIVATE KEY');
         $response->assertDontSee('MIIEvQIBADANBg');
         $response->assertDontSee('client_email');
-        $response->assertDontSee('activ-test-project');
+        $response->assertDontSee('harry-test-project');
         $response->assertSee('Configured');
     }
 
@@ -199,9 +199,9 @@ class SettingsSecurityTest extends TestCase
 
         $replacement = json_encode([
             'type' => 'service_account',
-            'project_id' => 'activ-replacement',
+            'project_id' => 'harry-replacement',
             'private_key' => "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgREPLACEMENTKEY\n-----END PRIVATE KEY-----\n",
-            'client_email' => 'new@activ-replacement.iam.gserviceaccount.com',
+            'client_email' => 'new@harry-replacement.iam.gserviceaccount.com',
             'token_uri' => 'https://oauth2.googleapis.com/token',
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 

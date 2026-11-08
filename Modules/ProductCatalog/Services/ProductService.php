@@ -74,7 +74,6 @@ class ProductService
             'show_breadcrumb' => $product->show_breadcrumb ?? true,
             'sku'             => $product->sku,
             'solution_type'   => $product->solution_type,
-            'solutions_list'  => [],
             'datasheet_url'   => $product->datasheet_url,
             'datasheet_rel'   => \Modules\SEO\Helpers\SeoHelper::get_rel($product->datasheet_url),
             'description'     => $product->description,

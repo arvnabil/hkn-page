@@ -317,14 +317,6 @@ class ProductImporter extends Importer
             ]);
         }
 
-        // 4. Sync Brand to Solutions
-        try {
-            $record->syncBrandToSolutions();
-        } catch (\Throwable $e) {
-             \Illuminate\Support\Facades\Log::warning("Brand sync failed for Product {$record->id}: " . $e->getMessage());
-        }
-
-
     }
 
     public static function getCompletedNotificationBody(Import $import): string

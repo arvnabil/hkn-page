@@ -60,7 +60,7 @@ class ManageWhatsAppBubble extends Page implements HasForms
                             ->helperText('Use international format without + or spaces (e.g., 62812...)'),
                         Textarea::make('message')
                             ->label('Default Message')
-                            ->placeholder('Halo ACTiV, saya ingin konsultasi...')
+                            ->placeholder('Halo Harry, saya ingin konsultasi solusi AVer...')
                             ->rows(3),
                         TextInput::make('tooltip')
                             ->label('Tooltip Text')

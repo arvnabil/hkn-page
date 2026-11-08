@@ -27,7 +27,7 @@ class NewsExporter extends Exporter
 
             ExportColumn::make('url')
                 ->label('url')
-                ->state(fn (News $record): string => 'https://activ.co.id/' . ltrim($record->slug, '/')),
+                ->state(fn (News $record): string => url('/news/' . ltrim($record->slug, '/'))),
 
             ExportColumn::make('excerpt')
                 ->label('excerpt'),

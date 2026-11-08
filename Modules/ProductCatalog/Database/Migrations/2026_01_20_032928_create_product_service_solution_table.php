@@ -11,14 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (Schema::hasTable('service_solutions')) {
-            Schema::create('product_service_solution', function (Blueprint $table) {
-                $table->id();
-                $table->foreignId('product_id')->constrained('products')->cascadeOnDelete();
-                $table->foreignId('service_solution_id')->constrained('service_solutions')->cascadeOnDelete();
-                $table->timestamps();
-            });
-        }
+        // Product-to-service-solution relation intentionally removed.
     }
 
     /**
@@ -26,6 +19,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('product_service_solution');
+        // No-op: this migration no longer creates a relation.
     }
 };

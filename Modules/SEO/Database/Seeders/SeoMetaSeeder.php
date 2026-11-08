@@ -38,6 +38,6 @@ class SeoMetaSeeder extends Seeder
          if ($heroSection && isset($heroSection->config['slides'][0]['description'])) {
             return \Illuminate\Support\Str::limit(strip_tags($heroSection->config['slides'][0]['description']), 160);
          }
-         return "Activia RDW - " . $page->title;
+         return "Harry AVer - " . $page->title;
     }
 }

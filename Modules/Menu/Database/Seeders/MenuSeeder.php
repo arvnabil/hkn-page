@@ -55,16 +55,10 @@ class MenuSeeder extends Seeder
                 'visibility' => 'all',
             ],
             [
-                'title' => 'Masuk Event',
+                'title' => 'Hubungi Kami',
                 'type' => 'custom',
-                'url' => '/events/auth/login',
-                'visibility' => 'guest',
-            ],
-            [
-                'title' => 'Dasbor Event',
-                'type' => 'custom',
-                'url' => '/events/dashboard',
-                'visibility' => 'auth',
+                'url' => '/contact',
+                'visibility' => 'all',
             ],
         ];
 
@@ -76,56 +70,33 @@ class MenuSeeder extends Seeder
         $items = [
             [
                 'title' => 'Beranda',
-                'type' => 'page',
-                'page_slug' => 'home',
-            ],
-            [
-                'title' => 'Layanan',
-                'type' => 'page',
-                'page_slug' => 'services',
-            ],
-            [
-                'title' => 'Tentang Kami',
-                'type' => 'page',
-                'page_slug' => 'about-us',
-            ],
-            [
-                'title' => 'Mitra',
                 'type' => 'custom',
-                'url' => '/partners',
+                'url' => '/',
             ],
             [
                 'title' => 'Produk',
                 'type' => 'custom',
-                'url' => '/products',
+                'url' => '/produk',
             ],
             [
-                'title' => 'Proyek',
-                'type' => 'page',
-                'page_slug' => 'projects',
-            ],
-            [
-                'title' => 'Media',
+                'title' => 'Artikel',
                 'type' => 'custom',
-                'url' => '#',
-                'children' => [
-                   [
-                       'title' => 'Toko',
-                       'type' => 'custom',
-                       'url' => 'https://accommerce.id',
-                       'target' => '_blank',
-                   ],
-                   [
-                       'title' => 'Event',
-                       'type' => 'custom',
-                       'url' => '/events',
-                   ],
-                   [
-                       'title' => 'Berita',
-                       'type' => 'page',
-                       'page_slug' => 'news',
-                   ],
-                ],
+                'url' => '/artikel',
+            ],
+            [
+                'title' => 'Solusi',
+                'type' => 'custom',
+                'url' => '/solusi',
+            ],
+            [
+                'title' => 'Panduan',
+                'type' => 'custom',
+                'url' => '/panduan',
+            ],
+            [
+                'title' => 'Tentang',
+                'type' => 'custom',
+                'url' => '/tentang',
             ],
         ];
 

@@ -105,7 +105,7 @@ class SeoResolver
         $settings = \Modules\Settings\Models\Setting::whereIn('key', ['seo_default_title', 'seo_default_description', 'seo_default_og_image'])
             ->pluck('value', 'key');
 
-        $siteName = $settings['seo_default_title'] ?? config('app.name', 'ACTiV');
+        $siteName = $settings['seo_default_title'] ?? config('app.name', 'Harry AVer');
         $defaultDesc = $settings['seo_default_description'] ?? '';
         $defaultOgImageVal = $settings['seo_default_og_image'] ?? null;
         $defaultOgImage = $defaultOgImageVal ? asset('storage/' . $defaultOgImageVal) : null;

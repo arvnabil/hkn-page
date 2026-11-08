@@ -67,3 +67,4 @@ class NewsJsonSeederTest extends TestCase
         $this->assertEquals($tagPostCount, DB::table('news_tag_post')->count(), 'Tag pivot count should remain unchanged after re-seed');
     }
 }
+

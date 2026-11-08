@@ -6,10 +6,12 @@ import defaultAdvisor from '../../data/advisor.json';
 import siteData from '../../data/site.json';
 
 export default function ArticleShow({
-  article = defaultArticles[0],
+  article,
+  slug,
   advisor = defaultAdvisor,
   site = siteData,
 }) {
+  article = article || defaultArticles.find((item) => item.slug === slug) || defaultArticles[0];
   const authorName = article.author?.name || advisor.name;
   const authorRole = article.author?.role || advisor.role;
   const authorAvatar = article.author?.avatar || advisor.photo;

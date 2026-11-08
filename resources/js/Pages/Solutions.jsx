@@ -112,7 +112,9 @@ export default function Solutions({
                               isSelected ? 'bg-primary text-on-primary' : 'bg-surface border border-border-clean text-primary'
                             }`}
                           >
-                            {sol.icon || 'meeting_room'}
+                            <span className="inline-flex w-full h-full items-center justify-center text-center leading-none">
+                              {sol.icon || 'meeting_room'}
+                            </span>
                           </span>
                         </div>
                         <h3 className="font-heading font-extrabold text-sm sm:text-base text-on-surface line-clamp-1 mb-1">

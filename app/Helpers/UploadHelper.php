@@ -35,8 +35,8 @@ class UploadHelper
         $originalSlug = Str::slug($originalName);
 
         // 3. Append Branding & Timestamp (Year, Minutes, Seconds)
-        // Format: [context]-[original-name]-activ-teknologi-[timestamp]
-        $finalBase = $baseName . '-' . $originalSlug . '-activ-teknologi-' . date('Y-is');
+        // Format: [context]-[original-name]-harry-aver-[timestamp]
+        $finalBase = $baseName . '-' . $originalSlug . '-harry-aver-' . date('Y-is');
         $filename = Str::slug($finalBase);
         
         // 4. Force WebP Extension

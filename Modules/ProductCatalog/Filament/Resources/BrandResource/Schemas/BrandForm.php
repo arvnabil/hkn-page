@@ -113,7 +113,7 @@ class BrandForm
                                         ->helperText('Jika diisi, URL di atas akan diabaikan dan tombol akan diarahkan ke sistem tracking WhatsApp kami.'),
                                     TextInput::make('cta_whatsapp_message')
                                         ->label('CTA WhatsApp Default Message')
-                                        ->placeholder('Halo ACTiV, saya ingin bertanya...')
+                                        ->placeholder('Halo Harry, saya ingin bertanya mengenai solusi perangkat ini...')
                                         ->columnSpanFull(),
 
                                 ])->columns(2)->statePath('landing_config.hero'),
@@ -216,7 +216,7 @@ class BrandForm
                                         ->placeholder('Logitech Elite Partner Certification'),
                                     TextInput::make('modal_subtitle')
                                         ->label('Modal Subtitle')
-                                        ->placeholder('ACTiV is an official Logitech Elite Partner in Indonesia'),
+                                        ->placeholder('Harry is an authorized AVer enterprise solutions advisor in Indonesia'),
                                     RichEditor::make('modal_description')
                                         ->label('Modal Description')
                                         ->columnSpanFull(),

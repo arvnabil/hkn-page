@@ -12,7 +12,7 @@ class SeoManager
     protected array $meta = [];
     protected ?OrganizationSchema $organization = null;
     protected ?WebsiteSchema $website = null;
-    protected string $appName = 'ACTiV';
+    protected string $appName = 'Harry AVer';
 
     public function __construct()
     {

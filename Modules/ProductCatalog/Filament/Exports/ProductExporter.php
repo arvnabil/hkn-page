@@ -54,13 +54,9 @@ class ProductExporter extends Exporter
 
             // Relationships
             ExportColumn::make('brand.name')->label('brand_name'),
-            ExportColumn::make('service.name')->label('service_name'),
             ExportColumn::make('categories')
                 ->label('category_name')
                 ->state(fn (Product $record): ?string => $record->categories->pluck('name')->join(', ') ?: null),
-            ExportColumn::make('solutions')
-                ->label('solutions')
-                ->state(fn (Product $record): ?string => $record->solutions->pluck('title')->join(', ') ?: null),
 
             // Market Links
             ExportColumn::make('link_accommerce')->label('link_accommerce'),

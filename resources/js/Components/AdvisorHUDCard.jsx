@@ -1,4 +1,5 @@
 import React from 'react';
+import { Crosshair } from 'lucide-react';
 import advisorData from '../data/advisor.json';
 
 export default function AdvisorHUDCard({ advisor = advisorData }) {
@@ -13,8 +14,8 @@ export default function AdvisorHUDCard({ advisor = advisorData }) {
       {/* Top HUD Status Bar */}
       <div className="flex items-center justify-between font-label-mono text-xs text-primary pb-2 border-b border-border-clean">
         <span className="flex items-center space-x-1.5 font-bold">
-          <span className="material-symbols-outlined text-[15px] animate-pulse">
-            center_focus_strong
+          <span className="text-[15px] animate-pulse">
+            <Crosshair aria-hidden="true" size={16} strokeWidth={1.8} />
           </span>
           <span>[ADVISOR ID: {advisor.idCode}]</span>
         </span>

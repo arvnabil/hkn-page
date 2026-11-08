@@ -30,7 +30,7 @@ export default function ArticleCard({ article }) {
         </span>
 
         <Link
-          href={`/artikel/${article.id}`}
+          href={`/artikel/${article.slug || article.id}`}
           className="block group-hover:text-primary transition-colors"
         >
           <h3 className="font-title-md text-body-md font-bold text-on-surface line-clamp-2 mb-2 leading-snug">

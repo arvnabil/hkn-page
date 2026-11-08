@@ -50,7 +50,7 @@ class ScrambleDocsTest extends TestCase
 
         $user = User::create([
             'name' => 'Admin Developer',
-            'email' => 'admin-dev@active.co.id',
+            'email' => 'admin-dev@harryaver.com',
             'password' => bcrypt('password123'),
         ]);
 

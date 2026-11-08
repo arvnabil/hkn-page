@@ -114,11 +114,11 @@ class ManageSiteBranding extends Page implements HasForms
                         TextInput::make('instagram_url')
                             ->label('Instagram URL')
                             ->url()
-                            ->placeholder('https://www.instagram.com/activ_teknologi/'),
+                            ->placeholder('https://www.instagram.com/harryaver/'),
 
                         TextInput::make('instagram_username')
                             ->label('Instagram Username')
-                            ->placeholder('@activ_teknologi'),
+                            ->placeholder('@harryaver'),
 
                         TextInput::make('facebook_url')
                             ->label('Facebook URL')

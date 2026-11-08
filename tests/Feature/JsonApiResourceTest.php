@@ -159,8 +159,8 @@ class JsonApiResourceTest extends TestCase
     {
         // 1. Setup mock data
         $author = User::create([
-            'name' => 'ACTiV Writer',
-            'email' => 'writer@active.co.id',
+            'name' => 'Harry News Writer',
+            'email' => 'writer@harryaver.com',
             'password' => bcrypt('secret-password'),
         ]);
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Moon, Sun } from 'lucide-react';
 
 /**
  * ThemeToggle Component
@@ -54,9 +55,7 @@ export default function ThemeToggle({ className = '' }) {
       aria-label={isDark ? 'Beralih ke mode terang' : 'Beralih ke mode gelap'}
       title={isDark ? 'Mode Terang' : 'Mode Gelap'}
     >
-      <span className="material-symbols-outlined text-[20px] transition-transform duration-200">
-        {isDark ? 'light_mode' : 'dark_mode'}
-      </span>
+      {isDark ? <Sun aria-hidden="true" size={20} /> : <Moon aria-hidden="true" size={20} />}
     </button>
   );
 }

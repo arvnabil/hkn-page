@@ -3,122 +3,54 @@
 namespace Modules\ProductCatalog\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\ProductCatalog\Models\Product;
+use Illuminate\Support\Facades\DB;
 use Modules\ProductCatalog\Models\Brand;
+use Modules\ProductCatalog\Models\Product;
+use Modules\ProductCatalog\Models\ProductCategory;
 
 class ProductSeeder extends Seeder
 {
     public function run(): void
     {
-        $brandLogi = Brand::firstOrCreate(['slug' => 'logitech'], ['name' => 'Logitech']);
-        $brandYealink = Brand::firstOrCreate(['slug' => 'yealink'], ['name' => 'Yealink']);
-        $brandJabra = Brand::firstOrCreate(['slug' => 'jabra'], ['name' => 'Jabra']);
+        $jsonPath = resource_path('js/data/products.json');
+        $json = file_get_contents($jsonPath);
+        $json = preg_replace('/^\xEF\xBB\xBF/', '', $json);
+        $products = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+        $brand = Brand::updateOrCreate(['slug' => 'aver'], ['name' => 'AVer']);
 
-        // 1. Logitech MeetUp 2
-        Product::firstOrCreate(
-            ['slug' => 'meetup-2-prod'],
-            [
-                'name' => 'Logitech MeetUp 2',
-                'brand_id' => $brandLogi->id,
-                'description' => 'All-in-One ConferenceCam with AI Viewfinder.',
-                'image_path' => '/assets/img/product/product_1_3.png',
-                'price' => 9500000,
-                'is_active' => true
-            ]
-        );
+        DB::transaction(function () use ($products, $brand): void {
+            $categoryIds = [];
+            foreach (collect($products)->pluck('categoryLabel')->filter()->unique() as $sort => $label) {
+                $category = ProductCategory::updateOrCreate(
+                    ['slug' => \Illuminate\Support\Str::slug($label)],
+                    ['name' => $label, 'sort_order' => $sort, 'is_active' => true]
+                );
+                $categoryIds[$label] = $category->id;
+            }
 
-        // 2. Logitech Rally Bar
-        Product::firstOrCreate(
-            ['slug' => 'rally-bar-prod'],
-            [
-                'name' => 'Logitech Rally Bar',
-                'brand_id' => $brandLogi->id,
-                'description' => 'Premium All-in-One Video Bar for Small to Medium Rooms.',
-                'image_path' => '/assets/img/product/product_1_2.png',
-                'price' => 45000000,
-                'is_active' => true
-            ]
-        );
+            $slugs = collect($products)->pluck('id')->all();
+            Product::whereNotIn('slug', $slugs)->delete();
 
-        // 3. Jabra PanaCast 50
-        Product::firstOrCreate(
-            ['slug' => 'panacast-50-prod'],
-            [
-                'name' => 'Jabra PanaCast 50',
-                'brand_id' => $brandJabra->id,
-                'description' => 'The first new-normal-ready intelligent video bar.',
-                'image_path' => '/assets/img/product/product_1_5.png',
-                'price' => 42000000,
-                'is_active' => true
-            ]
-        );
+            foreach ($products as $item) {
+                $product = Product::updateOrCreate(['slug' => $item['id']], [
+                    'brand_id' => $brand->id,
+                    'name' => $item['name'],
+                    'description' => $item['tagline'] ?? null,
+                    'image_path' => $item['image'] ?? null,
+                    'thumbnail_path' => $item['image'] ?? null,
+                    'tags' => array_values(array_unique(array_merge($item['certifications'] ?? [], [$item['badge'] ?? '']))),
+                    'specs' => $item['specs'] ?? [],
+                    'features' => $item['features'] ?? [],
+                    'specification_text' => json_encode(array_intersect_key($item, array_flip(['roomSize','zoom','fov','resolution','warranty','bestFor'])), JSON_UNESCAPED_UNICODE),
+                    'features_text' => implode("\n", $item['features'] ?? []),
+                    'is_active' => true,
+                    'is_featured' => in_array($item['id'], ['cam550','cam570'], true),
+                ]);
 
-        // 4. Yealink MeetingBoard 65
-        Product::firstOrCreate(
-            ['slug' => 'yealink-meetingboard-65'],
-            [
-                'name' => 'Yealink MeetingBoard 65',
-                'brand_id' => $brandYealink->id,
-                'description' => 'All-in-One Smart Collaboration Display for Modern Workspace.',
-                'image_path' => '/assets/img/product/product_1_6.png',
-                'price' => 85000000,
-                'is_active' => true,
-                'is_featured' => true
-            ]
-        );
-
-        // 5. Logitech Rally Plus
-        Product::firstOrCreate(
-            ['slug' => 'logitech-rally-plus'],
-            [
-                'name' => 'Logitech Rally Plus',
-                'brand_id' => $brandLogi->id,
-                'description' => 'Premier modular video conferencing system for large rooms.',
-                'image_path' => '/assets/img/product/product_1_1.png',
-                'price' => 55000000,
-                'is_active' => true
-            ]
-        );
-
-        // 6. Yealink A30
-        Product::firstOrCreate(
-            ['slug' => 'yealink-a30'],
-            [
-                'name' => 'Yealink MeetingBar A30',
-                'brand_id' => $brandYealink->id,
-                'description' => 'All-in-one generic video bar for medium rooms.',
-                'image_path' => '/assets/img/product/product_1_4.png',
-                'price' => 38000000,
-                'is_active' => true
-            ]
-        );
-
-        // 7. Logitech Swytch
-        Product::firstOrCreate(
-            ['slug' => 'logitech-swytch'],
-            [
-                'name' => 'Logitech Swytch',
-                'brand_id' => $brandLogi->id,
-                'description' => 'Link laptop to room system with a single cable.',
-                'image_path' => '/assets/img/product/product_1_7.png',
-                'price' => 15000000,
-                'is_active' => true
-            ]
-        );
-
-        // 8. Jabra Speak 710
-        Product::firstOrCreate(
-            ['slug' => 'jabra-speak-710'],
-            [
-                'name' => 'Jabra Speak 710',
-                'brand_id' => $brandJabra->id,
-                'description' => 'Premium portable speakerphone with amazing sound.',
-                'image_path' => '/assets/img/product/product_1_8.png',
-                'price' => 4500000,
-                'is_active' => true
-            ]
-        );
-
-        // Add other referenced products as needed
+                if (isset($categoryIds[$item['categoryLabel'] ?? ''])) {
+                    $product->categories()->sync([$categoryIds[$item['categoryLabel']]]);
+                }
+            }
+        });
     }
 }

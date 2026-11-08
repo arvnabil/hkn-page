@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from '@inertiajs/react';
 import AVerLogo from './AVerLogo';
 import siteData from '../data/site.json';
+import { Headset, Link2, MessageCircle, ShieldCheck, UsersRound, Video } from 'lucide-react';
 
 export default function Footer({ site = siteData }) {
   return (
@@ -11,22 +12,22 @@ export default function Footer({ site = siteData }) {
         {/* Top Trust & Certification Banner (AVer Ecosystem) */}
         <div className="p-6 rounded-2xl bg-surface-container-lowest border border-border-clean mb-12 grid grid-cols-2 sm:grid-cols-4 gap-4 items-center text-center">
           <div className="flex flex-col items-center">
-            <span className="material-symbols-outlined text-primary text-2xl mb-1">verified_user</span>
+            <ShieldCheck aria-hidden="true" size={24} className="text-primary mb-1" />
             <span className="font-heading font-bold text-xs text-on-surface">Garansi 3+2 Tahun</span>
             <span className="font-mono text-[10px] text-muted-slate">Standar Industri AVer</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="material-symbols-outlined text-primary text-2xl mb-1">groups</span>
+            <UsersRound aria-hidden="true" size={24} className="text-primary mb-1" />
             <span className="font-heading font-bold text-xs text-on-surface">Microsoft Teams</span>
             <span className="font-mono text-[10px] text-muted-slate">Certified Rooms System</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="material-symbols-outlined text-primary text-2xl mb-1">videocam</span>
+            <Video aria-hidden="true" size={24} className="text-primary mb-1" />
             <span className="font-heading font-bold text-xs text-on-surface">Zoom Rooms</span>
             <span className="font-mono text-[10px] text-muted-slate">Certified Hardware</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="material-symbols-outlined text-primary text-2xl mb-1">support_agent</span>
+            <Headset aria-hidden="true" size={24} className="text-primary mb-1" />
             <span className="font-heading font-bold text-xs text-on-surface">Dedicated PoC</span>
             <span className="font-mono text-[10px] text-muted-slate">Uji Coba Denah Gratis</span>
           </div>
@@ -49,7 +50,7 @@ export default function Footer({ site = siteData }) {
                 className="w-9 h-9 rounded-lg bg-surface border border-border-clean flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors"
                 aria-label="LinkedIn"
               >
-                <span className="material-symbols-outlined text-[18px]">link</span>
+                <Link2 aria-hidden="true" size={18} />
               </a>
               <a
                 href={site.whatsapp}
@@ -58,7 +59,7 @@ export default function Footer({ site = siteData }) {
                 className="w-9 h-9 rounded-lg bg-surface border border-border-clean flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors"
                 aria-label="WhatsApp"
               >
-                <span className="material-symbols-outlined text-[18px]">chat</span>
+                <MessageCircle aria-hidden="true" size={18} />
               </a>
             </div>
           </div>

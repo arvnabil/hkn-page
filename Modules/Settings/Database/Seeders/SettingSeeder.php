@@ -12,13 +12,13 @@ class SettingSeeder extends Seeder
         $settings = [
             [
                 'key' => 'seo_default_title',
-                'value' => 'ACTiV - Digital Solutions',
+                'value' => 'Harry - AVer B2B Technical Advisor & Video Conference Solutions',
                 'label' => 'Default Meta Title',
                 'type' => 'text',
             ],
             [
                 'key' => 'seo_default_description',
-                'value' => 'Empowering businesses with modern digital solutions.',
+                'value' => 'Solusi video conference dan kamera AI tracking AVer resmi untuk ruang rapat korporat dan institusi bersama Harry.',
                 'label' => 'Default Meta Description',
                 'type' => 'textarea',
             ],

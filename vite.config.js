@@ -14,6 +14,21 @@ export default defineConfig({
   optimizeDeps: {
     entries: ['index.html'],
   },
+  // Laravel serves the React entry from its Vite manifest. Avoid copying the
+  // public directory: public/storage is a Docker-created symlink on Windows.
+  publicDir: false,
+  build: {
+    outDir: 'public/build',
+    emptyOutDir: true,
+    manifest: 'manifest.json',
+    rollupOptions: {
+      input: [
+        'resources/css/app.css',
+        'resources/js/app.jsx',
+        'resources/js/filament-serp.jsx',
+      ],
+    },
+  },
   server: {
     port: 5173,
     open: true,

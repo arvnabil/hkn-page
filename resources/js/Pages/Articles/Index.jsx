@@ -163,7 +163,7 @@ export default function ArticlesIndex({
                     </span>
                     <div className="flex flex-col">
                       <Link
-                        href={`/artikel/${item.id}`}
+                        href={`/artikel/${item.slug || item.id}`}
                         className="font-title-md text-xs font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2"
                       >
                         {item.title}

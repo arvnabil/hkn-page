@@ -18,8 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js (v20 LTS) for asset building
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+# Install Bun and Node.js (v20 LTS) for asset building
+RUN curl -fsSL https://bun.sh/install | bash \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
@@ -46,11 +47,14 @@ COPY .docker/php/local.ini /usr/local/etc/php/conf.d/local.ini
 # Copy project files
 COPY . /var/www/html
 
+# Do not reuse host-generated Laravel package manifests in the container.
+RUN rm -f bootstrap/cache/packages.php bootstrap/cache/services.php
+
 # Install Composer dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 # Install frontend dependencies and build assets
-RUN npm ci && npm run build
+RUN /root/.bun/bin/bun install --frozen-lockfile && /root/.bun/bin/bun run build
 
 # Copy and set entrypoint script permissions
 COPY .docker/entrypoint.sh /usr/local/bin/entrypoint.sh

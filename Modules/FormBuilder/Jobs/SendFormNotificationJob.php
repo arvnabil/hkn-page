@@ -25,7 +25,7 @@ class SendFormNotificationJob implements ShouldQueue
     public function handle(): void
     {
         // Use config or default
-        $recipient = config('mail.form_recipient', 'sales@activ.co.id');
+        $recipient = config('mail.form_recipient', 'contact@harryaver.com');
 
         Mail::to($recipient)->send(new FormSubmissionMail($this->submission));
     }

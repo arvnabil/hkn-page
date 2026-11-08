@@ -78,9 +78,9 @@ class PageSeeder extends Seeder
                 'key' => 'about',
                 'config' => [
                     'variant' => 'home',
-                    'title' => 'Bridging Technology and Education for a Better Future.',
-                    'subtitle' => 'Who We Are',
-                    'description' => 'ACTiV (PT Alfa Cipta Teknologi Virtual) is a dynamic company specializing in the sales and rental of software, hardware, and supporting accessories, with a primary focus on Information Communication Technology (ICT) and Education solutions. Backed by a team with over 6 years of experience and official partnerships with multinational ICT brands, we are dedicated to delivering the best comprehensive technology solutions to our clients.',
+                    'title' => 'Optimalisasi Komunikasi & Kolaborasi Audio Visual Enterprise.',
+                    'subtitle' => 'Tentang Harry & AVer Solutions',
+                    'description' => 'Harry hadir sebagai B2B technical advisor dan konsultan spesialis solusi video conference serta kamera AI tracking AVer di Indonesia. Berbekal keahlian teknis dalam integrasi ruang rapat enterprise, smart classroom, dan auditorium, kami membantu organisasi merancang ekosistem audio-visual yang andal, modern, dan presisi sesuai kebutuhan ruang Anda.',
                     'images' => [
                         '/assets/img/normal/about_7_1.jpg',
                         '/assets/img/normal/about_7_2.jpg',
@@ -88,13 +88,13 @@ class PageSeeder extends Seeder
                     ],
                     'features' => [
                         [
-                            'title' => 'ICT & Education Product Supply',
-                            'text' => 'Official provider of hardware and software tailored for education and ICT infrastructure.',
+                            'title' => 'AVer Enterprise Certified Solutions',
+                            'text' => 'Konsultasi dan penyediaan lini kamera PTZ, USB conference cam, dan audio beamforming resmi bergaransi.',
                             'icon' => '/assets/img/icon/shield.svg'
                         ],
                         [
-                            'title' => 'Solution Services & Custom Development',
-                            'text' => 'Expert technical solutions and custom software development tailored to your specific needs.',
+                            'title' => 'Desain Solusi & Blueprint Interaktif',
+                            'text' => 'Simulasi tata letak FOV kamera, akustik mikrofon, dan kompatibilitas platform UC (Zoom, Teams, Google Meet).',
                             'icon' => '/assets/img/icon/shield.svg'
                         ]
                     ]
@@ -127,18 +127,18 @@ class PageSeeder extends Seeder
             [
                 'key' => 'why_choose_us',
                 'config' => [
-                    'title' => 'Empowering Your Future with Proven Technology.',
-                    'subtitle' => 'Why Choose ACTiV',
-                    'description' => 'We are dedicated to providing comprehensive ICT and Education solutions that are not only advanced but also reliable. By combining technical expertise with global support, we ensure every technology investment you make delivers real, sustainable value.',
+                    'title' => 'Standar Tertinggi Kolaborasi Digital dengan Solusi AVer Teruji.',
+                    'subtitle' => 'Mengapa Memilih Harry',
+                    'description' => 'Kami tidak sekadar menawarkan perangkat, melainkan solusi menyeluruh mulai dari asesmen denah ruang, simulasi teknis AI HUD, hingga panduan instalasi profesional agar investasi teknologi Anda memberikan hasil kolaborasi terbaik.',
                     'features' => [
                         [
-                            'title' => 'Expert Team',
-                            'text' => 'Backed by professionals with over 6 years of experience in ICT infrastructure',
+                            'title' => 'Keahlian Teknis Audio Visual',
+                            'text' => 'Didukung pengalaman mendalam dalam integrasi sistem video conference dan akustik ruang korporat.',
                             'icon' => '/assets/img/icon/shield.svg'
                         ],
                         [
-                            'title' => 'Certified Brand Partners',
-                            'text' => 'Official partnerships ensuring product authenticity and certified technical support.',
+                            'title' => 'Rekomendasi Berbasis AI & Blueprint',
+                            'text' => 'Perhitungan akurat kapasitas peserta, pencahayaan, dan sudut pandang kamera untuk hasil optimal.',
                             'icon' => '/assets/img/icon/shield.svg'
                         ]
                     ],
@@ -166,8 +166,8 @@ class PageSeeder extends Seeder
             [
                 'key' => 'news',
                 'config' => [
-                    'title' => 'ACTiV News Articles',
-                    'subtitle' => 'News',
+                    'title' => 'Berita & Wawasan Terkini',
+                    'subtitle' => 'Kabar & Artikel Audio Visual',
                     'limit' => 3
                 ]
             ]
@@ -203,9 +203,9 @@ class PageSeeder extends Seeder
             [
                 'key' => 'about_content',
                 'config' => [
-                    'subtitle' => 'About ACTiV',
-                    'title' => 'Bridging Technology and Education for a Better Future.',
-                    'description' => 'ACTiV (PT Alfa Cipta Teknologi Virtual) is a premier provider of ICT and Educational solutions, specializing in hardware, software, and accessory rentals and sales. With over six years of industry experience and strategic partnerships with multinational brands, we deliver comprehensive, tailored technology solutions to empower our clients\' success.',
+                    'subtitle' => 'Tentang Harry',
+                    'title' => 'Menghubungkan Kolaborasi dan Teknologi Ruang Rapat Modern.',
+                    'description' => 'Harry adalah technical advisor terpercaya untuk pengadaan dan integrasi sistem video conferencing AVer di Indonesia. Kami berdedikasi memberikan konsultasi B2B profesional untuk perusahaan, institusi pendidikan, dan instansi pemerintahan dalam merancang ruang kolaborasi masa depan.',
                     'images' => [
                         '/assets/img/normal/about_7_1.jpg',
                         '/assets/img/normal/about_7_2.jpg',
@@ -214,18 +214,18 @@ class PageSeeder extends Seeder
                     'video_url' => 'https://www.youtube.com/watch?v=hIIQbkkKnno',
                     'features' => [
                         [
-                            'title' => 'Expert Team',
-                            'description' => 'Our team consists of seasoned professionals with deep expertise in ICT and education sectors.',
+                            'title' => 'Konsultan Spesialis AVer',
+                            'description' => 'Fokus mendalam pada ekosistem AVer: kamera AI auto tracking, video bar, dan sistem mikrofon konferensi.',
                             'icon' => '/assets/img/icon/guide.svg',
                         ],
                         [
-                            'title' => 'Certified Partnerships',
-                            'description' => 'We hold official partnerships with leading global brands, ensuring authentic products and certified technical support.',
+                            'title' => 'Dukungan Teknis Komprehensif',
+                            'description' => 'Membantu evaluasi arsitektur ruang rapat, rekomendasi penempatan perangkat, dan konfigurasi sistem audio-visual.',
                             'icon' => '/assets/img/icon/policy.svg',
                         ],
                         [
-                            'title' => 'Dedicated Support',
-                            'description' => 'Our responsive support system operates across multiple channels to provide timely resolutions and ensure business continuity.',
+                            'title' => 'Kemitraan Resmi & Bergaransi',
+                            'description' => 'Jaminan produk resmi, garansi pabrikan, dan kesinambungan layanan purna jual yang profesional.',
                             'icon' => '/assets/img/icon/support.svg',
                         ],
                     ],
@@ -235,17 +235,17 @@ class PageSeeder extends Seeder
             [
                 'key' => 'vision_mission',
                 'config' => [
-                    'vision_title' => 'Our Vision',
-                    'vision_text' => 'To be Indonesia\'s leading national provider of ICT and Education solutions, recognized for excellence in service, sales, and rentals.',
-                    'mission_title' => 'Our Mission',
+                    'vision_title' => 'Visi Kami',
+                    'vision_text' => 'Menjadi mitra rujukan utama B2B di Indonesia dalam implementasi solusi audio-visual dan smart collaboration room berstandar global.',
+                    'mission_title' => 'Misi Kami',
                     'mission_items' => [
-                        ['text' => 'Deliver superior consultation services that optimize business processes and productivity through strategic ICT implementation.'],
-                        ['text' => 'Provide a comprehensive range of well-designed, cost-effective solution blueprints.'],
-                        ['text' => 'Ensure seamless and flexible transaction experiences across direct and marketplace channels.'],
-                        ['text' => 'Offer dedicated after-sales support and maintenance to guarantee long-term operational success.'],
+                        ['text' => 'Menyediakan konsultasi teknis yang objektif, presisi, dan sesuai dengan kapasitas serta anggaran ruang kerja Anda.'],
+                        ['text' => 'Mengembangkan perangkat interaktif (AI Advisor HUD & Blueprint Studio) guna mempermudah pemilihan solusi AV.'],
+                        ['text' => 'Memberikan edukasi dan pendampingan implementasi teknologi kamera cerdas (AI auto tracking & voice tracking).'],
+                        ['text' => 'Memastikan kepuasan jangka panjang klien melalui dukungan teknis yang responsif dan berintegritas.'],
                     ],
-                    'goal_title' => 'Our Goal',
-                    'goal_text' => 'To become a trusted partner delivering consultative ICT solutions that drive productivity and resolve complex business challenges efficiently.',
+                    'goal_title' => 'Tujuan Kami',
+                    'goal_text' => 'Menciptakan pengalaman rapat hibrida yang lancar, bebas hambatan teknis, dan meningkatkan produktivitas seluruh tim organisasi.',
                 ]
             ],
              // 3. Testimonial (Legacy)
@@ -290,15 +290,15 @@ class PageSeeder extends Seeder
             [
                 'key' => 'contact',
                 'config' => [
-                    'title' => 'Contact Information',
-                    'subtitle' => "Let's Collaborate",
-                    'intro_text' => 'We appreciate your interest in ACTiV. Our team is ready to discuss how we can support your business goals. Please contact us via the following:',
-                    'phone' => '(+62) 2150110987',
+                    'title' => 'Informasi Kontak',
+                    'subtitle' => 'Konsultasi Bersama Harry',
+                    'intro_text' => 'Terima kasih atas minat Anda pada solusi Harry & AVer. Tim kami siap mendiskusikan kebutuhan ruang rapat dan kolaborasi organisasi Anda. Silakan hubungi kami melalui saluran berikut:',
+                    'phone' => '(+62) 21-50110987',
                     'whatsapp' => '(+62) 851-6299-4602',
-                    'email' => 'sales@activ.co.id',
-                    'address_office' => 'Infinity Office, Belleza BSA 1st Floor Unit 106, Jl. Letjen Soepeno, Kebayoran Lama, Jakarta Selatan 12210',
-                    'address_representative' => 'Ruko Golden Boulevard Blok S 28, BSD City, Tangerang Selatan 15318',
-                    'map_embed_url' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.448530321454!2d106.78065057585093!3d-6.204407860775895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x286e11158102c918!2sThe%20Bellezza%20Shopping%20Arcade!5e0!3m2!1sid!2sid!4v1716968007353!5m2!1sid!2sid',
+                    'email' => 'contact@harryaver.com',
+                    'address_office' => 'Jakarta Selatan, DKI Jakarta 12210, Indonesia',
+                    'address_representative' => 'Tangerang Selatan, Banten 15318, Indonesia',
+                    'map_embed_url' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2831252033!2d106.759478!3d-6.2297465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1716968007353!5m2!1sid!2sid',
                     'form_fields' => [
                         [
                             'label' => 'Your Name',

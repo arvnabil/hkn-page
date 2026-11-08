@@ -67,7 +67,7 @@ class NewsController extends Controller
                     'link' => route('dynamic.resolve', $post->slug),
                     'image' => $resolvePath($post->thumbnail),
                     'date' => $post->published_at ? $post->published_at->format('d M, Y') : '',
-                    'author' => 'ACTiV Team',
+                    'author' => 'Harry Editorial Team',
                     'category' => $post->categories->first()?->name ?? 'Uncategorized', // Display primary category
                     'categories' => $post->categories->map(fn($c) => ['name' => $c->name, 'slug' => $c->slug]),
                     'tags' => $post->tags->map(fn($t) => ['name' => $t->name, 'slug' => $t->slug]),
@@ -108,7 +108,7 @@ class NewsController extends Controller
             'page_title' => $page?->title ?? 'Latest News',
             'breadcrumb_image' => $page?->breadcrumb_image,
             'show_breadcrumb' => $page?->show_breadcrumb ?? true,
-            'seo' => SeoResolver::staticPage($pageTitle, 'Latest news and updates from ACTiV'),
+            'seo' => SeoResolver::staticPage($pageTitle, 'Berita dan wawasan audio visual terkini dari Harry'),
         ]);
     }
 
