@@ -59,9 +59,9 @@ export default function BuilderSidebar({
                                     onAddSection(key);
                                     setActiveTab("layers");
                                 }}
-                                className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg hover:border-act-primary hover:bg-act-primary/5 hover:shadow-sm transition aspect-square text-center group"
+                                className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg hover:border-aver-red hover:bg-aver-red/5 hover:shadow-sm transition aspect-square text-center group"
                             >
-                                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 mb-3 group-hover:bg-white group-hover:text-act-primary">
+                                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 mb-3 group-hover:bg-white group-hover:text-aver-red">
                                     <i
                                         className={`${item.icon || "fa-solid fa-cube"} text-lg`}
                                     ></i>
@@ -88,7 +88,7 @@ export default function BuilderSidebar({
                                     }
                                     className={`w-full flex items-center justify-between p-3 rounded-lg border transition ${
                                         pageSettings.status === "draft"
-                                            ? "border-act-primary bg-act-primary/5 text-act-primary"
+                                            ? "border-aver-red bg-aver-red/5 text-aver-red"
                                             : "border-gray-200 hover:border-gray-300 text-gray-700"
                                     }`}
                                 >
@@ -144,7 +144,7 @@ export default function BuilderSidebar({
                                     }
                                     className={`w-10 h-5 rounded-full transition-colors relative ${
                                         pageSettings.show_breadcrumb
-                                            ? "bg-act-primary"
+                                            ? "bg-aver-red"
                                             : "bg-gray-300"
                                     }`}
                                 >
@@ -205,7 +205,7 @@ export default function BuilderSidebar({
                                                                     url,
                                                             });
                                                     }}
-                                                    className="w-full aspect-video rounded-lg border-2 border-dashed border-gray-200 hover:border-act-primary hover:bg-act-primary/5 transition flex flex-col items-center justify-center text-gray-400 gap-2"
+                                                    className="w-full aspect-video rounded-lg border-2 border-dashed border-gray-200 hover:border-aver-red hover:bg-aver-red/5 transition flex flex-col items-center justify-center text-gray-400 gap-2"
                                                 >
                                                     <i className="fa-regular fa-image text-2xl"></i>
                                                     <span className="text-xs font-medium">
@@ -239,7 +239,7 @@ export default function BuilderSidebar({
                                     </p>
                                     <button
                                         onClick={() => setActiveTab("add")}
-                                        className="text-act-primary hover:underline text-sm font-medium"
+                                        className="text-aver-red hover:underline text-sm font-medium"
                                     >
                                         Add your first section
                                     </button>
@@ -281,7 +281,7 @@ export default function BuilderSidebar({
                         onToggle();
                         setActiveTab("add");
                     }}
-                    className="w-10 h-10 rounded-lg bg-act-primary/10 text-act-primary hover:bg-act-primary/20 flex items-center justify-center transition"
+                    className="w-10 h-10 rounded-lg bg-aver-red/10 text-aver-red hover:bg-aver-red/20 flex items-center justify-center transition"
                     title="Add Section"
                 >
                     <i className="fa-regular fa-plus"></i>
@@ -307,21 +307,21 @@ export default function BuilderSidebar({
             <div className="flex items-center justify-between px-2 pt-2 pb-0">
                 <div className="flex flex-1">
                     <button
-                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "layers" ? "border-act-primary text-act-primary bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
+                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "layers" ? "border-aver-red text-aver-red bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
                         onClick={() => setActiveTab("layers")}
                     >
                         <i className="fa-regular fa-layer-group mb-1 block text-base"></i>
                         Layers
                     </button>
                     <button
-                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "add" ? "border-act-primary text-act-primary bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
+                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "add" ? "border-aver-red text-aver-red bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
                         onClick={() => setActiveTab("add")}
                     >
                         <i className="fa-regular fa-plus mb-1 block text-base"></i>
                         Add
                     </button>
                     <button
-                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "settings" ? "border-act-primary text-act-primary bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
+                        className={`flex-1 py-3 text-xs font-medium border-b-2 text-center transition ${activeTab === "settings" ? "border-aver-red text-aver-red bg-white" : "border-transparent text-gray-500 hover:text-gray-700"}`}
                         onClick={() => setActiveTab("settings")}
                     >
                         <i className="fa-regular fa-gear mb-1 block text-base"></i>

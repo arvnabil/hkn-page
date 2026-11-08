@@ -132,13 +132,13 @@ export default function InspectorPanel({
                     <div className="flex bg-gray-100 p-1 rounded text-xs font-medium">
                         <button
                             onClick={() => setUseVisualEditor(true)}
-                            className={`flex-1 py-1 rounded transition ${useVisualEditor ? "bg-white shadow text-act-primary" : "text-gray-500 hover:text-gray-700"}`}
+                            className={`flex-1 py-1 rounded transition ${useVisualEditor ? "bg-white shadow text-aver-red" : "text-gray-500 hover:text-gray-700"}`}
                         >
                             Visual
                         </button>
                         <button
                             onClick={() => setUseVisualEditor(false)}
-                            className={`flex-1 py-1 rounded transition ${!useVisualEditor ? "bg-white shadow text-act-primary" : "text-gray-500 hover:text-gray-700"}`}
+                            className={`flex-1 py-1 rounded transition ${!useVisualEditor ? "bg-white shadow text-aver-red" : "text-gray-500 hover:text-gray-700"}`}
                         >
                             Code (JSON)
                         </button>
@@ -168,7 +168,7 @@ export default function InspectorPanel({
                         <textarea
                             value={configJson}
                             onChange={handleJsonChange}
-                            className={`w-full h-96 text-xs font-mono p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-act-primary focus:border-act-primary outline-none resize-none ${
+                            className={`w-full h-96 text-xs font-mono p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-aver-red focus:border-aver-red outline-none resize-none ${
                                 error
                                     ? "border-red-300 bg-red-50"
                                     : "border-gray-200"
@@ -199,7 +199,7 @@ export default function InspectorPanel({
                                     is_active: e.target.checked,
                                 })
                             }
-                            className="rounded border-gray-300 text-act-primary focus:ring-act-primary"
+                            className="rounded border-gray-300 text-aver-red focus:ring-aver-red"
                         />
                         <span className="text-sm font-medium text-gray-700">
                             Section Active

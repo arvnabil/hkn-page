@@ -83,10 +83,10 @@ const SectionPreview = memo(function SectionPreview({
                 group relative transition-all duration-300 ease-out border-2 mx-auto
                 ${
                     isSelected
-                        ? "z-10 border-act-primary ring-4 ring-act-primary/10 shadow-xl"
+                        ? "z-10 border-aver-red ring-4 ring-aver-red/10 shadow-xl"
                         : isHovered
-                          ? "z-0 border-act-primary/40 shadow-md"
-                          : "z-0 border-transparent hover:border-act-primary/20"
+                          ? "z-0 border-aver-red/40 shadow-md"
+                          : "z-0 border-transparent hover:border-aver-red/20"
                 }
             `}
         >
@@ -135,7 +135,7 @@ const SectionPreview = memo(function SectionPreview({
                 <div
                     className={`
                     text-[10px] px-3 py-1 font-bold text-white shadow-md uppercase tracking-wider rounded-bl-lg backdrop-blur-sm
-                    ${isSelected ? "bg-act-primary" : "bg-gray-500/80"}
+                    ${isSelected ? "bg-aver-red" : "bg-gray-500/80"}
                 `}
                 >
                     {registryItem.label}

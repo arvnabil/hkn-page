@@ -5,7 +5,6 @@ namespace Modules\CMS\Database\Seeders;
 use Modules\CMS\Models\Page;
 use Modules\CMS\Models\PageSection;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Str;
 
 class PageSeeder extends Seeder
 {
@@ -26,155 +25,157 @@ class PageSeeder extends Seeder
         // Clear existing sections for this page to avoid duplicates on re-seed
         PageSection::where('page_id', $homePage->id)->delete();
 
-        // 2. Define Sections (Order matters)
-        $sections = [
+        // 2. Define Harry AVer Specialized Sections (Order matters)
+        $homeSections = [
             [
-                // New Slider Section (Variant: Hero, Source: Static)
-                'key' => 'slider',
+                'key' => 'hero',
                 'config' => [
-                    'variant' => 'hero',
-                    'source' => 'static',
-                    'delay' => 5000,
-                    'slides' => [
-                        [
-                            'title' => 'Tumbuh Bersama Teknologi yang Terhubung',
-                            'description' => 'Kami membantu bisnis Anda menyelaraskan infrastruktur ICT agar setiap sistem dapat berkomunikasi dengan sempurna, memberikan Anda ruang lebih untuk fokus pada hal yang paling utama: Kesuksesan Bisnis.',
-                            'bg_image' => '/assets/img/hero/hero_bg_3_1.png',
-                            'buttons' => [
-                                ['text' => 'Download Company Profile', 'url' => '#', 'style' => 'style7'],
-                                ['text' => 'Hubungi via WhatsApp', 'url' => 'https://wa.me/6285162994602', 'style' => 'style2', 'open_new_tab' => true]
-                            ]
-                        ],
-                        [
-                            'title' => 'Kolaborasi Sempurna, Perangkat Terpercaya',
-                            'description' => 'Spesialis integrasi system audio video conference berpengalaman yang memastikan setiap pertemuan Anda berjalan tanpa kendala teknis untuk setiap komunikasi bisnis Anda.',
-                            'bg_image' => '/assets/img/hero/hero_bg_2_1.png',
-                            'buttons' => [
-                                ['text' => 'Lihat Projects', 'url' => '/projects', 'style' => 'style7'],
-                                ['text' => 'Hubungi Kami', 'url' => '/contact', 'style' => 'style2']
-                            ]
-                        ],
-                        [
-                            'title' => 'Integritas Infrastruktur, Kreativitas Software, Kesuksesan Bisnis.',
-                            'description' => 'Kami menghadirkan pengalaman solusi ICT profesional yang dipadukan dengan pengembangan perangkat lunak kustom untuk memastikan setiap sistem teknologi bekerja tepat sesuai kebutuhan bisnis Anda.',
-                            'bg_image' => '/assets/img/hero/hero_bg_2_2.png',
-                            'buttons' => [
-                                ['text' => 'Konsultasi Software Custom', 'url' => '/contact', 'style' => 'style7'],
-                            ]
-                        ],
-                        [
-                            'title' => 'Keahlian dalam Pemasangan, Komitmen dalam Perawatan.',
-                            'description' => 'Kami hadir memastikan setiap infrastruktur IT dan ruang kolaborasi Anda tetap dalam performa puncak, memberikan Anda kebebasan untuk fokus sepenuhnya pada pertumbuhan bisnis tanpa khawatir hambatan teknis',
-                            'bg_image' => '/assets/img/hero/hero_bg_4_1.png',
-                            'buttons' => [
-                                ['text' => 'Paket Maintenance', 'url' => '/services', 'style' => 'style7'],
-                                ['text' => 'Konsultasi Instalasi', 'url' => '/contact', 'style' => 'style2']
-                            ]
-                        ]
-                    ]
-                ]
-            ],
-            [
-                'key' => 'about',
-                'config' => [
-                    'variant' => 'home',
-                    'title' => 'Optimalisasi Komunikasi & Kolaborasi Audio Visual Enterprise.',
-                    'subtitle' => 'Tentang Harry & AVer Solutions',
-                    'description' => 'Harry hadir sebagai B2B technical advisor dan konsultan spesialis solusi video conference serta kamera AI tracking AVer di Indonesia. Berbekal keahlian teknis dalam integrasi ruang rapat enterprise, smart classroom, dan auditorium, kami membantu organisasi merancang ekosistem audio-visual yang andal, modern, dan presisi sesuai kebutuhan ruang Anda.',
-                    'images' => [
-                        '/assets/img/normal/about_7_1.jpg',
-                        '/assets/img/normal/about_7_2.jpg',
-                        '/assets/img/normal/about_7_3.jpg'
+                    'badge' => 'AVer INDONESIA ENTERPRISE PARTNER',
+                    'title' => 'Solusi Video Conference & Kamera PTZ Enterprise AVer',
+                    'subtitle' => 'TEKNOLOGI HYBRID WORKPLACE RESMI',
+                    'description' => 'Optimalisasi ruang rapat, auditorium, dan ruang kelas Anda dengan teknologi kamera tracking berbasis AI, audio array bersertifikasi Microsoft Teams & Zoom, serta garansi resmi 5 tahun.',
+                    'primary_btn_text' => 'Minta Penawaran B2B',
+                    'primary_btn_url' => '/penawaran',
+                    'secondary_btn_text' => 'Eksplorasi Denah Solusi',
+                    'secondary_btn_url' => '/solusi',
+                    'image' => '/assets/img/hero-ptz.png',
+                    'stats' => [
+                        ['value' => '4K / 60fps', 'label' => 'Resolusi Optik Ultra HD'],
+                        ['value' => '30X', 'label' => 'Optical Zoom Lossless'],
+                        ['value' => 'AI Tracking', 'label' => 'Voice & Preset Tracking Otomatis'],
+                        ['value' => '5 Tahun', 'label' => 'Garansi Resmi Enterprise'],
                     ],
-                    'features' => [
-                        [
-                            'title' => 'AVer Enterprise Certified Solutions',
-                            'text' => 'Konsultasi dan penyediaan lini kamera PTZ, USB conference cam, dan audio beamforming resmi bergaransi.',
-                            'icon' => '/assets/img/icon/shield.svg'
-                        ],
-                        [
-                            'title' => 'Desain Solusi & Blueprint Interaktif',
-                            'text' => 'Simulasi tata letak FOV kamera, akustik mikrofon, dan kompatibilitas platform UC (Zoom, Teams, Google Meet).',
-                            'icon' => '/assets/img/icon/shield.svg'
-                        ]
-                    ]
                 ]
             ],
             [
-                'key' => 'services',
+                'key' => 'advisor',
                 'config' => [
+                    'badge' => 'SIMULATOR TEKNIS CERDAS',
+                    'title' => 'AI Room Advisor & Recommendation HUD',
+                    'subtitle' => 'SISTEM KONSULTASI INTERAKTIF PERANGKAT RUANG RAPAT',
+                    'description' => 'Tentukan kapasitas peserta, platform UC yang digunakan, dan tipe pencahayaan untuk mendapatkan simulasi konfigurasi kamera dan audio AVer yang paling ideal secara instan.',
+                ]
+            ],
+            [
+                'key' => 'blueprint',
+                'config' => [
+                    'badge' => 'INTERACTIVE BLUEPRINT STUDIO',
+                    'title' => 'Studio Denah Interaktif & Arsitektur Solusi Ruang',
+                    'subtitle' => 'SIMULASI FOV KAMERA & AKUSTIK AUDIO RUANG RAPAT',
+                    'description' => 'Eksplorasi penempatan kamera AVer, sudut pandang optimal (Field of View), dan jangkauan mikrofon beamforming untuk berbagai denah ruang rapat korporat dan institusi.',
+                    'default_room' => 'huddle',
+                ]
+            ],
+            [
+                'key' => 'products',
+                'config' => [
+                    'badge' => 'KATALOG PERANGKAT RESMI',
+                    'title' => 'Katalog Kamera PTZ & Sistem Audio AVer',
+                    'subtitle' => 'HARDWARE BERMUTU TINGGI UNTUK ENTERPRISE & EDUCATION',
+                    'description' => 'Temukan perangkat konferensi video AVer dengan zoom optik presisi tinggi, teknologi auto-framing cerdas, dan integrasi mulus dengan ekosistem Zoom, Teams, dan Google Meet.',
                     'limit' => 6,
-                    'order' => 'asc'
+                    'category' => 'all',
+                    'cta_text' => 'Lihat Semua Kamera AVer',
+                    'cta_url' => '/produk',
                 ]
             ],
             [
-                // Brand Partners Section
-                'key' => 'brand_partners',
+                'key' => 'comparison',
                 'config' => [
-                    'title' => '',
-                    'subtitle' => '',
-                    'brands' => [
-                         ['image' => '/assets/img/brand/brand_1_1.svg', 'url' => '#', 'name' => 'Brand 1'],
-                         ['image' => '/assets/img/brand/brand_1_2.svg', 'url' => '#', 'name' => 'Brand 2'],
-                         ['image' => '/assets/img/brand/brand_1_3.svg', 'url' => '#', 'name' => 'Brand 3'],
-                         ['image' => '/assets/img/brand/brand_1_4.svg', 'url' => '#', 'name' => 'Brand 4'],
-                         ['image' => '/assets/img/brand/brand_1_5.svg', 'url' => '#', 'name' => 'Brand 5'],
-                         ['image' => '/assets/img/brand/brand_1_6.svg', 'url' => '#', 'name' => 'Brand 6'],
-                         ['image' => '/assets/img/brand/brand_1_7.svg', 'url' => '#', 'name' => 'Brand 7']
-                    ]
+                    'badge' => 'TECHNICAL SPECIFICATION MATRIX',
+                    'title' => 'Matriks Perbandingan Kamera PTZ AVer',
+                    'subtitle' => 'KOMPARASI SPESIFIKASI TEKNIS & FITUR ENTERPRISE',
+                    'description' => 'Bandingkan resolusi optik, kemampuan zoom, sudut pandang fov, dan sertifikasi platform antar tipe kamera AVer untuk memilih perangkat yang paling tepat.',
+                    'product_1' => 'cam570',
+                    'product_2' => 'cam550',
+                    'product_3' => 'cam520-pro3',
                 ]
             ],
             [
                 'key' => 'why_choose_us',
                 'config' => [
-                    'title' => 'Standar Tertinggi Kolaborasi Digital dengan Solusi AVer Teruji.',
-                    'subtitle' => 'Mengapa Memilih Harry',
-                    'description' => 'Kami tidak sekadar menawarkan perangkat, melainkan solusi menyeluruh mulai dari asesmen denah ruang, simulasi teknis AI HUD, hingga panduan instalasi profesional agar investasi teknologi Anda memberikan hasil kolaborasi terbaik.',
+                    'badge' => 'ENTERPRISE ASSURANCE',
+                    'title' => 'Mengapa Memilih Ekosistem Konferensi AVer?',
+                    'subtitle' => 'KEUNGGULAN ENTERPRISE KELAS DUNIA',
+                    'description' => 'Dirancang untuk memberikan pengalaman komunikasi video tanpa hambatan dengan kecerdasan buatan terdepan dan reliabilitas hardware bersertifikasi global.',
                     'features' => [
                         [
-                            'title' => 'Keahlian Teknis Audio Visual',
-                            'text' => 'Didukung pengalaman mendalam dalam integrasi sistem video conference dan akustik ruang korporat.',
-                            'icon' => '/assets/img/icon/shield.svg'
+                            'title' => 'Teknologi AI Voice & Gesture Tracking',
+                            'description' => 'Kamera mendeteksi pembicara aktif secara otomatis dan dapat dikendalikan cukup dengan lambaian tangan tanpa remote.',
+                            'icon' => 'psychology',
                         ],
                         [
-                            'title' => 'Rekomendasi Berbasis AI & Blueprint',
-                            'text' => 'Perhitungan akurat kapasitas peserta, pencahayaan, dan sudut pandang kamera untuk hasil optimal.',
-                            'icon' => '/assets/img/icon/shield.svg'
-                        ]
+                            'title' => 'Sertifikasi Resmi Teams, Zoom & Meet',
+                            'description' => 'Kesesuaian protokol 100% tanpa delay, plug-and-play langsung tersambung dengan PC/Mac dan Microsoft Teams Rooms.',
+                            'icon' => 'verified',
+                        ],
+                        [
+                            'title' => 'Garansi Resmi Terpanjang: Hingga 5 Tahun',
+                            'description' => 'Garansi standar 3 tahun dengan opsi ekstensi 2 tahun cuma-cuma melalui registrasi online untuk ketenangan jangka panjang.',
+                            'icon' => 'shield',
+                        ],
+                        [
+                            'title' => 'Dukungan Teknis & PoC Demo Lokal',
+                            'description' => 'Tim ahli kami siap memberikan demonstrasi perangkat langsung di ruang rapat Anda sebelum proses pengadaan.',
+                            'icon' => 'support_agent',
+                        ],
                     ],
-                    'images' => [
-                         '/assets/img/normal/about_4_1.jpg',
-                         '/assets/img/normal/about_4_2.jpg'
+                    'show_button' => true,
+                    'button_text' => 'Jadwalkan Demo / PoC',
+                    'button_url' => '/penawaran',
+                ]
+            ],
+            [
+                'key' => 'articles',
+                'config' => [
+                    'badge' => 'EDITORIAL & TECH BRIEFS',
+                    'title' => 'Wawasan Teknis & Panduan Ruang Hybrid',
+                    'subtitle' => 'PUBLIKASI & BEDAH TEKNOLOGI PRO AV',
+                    'description' => 'Eksplorasi artikel terkini mengenai arsitektur ruang rapat modern, tips akustik, panduan pemilihan lensa PTZ, dan studi kasus implementasi nyata di Indonesia.',
+                    'limit' => 3,
+                    'cta_text' => 'Lihat Semua Artikel',
+                    'cta_url' => '/artikel',
+                ]
+            ],
+            [
+                'key' => 'faq',
+                'config' => [
+                    'badge' => 'FREQUENTLY ASKED QUESTIONS',
+                    'title' => 'Pertanyaan Umum Seputar Solusi AVer (FAQ)',
+                    'subtitle' => 'INFORMASI TEKNIS & PENGADAAN ENTERPRISE',
+                    'description' => 'Temukan jawaban cepat mengenai garansi, kompatibilitas software, integrasi audio ceiling, hingga mekanisme uji coba perangkat (PoC).',
+                    'items' => [
+                        [
+                            'question' => 'Apakah kamera AVer kompatibel dengan Microsoft Teams Rooms dan Zoom Rooms?',
+                            'answer' => 'Ya, seluruh lini produk kamera AVer (seperti CAM570, CAM550, dan VB342 Pro) telah bersertifikasi resmi oleh Microsoft Teams dan Zoom, serta mendukung fitur kontrol native dari layar sentuh konsol ruang rapat.',
+                        ],
+                        [
+                            'question' => 'Bagaimana cara mengajukan Proof of Concept (PoC) di kantor kami?',
+                            'answer' => 'Anda dapat mengisi formulir Permintaan Penawaran atau menghubungi Harry via WhatsApp. Tim teknis kami akan mengantarkan unit demo ke kantor Anda di wilayah Jabodetabek, Surabaya, dan sekitarnya.',
+                        ],
+                        [
+                            'question' => 'Berapa lama masa garansi resmi kamera AVer di Indonesia?',
+                            'answer' => 'Semua kamera enterprise AVer dilengkapi garansi standar 3 tahun, dengan tambahan 2 tahun gratis (total 5 tahun) cukup dengan mendaftarkan nomor seri produk di portal registrasi resmi AVer.',
+                        ],
+                        [
+                            'question' => 'Apakah AVer bisa diintegrasikan dengan mikrofon ceiling pihak ketiga (Shure / Sennheiser)?',
+                            'answer' => 'Sangat bisa. Seri kamera seperti CAM570 dan CAM550 mendukung integrasi audio-tracking via preset triggering dari DSP Shure IntelliMix, Sennheiser TeamConnect, dan Yamaha RM-CG.',
+                        ],
                     ],
-                    'video_url' => 'https://www.youtube.com/watch?v=hIIQbkkKnno'
                 ]
             ],
             [
-                'key' => 'projects',
+                'key' => 'inquiry',
                 'config' => [
-                    'limit' => 8
+                    'badge' => 'B2B LEADS & INQUIRY',
+                    'title' => 'Minta Penawaran Resmi & Jadwalkan PoC',
+                    'subtitle' => 'KONSULTASI GRATIS DENGAN EXPERT AVer INDONESIA',
+                    'description' => 'Isi formulir kebutuhan ruang rapat atau proyek Anda di bawah ini. Tim kami akan mengirimkan proposal harga resmi dan menghubungi Anda dalam 1x24 jam kerja.',
                 ]
             ],
-            [
-                'key' => 'cta', // ClientSection
-                'config' => [
-                    'title' => 'Our Clients',
-                    'subtitle' => 'Clients',
-                    'clients' => ["1_1", "1_2", "1_3", "1_4", "1_5", "1_6", "1_7", "1_1", "1_4", "1_3", "1_2", "1_1", "1_1", "1_1"]
-                ]
-            ],
-            [
-                'key' => 'news',
-                'config' => [
-                    'title' => 'Berita & Wawasan Terkini',
-                    'subtitle' => 'Kabar & Artikel Audio Visual',
-                    'limit' => 3
-                ]
-            ]
         ];
 
-        // 3. Insert Sections
-        foreach ($sections as $index => $section) {
+        foreach ($homeSections as $index => $section) {
             PageSection::create([
                 'page_id' => $homePage->id,
                 'section_key' => $section['key'],
@@ -184,170 +185,112 @@ class PageSeeder extends Seeder
             ]);
         }
 
-        // 4. Create or Update About Us Page
+        // 3. Create or Update About Us Page
         $aboutPage = Page::updateOrCreate(
             ['slug' => 'about-us'],
             [
                 'title' => 'About Us',
-                'type' => 'dynamic', // Or whatever generic type implies dynamic
+                'type' => 'dynamic',
                 'status' => 'published',
                 'is_homepage' => false,
-                'show_breadcrumb' => true, // Ensure breadcrumb is shown
+                'show_breadcrumb' => true,
             ]
         );
 
         PageSection::where('page_id', $aboutPage->id)->delete();
 
         $aboutSections = [
-             // 1. About Content (Legacy)
             [
-                'key' => 'about_content',
+                'key' => 'hero',
                 'config' => [
-                    'subtitle' => 'Tentang Harry',
-                    'title' => 'Menghubungkan Kolaborasi dan Teknologi Ruang Rapat Modern.',
-                    'description' => 'Harry adalah technical advisor terpercaya untuk pengadaan dan integrasi sistem video conferencing AVer di Indonesia. Kami berdedikasi memberikan konsultasi B2B profesional untuk perusahaan, institusi pendidikan, dan instansi pemerintahan dalam merancang ruang kolaborasi masa depan.',
-                    'images' => [
-                        '/assets/img/normal/about_7_1.jpg',
-                        '/assets/img/normal/about_7_2.jpg',
-                        '/assets/img/normal/about_7_3.jpg',
+                    'badge' => 'TENTANG HARRY & AVer SOLUTIONS',
+                    'title' => 'Konsultan Spesialis & Technical Advisor Audio Visual Enterprise',
+                    'subtitle' => 'PENGALAMAN & INTEGRITAS TEKNOLOGI HYBRID',
+                    'description' => 'Harry hadir sebagai technical advisor dan partner pengadaan resmi perangkat video conference AVer di Indonesia, membantu institusi merancang ruang rapat, auditorium, dan kelas cerdas berstandar internasional.',
+                    'primary_btn_text' => 'Konsultasi Sekarang',
+                    'primary_btn_url' => '/penawaran',
+                    'secondary_btn_text' => 'Lihat Produk AVer',
+                    'secondary_btn_url' => '/produk',
+                    'image' => '/assets/harrys.png',
+                    'stats' => [
+                        ['value' => '10+ Thn', 'label' => 'Pengalaman Implementasi AV'],
+                        ['value' => '100+', 'label' => 'Ruang Rapat Terpasang'],
+                        ['value' => 'Official', 'label' => 'Partner Perangkat AVer'],
+                        ['value' => '5 Tahun', 'label' => 'Garansi Resmi Enterprise'],
                     ],
-                    'video_url' => 'https://www.youtube.com/watch?v=hIIQbkkKnno',
+                ]
+            ],
+            [
+                'key' => 'rich_text',
+                'config' => [
+                    'badge' => 'COMPANY OVERVIEW',
+                    'title' => 'Mengenal Harry Kusumo Negoro & Solusi AVer',
+                    'subtitle' => 'DEDIKASI UNTUK KOLABORASI MODERN DI INDONESIA',
+                    'content' => '<p>Di tengah pesatnya perkembangan sistem kerja hybrid, kualitas komunikasi visual dan kejernihan audio bukan lagi sekadar fasilitas pendukung, melainkan penentu produktivitas dan citra profesional organisasi.</p><p>Harry berfokus menyediakan konsultasi teknis, evaluasi tata letak ruang, perhitungan jangkauan FOV lensa, serta integrasi kamera PTZ AVer berstandar Microsoft Teams Rooms, Zoom Rooms, dan Google Meet. Kami memastikan setiap investasi perangkat tepat guna, andal, dan siap mendukung pertumbuhan jangka panjang bisnis Anda.</p>',
+                ]
+            ],
+            [
+                'key' => 'why_choose_us',
+                'config' => [
+                    'badge' => 'STANDAR LAYANAN',
+                    'title' => 'Komitmen Kami untuk Setiap Klien',
+                    'subtitle' => 'NILAI TAMBAH KONSULTASI PROFESIONAL',
+                    'description' => 'Setiap proyek ruang rapat ditangani dengan pendekatan menyeluruh mulai dari asesmen akustik hingga pelatihan operasional tim internal Anda.',
                     'features' => [
                         [
-                            'title' => 'Konsultan Spesialis AVer',
-                            'description' => 'Fokus mendalam pada ekosistem AVer: kamera AI auto tracking, video bar, dan sistem mikrofon konferensi.',
-                            'icon' => '/assets/img/icon/guide.svg',
+                            'title' => 'Konsultasi Objektif & Tepat Kebutuhan',
+                            'description' => 'Rekomendasi perangkat disesuaikan dengan dimensi ruang, akustik, dan platform UC yang digunakan.',
+                            'icon' => 'verified',
                         ],
                         [
-                            'title' => 'Dukungan Teknis Komprehensif',
-                            'description' => 'Membantu evaluasi arsitektur ruang rapat, rekomendasi penempatan perangkat, dan konfigurasi sistem audio-visual.',
-                            'icon' => '/assets/img/icon/policy.svg',
+                            'title' => 'Simulasi Interaktif Blueprint & FOV',
+                            'description' => 'Visualisasikan denah dan sudut pandang kamera sebelum pengadaan perangkat dilakukan.',
+                            'icon' => 'architecture',
                         ],
                         [
-                            'title' => 'Kemitraan Resmi & Bergaransi',
-                            'description' => 'Jaminan produk resmi, garansi pabrikan, dan kesinambungan layanan purna jual yang profesional.',
-                            'icon' => '/assets/img/icon/support.svg',
+                            'title' => 'Fasilitas Demo Unit & PoC Langsung',
+                            'description' => 'Uji performa kamera AI tracking langsung di ruang rapat Anda sebelum memutuskan pembelian.',
+                            'icon' => 'devices',
+                        ],
+                        [
+                            'title' => 'Garansi Resmi & Dukungan Purna Jual',
+                            'description' => 'Jaminan unit original dengan dukungan garansi resmi AVer hingga 5 tahun dan tim teknis responsif.',
+                            'icon' => 'shield',
+                        ],
+                    ],
+                    'show_button' => true,
+                    'button_text' => 'Diskusikan Kebutuhan Anda',
+                    'button_url' => '/penawaran',
+                ]
+            ],
+            [
+                'key' => 'faq',
+                'config' => [
+                    'badge' => 'TANYA JAWAB',
+                    'title' => 'Pertanyaan Seputar Layanan Konsultasi',
+                    'subtitle' => 'INFORMASI PENGADAAN & PROSES POC',
+                    'description' => 'Hal-hal yang sering ditanyakan oleh klien enterprise mengenai alur konsultasi dan uji coba perangkat.',
+                    'items' => [
+                        [
+                            'question' => 'Apakah konsultasi awal dan simulasi denah dikenakan biaya?',
+                            'answer' => 'Tidak, konsultasi awal dan rekomendasi teknis diberikan secara cuma-cuma sebagai bagian dari komitmen kami membantu Anda menemukan solusi terbaik.',
+                        ],
+                        [
+                            'question' => 'Bagaimana cara mengajukan uji coba unit (Proof of Concept)?',
+                            'answer' => 'Cukup kirimkan permintaan melalui form penawaran atau WhatsApp kami. Kami akan menjadwalkan kunjungan teknisi untuk instalasi sementara demo unit di lokasi Anda.',
                         ],
                     ],
                 ]
             ],
-             // 2. Vision & Mission (Legacy)
             [
-                'key' => 'vision_mission',
+                'key' => 'inquiry',
                 'config' => [
-                    'vision_title' => 'Visi Kami',
-                    'vision_text' => 'Menjadi mitra rujukan utama B2B di Indonesia dalam implementasi solusi audio-visual dan smart collaboration room berstandar global.',
-                    'mission_title' => 'Misi Kami',
-                    'mission_items' => [
-                        ['text' => 'Menyediakan konsultasi teknis yang objektif, presisi, dan sesuai dengan kapasitas serta anggaran ruang kerja Anda.'],
-                        ['text' => 'Mengembangkan perangkat interaktif (AI Advisor HUD & Blueprint Studio) guna mempermudah pemilihan solusi AV.'],
-                        ['text' => 'Memberikan edukasi dan pendampingan implementasi teknologi kamera cerdas (AI auto tracking & voice tracking).'],
-                        ['text' => 'Memastikan kepuasan jangka panjang klien melalui dukungan teknis yang responsif dan berintegritas.'],
-                    ],
-                    'goal_title' => 'Tujuan Kami',
-                    'goal_text' => 'Menciptakan pengalaman rapat hibrida yang lancar, bebas hambatan teknis, dan meningkatkan produktivitas seluruh tim organisasi.',
+                    'badge' => 'HUBUNGI HARRY',
+                    'title' => 'Konsultasi Spesifikasi & Jadwal PoC',
+                    'subtitle' => 'RESPON CEPAT 1X24 JAM KERJA',
+                    'description' => 'Silakan tinggalkan pesan mengenai ruang pertemuan atau proyek Anda. Kami akan menghubungi Anda untuk memberikan rekomendasi arsitektur terbaik.',
                 ]
             ],
-             // 3. Testimonial (Legacy)
-            [
-                'key' => 'testimonial',
-                'config' => [
-                    'title' => 'What Client Say About us',
-                    'subtitle' => 'Testimonials',
-                    'testimonials' => [
-                        [
-                            'name' => 'Sarah Rahman',
-                            'role' => 'UI/UX Designer',
-                            'quote' => 'Cybersecurity is more critical than ever. We implemented a comprehensive security strategy that includes firewall protection and regular audits.',
-                            'rating' => 5,
-                            'image' => '/assets/img/testimonial/testi_4_1.png',
-                        ],
-                        [
-                            'name' => 'Rina Sartika',
-                            'role' => 'Product Manager',
-                            'quote' => 'Cloud computing has revolutionized how we operate. It offers scalability and flexibility, allowing us to access data from anywhere.',
-                            'rating' => 5,
-                            'image' => '/assets/img/testimonial/testi_4_2.png',
-                        ],
-                        [
-                            'name' => 'Michael Chen',
-                            'role' => 'Developer',
-                            'quote' => 'Data analytics is key to understanding our customers. We use advanced tools to analyze trends and make data-driven decisions.',
-                            'rating' => 5,
-                            'image' => '/assets/img/testimonial/testi_4_3.png',
-                        ],
-                        [
-                            'name' => 'Dewi Santoso',
-                            'role' => 'Data Analyst',
-                            'quote' => 'Artificial Intelligence is transforming our industry. We are exploring AI solutions to automate routine tasks and improve efficiency.',
-                            'rating' => 5,
-                            'image' => '/assets/img/testimonial/testi_4_4.png',
-                        ],
-                    ],
-                ]
-            ],
-             // 4. Contact & Map (Legacy)
-            [
-                'key' => 'contact',
-                'config' => [
-                    'title' => 'Informasi Kontak',
-                    'subtitle' => 'Konsultasi Bersama Harry',
-                    'intro_text' => 'Terima kasih atas minat Anda pada solusi Harry & AVer. Tim kami siap mendiskusikan kebutuhan ruang rapat dan kolaborasi organisasi Anda. Silakan hubungi kami melalui saluran berikut:',
-                    'phone' => '(+62) 21-50110987',
-                    'whatsapp' => '(+62) 851-6299-4602',
-                    'email' => 'contact@harryaver.com',
-                    'address_office' => 'Jakarta Selatan, DKI Jakarta 12210, Indonesia',
-                    'address_representative' => 'Tangerang Selatan, Banten 15318, Indonesia',
-                    'map_embed_url' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.2831252033!2d106.759478!3d-6.2297465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1716968007353!5m2!1sid!2sid',
-                    'form_fields' => [
-                        [
-                            'label' => 'Your Name',
-                            'name' => 'name',
-                            'type' => 'text',
-                            'placeholder' => 'Your Name',
-                            'width' => 'col-sm-6',
-                            'required' => true,
-                            'icon' => '/assets/img/icon/user.svg'
-                        ],
-                        [
-                            'label' => 'Email Address',
-                            'name' => 'email',
-                            'type' => 'email',
-                            'placeholder' => 'Email Address',
-                            'width' => 'col-sm-6',
-                            'required' => true,
-                            'icon' => '/assets/img/icon/mail.svg'
-                        ],
-                        [
-                            'label' => 'Phone Number',
-                            'name' => 'number',
-                            'type' => 'tel',
-                            'placeholder' => 'Phone Number',
-                            'width' => 'col-sm-6',
-                            'required' => false,
-                            'icon' => '/assets/img/icon/call.svg'
-                        ],
-                        [
-                            'label' => 'Subject',
-                            'name' => 'subject',
-                            'type' => 'select',
-                            'options' => 'Quotation,Technical Support,Billing',
-                            'placeholder' => 'Select Subject',
-                            'width' => 'col-sm-6',
-                            'required' => true
-                        ],
-                        [
-                            'label' => 'Your Message',
-                            'name' => 'message',
-                            'type' => 'textarea',
-                            'placeholder' => 'Your Message',
-                            'width' => 'col-12',
-                            'required' => true,
-                            'icon' => '/assets/img/icon/chat.svg'
-                        ]
-                    ]
-                ]
-            ]
         ];
 
         foreach ($aboutSections as $index => $section) {
@@ -359,6 +302,5 @@ class PageSeeder extends Seeder
                 'config' => $section['config'],
             ]);
         }
-
     }
 }

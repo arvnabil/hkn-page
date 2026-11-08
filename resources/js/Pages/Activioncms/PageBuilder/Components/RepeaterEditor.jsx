@@ -253,7 +253,7 @@ export default function RepeaterEditor({
                 <button
                     type="button"
                     onClick={handleAddItem}
-                    className="text-xs bg-white hover:bg-act-primary hover:text-white border border-gray-300 hover:border-act-primary text-gray-700 px-2 py-1 rounded shadow-sm transition flex items-center"
+                    className="text-xs bg-white hover:bg-aver-red hover:text-white border border-gray-300 hover:border-aver-red text-gray-700 px-2 py-1 rounded shadow-sm transition flex items-center"
                 >
                     <i className="fa-solid fa-plus mr-1"></i> Add
                 </button>

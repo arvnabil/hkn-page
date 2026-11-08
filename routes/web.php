@@ -52,6 +52,7 @@ Route::get('/produk/{id}', function ($id) {
 Route::get('/perbandingan', function () {
     return Inertia::render('Comparison');
 })->name('comparison');
+Route::redirect('/komparasi', '/perbandingan');
 
 Route::get('/artikel', function () {
     return Inertia::render('Articles/Index');

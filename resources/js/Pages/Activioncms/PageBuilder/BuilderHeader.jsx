@@ -16,7 +16,7 @@ export default function BuilderHeader({
     const getDeviceBtnClass = (device) =>
         `p-2 rounded hover:shadow-sm transition ${
             previewDevice === device
-                ? "bg-white text-act-primary shadow-sm font-medium"
+                ? "bg-white text-aver-red shadow-sm font-medium"
                 : "text-gray-500 hover:bg-white/50 hover:text-gray-700"
         }`;
 
@@ -24,7 +24,7 @@ export default function BuilderHeader({
         <div className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 sticky top-0 z-50 shadow-sm">
             <div className="flex items-center gap-4">
                 <Link
-                    href="/admin/pages"
+                    href="/activioncms/pages"
                     className="text-gray-500 hover:text-gray-700"
                 >
                     <i className="fa-solid fa-arrow-left"></i>
@@ -45,7 +45,7 @@ export default function BuilderHeader({
                     <button
                         onClick={onUndo}
                         disabled={!canUndo}
-                        className="p-2 text-gray-500 hover:text-act-primary disabled:opacity-30 disabled:hover:text-gray-500 transition"
+                        className="p-2 text-gray-500 hover:text-aver-red disabled:opacity-30 disabled:hover:text-gray-500 transition"
                         title="Undo (Ctrl+Z)"
                     >
                         <i className="fa-solid fa-rotate-left"></i>
@@ -53,7 +53,7 @@ export default function BuilderHeader({
                     <button
                         onClick={onRedo}
                         disabled={!canRedo}
-                        className="p-2 text-gray-500 hover:text-act-primary disabled:opacity-30 disabled:hover:text-gray-500 transition"
+                        className="p-2 text-gray-500 hover:text-aver-red disabled:opacity-30 disabled:hover:text-gray-500 transition"
                         title="Redo (Ctrl+Shift+Z)"
                     >
                         <i className="fa-solid fa-rotate-right"></i>
@@ -65,7 +65,7 @@ export default function BuilderHeader({
                 <a
                     href={`/${page.slug}`}
                     target="_blank"
-                    className="text-sm font-medium text-gray-600 hover:text-act-primary flex items-center gap-2"
+                    className="text-sm font-medium text-gray-600 hover:text-aver-red flex items-center gap-2"
                 >
                     Live View <i className="fa-regular fa-external-link"></i>
                 </a>

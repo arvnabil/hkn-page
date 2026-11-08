@@ -32,7 +32,7 @@ export default function SortableSectionItem({
             style={style}
             className={`p-3 border rounded-lg mb-2 flex items-center gap-3 bg-white group cursor-pointer transition-all ${
                 isSelected
-                    ? "border-act-primary shadow-sm ring-1 ring-act-primary/20"
+                    ? "border-aver-red shadow-sm ring-1 ring-aver-red/20"
                     : "border-gray-200 hover:border-gray-300"
             }`}
             onClick={onClick}
@@ -48,7 +48,7 @@ export default function SortableSectionItem({
 
             {/* Icon */}
             <div
-                className={`w-8 h-8 rounded flex items-center justify-center text-xs ${isSelected ? "bg-act-primary/10 text-act-primary" : "bg-gray-100 text-gray-500"}`}
+                className={`w-8 h-8 rounded flex items-center justify-center text-xs ${isSelected ? "bg-aver-red/10 text-aver-red" : "bg-gray-100 text-gray-500"}`}
             >
                 <i className={registryItem.icon || "fa-regular fa-cube"}></i>
             </div>
@@ -73,7 +73,7 @@ export default function SortableSectionItem({
 
             {/* Active Indicator Arrow */}
             {isSelected && (
-                <div className="text-act-primary">
+                <div className="text-aver-red">
                     <i className="fa-solid fa-chevron-right"></i>
                 </div>
             )}

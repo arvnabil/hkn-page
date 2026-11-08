@@ -39,7 +39,7 @@ export default function SchemaForm({ schema, data, onChange }) {
                             onChange={(e) =>
                                 onFieldChange(fieldName, e.target.value)
                             }
-                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-act-primary focus:ring focus:ring-act-primary/20 bg-gray-50 text-gray-800"
+                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-aver-red focus:ring focus:ring-aver-red/20 bg-gray-50 text-gray-800"
                         />
                     </div>
                 );
@@ -56,7 +56,7 @@ export default function SchemaForm({ schema, data, onChange }) {
                                 onFieldChange(fieldName, e.target.value)
                             }
                             rows={3}
-                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-act-primary focus:ring focus:ring-act-primary/20 bg-gray-50 resize-y text-gray-800"
+                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-aver-red focus:ring focus:ring-aver-red/20 bg-gray-50 resize-y text-gray-800"
                         />
                     </div>
                 );
@@ -90,7 +90,7 @@ export default function SchemaForm({ schema, data, onChange }) {
                                         onFieldChange(fieldName, e.target.value)
                                     }
                                     placeholder="Image URL..."
-                                    className="w-full text-xs border-gray-300 rounded shadow-sm focus:border-act-primary focus:ring focus:ring-act-primary/20 bg-gray-50"
+                                    className="w-full text-xs border-gray-300 rounded shadow-sm focus:border-aver-red focus:ring focus:ring-aver-red/20 bg-gray-50"
                                 />
 
                                 {/* File Upload Input */}
@@ -175,7 +175,7 @@ export default function SchemaForm({ schema, data, onChange }) {
                             onChange={(e) =>
                                 onFieldChange(fieldName, e.target.value)
                             }
-                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-act-primary focus:ring focus:ring-act-primary/20 bg-gray-50 text-gray-800"
+                            className="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-aver-red focus:ring focus:ring-aver-red/20 bg-gray-50 text-gray-800"
                         >
                             {field.options?.map((opt) => (
                                 <option key={opt.value} value={opt.value}>

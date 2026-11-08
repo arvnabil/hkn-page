@@ -96,7 +96,7 @@ export default function BuilderCanvas({
                 >
                     {sections.length === 0 ? (
                         <div className="flex-1 flex flex-col items-center justify-center p-12 text-gray-400 border-2 border-dashed border-gray-200 m-8 rounded-xl h-[50vh] animate-fade-in-up">
-                            <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-6 shadow-inner text-act-primary/50">
+                            <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-6 shadow-inner text-aver-red/50">
                                 <i className="fa-regular fa-layer-group text-3xl"></i>
                             </div>
                             <h3 className="text-xl font-bold text-gray-700">

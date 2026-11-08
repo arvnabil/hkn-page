@@ -27,52 +27,101 @@ class ServicesPageSeeder extends Seeder
         // 2. Clear existing sections for this page
         PageSection::where('page_id', $page->id)->delete();
 
-        // 3. Define Sections
+        // 3. Define Harry AVer Sections
         $sections = [
-            // 1. Service List (Breadcrumb handled by Page model)
             [
-                'section_key' => 'service_list',
+                'section_key' => 'hero',
                 'config' => [
-                    'title' => 'Layanan Konsultasi & Integrasi Audio Visual AVer',
-                    'subtitle' => 'Layanan Profesional Kami',
-                    'description' => "Harry menghadirkan rangkaian layanan terpadu mulai dari asesmen denah ruang, pengujian akustik & FOV kamera, hingga pendampingan instalasi perangkat video conference AVer.",
-                    'limit' => 12,
-                    'order' => 'asc',
+                    'badge' => 'ARSITEKTUR & LAYANAN ENTERPRISE',
+                    'title' => 'Layanan Konsultasi & Blueprint Solusi Ruang Rapat AVer',
+                    'subtitle' => 'SOLUSI TERINTEGRASI END-TO-END',
+                    'description' => 'Dari huddle room 2 orang hingga auditorium 200+ peserta, kami merancang konfigurasi kamera AI tracking, audio array ceiling, dan sistem display yang presisi.',
+                    'primary_btn_text' => 'Minta Konsultasi Denah',
+                    'primary_btn_url' => '/penawaran',
+                    'secondary_btn_text' => 'Buka Studio Denah Interaktif',
+                    'secondary_btn_url' => '/solusi',
+                    'image' => '/assets/img/hero-ptz.png',
+                    'stats' => [
+                        ['value' => '5 Tipe', 'label' => 'Arsitektur Ruang Siap Pakai'],
+                        ['value' => 'AI Cam', 'label' => 'Voice & Auto Tracking'],
+                        ['value' => 'Teams/Zoom', 'label' => 'Native Certified'],
+                        ['value' => '5 Tahun', 'label' => 'Garansi Resmi'],
+                    ],
                 ],
             ],
-            // 2. Solution
             [
-                'section_key' => 'service_solution',
+                'section_key' => 'blueprint',
                 'config' => [
-                    'title' => 'Solusi Ruang Rapat Cerdas',
-                    'subtitle' => 'Arsitektur Ruang',
-                    'description' => "Bersama Harry dan teknologi AVer, kami merancang ruang kolaborasi cerdas yang mengintegrasikan kamera AI auto tracking, mikrofon beamforming, dan tampilan interaktif untuk pengalaman meeting terbaik.",
-                    'btn_text' => 'Konsultasi Ruang Sekarang',
-                    'btn_url' => '/contact',
-                    'images' => [
-                        '/assets/img/choose/choose_4_1.jpg',
-                        '/assets/img/choose/choose_4_2.jpg',
-                        '/assets/img/choose/choose_4_3.jpg',
-                    ],
+                    'badge' => 'INTERACTIVE BLUEPRINT STUDIO',
+                    'title' => 'Studio Denah Interaktif & Arsitektur Solusi Ruang',
+                    'subtitle' => 'SIMULASI FOV KAMERA & AKUSTIK AUDIO RUANG RAPAT',
+                    'description' => 'Eksplorasi penempatan kamera AVer, sudut pandang optimal (Field of View), dan jangkauan mikrofon beamforming untuk berbagai denah ruang rapat korporat dan institusi.',
+                    'default_room' => 'huddle',
+                ],
+            ],
+            [
+                'section_key' => 'advisor',
+                'config' => [
+                    'badge' => 'SIMULATOR TEKNIS CERDAS',
+                    'title' => 'AI Room Advisor & Recommendation HUD',
+                    'subtitle' => 'SISTEM KONSULTASI INTERAKTIF PERANGKAT RUANG RAPAT',
+                    'description' => 'Tentukan kapasitas peserta, platform UC yang digunakan, dan tipe pencahayaan untuk mendapatkan simulasi konfigurasi kamera dan audio AVer yang paling ideal secara instan.',
+                ],
+            ],
+            [
+                'section_key' => 'products',
+                'config' => [
+                    'badge' => 'KATALOG PERANGKAT RESMI',
+                    'title' => 'Katalog Kamera PTZ & Sistem Audio AVer',
+                    'subtitle' => 'HARDWARE BERMUTU TINGGI UNTUK ENTERPRISE & EDUCATION',
+                    'description' => 'Temukan perangkat konferensi video AVer dengan zoom optik presisi tinggi, teknologi auto-framing cerdas, dan integrasi mulus dengan ekosistem Zoom, Teams, dan Google Meet.',
+                    'limit' => 6,
+                    'category' => 'all',
+                    'cta_text' => 'Lihat Semua Kamera AVer',
+                    'cta_url' => '/produk',
+                ],
+            ],
+            [
+                'section_key' => 'why_choose_us',
+                'config' => [
+                    'badge' => 'ENTERPRISE ASSURANCE',
+                    'title' => 'Mengapa Memilih Ekosistem Konferensi AVer?',
+                    'subtitle' => 'KEUNGGULAN ENTERPRISE KELAS DUNIA',
+                    'description' => 'Dirancang untuk memberikan pengalaman komunikasi video tanpa hambatan dengan kecerdasan buatan terdepan dan reliabilitas hardware bersertifikasi global.',
                     'features' => [
-                        ['text' => 'Huddle & Medium Room Solution'],
-                        ['text' => 'Boardroom & Executive Conference'],
-                        ['text' => 'Auditorium & Townhall PTZ System'],
-                        ['text' => 'Smart Classroom & Distance Learning'],
-                        ['text' => 'Akustik & Mikrofon Beamforming'],
+                        [
+                            'title' => 'Teknologi AI Voice & Gesture Tracking',
+                            'description' => 'Kamera mendeteksi pembicara aktif secara otomatis dan dapat dikendalikan cukup dengan lambaian tangan tanpa remote.',
+                            'icon' => 'psychology',
+                        ],
+                        [
+                            'title' => 'Sertifikasi Resmi Teams, Zoom & Meet',
+                            'description' => 'Kesesuaian protokol 100% tanpa delay, plug-and-play langsung tersambung dengan PC/Mac dan Microsoft Teams Rooms.',
+                            'icon' => 'verified',
+                        ],
+                        [
+                            'title' => 'Garansi Resmi Terpanjang: Hingga 5 Tahun',
+                            'description' => 'Garansi standar 3 tahun dengan opsi ekstensi 2 tahun cuma-cuma melalui registrasi online untuk ketenangan jangka panjang.',
+                            'icon' => 'shield',
+                        ],
+                        [
+                            'title' => 'Dukungan Teknis & PoC Demo Lokal',
+                            'description' => 'Tim ahli kami siap memberikan demonstrasi perangkat langsung di ruang rapat Anda sebelum proses pengadaan.',
+                            'icon' => 'support_agent',
+                        ],
                     ],
+                    'show_button' => true,
+                    'button_text' => 'Jadwalkan Demo / PoC',
+                    'button_url' => '/penawaran',
                 ],
             ],
-            // 3. CTA
             [
-                'section_key' => 'service_cta',
+                'section_key' => 'inquiry',
                 'config' => [
-                    'title' => 'Rencanakan Ruang Rapat Anda Bersama Harry',
-                    'subtitle' => 'Konsultasi Spesifikasi & Penawaran',
-                    'description' => "Diskusikan kebutuhan ruang rapat Anda untuk rekomendasi spesifikasi teknis dan penawaran resmi perangkat AVer.",
-                    'btn_text' => 'Hubungi Kami via WhatsApp',
-                    'btn_url' => 'https://wa.me/6285162994602',
-                    'bg_image' => '/assets/img/normal/cta-img-6.jpg',
+                    'badge' => 'B2B LEADS & INQUIRY',
+                    'title' => 'Minta Penawaran Resmi & Jadwalkan PoC',
+                    'subtitle' => 'KONSULTASI GRATIS DENGAN EXPERT AVer INDONESIA',
+                    'description' => 'Isi formulir kebutuhan ruang rapat atau proyek Anda di bawah ini. Tim kami akan mengirimkan proposal harga resmi dan menghubungi Anda dalam 1x24 jam kerja.',
                 ],
             ],
         ];
