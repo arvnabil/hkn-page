@@ -25,152 +25,58 @@ class PageSeeder extends Seeder
         // Clear existing sections for this page to avoid duplicates on re-seed
         PageSection::where('page_id', $homePage->id)->delete();
 
-        // 2. Define Harry AVer Specialized Sections (Order matters)
+        // 2. Define Harry AVer Editorial Magazine Sections (Layout 1)
         $homeSections = [
             [
-                'key' => 'hero',
+                'key' => 'editorial_hero',
                 'config' => [
-                    'badge' => 'AVer INDONESIA ENTERPRISE PARTNER',
-                    'title' => 'Solusi Video Conference & Kamera PTZ Enterprise AVer',
-                    'subtitle' => 'TEKNOLOGI HYBRID WORKPLACE RESMI',
-                    'description' => 'Optimalisasi ruang rapat, auditorium, dan ruang kelas Anda dengan teknologi kamera tracking berbasis AI, audio array bersertifikasi Microsoft Teams & Zoom, serta garansi resmi 5 tahun.',
-                    'primary_btn_text' => 'Minta Penawaran B2B',
-                    'primary_btn_url' => '/penawaran',
-                    'secondary_btn_text' => 'Eksplorasi Denah Solusi',
-                    'secondary_btn_url' => '/solusi',
-                    'image' => '/assets/img/hero-ptz.png',
-                    'stats' => [
-                        ['value' => '4K / 60fps', 'label' => 'Resolusi Optik Ultra HD'],
-                        ['value' => '30X', 'label' => 'Optical Zoom Lossless'],
-                        ['value' => 'AI Tracking', 'label' => 'Voice & Preset Tracking Otomatis'],
-                        ['value' => '5 Tahun', 'label' => 'Garansi Resmi Enterprise'],
-                    ],
+                    'badge' => 'LIPUTAN UTAMA',
+                    'sidebar_title' => 'TREN & ANALISIS TEKNIS',
+                ]
+            ],
+            [
+                'key' => 'ecosystem_alliance',
+                'config' => [
+                    'alliance_label' => 'ECOSYSTEM ALLIANCE',
+                    'item_1' => 'Microsoft Teams Certified',
+                    'item_2' => 'Zoom Rooms Certified',
+                    'item_3' => 'Google Meet Compatible',
+                    'item_4' => '3+2 Years Warranty',
                 ]
             ],
             [
                 'key' => 'advisor',
                 'config' => [
-                    'badge' => 'SIMULATOR TEKNIS CERDAS',
-                    'title' => 'AI Room Advisor & Recommendation HUD',
-                    'subtitle' => 'SISTEM KONSULTASI INTERAKTIF PERANGKAT RUANG RAPAT',
-                    'description' => 'Tentukan kapasitas peserta, platform UC yang digunakan, dan tipe pencahayaan untuk mendapatkan simulasi konfigurasi kamera dan audio AVer yang paling ideal secara instan.',
-                ]
-            ],
-            [
-                'key' => 'blueprint',
-                'config' => [
-                    'badge' => 'INTERACTIVE BLUEPRINT STUDIO',
-                    'title' => 'Studio Denah Interaktif & Arsitektur Solusi Ruang',
-                    'subtitle' => 'SIMULASI FOV KAMERA & AKUSTIK AUDIO RUANG RAPAT',
-                    'description' => 'Eksplorasi penempatan kamera AVer, sudut pandang optimal (Field of View), dan jangkauan mikrofon beamforming untuk berbagai denah ruang rapat korporat dan institusi.',
-                    'default_room' => 'huddle',
-                ]
-            ],
-            [
-                'key' => 'products',
-                'config' => [
-                    'badge' => 'KATALOG PERANGKAT RESMI',
-                    'title' => 'Katalog Kamera PTZ & Sistem Audio AVer',
-                    'subtitle' => 'HARDWARE BERMUTU TINGGI UNTUK ENTERPRISE & EDUCATION',
-                    'description' => 'Temukan perangkat konferensi video AVer dengan zoom optik presisi tinggi, teknologi auto-framing cerdas, dan integrasi mulus dengan ekosistem Zoom, Teams, dan Google Meet.',
-                    'limit' => 6,
-                    'category' => 'all',
-                    'cta_text' => 'Lihat Semua Kamera AVer',
-                    'cta_url' => '/produk',
-                ]
-            ],
-            [
-                'key' => 'comparison',
-                'config' => [
-                    'badge' => 'TECHNICAL SPECIFICATION MATRIX',
-                    'title' => 'Matriks Perbandingan Kamera PTZ AVer',
-                    'subtitle' => 'KOMPARASI SPESIFIKASI TEKNIS & FITUR ENTERPRISE',
-                    'description' => 'Bandingkan resolusi optik, kemampuan zoom, sudut pandang fov, dan sertifikasi platform antar tipe kamera AVer untuk memilih perangkat yang paling tepat.',
-                    'product_1' => 'cam570',
-                    'product_2' => 'cam550',
-                    'product_3' => 'cam520-pro3',
-                ]
-            ],
-            [
-                'key' => 'why_choose_us',
-                'config' => [
-                    'badge' => 'ENTERPRISE ASSURANCE',
-                    'title' => 'Mengapa Memilih Ekosistem Konferensi AVer?',
-                    'subtitle' => 'KEUNGGULAN ENTERPRISE KELAS DUNIA',
-                    'description' => 'Dirancang untuk memberikan pengalaman komunikasi video tanpa hambatan dengan kecerdasan buatan terdepan dan reliabilitas hardware bersertifikasi global.',
-                    'features' => [
-                        [
-                            'title' => 'Teknologi AI Voice & Gesture Tracking',
-                            'description' => 'Kamera mendeteksi pembicara aktif secara otomatis dan dapat dikendalikan cukup dengan lambaian tangan tanpa remote.',
-                            'icon' => 'psychology',
-                        ],
-                        [
-                            'title' => 'Sertifikasi Resmi Teams, Zoom & Meet',
-                            'description' => 'Kesesuaian protokol 100% tanpa delay, plug-and-play langsung tersambung dengan PC/Mac dan Microsoft Teams Rooms.',
-                            'icon' => 'verified',
-                        ],
-                        [
-                            'title' => 'Garansi Resmi Terpanjang: Hingga 5 Tahun',
-                            'description' => 'Garansi standar 3 tahun dengan opsi ekstensi 2 tahun cuma-cuma melalui registrasi online untuk ketenangan jangka panjang.',
-                            'icon' => 'shield',
-                        ],
-                        [
-                            'title' => 'Dukungan Teknis & PoC Demo Lokal',
-                            'description' => 'Tim ahli kami siap memberikan demonstrasi perangkat langsung di ruang rapat Anda sebelum proses pengadaan.',
-                            'icon' => 'support_agent',
-                        ],
-                    ],
-                    'show_button' => true,
-                    'button_text' => 'Jadwalkan Demo / PoC',
-                    'button_url' => '/penawaran',
+                    'badge' => 'PROFIL ADVISOR · KONSULTASI PROFESIONAL',
+                    'tagline' => 'Membantu Anda memilih solusi kolaborasi terbaik',
+                    'bio' => 'Berdedikasi mendampingi organisasi, institusi pendidikan, dan konsultan arsitektur ruang dalam merancang ekosistem video konferensi modern. Fokus utama pada pemilihan konfigurasi kamera optik presisi dan teknologi AI tracking AVer yang selaras dengan dimensi fisik dan kebutuhan interaksi pengguna.',
+                    'specialty' => 'AVer Optics & PTZ Systems',
+                    'room_focus' => 'Huddle Space hingga Auditorium',
+                    'approach' => 'Konsultatif Edukatif & Audit Fisik',
+                    'whatsapp_text' => 'Konsultasi WhatsApp',
+                    'whatsapp_url' => 'https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer',
+                    'profile_text' => 'Lihat Profil Lengkap',
+                    'profile_url' => '/tentang',
                 ]
             ],
             [
                 'key' => 'articles',
                 'config' => [
-                    'badge' => 'EDITORIAL & TECH BRIEFS',
-                    'title' => 'Wawasan Teknis & Panduan Ruang Hybrid',
-                    'subtitle' => 'PUBLIKASI & BEDAH TEKNOLOGI PRO AV',
-                    'description' => 'Eksplorasi artikel terkini mengenai arsitektur ruang rapat modern, tips akustik, panduan pemilihan lensa PTZ, dan studi kasus implementasi nyata di Indonesia.',
-                    'limit' => 3,
+                    'subtitle' => 'DOKUMENTASI & PANDUAN TERBARU',
+                    'title' => 'Arsip Artikel & Studi Kasus',
+                    'limit' => '6',
                     'cta_text' => 'Lihat Semua Artikel',
                     'cta_url' => '/artikel',
                 ]
             ],
             [
-                'key' => 'faq',
+                'key' => 'products',
                 'config' => [
-                    'badge' => 'FREQUENTLY ASKED QUESTIONS',
-                    'title' => 'Pertanyaan Umum Seputar Solusi AVer (FAQ)',
-                    'subtitle' => 'INFORMASI TEKNIS & PENGADAAN ENTERPRISE',
-                    'description' => 'Temukan jawaban cepat mengenai garansi, kompatibilitas software, integrasi audio ceiling, hingga mekanisme uji coba perangkat (PoC).',
-                    'items' => [
-                        [
-                            'question' => 'Apakah kamera AVer kompatibel dengan Microsoft Teams Rooms dan Zoom Rooms?',
-                            'answer' => 'Ya, seluruh lini produk kamera AVer (seperti CAM570, CAM550, dan VB342 Pro) telah bersertifikasi resmi oleh Microsoft Teams dan Zoom, serta mendukung fitur kontrol native dari layar sentuh konsol ruang rapat.',
-                        ],
-                        [
-                            'question' => 'Bagaimana cara mengajukan Proof of Concept (PoC) di kantor kami?',
-                            'answer' => 'Anda dapat mengisi formulir Permintaan Penawaran atau menghubungi Harry via WhatsApp. Tim teknis kami akan mengantarkan unit demo ke kantor Anda di wilayah Jabodetabek, Surabaya, dan sekitarnya.',
-                        ],
-                        [
-                            'question' => 'Berapa lama masa garansi resmi kamera AVer di Indonesia?',
-                            'answer' => 'Semua kamera enterprise AVer dilengkapi garansi standar 3 tahun, dengan tambahan 2 tahun gratis (total 5 tahun) cukup dengan mendaftarkan nomor seri produk di portal registrasi resmi AVer.',
-                        ],
-                        [
-                            'question' => 'Apakah AVer bisa diintegrasikan dengan mikrofon ceiling pihak ketiga (Shure / Sennheiser)?',
-                            'answer' => 'Sangat bisa. Seri kamera seperti CAM570 dan CAM550 mendukung integrasi audio-tracking via preset triggering dari DSP Shure IntelliMix, Sennheiser TeamConnect, dan Yamaha RM-CG.',
-                        ],
-                    ],
-                ]
-            ],
-            [
-                'key' => 'inquiry',
-                'config' => [
-                    'badge' => 'B2B LEADS & INQUIRY',
-                    'title' => 'Minta Penawaran Resmi & Jadwalkan PoC',
-                    'subtitle' => 'KONSULTASI GRATIS DENGAN EXPERT AVer INDONESIA',
-                    'description' => 'Isi formulir kebutuhan ruang rapat atau proyek Anda di bawah ini. Tim kami akan mengirimkan proposal harga resmi dan menghubungi Anda dalam 1x24 jam kerja.',
+                    'subtitle' => 'KATALOG HARDWARE ENTERPRISE',
+                    'title' => 'Solusi Kamera & Video Bar AVer',
+                    'limit' => '8',
+                    'cta_text' => 'Lihat Semua Produk',
+                    'cta_url' => '/produk',
                 ]
             ],
         ];

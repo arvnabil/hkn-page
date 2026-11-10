@@ -57,16 +57,8 @@ $getDynamicProducts = function () {
     return json_decode(file_get_contents(resource_path('js/data/products.json')), true) ?: [];
 };
 
-// Layout 1 (Editorial Magazine) as the primary dynamic homepage
-Route::get('/', function () use ($getEnrichedArticles, $getDynamicProducts) {
-    return Inertia::render('Home', [
-        'articles' => $getEnrichedArticles(),
-        'products' => $getDynamicProducts(),
-    ]);
-})->name('home');
-
-// Layout 2 (B2B Solution Landing from Page Builder)
-Route::get('/landing', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('landing');
+// Homepage now uses dynamic CMS Page 1 (Editorial Magazine Layout)
+Route::get('/', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('home');
 Route::get('/editorial', function () use ($getEnrichedArticles, $getDynamicProducts) {
     return Inertia::render('Home', [
         'articles' => $getEnrichedArticles(),

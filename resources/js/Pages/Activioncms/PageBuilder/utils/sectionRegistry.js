@@ -1,4 +1,6 @@
 import HeroSection from "@/Components/Sections/HeroSection";
+import EditorialHeroSection from "@/Components/Sections/EditorialHeroSection";
+import EcosystemAllianceSection from "@/Components/Sections/EcosystemAllianceSection";
 import AdvisorSection from "@/Components/Sections/AdvisorSection";
 import BlueprintSection from "@/Components/Sections/BlueprintSection";
 import ProductGridSection from "@/Components/Sections/ProductGridSection";
@@ -10,6 +12,43 @@ import InquirySection from "@/Components/Sections/InquirySection";
 import RichTextSection from "@/Components/Sections/RichTextSection";
 
 export const sectionRegistry = {
+  // AVer Editorial Magazine Sections
+  editorial_hero: {
+    id: "editorial_hero",
+    label: "Editorial Hero & Liputan Utama",
+    icon: "fa-regular fa-newspaper",
+    component: EditorialHeroSection,
+    schema: [
+      { name: "badge", type: "text", label: "Badge Label" },
+      { name: "sidebar_title", type: "text", label: "Sidebar Highlights Title" },
+    ],
+    defaultConfig: {
+      badge: "LIPUTAN UTAMA",
+      sidebar_title: "TREN & ANALISIS TEKNIS",
+    },
+  },
+
+  ecosystem_alliance: {
+    id: "ecosystem_alliance",
+    label: "Ecosystem Alliance Strip",
+    icon: "fa-regular fa-handshake",
+    component: EcosystemAllianceSection,
+    schema: [
+      { name: "alliance_label", type: "text", label: "Alliance Label" },
+      { name: "item_1", type: "text", label: "Alliance 1 (Teams)" },
+      { name: "item_2", type: "text", label: "Alliance 2 (Zoom)" },
+      { name: "item_3", type: "text", label: "Alliance 3 (Google)" },
+      { name: "item_4", type: "text", label: "Alliance 4 (Warranty)" },
+    ],
+    defaultConfig: {
+      alliance_label: "ECOSYSTEM ALLIANCE",
+      item_1: "Microsoft Teams Certified",
+      item_2: "Zoom Rooms Certified",
+      item_3: "Google Meet Compatible",
+      item_4: "3+2 Years Warranty",
+    },
+  },
+
   // 1. Enterprise Hero Banner
   hero: {
     id: "hero",
@@ -55,23 +94,35 @@ export const sectionRegistry = {
     },
   },
 
-  // 2. Interactive AI Room Advisor HUD
+  // 2. Interactive AI Room Advisor HUD & Profile
   advisor: {
     id: "advisor",
-    label: "AI Room Advisor HUD",
-    icon: "fa-regular fa-microchip-ai",
+    label: "Advisor Profile & Consultation HUD",
+    icon: "fa-regular fa-user-tie",
     component: AdvisorSection,
     schema: [
       { name: "badge", type: "text", label: "Badge Label" },
-      { name: "title", type: "text", label: "Section Title" },
-      { name: "subtitle", type: "text", label: "Subtitle" },
-      { name: "description", type: "textarea", label: "Description" },
+      { name: "tagline", type: "text", label: "Advisor Tagline" },
+      { name: "bio", type: "textarea", label: "Advisor Bio" },
+      { name: "specialty", type: "text", label: "Spesialisasi" },
+      { name: "room_focus", type: "text", label: "Fokus Ruang" },
+      { name: "approach", type: "text", label: "Pendekatan Konsultasi" },
+      { name: "whatsapp_text", type: "text", label: "Tombol WhatsApp Text" },
+      { name: "whatsapp_url", type: "text", label: "Tombol WhatsApp URL" },
+      { name: "profile_text", type: "text", label: "Tombol Profil Text" },
+      { name: "profile_url", type: "text", label: "Tombol Profil URL" },
     ],
     defaultConfig: {
-      badge: "SIMULATOR TEKNIS CERDAS",
-      title: "AI Room Advisor & Recommendation HUD",
-      subtitle: "SISTEM KONSULTASI INTERAKTIF PERANGKAT RUANG RAPAT",
-      description: "Tentukan kapasitas peserta, platform UC yang digunakan, dan tipe pencahayaan untuk mendapatkan simulasi konfigurasi kamera dan audio AVer yang paling ideal secara instan.",
+      badge: "PROFIL ADVISOR · KONSULTASI PROFESIONAL",
+      tagline: "Membantu Anda memilih solusi kolaborasi terbaik",
+      bio: "Berdedikasi mendampingi organisasi, institusi pendidikan, dan konsultan arsitektur ruang dalam merancang ekosistem video konferensi modern. Fokus utama pada pemilihan konfigurasi kamera optik presisi dan teknologi AI tracking AVer yang selaras dengan dimensi fisik dan kebutuhan interaksi pengguna.",
+      specialty: "AVer Optics & PTZ Systems",
+      room_focus: "Huddle Space hingga Auditorium",
+      approach: "Konsultatif Edukatif & Audit Fisik",
+      whatsapp_text: "Konsultasi WhatsApp",
+      whatsapp_url: "https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
+      profile_text: "Lihat Profil Lengkap",
+      profile_url: "/tentang",
     },
   },
 

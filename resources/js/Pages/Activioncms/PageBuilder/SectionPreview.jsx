@@ -42,6 +42,9 @@ const SectionPreview = memo(function SectionPreview({
     if (section.section_key === "articles" && Array.isArray(builderConfig.items)) {
         builderConfig.items = builderConfig.items.slice(0, 3);
     }
+    if (section.section_key === "editorial_hero" && Array.isArray(builderConfig.articles)) {
+        builderConfig.articles = builderConfig.articles.slice(0, 5);
+    }
 
     // Interaction Components
     const handleClick = (e) => {

@@ -78,6 +78,10 @@ class SectionDataResolver
             // Products & Hardware
             'products' => $this->resolveProducts($config),
 
+            // Editorial Magazine Sections
+            'editorial_hero' => $this->resolveEditorialHero($config),
+            'articles' => $this->resolveArticles($config),
+
             default => $config,
         };
 
@@ -145,6 +149,43 @@ class SectionDataResolver
             }
         }
 
+        return $config;
+    }
+
+    public function getEnrichedArticles(): array
+    {
+        $articles = json_decode(@file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
+        $newsRecords = DB::table('news')
+            ->whereIn('slug', array_column($articles, 'slug'))
+            ->get(['slug', 'featured_image', 'published_at'])
+            ->keyBy('slug');
+
+        foreach ($articles as &$article) {
+            $news = $newsRecords->get($article['slug']);
+            if ($news && $news->featured_image) {
+                $image = $news->featured_image;
+                $article['thumbnail'] = str_starts_with($image, 'http')
+                    ? $image
+                    : asset('storage/'.ltrim($image, '/'));
+            }
+            if ($news && $news->published_at) {
+                $article['publishedAt'] = \Carbon\Carbon::parse($news->published_at)->isoFormat('D MMM Y');
+            }
+        }
+        unset($article);
+
+        return $articles;
+    }
+
+    protected function resolveEditorialHero(array $config): array
+    {
+        $config['articles'] = $this->getEnrichedArticles();
+        return $config;
+    }
+
+    protected function resolveArticles(array $config): array
+    {
+        $config['items'] = $this->getEnrichedArticles();
         return $config;
     }
 

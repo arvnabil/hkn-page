@@ -1,5 +1,7 @@
 import React from 'react';
 import HeroSection from './Sections/HeroSection';
+import EditorialHeroSection from './Sections/EditorialHeroSection';
+import EcosystemAllianceSection from './Sections/EcosystemAllianceSection';
 import AdvisorSection from './Sections/AdvisorSection';
 import BlueprintSection from './Sections/BlueprintSection';
 import ProductGridSection from './Sections/ProductGridSection';
@@ -11,6 +13,10 @@ import InquirySection from './Sections/InquirySection';
 import RichTextSection from './Sections/RichTextSection';
 
 const SECTIONS = {
+  // AVer Editorial & Magazine Sections (Layout 1)
+  editorial_hero: EditorialHeroSection,
+  ecosystem_alliance: EcosystemAllianceSection,
+
   // AVer Specialized Enterprise Sections
   hero: HeroSection,
   slider: HeroSection,
