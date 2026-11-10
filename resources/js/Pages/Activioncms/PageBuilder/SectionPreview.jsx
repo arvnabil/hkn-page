@@ -33,7 +33,15 @@ const SectionPreview = memo(function SectionPreview({
     if (section.section_key === "projects") {
         extraProps.projects = allProjects;
     }
-    // Add logic for News etc if needed later
+    // For dynamic sections, strip large runtime data from config to avoid
+    // serialization issues in the builder canvas. The live page uses the resolver.
+    const builderConfig = { ...(section.config || {}) };
+    if (section.section_key === "products" && Array.isArray(builderConfig.items)) {
+        builderConfig.items = builderConfig.items.slice(0, 3);
+    }
+    if (section.section_key === "articles" && Array.isArray(builderConfig.items)) {
+        builderConfig.items = builderConfig.items.slice(0, 3);
+    }
 
     // Interaction Components
     const handleClick = (e) => {
@@ -112,7 +120,7 @@ const SectionPreview = memo(function SectionPreview({
                 <ErrorBoundary key={section.id}>
                     {/* Unified component rendering */}
                     <Component
-                        {...(section.config || {})}
+                        {...builderConfig}
                         {...extraProps}
                         preview={true}
                         isBuilder={true}

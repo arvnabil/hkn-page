@@ -33,6 +33,14 @@ class PageBuilderController extends Controller
             $resolved = $sectionDataResolver->resolve($section);
             $props = $resolved['props'];
 
+            // STRIP DYNAMIC/RUNTIME FIELDS from builder config:
+            // These are resolved at render time on the live page and should NOT
+            // be stored or sent as large payloads to the builder canvas.
+            $dynamicFields = ['items', 'articles', 'news_items'];
+            foreach ($dynamicFields as $field) {
+                unset($props[$field]);
+            }
+
             // TRANSFORM FOR BUILDER: Adapter for Data Structure Mismatch
             // Filament stores images as ['url1', 'url2'] (Flat Array) via Accessor
             // PageBuilder Inspector expects [{image: 'url1'}, {image: 'url2'}] (Repeater Object)
@@ -131,6 +139,13 @@ class PageBuilderController extends Controller
                     $config = json_decode($configInput, true) ?? [];
                 } else {
                     $config = $configInput;
+                }
+
+                // STRIP DYNAMIC/RUNTIME FIELDS: Fields that are resolved at runtime
+                // should NOT be persisted to the database config (they come from the resolver).
+                $dynamicFields = ['items', 'articles', 'news_items'];
+                foreach ($dynamicFields as $field) {
+                    unset($config[$field]);
                 }
 
                 // TRANSFORM FOR DATABASE: Adapter for Data Structure Mismatch
