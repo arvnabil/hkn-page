@@ -27,48 +27,10 @@ class PageController extends Controller
             ->first();
 
         if (!$homepage) {
-            // Fallback to static Home with legacy data
-            $services = [];
-            if (class_exists(\Modules\Services\Models\Service::class)) {
-                $services = \Modules\Services\Models\Service::orderBy('sort_order', 'asc')->take(3)->get();
-            }
-
-            $projects = [];
-            if (class_exists(\Modules\Projects\Models\Project::class)) {
-                $projects = \Modules\Projects\Models\Project::where('status', 'published')
-                    ->latest() // Match Builder sorting (created_at)
-                    ->limit(8)
-                    ->get()
-                    ->map(function ($p) {
-                         return [
-                            'title' => $p->title,
-                            'subtitle' => $p->title,
-                            'image' => $p->thumbnail ? "/storage/{$p->thumbnail}" : null,
-                            'link' => "/projects/{$p->slug}",
-                            'category' => $p->is_featured ? 'Featured' : 'Project'
-                        ];
-                    });
-            }
-
-            $clients = [];
-            if (class_exists(\Modules\Clients\Models\Client::class)) {
-                $clients = \Modules\Clients\Models\Client::where('is_active', true)
-                    ->orderBy('position', 'asc')
-                    ->get()
-                    ->map(function ($c) {
-                        return [
-                            'name' => $c->name,
-                            'image' => $c->logo ? "/storage/{$c->logo}" : null,
-                            'website_url' => $c->website_url,
-                        ];
-                    });
-            }
-
+            // Fallback to static Home — legacy modules (Projects, Services, Clients) have been removed.
             return Inertia::render('Home', [
-                'services' => $services,
-                'projects' => $projects,
-                'clients' => $clients,
-                'seo' => \Modules\SEO\Services\SeoResolver::staticPage('Home')
+                'articles' => [],
+                'seo'      => \Modules\SEO\Services\SeoResolver::staticPage('Home'),
             ]);
         }
 
