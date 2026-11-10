@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
  * Interactive Architectural Room Blueprint & FOV Simulator Component
  * Adapts dynamically to Light (Clean Technical Drafting) & Dark (Night HUD) modes
  */
-export default function RoomBlueprint({ solution }) {
+export default function RoomBlueprint({ solution, room }) {
+  const activeSolution = solution || room || {};
   const [activeLayer, setActiveLayer] = useState('all'); // 'all' | 'fov' | 'audio'
   const [hoveredNode, setHoveredNode] = useState(null);
   const [isDark, setIsDark] = useState(false);
@@ -26,7 +27,15 @@ export default function RoomBlueprint({ solution }) {
     };
   }, []);
 
-  const { id, title, dimension, area, cameraPlacement, micRange, tableDistance } = solution;
+  const {
+    id = 'huddle',
+    title = 'Huddle Space',
+    dimension = '3m × 4m',
+    area = '12 m²',
+    cameraPlacement = 'Di bawah layar (ketinggian 1.1m)',
+    micRange = '5 meter',
+    tableDistance = '1.2 meter dari layar',
+  } = activeSolution;
 
   // Dynamic Theme Colors for SVG Drawing
   const theme = {
@@ -181,7 +190,7 @@ export default function RoomBlueprint({ solution }) {
               {/* FOV Angle Arc Line */}
               <path d="M 230 110 A 100 100 0 0 1 370 110" fill="none" stroke="#0094DA" strokeWidth="1.5" strokeDasharray="3 3" opacity="0.8" />
               <text x="300" y="105" fill="#0094DA" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">
-                FOV SUDUT KAMERA {solution.cameraFov}°
+                FOV SUDUT KAMERA {activeSolution.cameraFov || 120}°
               </text>
             </g>
           )}
@@ -200,7 +209,7 @@ export default function RoomBlueprint({ solution }) {
           {/* 4. CAMERA HARDWARE NODE (INTERACTIVE PIN) */}
           <g
             className="cursor-pointer"
-            onMouseEnter={() => setHoveredNode({ title: 'Kamera AVer', desc: `${solution.recommended} — Penempatan: ${cameraPlacement}. Jarak ideal ke meja: ${tableDistance}.` })}
+            onMouseEnter={() => setHoveredNode({ title: 'Kamera AVer', desc: `${activeSolution.recommended || 'AVer Pro AV'} — Penempatan: ${cameraPlacement}. Jarak ideal ke meja: ${tableDistance}.` })}
             onMouseLeave={() => setHoveredNode(null)}
           >
             <circle cx="300" cy="34" r="10" fill={theme.camBase} stroke="#0094DA" strokeWidth="2" />

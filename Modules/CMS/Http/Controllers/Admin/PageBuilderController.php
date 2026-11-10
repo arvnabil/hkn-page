@@ -36,7 +36,10 @@ class PageBuilderController extends Controller
             // STRIP DYNAMIC/RUNTIME FIELDS from builder config:
             // These are resolved at render time on the live page and should NOT
             // be stored or sent as large payloads to the builder canvas.
-            $dynamicFields = ['items', 'articles', 'news_items'];
+            // Also strip 'id' and 'className' which are injected by SectionDataResolver
+            // into $common — they must NOT pollute section.config since 'id' would
+            // collide with the Eloquent model's own section.id used by dnd-kit.
+            $dynamicFields = ['items', 'articles', 'news_items', 'id', 'className'];
             foreach ($dynamicFields as $field) {
                 unset($props[$field]);
             }
@@ -143,7 +146,8 @@ class PageBuilderController extends Controller
 
                 // STRIP DYNAMIC/RUNTIME FIELDS: Fields that are resolved at runtime
                 // should NOT be persisted to the database config (they come from the resolver).
-                $dynamicFields = ['items', 'articles', 'news_items'];
+                // Also strip 'id' and 'className' injected by SectionDataResolver into common props.
+                $dynamicFields = ['items', 'articles', 'news_items', 'id', 'className'];
                 foreach ($dynamicFields as $field) {
                     unset($config[$field]);
                 }

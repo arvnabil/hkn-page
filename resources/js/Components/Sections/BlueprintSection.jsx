@@ -71,7 +71,7 @@ export default function BlueprintSection({
             </Link>
           </div>
 
-          <RoomBlueprint room={activeSolution} />
+          <RoomBlueprint solution={activeSolution} room={activeSolution} />
         </div>
       </div>
     </section>
