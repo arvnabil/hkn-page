@@ -46,11 +46,15 @@ export default function Home({
                   {featured.excerpt}
                 </p>
 
-                <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-6 border border-border-clean">
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-6 border border-border-clean bg-surface-alt">
                   <img
                     src={featured.thumbnail}
                     alt={featured.title}
                     className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = '/assets/img/hero-ptz.png';
+                    }}
                   />
                 </div>
               </div>
@@ -246,7 +250,7 @@ export default function Home({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((prod) => (
+            {(products || []).slice(0, 8).map((prod) => (
               <ProductCard key={prod.id} product={prod} />
             ))}
           </div>

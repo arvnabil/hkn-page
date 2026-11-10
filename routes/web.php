@@ -20,16 +20,21 @@ Route::get('/admin', function () {
 // ─── Harry Public Pages (AVer Solutions Advisor) ──────────
 $getEnrichedArticles = function () {
     $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
-    $imagesBySlug = DB::table('news')
+    $newsRecords = DB::table('news')
         ->whereIn('slug', array_column($articles, 'slug'))
-        ->pluck('featured_image', 'slug');
+        ->get(['slug', 'featured_image', 'published_at'])
+        ->keyBy('slug');
 
     foreach ($articles as &$article) {
-        $image = $imagesBySlug[$article['slug']] ?? null;
-        if ($image) {
+        $news = $newsRecords->get($article['slug']);
+        if ($news && $news->featured_image) {
+            $image = $news->featured_image;
             $article['thumbnail'] = str_starts_with($image, 'http')
                 ? $image
                 : asset('storage/'.ltrim($image, '/'));
+        }
+        if ($news && $news->published_at) {
+            $article['publishedAt'] = \Carbon\Carbon::parse($news->published_at)->isoFormat('D MMM Y');
         }
     }
     unset($article);
@@ -52,10 +57,21 @@ $getDynamicProducts = function () {
     return json_decode(file_get_contents(resource_path('js/data/products.json')), true) ?: [];
 };
 
-Route::get('/', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('home');
+// Layout 1 (Editorial Magazine) as the primary dynamic homepage
+Route::get('/', function () use ($getEnrichedArticles, $getDynamicProducts) {
+    return Inertia::render('Home', [
+        'articles' => $getEnrichedArticles(),
+        'products' => $getDynamicProducts(),
+    ]);
+})->name('home');
 
-Route::get('/editorial', function () use ($getEnrichedArticles) {
-    return Inertia::render('Home', ['articles' => $getEnrichedArticles()]);
+// Layout 2 (B2B Solution Landing from Page Builder)
+Route::get('/landing', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('landing');
+Route::get('/editorial', function () use ($getEnrichedArticles, $getDynamicProducts) {
+    return Inertia::render('Home', [
+        'articles' => $getEnrichedArticles(),
+        'products' => $getDynamicProducts(),
+    ]);
 })->name('editorial');
 
 Route::get('/tentang', function () {

@@ -17,6 +17,10 @@ export default function ArticleCard({ article }) {
             loading="lazy"
             decoding="async"
             src={article.thumbnail}
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = '/assets/img/hero-ptz.png';
+            }}
           />
           {article.telemetry && (
             <span className="absolute top-2 right-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-[10px] font-label-telemetry text-primary font-semibold">
