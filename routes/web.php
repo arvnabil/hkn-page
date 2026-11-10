@@ -9,6 +9,14 @@ Route::get('/login', function () {
     return redirect()->route('filament.activioncms.auth.login');
 })->name('login');
 
+Route::get('/dashboard', function () {
+    return redirect('/activioncms');
+})->name('dashboard');
+
+Route::get('/admin', function () {
+    return redirect('/activioncms');
+});
+
 // ─── Harry Public Pages (AVer Solutions Advisor) ──────────
 Route::get('/', function () {
     $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];

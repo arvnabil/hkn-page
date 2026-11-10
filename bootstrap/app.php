@@ -26,12 +26,7 @@ return Application::configure(basePath: dirname(__DIR__))
             return route('login');
         });
 
-        $middleware->redirectUsersTo(function (Request $request) {
-            if ($request->is('events/*')) {
-                return route('events.dashboard');
-            }
-            return '/';
-        });
+        $middleware->redirectUsersTo(fn () => '/');
 
         $middleware->alias([
             'api_key' => \App\Http\Middleware\VerifyApiKey::class,
