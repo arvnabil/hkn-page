@@ -18,7 +18,7 @@ Route::get('/admin', function () {
 });
 
 // ─── Harry Public Pages (AVer Solutions Advisor) ──────────
-Route::get('/', function () {
+$getEnrichedArticles = function () {
     $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
     $imagesBySlug = DB::table('news')
         ->whereIn('slug', array_column($articles, 'slug'))
@@ -34,7 +34,11 @@ Route::get('/', function () {
     }
     unset($article);
 
-    return Inertia::render('Home', ['articles' => $articles]);
+    return $articles;
+};
+
+Route::get('/', function () use ($getEnrichedArticles) {
+    return Inertia::render('Home', ['articles' => $getEnrichedArticles()]);
 })->name('home');
 
 Route::get('/tentang', function () {
@@ -62,12 +66,12 @@ Route::get('/perbandingan', function () {
 })->name('comparison');
 Route::redirect('/komparasi', '/perbandingan');
 
-Route::get('/artikel', function () {
-    return Inertia::render('Articles/Index');
+Route::get('/artikel', function () use ($getEnrichedArticles) {
+    return Inertia::render('Articles/Index', ['articles' => $getEnrichedArticles()]);
 })->name('articles.index');
 
-Route::get('/artikel/{slug}', function ($slug) {
-    $articles = json_decode(file_get_contents(resource_path('js/data/articles.json')), true) ?: [];
+Route::get('/artikel/{slug}', function ($slug) use ($getEnrichedArticles) {
+    $articles = $getEnrichedArticles();
     $article = collect($articles)->first(fn ($item) => ($item['slug'] ?? null) === $slug);
 
     // Keep old links such as /artikel/681 working, then canonicalize them.
