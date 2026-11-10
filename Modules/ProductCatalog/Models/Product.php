@@ -56,7 +56,6 @@ class Product extends Model
         $specs = is_array($this->specs) ? $this->specs : [];
         $features = is_array($this->features) ? $this->features : [];
         $tags = is_array($this->tags) ? $this->tags : [];
-        $specText = json_decode($this->specification_text ?? '{}', true) ?: [];
         $firstCategory = $this->categories->first();
 
         $image = $this->image_path ?: $this->thumbnail_path;
@@ -64,22 +63,41 @@ class Product extends Model
             $image = asset('storage/' . ltrim($image, '/'));
         }
 
-        return array_merge([
+        // Extract nested specs or direct keys
+        $roomSize = $specs['roomSize'] ?? null;
+        $zoom = $specs['zoom'] ?? null;
+        $resolution = $specs['resolution'] ?? null;
+        $fov = $specs['fov'] ?? null;
+        $bestFor = $specs['bestFor'] ?? null;
+        $warranty = $specs['warranty'] ?? '3+2 Tahun Garansi Resmi AVer';
+        $badge = $specs['badge'] ?? ($tags[0] ?? 'ENTERPRISE');
+        $categoryLabel = $specs['categoryLabel'] ?? ($firstCategory ? $firstCategory->name : 'PTZ Pro AV');
+        $certifications = !empty($specs['certifications']) && is_array($specs['certifications'])
+            ? $specs['certifications']
+            : array_values(array_filter($tags, fn ($t) => in_array($t, ['Microsoft Teams', 'Zoom Rooms', 'Google Meet'], true)));
+
+        return [
             'id'             => $this->slug ?: (string) $this->id,
             'slug'           => $this->slug,
             'name'           => $this->name,
             'tagline'        => $this->description,
-            'badge'          => $tags[0] ?? 'ENTERPRISE',
+            'badge'          => $badge,
             'category'       => $firstCategory ? $firstCategory->slug : 'ptz',
-            'categoryLabel'  => $firstCategory ? $firstCategory->name : 'PTZ Pro AV',
+            'categoryLabel'  => $categoryLabel,
             'image'          => $image,
             'images'         => $image ? [$image] : [],
-            'certifications' => array_values(array_filter($tags, fn ($t) => in_array($t, ['Microsoft Teams', 'Zoom Rooms', 'Google Meet'], true))),
+            'certifications' => $certifications,
             'specs'          => $specs,
             'features'       => $features,
+            'roomSize'       => $roomSize,
+            'zoom'           => $zoom,
+            'resolution'     => $resolution,
+            'fov'            => $fov,
+            'bestFor'        => $bestFor,
+            'warranty'       => $warranty,
             'price'          => $this->price,
             'link_accommerce'=> $this->link_accommerce,
             'whatsapp_note'  => $this->whatsapp_note,
-        ], $specText);
+        ];
     }
 }
