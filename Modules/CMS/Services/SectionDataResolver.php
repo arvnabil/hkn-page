@@ -75,6 +75,9 @@ class SectionDataResolver
             'service_solution' => $config,
             'service_cta' => $config,
 
+            // Products & Hardware
+            'products' => $this->resolveProducts($config),
+
             default => $config,
         };
 
@@ -127,6 +130,22 @@ class SectionDataResolver
             'subtitle' => $config['subtitle'] ?? null,
             'description' => $config['description'] ?? null,
         ]);
+    }
+
+    protected function resolveProducts(array $config): array
+    {
+        if (class_exists(\Modules\ProductCatalog\Models\Product::class)) {
+            $dbProducts = \Modules\ProductCatalog\Models\Product::where('is_active', true)
+                ->with('categories')
+                ->orderBy('id', 'asc')
+                ->get();
+
+            if ($dbProducts->isNotEmpty()) {
+                $config['items'] = $dbProducts->map->toFrontendArray()->values()->all();
+            }
+        }
+
+        return $config;
     }
 
     protected function resolveServices(array $config): array

@@ -13,6 +13,7 @@ export default function ProductGridSection({
   show_filter = true,
   cta_text = "Lihat Semua Kamera AVer",
   cta_url = "/produk",
+  items = null,
 }) {
   const [selectedCategory, setSelectedCategory] = useState(category);
 
@@ -24,7 +25,9 @@ export default function ProductGridSection({
     { id: 'classroom', label: 'Education PTZ' },
   ];
 
-  const filteredProducts = defaultProducts
+  const sourceProducts = Array.isArray(items) && items.length > 0 ? items : defaultProducts;
+
+  const filteredProducts = sourceProducts
     .filter((p) => {
       if (selectedCategory === 'all') return true;
       if (selectedCategory === 'ptz') return p.tags?.includes('PTZ') || p.category?.toLowerCase().includes('ptz');

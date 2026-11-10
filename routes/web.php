@@ -37,9 +37,26 @@ $getEnrichedArticles = function () {
     return $articles;
 };
 
-Route::get('/', function () use ($getEnrichedArticles) {
+$getDynamicProducts = function () {
+    if (class_exists(\Modules\ProductCatalog\Models\Product::class)) {
+        $dbProducts = \Modules\ProductCatalog\Models\Product::where('is_active', true)
+            ->with('categories')
+            ->orderBy('id', 'asc')
+            ->get();
+
+        if ($dbProducts->isNotEmpty()) {
+            return $dbProducts->map->toFrontendArray()->values()->all();
+        }
+    }
+
+    return json_decode(file_get_contents(resource_path('js/data/products.json')), true) ?: [];
+};
+
+Route::get('/', [\Modules\CMS\Http\Controllers\PageController::class, 'resolveHomepage'])->name('home');
+
+Route::get('/editorial', function () use ($getEnrichedArticles) {
     return Inertia::render('Home', ['articles' => $getEnrichedArticles()]);
-})->name('home');
+})->name('editorial');
 
 Route::get('/tentang', function () {
     return Inertia::render('About');
@@ -53,12 +70,22 @@ Route::get('/penawaran', function () {
     return Inertia::render('Inquiry');
 })->name('inquiry');
 
-Route::get('/produk', function () {
-    return Inertia::render('Products/Index');
+Route::get('/produk', function () use ($getDynamicProducts) {
+    return Inertia::render('Products/Index', [
+        'products' => $getDynamicProducts(),
+    ]);
 })->name('products.index');
 
-Route::get('/produk/{id}', function ($id) {
-    return Inertia::render('Products/Show', ['id' => $id]);
+Route::get('/produk/{id}', function ($id) use ($getDynamicProducts) {
+    $products = $getDynamicProducts();
+    $product = collect($products)->first(fn ($p) => (string) ($p['id'] ?? '') === (string) $id || (string) ($p['slug'] ?? '') === (string) $id);
+
+    abort_unless($product, 404);
+
+    return Inertia::render('Products/Show', [
+        'product'  => $product,
+        'products' => $products,
+    ]);
 })->name('products.show');
 
 Route::get('/perbandingan', function () {
