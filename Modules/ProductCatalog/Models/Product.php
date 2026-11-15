@@ -7,10 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\SEO\Traits\HasSeoMeta;
 use App\Traits\HasImageCleanup;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Modules\ProductCatalog\Support\ProductContent;
 
 #[Fillable([
     'brand_id', 'name', 'slug',
-    'description', 'image_path', 'thumbnail_path', 'sku', 'solution_type',
+    'description', 'short_description', 'image_path', 'image_paths', 'thumbnail_path', 'sku', 'solution_type',
     'datasheet_url', 'tags', 'specs', 'specification_text',
     'features', 'features_text', 'is_active', 'is_featured', 'is_new',
     'breadcrumb_image', 'show_breadcrumb',
@@ -20,7 +23,7 @@ class Product extends Model
 {
     use HasFactory, HasSeoMeta, HasImageCleanup;
 
-    protected $cleanupFields = ['image_path', 'thumbnail_path', 'breadcrumb_image', 'datasheet_url'];
+    protected $cleanupFields = ['image_path', 'image_paths', 'thumbnail_path', 'breadcrumb_image', 'datasheet_url'];
     protected $richEditorCleanupFields = ['description', 'specification_text', 'features_text'];
 
     /**
@@ -34,6 +37,7 @@ class Product extends Model
             'specs'          => 'array',
             'tags'           => 'array',
             'features'       => 'array',
+            'image_paths'    => 'array',
             'is_active'      => 'boolean',
             'is_featured'    => 'boolean',
             'is_new'         => 'boolean',
@@ -58,10 +62,9 @@ class Product extends Model
         $tags = is_array($this->tags) ? $this->tags : [];
         $firstCategory = $this->categories->first();
 
-        $image = $this->image_path ?: $this->thumbnail_path;
-        if ($image && !str_starts_with($image, 'http') && !str_starts_with($image, '/')) {
-            $image = asset('storage/' . ltrim($image, '/'));
-        }
+        $images = collect(array_merge([$this->image_path], $this->image_paths ?? []))
+            ->filter()->map(fn ($path) => self::imageUrl($path))->filter()->unique()->values()->all();
+        $image = $images[0] ?? self::imageUrl($this->thumbnail_path);
 
         // Extract nested specs or direct keys
         $roomSize = $specs['roomSize'] ?? null;
@@ -69,26 +72,32 @@ class Product extends Model
         $resolution = $specs['resolution'] ?? null;
         $fov = $specs['fov'] ?? null;
         $bestFor = $specs['bestFor'] ?? null;
-        $warranty = $specs['warranty'] ?? '3+2 Tahun Garansi Resmi AVer';
-        $badge = $specs['badge'] ?? ($tags[0] ?? 'ENTERPRISE');
-        $categoryLabel = $specs['categoryLabel'] ?? ($firstCategory ? $firstCategory->name : 'PTZ Pro AV');
+        $warranty = $specs['warranty'] ?? null;
+        $badge = $specs['badge'] ?? null;
+        $categoryLabel = $specs['categoryLabel'] ?? $firstCategory?->name;
         $certifications = !empty($specs['certifications']) && is_array($specs['certifications'])
             ? $specs['certifications']
             : array_values(array_filter($tags, fn ($t) => in_array($t, ['Microsoft Teams', 'Zoom Rooms', 'Google Meet'], true)));
 
         return [
             'id'             => $this->slug ?: (string) $this->id,
+            'databaseId'     => $this->id,
             'slug'           => $this->slug,
             'name'           => $this->name,
-            'tagline'        => $this->description,
+            'tagline'        => $this->short_description ?: Str::limit(trim(html_entity_decode(strip_tags($this->description ?? ''), ENT_QUOTES, 'UTF-8')), 240),
+            'descriptionHtml' => Str::sanitizeHtml($this->description ?? ''),
+            'specificationHtml' => $this->richContent($this->specification_text),
+            'featuresHtml'   => $this->richContent($this->features_text),
+            'sku'           => $this->sku,
             'badge'          => $badge,
-            'category'       => $firstCategory ? $firstCategory->slug : 'ptz',
+            'category'       => $firstCategory?->slug,
             'categoryLabel'  => $categoryLabel,
             'image'          => $image,
-            'images'         => $image ? [$image] : [],
+            'images'         => $images ?: ($image ? [$image] : []),
             'certifications' => $certifications,
             'specs'          => $specs,
-            'features'       => $features,
+            'technicalSpecs' => $specs['technical'] ?? Arr::except($specs, ProductContent::SUMMARY_KEYS),
+            'features'       => array_values(array_filter(array_map(ProductContent::featureText(...), $features))),
             'roomSize'       => $roomSize,
             'zoom'           => $zoom,
             'resolution'     => $resolution,
@@ -96,8 +105,35 @@ class Product extends Model
             'bestFor'        => $bestFor,
             'warranty'       => $warranty,
             'price'          => $this->price,
-            'link_accommerce'=> $this->link_accommerce,
+            'link_accommerce'=> Str::sanitizeUrl($this->link_accommerce),
             'whatsapp_note'  => $this->whatsapp_note,
+            'datasheet_url'  => Str::sanitizeUrl($this->datasheet_url),
+            'breadcrumb_image' => self::imageUrl($this->breadcrumb_image),
+            'show_breadcrumb' => $this->show_breadcrumb ?? true,
         ];
+    }
+
+    public static function imageUrl(?string $path): ?string
+    {
+        if (! $path) {
+            return null;
+        }
+        if (str_starts_with($path, '/') && ! str_starts_with($path, '//')) {
+            return $path;
+        }
+        if (preg_match('~^https?://~i', $path)) {
+            return $path;
+        }
+        if (str_contains($path, ':') || str_contains($path, '..') || str_starts_with($path, '//')) {
+            return null;
+        }
+
+        return '/storage/'.ltrim($path, '/');
+    }
+
+    private function richContent(?string $content): string
+    {
+        // Legacy seed data stored JSON / duplicate plain text here.
+        return $content && str_contains($content, '<') ? Str::sanitizeHtml($content) : '';
     }
 }

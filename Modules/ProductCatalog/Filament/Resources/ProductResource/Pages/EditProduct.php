@@ -18,13 +18,11 @@ class EditProduct extends EditRecord
 
     protected function mutateFormDataBeforeFill(array $data): array
     {
-        $data['specs'] = \App\Helpers\JsonHelper::toRepeater($data['specs'] ?? []);
-        return $data;
+        return \Modules\ProductCatalog\Support\ProductContent::forForm($data);
     }
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        $data['specs'] = \App\Helpers\JsonHelper::fromRepeater($data['specs'] ?? []);
-        return $data;
+        return \Modules\ProductCatalog\Support\ProductContent::forStorage($data);
     }
 }

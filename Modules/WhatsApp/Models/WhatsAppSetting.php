@@ -37,7 +37,7 @@ class WhatsAppSetting extends Model
     {
         return self::first() ?? self::create([
             'is_enabled' => true,
-            'phone' => '6281280944719',
+            'phone' => null,
             'message' => 'Halo Harry, saya ingin konsultasi solusi video conference AVer',
             'tooltip' => 'Butuh bantuan? Chat kami di WhatsApp',
             'position' => 'bottom-right',

@@ -39,9 +39,13 @@ class IndexCoverage extends Page implements HasTable
                 ->icon('heroicon-o-arrow-path')
                 ->action(function () {
                     app(SeoMonitoringService::class)->sync();
+                    $this->flushCachedTableRecords();
+                    $this->resetPage();
+                    $this->dispatch('seo-monitoring-synced');
                     Notification::make()
                         ->success()
                         ->title('SEO Data Synced')
+                        ->body(number_format(SeoMonitoringRecord::count()).' URL tersimpan pada monitoring lokal.')
                         ->send();
                 }),
         ];
@@ -59,6 +63,8 @@ class IndexCoverage extends Page implements HasTable
     {
         return $table
             ->query(SeoMonitoringRecord::query())
+            ->emptyStateHeading('Data monitoring belum tersedia')
+            ->emptyStateDescription('Klik Sync Data untuk memindai URL lokal. Jika filter aktif, coba hapus filter.')
             ->columns([
                 TextColumn::make('url')
                     ->label('URL')
@@ -75,13 +81,11 @@ class IndexCoverage extends Page implements HasTable
                         'info' => 'News',
                     ]),
 
-                BadgeColumn::make('is_noindex')
-                    ->label('Index Status')
-                    ->formatStateUsing(fn ($state) => $state ? 'Noindex' : 'Indexed')
-                    ->colors([
-                        'danger' => 'Noindex',
-                        'success' => 'Indexed',
-                    ]),
+                TextColumn::make('is_noindex')
+                    ->label('Aturan indeks')->badge()
+                    ->formatStateUsing(fn ($state) => $state ? 'Noindex' : 'Boleh diindeks')
+                    ->color(fn ($state) => $state ? 'danger' : 'success')
+                    ->tooltip('Berdasarkan konfigurasi robots lokal; bukan konfirmasi indeks dari Google.'),
 
                 IconColumn::make('in_sitemap')
                     ->label('In Sitemap')
@@ -90,7 +94,7 @@ class IndexCoverage extends Page implements HasTable
                     ->falseIcon('heroicon-o-x-circle'),
 
                 IconColumn::make('canonical_valid')
-                    ->label('Canonical')
+                    ->label('Canonical diisi')
                     ->boolean(),
 
                 TextColumn::make('seo_score')
@@ -117,9 +121,9 @@ class IndexCoverage extends Page implements HasTable
                     ]),
 
                 SelectFilter::make('is_noindex')
-                    ->label('Index Status')
+                    ->label('Aturan indeks')
                     ->options([
-                        '0' => 'Indexed',
+                        '0' => 'Boleh diindeks',
                         '1' => 'Noindex',
                     ]),
 

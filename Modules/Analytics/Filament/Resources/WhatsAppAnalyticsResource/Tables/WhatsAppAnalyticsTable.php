@@ -57,6 +57,7 @@ class WhatsAppAnalyticsTable
                     ->searchable()
                     ->default('-')
                     ->toggleable(),
+                Tables\Columns\TextColumn::make('utm_content')->label('UTM Content')->searchable()->toggleable(),
                 Tables\Columns\TextColumn::make('cta_position')
                     ->searchable()
                     ->default('-')
@@ -90,10 +91,12 @@ class WhatsAppAnalyticsTable
                     ->options(fn () => \Modules\Analytics\Models\AnalyticsClickEvent::query()->where('event_type', 'whatsapp')->distinct()->pluck('cta_position', 'cta_position')->filter()->toArray()),
                 Tables\Filters\SelectFilter::make('entity_type')
                     ->options([
-                        'product' => 'Product',
+                        \Modules\ProductCatalog\Models\Product::class => 'Product',
+                        \Modules\News\Models\News::class => 'Article',
+                        \Modules\CMS\Models\Page::class => 'Page',
                         'service' => 'Service (Category)',
                         'service_solution' => 'Service (Detail)',
-                        'brand' => 'Brand',
+                        \Modules\ProductCatalog\Models\Brand::class => 'Brand',
                     ]),
                 Tables\Filters\SelectFilter::make('device')
                     ->options([

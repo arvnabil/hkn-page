@@ -9,6 +9,8 @@ class SeoContentTypeChart extends ChartWidget
 {
     protected ?string $heading = 'URLs per Content Type';
     protected ?string $maxHeight = '250px';
+    protected ?string $emptyStateHeading = 'Belum disinkronkan';
+    protected ?string $emptyStateDescription = 'Klik Sync Data untuk mengisi grafik.';
 
     protected function getData(): array
     {
@@ -33,5 +35,17 @@ class SeoContentTypeChart extends ChartWidget
     protected function getType(): string
     {
         return 'bar';
+    }
+
+    public function isEmpty(): bool
+    {
+        return ! SeoMonitoringRecord::exists();
+    }
+
+    #[\Livewire\Attributes\On('seo-monitoring-synced')]
+    public function refreshMonitoring(): void
+    {
+        $this->cachedData = null;
+        $this->updateChartData();
     }
 }

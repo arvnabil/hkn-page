@@ -54,7 +54,7 @@ class PageSeeder extends Seeder
                     'room_focus' => 'Huddle Space hingga Auditorium',
                     'approach' => 'Konsultatif Edukatif & Audit Fisik',
                     'whatsapp_text' => 'Konsultasi WhatsApp',
-                    'whatsapp_url' => 'https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer',
+                    'whatsapp_message' => 'Halo Harry, saya ingin konsultasi solusi AVer.',
                     'profile_text' => 'Lihat Profil Lengkap',
                     'profile_url' => '/tentang',
                 ]

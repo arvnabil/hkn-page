@@ -6,7 +6,6 @@ use Modules\FormBuilder\Filament\Resources\FormSubmissionResource\Pages;
 use Modules\FormBuilder\Filament\Resources\FormSubmissionResource\Schemas\FormSubmissionForm;
 use Modules\FormBuilder\Filament\Resources\FormSubmissionResource\Tables\FormSubmissionTable;
 use Modules\FormBuilder\Models\FormSubmission;
-use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
@@ -14,6 +13,9 @@ use Filament\Tables\Table;
 class FormSubmissionResource extends Resource
 {
     protected static ?string $model = FormSubmission::class;
+
+    // Penawaran Masuk is the single public-facing administration menu.
+    protected static bool $shouldRegisterNavigation = false;
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-inbox-arrow-down';
 

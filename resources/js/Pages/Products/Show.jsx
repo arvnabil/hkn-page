@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../../Layouts/AppLayout';
 import defaultProducts from '../../data/products.json';
-import siteData from '../../data/site.json';
+import { whatsappLink } from '../../lib/whatsapp';
 
 const CERT_ICONS = {
   'Microsoft Teams': { icon: 'groups', color: 'text-blue-600', label: 'Teams' },
@@ -10,12 +10,20 @@ const CERT_ICONS = {
   'Google Meet': { icon: 'meet_now', color: 'text-green-600', label: 'Meet' },
 };
 
+function specificationRows(specs, prefix = '') {
+  return Object.entries(specs || {}).flatMap(([key, value]) => {
+    const label = prefix ? `${prefix} · ${key}` : key;
+    if (Array.isArray(value)) return [[label, value.join(', ')]];
+    if (value && typeof value === 'object') return specificationRows(value, label);
+    return value === null || value === '' ? [] : [[label, String(value)]];
+  });
+}
+
 export default function ProductsShow({
   product = defaultProducts[0],
   products = defaultProducts,
-  site = siteData,
 }) {
-  const gallery = (product.images && product.images.length > 0) ? product.images : [product.image];
+  const gallery = [...new Set((product.images?.length ? product.images : [product.image]).filter(Boolean))];
   const [activeImage, setActiveImage] = useState(gallery[0] || product.image);
 
   useEffect(() => {
@@ -26,20 +34,28 @@ export default function ProductsShow({
   // Related products (exclude current)
   const related = products.filter((p) => p.id !== product.id).slice(0, 3);
 
-  const specsEntries = product.specs ? Object.entries(product.specs) : [];
+  const summaryKeys = ['roomSize', 'zoom', 'resolution', 'fov', 'bestFor', 'warranty', 'badge', 'categoryLabel', 'certifications'];
+  const specsEntries = specificationRows(product.technicalSpecs ?? Object.fromEntries(
+    Object.entries(product.specs || {}).filter(([key]) => !summaryKeys.includes(key))
+  ));
+  const whatsappUrl = whatsappLink({ text: product.whatsapp_note || `Halo Harry, saya ingin konsultasi mengenai ${product.name}.`, position: 'product_detail', label: 'Konsultasi Gratis', campaign: 'product_consultation', entityType: 'product', entityId: product.databaseId, entitySlug: product.slug || product.id });
 
   return (
     <AppLayout title={`${product.name} — ${product.tagline}`}>
       <div className="mx-auto max-w-page px-gutter-mobile py-space-2xl md:px-gutter md:py-space-3xl">
 
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 font-mono text-xs text-secondary mb-8" aria-label="Breadcrumb">
+        {product.show_breadcrumb !== false && <nav className="flex flex-wrap items-center gap-2 font-mono text-xs text-secondary mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-primary transition-colors">Beranda</Link>
           <span className="material-symbols-outlined text-[14px]">chevron_right</span>
           <Link href="/produk" className="hover:text-primary transition-colors">Produk</Link>
           <span className="material-symbols-outlined text-[14px]">chevron_right</span>
           <span className="text-primary font-semibold">{product.name}</span>
-        </nav>
+        </nav>}
+
+        {product.show_breadcrumb !== false && product.breadcrumb_image && (
+          <img src={product.breadcrumb_image} alt="" className="w-full h-40 md:h-56 object-cover rounded-xl mb-8" />
+        )}
 
         {/* Hero Section — 2 Column */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-16">
@@ -71,22 +87,16 @@ export default function ProductsShow({
                 </div>
               )}
 
-              <img
+              {activeImage ? <img
                 src={activeImage}
                 alt={product.name}
                 className="w-full h-full object-contain p-4 group-hover:scale-[1.02] transition-transform duration-300"
-              />
+              /> : <span className="text-muted-slate">Gambar produk belum tersedia</span>}
 
-              {/* AI Label */}
-              <div className="absolute bottom-4 right-4 z-10">
-                <span className="font-mono text-[10px] text-muted-slate bg-surface-container-lowest/80 px-2 py-0.5 rounded border border-border-clean">
-                  AI AUTO-FRAMING AKTIF
-                </span>
-              </div>
             </div>
 
             {/* Thumbnail Strip */}
-            <div className="grid grid-cols-5 gap-3">
+            {gallery.length > 1 && <div className="grid grid-cols-4 sm:grid-cols-5 gap-3">
               {gallery.map((img, i) => (
                 <button
                   key={i}
@@ -96,11 +106,12 @@ export default function ProductsShow({
                   }`}
                   type="button"
                   aria-label={`Gambar ${i + 1} ${product.name}`}
+                  aria-pressed={activeImage === img}
                 >
                   <img src={img} alt={`${product.name} - tampilan ${i + 1}`} className="w-full h-full object-contain" />
                 </button>
               ))}
-            </div>
+            </div>}
           </div>
 
           {/* Right: Product Info */}
@@ -124,6 +135,9 @@ export default function ProductsShow({
               <p className="font-body-md text-base text-secondary leading-relaxed">
                 {product.tagline}
               </p>
+              {product.sku && <p className="mt-3 text-xs font-mono text-muted-slate">SKU: {product.sku}</p>}
+              {Number(product.price) > 0 && <p className="mt-4 text-xl font-bold text-primary">{new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(Number(product.price))}</p>}
+              {product.bestFor && <p className="mt-3 text-sm text-secondary">{product.bestFor}</p>}
             </div>
 
             {/* Quick Specs Grid */}
@@ -190,18 +204,17 @@ export default function ProductsShow({
             )}
 
             {/* AVer Official Guarantee Badge */}
-            <div className="flex items-center gap-3 p-3.5 rounded-xl bg-surface-alt border border-border-clean">
+            {product.warranty && <div className="flex items-center gap-3 p-3.5 rounded-xl bg-surface-alt border border-border-clean">
               <span className="material-symbols-outlined text-[#E52421] text-2xl">verified_user</span>
               <div className="text-xs">
-                <span className="font-heading font-bold text-on-surface block">Garansi Resmi AVer 3+2 Tahun</span>
-                <span className="font-body-sm text-secondary">Dukungan teknis lokal dan program uji coba Proof of Concept (PoC) gratis di lokasi Anda.</span>
+                <span className="font-heading font-bold text-on-surface block">{product.warranty}</span>
               </div>
-            </div>
+            </div>}
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a
-                href={site.whatsapp}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary font-mono text-sm font-bold hover:opacity-90 transition-opacity"
@@ -217,8 +230,23 @@ export default function ProductsShow({
                 Bandingkan Produk
               </Link>
             </div>
+            {(product.datasheet_url || product.link_accommerce) && <div className="flex flex-wrap gap-4 text-sm font-semibold text-primary">
+              {product.datasheet_url && <a href={product.datasheet_url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Buka datasheet ↗</a>}
+              {product.link_accommerce && <a href={product.link_accommerce} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Beli online ↗</a>}
+            </div>}
           </div>
         </section>
+
+        {[
+          ['Deskripsi Produk', product.descriptionHtml],
+          ['Detail Fitur', product.featuresHtml],
+          ['Informasi Spesifikasi', product.specificationHtml],
+        ].filter(([, html]) => html).map(([heading, html]) => (
+          <section key={heading} className="mb-12">
+            <h2 className="text-2xl font-bold mb-5">{heading}</h2>
+            <div className="product-rich-content text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: html }} />
+          </section>
+        ))}
 
         {/* Technical Specs Table */}
         {specsEntries.length > 0 && (

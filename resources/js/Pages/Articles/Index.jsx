@@ -1,3 +1,4 @@
+import { whatsappLink } from '../../lib/whatsapp';
 import React, { useState, useMemo } from 'react';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../../Layouts/AppLayout';
@@ -189,7 +190,7 @@ export default function ArticlesIndex({
                 Diskusikan dimensi fisik ruangan, kapasitas peserta, dan integrasi platform bersama {advisor.name}.
               </p>
               <a
-                href={site.whatsapp}
+                href={whatsappLink({ sourceUrl: site.whatsapp, position: 'articles_sidebar', campaign: 'article_consultation' })}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-2.5 px-4 rounded-lg bg-whatsapp text-white font-title-md text-xs font-bold flex items-center justify-center gap-2 shadow-sm hover:bg-whatsapp-dark transition-colors"

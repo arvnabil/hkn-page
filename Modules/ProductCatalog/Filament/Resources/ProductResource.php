@@ -4,7 +4,6 @@ namespace Modules\ProductCatalog\Filament\Resources;
 
 use Modules\ProductCatalog\Filament\Resources\ProductResource\Pages;
 use Filament\Resources\Resource;
-use Filament\Forms\Form;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Modules\ProductCatalog\Models\Product;

@@ -11,13 +11,14 @@ trait HasImageCleanup
     {
         static::updated(function (Model $model) {
             // 1. Standard Fields
+            $oldValues = [];
+            $newValues = [];
             foreach ($model->getCleanupFields() as $field) {
-                if ($model->isDirty($field)) {
-                    $oldValue = $model->getOriginal($field);
-                    $newValue = $model->getAttribute($field);
-                    self::cleanupOrphanedFiles($oldValue, $newValue);
-                }
+                $oldValues[] = $model->getOriginal($field);
+                $newValues[] = $model->getAttribute($field);
             }
+            // A file may be shared by the main image, gallery, and thumbnail.
+            self::cleanupOrphanedFiles($oldValues, $newValues);
 
             // 2. RichEditor Fields
             foreach ($model->getRichEditorCleanupFields() as $field) {

@@ -1,3 +1,4 @@
+import { whatsappLink } from '../../lib/whatsapp';
 import React from 'react';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../../Layouts/AppLayout';
@@ -109,7 +110,7 @@ export default function ArticleShow({
               </p>
               <div className="pt-2">
                 <a
-                  href={site.whatsapp}
+                  href={whatsappLink({ text: `Halo Harry, saya ingin bertanya tentang artikel ${article.title}.`, position: 'article_detail', campaign: 'article_consultation', entityType: 'article', entitySlug: article.slug })}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-primary hover:underline"

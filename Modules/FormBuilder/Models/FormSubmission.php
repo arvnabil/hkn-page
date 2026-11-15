@@ -11,6 +11,7 @@ class FormSubmission extends Model
 
     protected $fillable = [
         'form_key',
+        'inquiry_id',
         'page_slug',
         'payload',
         'ip_address',
@@ -20,4 +21,9 @@ class FormSubmission extends Model
     protected $casts = [
         'payload' => 'array',
     ];
+
+    public function inquiry(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(\Modules\Inquiry\Models\Inquiry::class);
+    }
 }

@@ -49,9 +49,7 @@ $getDynamicProducts = function () {
             ->orderBy('id', 'asc')
             ->get();
 
-        if ($dbProducts->isNotEmpty()) {
-            return $dbProducts->map->toFrontendArray()->values()->all();
-        }
+        return $dbProducts->map->toFrontendArray()->values()->all();
     }
 
     return json_decode(file_get_contents(resource_path('js/data/products.json')), true) ?: [];

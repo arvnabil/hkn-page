@@ -5,6 +5,7 @@ import RoomBlueprint from '../Components/RoomBlueprint';
 import defaultSolutions from '../data/solutions.json';
 import defaultProducts from '../data/products.json';
 import siteData from '../data/site.json';
+import { whatsappLink } from '../lib/whatsapp';
 
 export default function Solutions({
   solutions = defaultSolutions,
@@ -22,9 +23,7 @@ export default function Solutions({
     activeSolution.products?.includes(p.id)
   );
 
-  const waUrl = `${site.whatsapp}?text=${encodeURIComponent(
-    `Halo Harry, saya tertarik konsultasi denah ${activeSolution.title} (${activeSolution.dimension}, kapasitas ${activeSolution.capacity}). Mohon rekomendasi teknis dan jadwal PoC.`
-  )}`;
+  const waUrl = whatsappLink({ text: `Halo Harry, saya tertarik konsultasi denah ${activeSolution.title} (${activeSolution.dimension}, kapasitas ${activeSolution.capacity}). Mohon rekomendasi teknis dan jadwal PoC.`, position: 'solutions_blueprint', campaign: 'room_consultation', entityType: 'solution', entitySlug: activeSolution.id });
 
   return (
     <AppLayout title="Solusi Ruang Rapat Hybrid — Studio Arsitektur AVer" site={site}>
@@ -321,7 +320,7 @@ export default function Solutions({
           /* MATRIX / COMPARISON OF ALL 4 ROOMS */
           <section className="mb-16 space-y-8 animate-in fade-in">
             {solutions.map((sol, idx) => {
-              const solWa = `${site.whatsapp}?text=${encodeURIComponent(`Halo Harry, saya tertarik konsultasi solusi ${sol.title} (${sol.dimension})`)}`;
+              const solWa = whatsappLink({ text: `Halo Harry, saya tertarik konsultasi solusi ${sol.title} (${sol.dimension}).`, position: 'solutions_card', campaign: 'room_consultation', entityType: 'solution', entitySlug: sol.id });
               return (
                 <div key={sol.id} id={sol.id} className="ui-card p-6 sm:p-8 bg-surface-container-lowest">
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -418,7 +417,7 @@ export default function Solutions({
             </p>
             <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
               <a
-                href={site.whatsapp}
+                href={whatsappLink({ sourceUrl: site.whatsapp, position: 'solutions_footer', campaign: 'room_consultation' })}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-mono text-sm font-bold shadow-md hover:opacity-95 transition-opacity"

@@ -4,123 +4,91 @@ namespace Modules\WhatsApp\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+use Modules\Analytics\Jobs\ResolveGeoLocation;
+use Modules\Analytics\Models\AnalyticsClickEvent;
+use Modules\WhatsApp\Models\WhatsAppSetting;
 
 class WhatsAppController extends Controller
 {
     public function redirect(Request $request)
     {
-        // Get WhatsApp Number (Priority: Parameter > Settings)
-        $whatsappNumber = $request->input('phone');
-        
-        if (!$whatsappNumber) {
-            $settings = \Modules\WhatsApp\Models\WhatsAppSetting::getInstance();
-            $whatsappNumber = $settings ? $settings->phone : null;
+        $data = $request->validate([
+            'text' => 'nullable|string|max:4000',
+            'utm_source' => 'nullable|string|max:255', 'utm_medium' => 'nullable|string|max:255',
+            'utm_campaign' => 'nullable|string|max:255', 'utm_content' => 'nullable|string|max:255',
+            'utm_term' => 'nullable|string|max:255', 'cta_position' => 'nullable|string|max:255',
+            'cta_label' => 'nullable|string|max:255', 'page_route' => 'nullable|string|max:2048',
+            'entity_type' => 'nullable|string|max:255', 'entity_slug' => 'nullable|string|max:255',
+            'entity_id' => 'nullable|integer|min:1',
+        ]);
+
+        // Every CTA uses this one setting; a URL cannot override the destination.
+        $number = preg_replace('/[^0-9]/', '', (string) WhatsAppSetting::query()->value('phone'));
+        if (str_starts_with($number, '0')) $number = '62'.substr($number, 1);
+        if (!preg_match('/^[1-9][0-9]{7,14}$/', $number)) {
+            return response('Nomor WhatsApp belum dikonfigurasi dengan benar.', 503);
         }
 
-        if (!$whatsappNumber) {
-            // Fallback to legacy settings table if new model is empty
-            $legacySettings = DB::table('settings')->where('key', 'whatsapp_number')->first();
-            $whatsappNumber = $legacySettings ? $legacySettings->value : null;
+        $text = $data['text'] ?? 'Halo Harry, saya ingin bertanya mengenai solusi AVer.';
+        $sessionId = $request->session()->get('analytics_session_id', (string) Str::uuid());
+        $request->session()->put('analytics_session_id', $sessionId);
+        $userAgent = (string) $request->userAgent();
+        $isBot = (bool) preg_match('/bot|crawl|slurp|spider|mediapartners/i', $userAgent);
+        $device = preg_match('/mobile|android|iphone|ipad|phone/i', $userAgent) ? 'mobile' : 'desktop';
+        $referrer = $request->header('referer');
+        $pagePath = parse_url($data['page_route'] ?? $referrer ?? '/', PHP_URL_PATH) ?: '/';
+        if (!str_starts_with($pagePath, '/')) $pagePath = '/';
+
+        // Resolve only known model types. Click Events eager-loads this morph relation.
+        $models = [
+            'product' => \Modules\ProductCatalog\Models\Product::class,
+            'article' => \Modules\News\Models\News::class,
+            'news' => \Modules\News\Models\News::class,
+            'brand' => \Modules\ProductCatalog\Models\Brand::class,
+            'page' => \Modules\CMS\Models\Page::class,
+        ];
+        $entity = null;
+        $entityClass = $models[$data['entity_type'] ?? ''] ?? null;
+        if ($entityClass && (!empty($data['entity_id']) || !empty($data['entity_slug']))) {
+            $entity = $entityClass::query()
+                ->when(!empty($data['entity_id']), fn ($query) => $query->whereKey($data['entity_id']))
+                ->when(!empty($data['entity_slug']), fn ($query) => $query->where('slug', $data['entity_slug']))
+                ->first();
         }
 
-        if (!$whatsappNumber) {
-            return redirect('/')->with('error', 'WhatsApp number not configured.');
-        }
-
-        $text = $request->input('text', 'Halo Harry, saya ingin bertanya mengenai solusi AVer.');
-
-        // Clean WhatsApp number
-        $number = preg_replace('/[^0-9]/', '', $whatsappNumber);
-        if (str_starts_with($number, '0')) {
-            $number = '62' . substr($number, 1);
-        }
-
-        // WhatsApp redirect URL
-        $whatsappUrl = "https://wa.me/{$number}?text=" . urlencode($text);
-
-        // Enterprise Logic: Session ID
-        $sessionId = session()->get('analytics_session_id', (string) \Illuminate\Support\Str::uuid());
-        session()->put('analytics_session_id', $sessionId);
-
-        // Detect Bot and User Agent
-        $userAgent = $request->userAgent();
-        $isBot = preg_match('/bot|crawl|slurp|spider|mediapartners/i', $userAgent);
-
-        // Detect Device Type
-        $device = 'desktop';
-        if (preg_match('/mobile|android|iphone|ipad|phone/i', $userAgent)) {
-            $device = 'mobile';
-        }
-
-        // Session-Based Aggregation (1-hour window) - Only if context matches
-        $existingEvent = \Modules\Analytics\Models\AnalyticsClickEvent::where('ip_address', $request->ip())
-            ->where('event_type', 'whatsapp')
-            ->where('target_value', $number)
-            ->where('cta_position', $request->input('cta_position'))
-            ->where('utm_source', $request->input('utm_source'))
-            ->where('utm_medium', $request->input('utm_medium'))
-            ->where('utm_campaign', $request->input('utm_campaign'))
-            ->where('entity_id', $request->input('entity_id'))
-            ->where('page_url', $request->input('page_route'))
-            ->where('created_at', '>=', now()->subHour())
-            ->first();
-
-        if ($existingEvent && !$isBot) {
-            $existingEvent->increment('click_count');
-            
-            $newReferrer = $request->header('referer') ?: $request->input('page_route');
-            $updateData = [];
-
-            // Heal Referrer if current is bad and new is good
-            $currentReferrer = $existingEvent->referrer_url;
-            $currentIsBad = empty($currentReferrer) || str_contains($currentReferrer, '/activioncms');
-            $newIsGood = !empty($newReferrer) && !str_contains($newReferrer, '/activioncms');
-
-            if ($currentIsBad && $newIsGood) {
-                $updateData['referrer_url'] = $newReferrer;
-            }
-
-            // Optionally update event_label if it was null
-            if (empty($existingEvent->event_label) && $request->input('cta_label')) {
-                $updateData['event_label'] = $request->input('cta_label');
-            }
-
-            if (!empty($updateData)) {
-                $existingEvent->update($updateData);
+        $context = [
+            'session_id' => $sessionId, 'event_type' => 'whatsapp', 'target_value' => $number,
+            'utm_source' => $data['utm_source'] ?? 'website',
+            'utm_medium' => $data['utm_medium'] ?? 'whatsapp',
+            'utm_campaign' => $data['utm_campaign'] ?? 'website_contact',
+            'utm_content' => $data['utm_content'] ?? $data['cta_position'] ?? 'direct',
+            'utm_term' => $data['utm_term'] ?? null,
+            'cta_position' => $data['cta_position'] ?? 'direct',
+            'entity_type' => $entity?->getMorphClass(), 'entity_id' => $entity?->getKey(),
+            'entity_slug' => $data['entity_slug'] ?? $entity?->slug,
+            'page_url' => $pagePath, 'is_bot' => $isBot,
+        ];
+        $query = AnalyticsClickEvent::query()->where('created_at', '>=', now()->subHour());
+        foreach ($context as $key => $value) $query->where($key, $value);
+        $existing = !$isBot ? $query->first() : null;
+        if ($existing) {
+            $existing->increment('click_count');
+            if (!$existing->referrer_url || str_contains($existing->referrer_url, '/activioncms')) {
+                $existing->update(['referrer_url' => $referrer ?: $pagePath]);
             }
         } else {
-            $event = \Modules\Analytics\Models\AnalyticsClickEvent::create([
-                'session_id' => $sessionId,
-                'event_type' => 'whatsapp',
-                'event_label' => $request->input('cta_label'),
-                'utm_source' => $request->input('utm_source'),
-                'utm_medium' => $request->input('utm_medium'),
-                'utm_campaign' => $request->input('utm_campaign'),
-                'utm_term' => $request->input('utm_term'),
-                'utm_content' => $request->input('utm_content'),
-                'entity_type' => $request->input('entity_type'),
-                'entity_id' => $request->input('entity_id'),
-                'entity_slug' => $request->input('entity_slug'),
-                'cta_position' => $request->input('cta_position'),
-                'ip_address' => $request->ip(),
-                'user_agent' => $userAgent,
-                'device' => $device,
-                'referrer_url' => $request->header('referer') ?: $request->input('page_route'),
-                'page_url' => $request->input('page_route'),
-                'target_value' => $number,
-                'is_bot' => $isBot,
-                'meta' => [
-                    'message' => $text,
-                ],
+            $event = AnalyticsClickEvent::create($context + [
+                'event_label' => $data['cta_label'] ?? 'Konsultasi WhatsApp',
+                'ip_address' => $request->ip(), 'user_agent' => $userAgent,
+                'device' => $device, 'referrer_url' => $referrer ?: $pagePath,
+                'meta' => ['message' => $text, 'entity_kind' => $data['entity_type'] ?? null],
             ]);
-
-            // Dispatch Geo-Enrichment Job
-            if (!$isBot) {
-                \Modules\Analytics\Jobs\ResolveGeoLocation::dispatch($event);
+            if (!$isBot && filter_var($request->ip(), FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
+                ResolveGeoLocation::dispatch($event);
             }
         }
 
-        return redirect($whatsappUrl);
+        return redirect()->away('https://wa.me/'.$number.'?'.http_build_query(['text' => $text], '', '&', PHP_QUERY_RFC3986));
     }
 }

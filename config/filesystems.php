@@ -41,7 +41,8 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            // FilePond previews must stay same-origin when using localhost or 127.0.0.1.
+            'url' => env('APP_ENV') === 'local' ? '/storage' : env('APP_URL').'/storage',
             'visibility' => 'public',
             'serve' => true,
             'throw' => false,

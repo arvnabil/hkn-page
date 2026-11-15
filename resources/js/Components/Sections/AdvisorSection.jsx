@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from '@inertiajs/react';
 import AdvisorHUDCard from '../AdvisorHUDCard';
 import defaultAdvisor from '../../data/advisor.json';
+import { whatsappLink } from '../../lib/whatsapp';
 
 export default function AdvisorSection({
   badge = "PROFIL ADVISOR · KONSULTASI PROFESIONAL",
@@ -11,7 +12,8 @@ export default function AdvisorSection({
   room_focus = "Huddle Space hingga Auditorium",
   approach = "Konsultatif Edukatif & Audit Fisik",
   whatsapp_text = "Konsultasi WhatsApp",
-  whatsapp_url = "https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
+  whatsapp_url = '/wa',
+  whatsapp_message = '',
   profile_text = "Lihat Profil Lengkap",
   profile_url = "/tentang",
   advisorData = defaultAdvisor,
@@ -21,7 +23,7 @@ export default function AdvisorSection({
     ...(advisorData || {}),
     tagline: tagline || defaultAdvisor.tagline,
     bio: bio || defaultAdvisor.bio,
-    whatsapp: whatsapp_url || defaultAdvisor.whatsapp,
+    whatsapp: whatsappLink({ sourceUrl: whatsapp_url || defaultAdvisor.whatsapp, text: whatsapp_message || undefined, position: 'cms_advisor', label: whatsapp_text, campaign: 'advisor_consultation' }),
     metrics: {
       ...defaultAdvisor.metrics,
       specialty: specialty || defaultAdvisor.metrics.specialty,

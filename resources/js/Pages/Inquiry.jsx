@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { router } from '@inertiajs/react';
+import useInquirySubmission from '../hooks/useInquirySubmission';
+import InquiryProtection from '../Components/InquiryProtection';
 import AppLayout from '../Layouts/AppLayout';
 import siteData from '../data/site.json';
 
@@ -28,19 +29,15 @@ export default function Inquiry({ site = siteData }) {
     phone: '',
     roomType: roomTypes[1]?.value || 'medium',
     dimensions: '',
-    participants: '6-12',
+    participants: '',
     platform: platforms[0]?.value || 'teams',
     notes: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const { formRef, submitted, setSubmitted, loading, errorMessage, honeypot, setHoneypot, submit } = useInquirySubmission();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setErrorMessage('');
 
     // Map roomType and participants to match backend schema
     let roomType = formData.roomType;
@@ -54,42 +51,10 @@ export default function Inquiry({ site = siteData }) {
       room_type: roomType,
       participant_count: parseInt(formData.participants) || null,
       current_platform: formData.platform === 'google' ? 'meet' : (formData.platform === 'byod' ? 'other' : formData.platform),
-      budget_range: formData.dimensions || null,
-      notes: formData.notes || null,
+      notes: [formData.dimensions ? `Dimensi ruangan: ${formData.dimensions}` : '', formData.notes].filter(Boolean).join('\n') || null,
     };
 
-    if (typeof window !== 'undefined' && window.__INERTIA__) {
-      router.post('/penawaran', payload, {
-        onSuccess: () => {
-          setSubmitted(true);
-          setLoading(false);
-        },
-        onError: (errs) => {
-          setErrorMessage(Object.values(errs)[0] || 'Terjadi kesalahan pada input.');
-          setLoading(false);
-        },
-      });
-    } else {
-      // Fallback for standalone preview / fetch
-      fetch('/penawaran', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest',
-          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '',
-        },
-        body: JSON.stringify(payload),
-      })
-      .then(() => {
-        setSubmitted(true);
-        setLoading(false);
-      })
-      .catch(() => {
-        setSubmitted(true);
-        setLoading(false);
-      });
-    }
+    void submit(payload);
   };
 
   return (
@@ -130,7 +95,8 @@ export default function Inquiry({ site = siteData }) {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                <InquiryProtection value={honeypot} onChange={setHoneypot} />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-xs font-mono text-muted-slate uppercase mb-1">
@@ -189,7 +155,7 @@ export default function Inquiry({ site = siteData }) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div>
                     <label className="block text-xs font-mono text-muted-slate uppercase mb-1">
                       Tipe Ruangan
@@ -234,6 +200,12 @@ export default function Inquiry({ site = siteData }) {
                       ))}
                     </select>
                   </div>
+                  <div>
+                    <label htmlFor="inquiry-participants" className="block text-xs font-mono text-muted-slate uppercase mb-1">Jumlah peserta</label>
+                    <input id="inquiry-participants" type="number" min="1" step="1" value={formData.participants}
+                      onChange={event => setFormData({ ...formData, participants: event.target.value })}
+                      placeholder="Mis. 10" className="w-full px-4 py-2.5 bg-surface-alt border border-border-clean rounded-xl text-sm text-on-surface focus:outline-none focus:border-primary" />
+                  </div>
                 </div>
 
                 <div>
@@ -250,7 +222,7 @@ export default function Inquiry({ site = siteData }) {
                 </div>
 
                 {errorMessage && (
-                  <div className="p-3 rounded-xl bg-aver-red/10 border border-aver-red/30 text-aver-red text-xs font-mono">
+                  <div role="alert" className="p-3 rounded-xl bg-aver-red/10 border border-aver-red/30 text-aver-red text-xs font-mono">
                     {errorMessage}
                   </div>
                 )}

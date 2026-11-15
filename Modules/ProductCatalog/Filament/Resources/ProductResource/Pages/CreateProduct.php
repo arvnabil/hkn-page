@@ -11,7 +11,6 @@ class CreateProduct extends CreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
-        $data['specs'] = \App\Helpers\JsonHelper::fromRepeater($data['specs'] ?? []);
-        return $data;
+        return \Modules\ProductCatalog\Support\ProductContent::forStorage($data);
     }
 }

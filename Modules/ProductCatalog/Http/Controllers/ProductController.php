@@ -33,8 +33,9 @@ class ProductController extends Controller
         // Find the raw model for the SEO resolver
         $productModel = Product::where('slug', $slug)->first();
 
-        return Inertia::render('Products/Detail', [
+        return Inertia::render('Products/Show', [
             'product' => $productData,
+            'products' => $productData['related_products'],
             'seo' => \Modules\SEO\Services\SeoResolver::for($productModel),
         ]);
     }

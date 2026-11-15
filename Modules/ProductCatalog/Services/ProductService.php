@@ -21,7 +21,8 @@ class ProductService
      */
     public function getIndexData(array $filters)
     {
-        $products = $this->repository->getPaginatedWithFilters($filters);
+        $products = $this->repository->getPaginatedWithFilters($filters)
+            ->through(fn ($product) => $product->toFrontendArray());
 
         $brands = Brand::orderBy('name')->get(['id', 'name']);
         $categories = ProductCategory::where('is_active', true)->orderBy('name')->get(['id', 'name']);
@@ -41,61 +42,12 @@ class ProductService
     /**
      * Get data for a single product detail page
      */
-    public function getDetailData(string $slug)
+    public function getDetailData(string $slug): array
     {
         $product = $this->repository->findBySlug($slug);
-        
-        $relatedProducts = $this->repository->getRelatedProducts($product->brand_id, $product->id)
-            ->map(function ($related) {
-                return [
-                    'id'       => $related->id,
-                    'name'     => $related->name,
-                    'image_path'=> $related->image_path,
-                    'tag'      => $related->tags ? $related->tags[0] ?? null : null,
-                    'category' => $related->categories->pluck('name')->join(', ') ?: 'General',
-                    'slug'     => $related->slug,
-                    'price'    => $related->price,
-                    'brand'    => [
-                         'name' => $related->brand?->name ?? '',
-                         'logo' => $related->brand?->thumbnail ?? $related->brand?->image ?? ''
-                    ]
-                ];
-            });
+        $related = $this->repository->getRelatedProducts($product->brand_id, $product->id)
+            ->map->toFrontendArray()->values()->all();
 
-        return [
-            'id'              => $product->id,
-            'slug'            => $product->slug,
-            'name'            => $product->name,
-            'subtitle'        => $product->seo?->description,
-            'cta_label'       => "CTA Produk: {$product->name}",
-            'image'           => $product->image_path ? "/storage/" . $product->image_path : null,
-            'image_path'      => $product->image_path,
-            'breadcrumb_image'=> $product->breadcrumb_image ?: ($product->thumbnail_path ?: $product->image_path),
-            'show_breadcrumb' => $product->show_breadcrumb ?? true,
-            'sku'             => $product->sku,
-            'solution_type'   => $product->solution_type,
-            'datasheet_url'   => $product->datasheet_url,
-            'datasheet_rel'   => \Modules\SEO\Helpers\SeoHelper::get_rel($product->datasheet_url),
-            'description'     => $product->description,
-            'category'        => $product->categories->pluck('name')->join(', ') ?: 'General',
-            'categories_list' => $product->categories->map(function($c) {
-                return ['id' => $c->id, 'name' => $c->name, 'slug' => $c->slug];
-            })->values(),
-            'brand'           => [
-                'name'   => $product->brand->name,
-                'logo'   => $product->brand->thumbnail ?? $product->brand->image,
-                'slug'   => $product->brand->slug,
-                'config' => $product->brand->landing_config,
-            ],
-            'tags'            => $product->tags ?? [],
-            'specification'   => $product->specs,
-            'specification_text'=> $product->specification_text,
-            'features'        => $product->features ?? [],
-            'features_text'   => $product->features_text,
-            'related_products'=> $relatedProducts,
-            'link_accommerce' => $product->link_accommerce,
-            'link_accommerce_rel'=> \Modules\SEO\Helpers\SeoHelper::get_rel($product->link_accommerce),
-            'whatsapp_note'   => $product->whatsapp_note,
-        ];
+        return array_merge($product->toFrontendArray(), ['related_products' => $related]);
     }
 }

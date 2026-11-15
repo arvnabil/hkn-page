@@ -9,9 +9,9 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TagsInput;
-use Filament\Forms\Components\KeyValue;
 use Filament\Schemas\Components\Group;
 use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
@@ -33,10 +33,16 @@ class ProductForm
                                         ->schema([
                                             TextInput::make('name')
                                                 ->required()
+                                                ->maxLength(255)
                                                 ->live(onBlur: true)
-                                                ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                                                ->afterStateUpdated(function (Set $set, ?string $state, string $operation): void {
+                                                    if ($operation === 'create') {
+                                                        $set('slug', Str::slug($state));
+                                                    }
+                                                }),
                                             TextInput::make('slug')
                                                 ->required()
+                                                ->maxLength(255)
                                                 ->unique(ignoreRecord: true),
                                             TextInput::make('sku')
                                                 ->label('SKU'),
@@ -54,12 +60,16 @@ class ProductForm
                                                 ->createOptionForm(\Modules\ProductCatalog\Filament\Resources\ProductCategoryResource\Schemas\ProductCategoryForm::schema()),
                                             TextInput::make('price')
                                                 ->numeric()
+                                                ->minValue(0)
                                                 ->prefix('IDR'),
-                                            TextInput::make('solution_type')
-                                                ->label('Legacy Type (Deprecated)')
-                                                ->visible(false),
                                             TextInput::make('datasheet_url')
                                                 ->url(),
+                                            Textarea::make('short_description')
+                                                ->label('Ringkasan produk')
+                                                ->rows(3)
+                                                ->maxLength(240)
+                                                ->columnSpanFull()
+                                                ->helperText('Dipakai pada kartu dan pembuka halaman detail. Deskripsi lengkap ditulis di bawah.'),
                                             Toggle::make('edit_description_html')
                                                 ->label('⚡ Mode HTML / Code Editor')
                                                 ->live()
@@ -94,10 +104,24 @@ class ProductForm
                                                
                                         ])->columns(2),
 
+                                    Section::make('Ringkasan spesifikasi')
+                                        ->description('Field ini mengisi badge, kartu produk, perbandingan, dan ringkasan halaman detail.')
+                                        ->schema([
+                                            TextInput::make('specs.badge')->label('Badge produk')->maxLength(60),
+                                            TextInput::make('specs.categoryLabel')->label('Label kategori (opsional)')->helperText('Jika kosong, mengikuti kategori produk.'),
+                                            TextInput::make('specs.zoom')->label('Zoom'),
+                                            TextInput::make('specs.resolution')->label('Resolusi'),
+                                            TextInput::make('specs.fov')->label('Field of view / FOV'),
+                                            TextInput::make('specs.roomSize')->label('Ukuran / kapasitas ruangan'),
+                                            TextInput::make('specs.warranty')->label('Informasi garansi'),
+                                            Textarea::make('specs.bestFor')->label('Rekomendasi penggunaan')->rows(2),
+                                            TagsInput::make('specs.certifications')->label('Sertifikasi')->columnSpanFull(),
+                                        ])->columns(2),
+
                                     Section::make('Specifications & Features')
                                         ->schema([
                                             TagsInput::make('tags'),
-                                            \Filament\Forms\Components\Repeater::make('specs')
+                                            \Filament\Forms\Components\Repeater::make('specs.technical')
                                                 ->label('Specifications (Grouped)')
                                                 ->schema([
                                                     TextInput::make('group_name')
@@ -124,11 +148,13 @@ class ProductForm
                                             \Filament\Forms\Components\Repeater::make('features')
                                                 ->schema([
                                                     TextInput::make('name')->required(),
-                                                    TextInput::make('value')->label('Description')->required(),
+                                                    TextInput::make('value')->label('Description'),
                                                     TextInput::make('additional')->label('Additional Info'),
                                                 ])
                                                 ->columns(3),
                                             RichEditor::make('specification_text')
+                                                ->label('Catatan spesifikasi tambahan (opsional)')
+                                                ->helperText('Untuk penjelasan di luar tabel spesifikasi; hindari mengulang isi ringkasan.')
                                                 ->columnSpanFull()
                                                 ->fileAttachmentsAcceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/webp'])
                                                 ->fileAttachmentsMaxSize(2048)
@@ -137,6 +163,8 @@ class ProductForm
                                                 ->fileAttachmentsVisibility('public'),
                                                 
                                             RichEditor::make('features_text')
+                                                ->label('Penjelasan fitur tambahan (opsional)')
+                                                ->helperText('Untuk uraian panjang; fitur singkat cukup diisi pada daftar Features.')
                                                 ->columnSpanFull()
                                                 ->fileAttachmentsAcceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/webp'])
                                                 ->fileAttachmentsMaxSize(2048)
@@ -148,20 +176,23 @@ class ProductForm
                                     Section::make('Marketplace Links')
                                         ->schema([
                                             TextInput::make('link_accommerce')->label('Online Purchase Link (Acommerce)')->url(),
-                                            TextInput::make('whatsapp_note')
+                                            Textarea::make('whatsapp_note')
                                                 ->label('WhatsApp Message Note')
+                                                ->rows(3)
                                                 ->placeholder('e.g. Halo, saya tertarik dengan produk ini...')
-                                                ->helperText('Custom message pre-filled when user clicks "Best Price Request".'),
+                                                ->helperText('Pesan khusus tombol konsultasi produk. Nomor mengikuti pengaturan WhatsApp.'),
                                         ])->columns(1),
                                 ])->columnSpan(['lg' => 2]),
 
                             Group::make()
                                 ->schema([
-                                    Section::make('Image')
+                                    Section::make('Gambar produk')
+                                        ->description('File disimpan otomatis ke storage lokal; database menyimpan path gambar.')
                                         ->schema([
                                             FileUpload::make('image_path')
                                                 ->label('Product Main Image')
                                                 ->image()
+                                                ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
                                                 ->disk('public')
                                                 ->visibility('public')
                                                 ->maxSize(2048)
@@ -172,19 +203,21 @@ class ProductForm
                                                     $slug = $get('slug') ?: 'temp';
                                                     return \App\Helpers\UploadHelper::getSluggedFilename($file, 'products/' . $slug);
                                                 }),
-                                            FileUpload::make('thumbnail_path')
-                                                ->label('Thumbnail / Breadcrumb Image')
+                                            FileUpload::make('image_paths')
+                                                ->label('Galeri tambahan')
                                                 ->image()
+                                                ->multiple()
+                                                ->reorderable()
+                                                ->appendFiles()
+                                                ->maxFiles(10)
+                                                ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
                                                 ->disk('public')
+                                                ->directory(fn (Get $get) => 'products/' . (Str::slug($get('slug') ?: 'draft')) . '/gallery')
                                                 ->visibility('public')
                                                 ->maxSize(2048)
                                                 ->downloadable()
                                                 ->openable()
-                                                ->helperText('Digunakan untuk background breadcrumb. Jika kosong, akan menggunakan gambar utama. Ukuran maks: 2MB.')
-                                                ->getUploadedFileNameForStorageUsing(function (\Livewire\Features\SupportFileUploads\TemporaryUploadedFile $file, Get $get): string {
-                                                    $slug = $get('slug') ?: 'temp';
-                                                    return \App\Helpers\UploadHelper::getSluggedFilename($file, 'products/' . $slug . '/breadcrumb');
-                                                }),
+                                                ->helperText('Maksimal 10 gambar tambahan, 2 MB per file (JPG, PNG, WebP). Geser untuk mengubah urutan. Gambar utama selalu tampil pertama.'),
                                         ]),
                                             Section::make('Status')
                                          ->schema([

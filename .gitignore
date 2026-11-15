@@ -10,6 +10,8 @@ storage/gcp-service-account.json
 .env
 .env.backup
 .env.production
+/data/*.sql
+/storage/app/private/backups/
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

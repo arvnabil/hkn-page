@@ -15,7 +15,7 @@ class FormSubmissionController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'form_key' => 'required|string',
+            'form_key' => 'required|string|max:100|not_in:inquiry',
             'section_id' => 'nullable|integer',
             // ... (rest of validation)
             'page_slug' => 'nullable|string',
@@ -122,18 +122,24 @@ class FormSubmissionController extends Controller
     public function trackView(Request $request)
     {
         $validated = $request->validate([
-            'form_key' => 'required|string',
-            'page_slug' => 'nullable|string',
+            'form_key' => 'required|string|max:100',
+            'page_slug' => 'nullable|string|max:255',
         ]);
+
+        $sessionKey = 'form_views.'.hash('sha256', $validated['form_key'].'|'.($validated['page_slug'] ?? ''));
+        if ($request->session()->get($sessionKey, 0) > now()->subMinutes(30)->timestamp) {
+            return response()->json(['success' => true]);
+        }
 
         \DB::table('form_analytics')->insert([
             'form_key' => $validated['form_key'],
-            'page_slug' => $validated['page_slug'],
+            'page_slug' => $validated['page_slug'] ?? null,
             'ip_address' => $request->ip(),
             'user_agent' => $request->userAgent(),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        $request->session()->put($sessionKey, now()->timestamp);
 
         return response()->json(['success' => true]);
     }

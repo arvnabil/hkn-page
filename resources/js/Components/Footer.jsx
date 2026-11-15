@@ -1,3 +1,4 @@
+import { isWhatsAppLink, whatsappLink } from '../lib/whatsapp';
 import React from 'react';
 import { Link } from '@inertiajs/react';
 import AVerLogo from './AVerLogo';
@@ -53,7 +54,7 @@ export default function Footer({ site = siteData }) {
                 <Link2 aria-hidden="true" size={18} />
               </a>
               <a
-                href={site.whatsapp}
+                href={whatsappLink({ sourceUrl: site.whatsapp, position: 'footer_social', campaign: 'footer_contact' })}
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-lg bg-surface border border-border-clean flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors"
@@ -74,7 +75,7 @@ export default function Footer({ site = siteData }) {
                 {col.links.map((link, lIdx) => (
                   <li key={lIdx}>
                     <Link
-                      href={link.href}
+                      href={isWhatsAppLink(link.href) ? whatsappLink({ sourceUrl: link.href, position: `footer_${idx}_${lIdx}`, label: link.label, campaign: 'footer_contact' }) : link.href}
                       className="hover:text-primary transition-colors block py-0.5"
                     >
                       {link.label}

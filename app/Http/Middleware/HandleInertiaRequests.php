@@ -69,6 +69,7 @@ class HandleInertiaRequests extends Middleware
                     return $data;
                 })->toArray(),
             'whatsapp_bubble' => WhatsAppSetting::getInstance(),
+            'inquiry_form' => app(\Modules\FormBuilder\Services\FormSecurity::class)->publicConfiguration('inquiry'),
         ]);
     }
 }

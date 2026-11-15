@@ -4,12 +4,13 @@ import ProductCard from '../../Components/ProductCard';
 import defaultProducts from '../../data/products.json';
 
 export default function ProductsIndex({ products = defaultProducts }) {
+  const productItems = Array.isArray(products) ? products : (products.data || []);
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = useMemo(() => {
     const list = [{ code: 'all', label: 'Semua Kategori' }];
     const seen = new Set();
-    products.forEach((p) => {
+    productItems.forEach((p) => {
       if (p.category && !seen.has(p.category)) {
         seen.add(p.category);
         list.push({ code: p.category, label: p.categoryLabel || p.category.toUpperCase() });
@@ -19,8 +20,8 @@ export default function ProductsIndex({ products = defaultProducts }) {
   }, [products]);
 
   const filtered = useMemo(() => {
-    if (selectedCategory === 'all') return products;
-    return products.filter((p) => p.category === selectedCategory);
+    if (selectedCategory === 'all') return productItems;
+    return productItems.filter((p) => p.category === selectedCategory);
   }, [products, selectedCategory]);
 
   return (
@@ -67,6 +68,14 @@ export default function ProductsIndex({ products = defaultProducts }) {
             <ProductCard key={prod.id} product={prod} />
           ))}
         </div>
+
+        {!Array.isArray(products) && products.last_page > 1 && (
+          <nav aria-label="Halaman produk" className="flex items-center justify-between gap-4 mb-8 text-sm">
+            {products.prev_page_url ? <a href={products.prev_page_url} className="text-primary">← Sebelumnya</a> : <span />}
+            <span>{products.current_page} / {products.last_page}</span>
+            {products.next_page_url ? <a href={products.next_page_url} className="text-primary">Selanjutnya →</a> : <span />}
+          </nav>
+        )}
 
       </div>
     </AppLayout>

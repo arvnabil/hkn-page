@@ -37,6 +37,12 @@ export function InertiaProvider({ children, pageProps = {} }) {
       return;
     }
 
+    // Laravel pages need fresh server props; standalone pages use local routing.
+    if (document.getElementById('app')) {
+      window.location.assign(href);
+      return;
+    }
+
     window.history.pushState({}, '', href);
     setUrl(href);
     window.dispatchEvent(new Event('pushstate'));

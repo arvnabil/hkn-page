@@ -6,7 +6,7 @@
                 "href":  "/penawaran",
                 "route":  "inquiry"
             },
-    "whatsapp":  "https://wa.me/6281200000000?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
+    "whatsapp":  "/wa?text=Halo%20Harry,%20saya%20ingin%20konsultasi%20solusi%20AVer",
     "avatar":  "/assets/harry.png",
     "linkedin":  "https://linkedin.com",
     "navigation":  [
@@ -126,7 +126,7 @@
                                          "label":  "Minta Form Penawaran"
                                      },
                                      {
-                                         "href":  "https://wa.me/6281200000000",
+                                         "href":  "/wa",
                                          "label":  "Chat Langsung WhatsApp"
                                      },
                                      {

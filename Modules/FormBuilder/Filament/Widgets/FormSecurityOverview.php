@@ -14,16 +14,19 @@ class FormSecurityOverview extends BaseWidget
     {
         // 1. Total Views (Last 30 Days)
         $totalViews = DB::table('form_analytics')
+            ->where('form_key', 'inquiry')
             ->where('created_at', '>=', now()->subDays(30))
             ->count();
 
         // 2. Total Submissions (Last 30 Days - Allowed + Blocked)
         $totalSubmissions = DB::table('form_security_logs')
+            ->where('form_key', 'inquiry')
             ->where('created_at', '>=', now()->subDays(30))
             ->count();
 
         // 3. Blocked Spam
         $blockedSpam = DB::table('form_security_logs')
+            ->where('form_key', 'inquiry')
             ->where('decision', 'block')
             ->where('created_at', '>=', now()->subDays(30))
             ->count();
@@ -32,33 +35,32 @@ class FormSecurityOverview extends BaseWidget
         $spamRate = $totalSubmissions > 0 ? round(($blockedSpam / $totalSubmissions) * 100, 1) : 0;
 
         // 5. Conversion Rate (Allowed Submissions / Views)
-        $allowedSubmissions = $totalSubmissions - $blockedSpam;
+        $allowedSubmissions = DB::table('form_security_logs')->where('form_key', 'inquiry')
+            ->where('decision', 'allow')->where('created_at', '>=', now()->subDays(30))->count();
         $conversionRate = $totalViews > 0 ? round(($allowedSubmissions / $totalViews) * 100, 1) : 0;
 
-        // 6. Security Mode (Check one form as sample or show global status)
-        // Let's rely on the most active form settings
-        $settings = DB::table('form_security_settings')->orderBy('updated_at', 'desc')->first();
-        $securityMode = $settings ? ($settings->auto_managed ? 'Auto-Pilot' : 'Manual') : 'Manual';
-        $captchaStatus = $settings ? ($settings->captcha_enabled ? 'ON' : 'OFF') : 'ON';
+        $config = app(\Modules\FormBuilder\Services\FormSecurity::class)->configuration('inquiry');
+        $securityMode = ! $config['captcha_enabled'] ? 'Honeypot + limit'
+            : ($config['configured'] ? 'reCAPTCHA aktif' : 'Konfigurasi belum lengkap');
 
         return [
-            Stat::make('Form Views (30d)', number_format($totalViews))
-                ->description('Total page views on contact sections')
+            Stat::make('Tampilan penawaran (30 hari)', number_format($totalViews))
+                ->description('Form terlihat; sesi/halaman unik per 30 menit')
                 ->descriptionIcon('heroicon-m-eye')
                 ->color('gray'),
 
-            Stat::make('Conversion Rate', $conversionRate . '%')
-                ->description("$allowedSubmissions legitimate submissions")
+            Stat::make('Konversi penawaran', $conversionRate . '%')
+                ->description("$allowedSubmissions kiriman berhasil disimpan")
                 ->descriptionIcon('heroicon-m-arrow-trending-up')
                 ->color('success'),
 
-            Stat::make('Spam Blocked', number_format($blockedSpam))
+            Stat::make('Spam diblokir', number_format($blockedSpam))
                 ->description("Spam Rate: $spamRate%")
                 ->descriptionIcon('heroicon-m-shield-check')
                 ->color('danger'),
 
-            Stat::make('Security Engine', "$securityMode ($captchaStatus)")
-                ->description('Auto-decision system status')
+            Stat::make('Keamanan penawaran', $securityMode)
+                ->description('Honeypot dan pembatasan kiriman selalu aktif')
                 ->descriptionIcon('heroicon-m-cpu-chip')
                 ->color('primary'),
         ];

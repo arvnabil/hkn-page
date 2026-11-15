@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { whatsappLink } from '../lib/whatsapp';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../Layouts/AppLayout';
 import defaultProducts from '../data/products.json';
@@ -104,14 +105,10 @@ export default function Comparison({
   };
 
   // Dynamic WhatsApp consultation link with currently compared product names
-  const dynamicWaUrl = useMemo(() => {
+  const comparisonMessage = useMemo(() => {
     const names = compareList.map((p) => p.name).join(' vs ');
-    const text = encodeURIComponent(
-      `Halo ${advisorShort}, saya sedang membandingkan [${names}] di website. Bisa minta rekomendasi mana yang paling pas untuk ruang rapat kantor kami?`
-    );
-    const baseWa = site.whatsapp ? site.whatsapp.split('?')[0] : 'https://wa.me/6281200000000';
-    return `${baseWa}?text=${text}`;
-  }, [compareList, advisorShort, site.whatsapp]);
+    return `Halo ${advisorShort}, saya sedang membandingkan [${names}] di website. Bisa minta rekomendasi mana yang paling pas untuk ruang rapat kantor kami?`;
+  }, [compareList, advisorShort]);
 
   // Spec rows filtering based on diff toggle
   const filteredRows = showDiffOnly
@@ -273,7 +270,7 @@ export default function Comparison({
                 <span>Cetak / PDF</span>
               </button>
               <a
-                href={dynamicWaUrl}
+                href={whatsappLink({ text: comparisonMessage, position: 'comparison_summary', campaign: 'product_comparison', entitySlug: compareList.map(product => product.id).join(',') })}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-mono text-xs font-bold hover:opacity-90 transition-opacity"
@@ -489,9 +486,7 @@ export default function Comparison({
                         Detail Produk
                       </Link>
                       <a
-                        href={`${site.whatsapp ? site.whatsapp.split('?')[0] : 'https://wa.me/6281200000000'}?text=${encodeURIComponent(
-                          `Halo ${advisorShort}, saya tertarik dengan spesifikasi ${p.name}. Bisa jelaskan ketersediaan dan penawarannya?`
-                        )}`}
+                        href={whatsappLink({ text: `Halo ${advisorShort}, saya tertarik dengan spesifikasi ${p.name}. Bisa jelaskan ketersediaan dan penawarannya?`, position: 'comparison_product', campaign: 'product_comparison', entityType: 'product', entityId: p.databaseId, entitySlug: p.slug || p.id })}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-lg border border-border-clean bg-surface-alt text-on-surface font-mono text-xs font-bold hover:border-primary transition-colors"
@@ -522,7 +517,7 @@ export default function Comparison({
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href={dynamicWaUrl}
+              href={whatsappLink({ text: comparisonMessage, position: 'comparison_footer', campaign: 'product_comparison', entitySlug: compareList.map(product => product.id).join(',') })}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-mono text-sm font-bold hover:opacity-90 transition-opacity shadow-md"

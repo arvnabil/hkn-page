@@ -1,3 +1,4 @@
+import { whatsappLink } from '../lib/whatsapp';
 import React from 'react';
 import AppLayout from '../Layouts/AppLayout';
 import AdvisorHUDCard from '../Components/AdvisorHUDCard';
@@ -37,7 +38,7 @@ export default function About({ advisor = defaultAdvisor }) {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href={advisor.whatsapp}
+                  href={whatsappLink({ sourceUrl: advisor.whatsapp, position: 'about_advisor', campaign: 'advisor_consultation' })}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-whatsapp text-white font-title-md font-bold shadow-md hover:bg-whatsapp-dark transition-colors"

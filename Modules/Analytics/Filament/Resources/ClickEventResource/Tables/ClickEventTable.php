@@ -68,6 +68,7 @@ class ClickEventTable
                 TextColumn::make('cta_position')
                     ->default('-')
                     ->searchable(),
+                TextColumn::make('utm_content')->label('UTM Content')->searchable()->toggleable(),
                 TextColumn::make('device')
                     ->badge()
                     ->color(fn ($state) => $state === 'mobile' ? 'warning' : 'info')

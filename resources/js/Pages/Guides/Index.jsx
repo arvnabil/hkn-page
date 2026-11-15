@@ -1,3 +1,4 @@
+import { whatsappLink } from '../../lib/whatsapp';
 import React, { useState } from 'react';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../../Layouts/AppLayout';
@@ -119,7 +120,7 @@ export default function GuidesIndex({
             Konsultasikan kebutuhan ruang rapat Anda langsung dengan {advisorShort} — spesialis kamera konferensi AVer berpengalaman.
           </p>
           <a
-            href={site.whatsapp}
+            href={whatsappLink({ sourceUrl: site.whatsapp, position: 'guides_footer', campaign: 'guide_consultation' })}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-mono text-sm font-bold hover:opacity-90 transition-opacity"

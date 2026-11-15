@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { router } from '@inertiajs/react';
+import useInquirySubmission from '../../hooks/useInquirySubmission';
+import InquiryProtection from '../InquiryProtection';
 import Swal from 'sweetalert2';
 
 export default function InquirySection({
@@ -13,45 +14,23 @@ export default function InquirySection({
     email: '',
     phone: '',
     company: '',
-    room_type: 'Boardroom (12-20 Orang)',
+    room_type: 'boardroom',
     budget_range: '50-100jt',
     notes: '',
   });
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
+  const { formRef, loading, errors, errorMessage, honeypot, setHoneypot, submit } = useInquirySubmission();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setErrors({});
-
-    router.post('/penawaran', formData, {
-      preserveScroll: true,
-      onSuccess: () => {
-        setLoading(false);
-        Swal.fire({
-          icon: 'success',
-          title: 'Permintaan Berhasil Dikirim',
-          text: 'Terima kasih! Proposal resmi dan jadwal PoC akan segera kami kirimkan ke email Anda.',
-          confirmButtonColor: '#E52421',
-        });
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          company: '',
-          room_type: 'Boardroom (12-20 Orang)',
-          budget_range: '50-100jt',
-          notes: '',
-        });
-      },
-      onError: (err) => {
-        setLoading(false);
-        setErrors(err);
-      },
-    });
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (await submit(formData)) {
+      Swal.fire({
+        icon: 'success', title: 'Permintaan Berhasil Disimpan',
+        text: 'Terima kasih! Tim kami akan menghubungi Anda untuk menindaklanjuti kebutuhan ruangan.',
+        confirmButtonColor: '#006191',
+      });
+      setFormData({ name: '', email: '', phone: '', company: '', room_type: 'boardroom', budget_range: '50-100jt', notes: '' });
+    }
   };
-
   return (
     <section className="py-16 md:py-24 bg-surface-alt border-b border-border-clean relative">
       <div className="mx-auto max-w-3xl px-gutter-mobile md:px-gutter">
@@ -75,7 +54,7 @@ export default function InquirySection({
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6 sm:p-8 rounded-2xl bg-surface border border-border-clean shadow-xl">
+        <form ref={formRef} onSubmit={handleSubmit} className="p-6 sm:p-8 rounded-2xl bg-surface border border-border-clean shadow-xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
               <label className="block text-xs font-mono font-bold text-secondary uppercase mb-1.5">
@@ -148,11 +127,11 @@ export default function InquirySection({
                 onChange={(e) => setFormData({ ...formData, room_type: e.target.value })}
                 className="w-full px-4 py-2.5 rounded-xl bg-surface-alt border border-border-clean text-sm text-on-surface focus:outline-none focus:border-aver-red"
               >
-                <option value="Huddle Room (2-6 Orang)">Huddle Room (2-6 Orang)</option>
-                <option value="Medium Conference (6-12 Orang)">Medium Conference (6-12 Orang)</option>
-                <option value="Boardroom (12-20 Orang)">Boardroom (12-20 Orang)</option>
-                <option value="Auditorium & Townhall (50+ Orang)">Auditorium & Townhall (50+ Orang)</option>
-                <option value="Ruang Kelas / Smart Classroom">Ruang Kelas / Smart Classroom</option>
+                <option value="huddle">Huddle Room (2-6 Orang)</option>
+                <option value="medium">Medium Conference (6-12 Orang)</option>
+                <option value="boardroom">Boardroom (12-20 Orang)</option>
+                <option value="auditorium">Auditorium & Townhall (50+ Orang)</option>
+
               </select>
             </div>
 
@@ -186,6 +165,8 @@ export default function InquirySection({
             />
           </div>
 
+          <InquiryProtection value={honeypot} onChange={setHoneypot} />
+          {errorMessage && <p role="alert" className="mb-4 rounded-lg border border-error/30 bg-error/10 p-3 text-sm text-error">{errorMessage}</p>}
           <button
             type="submit"
             disabled={loading}

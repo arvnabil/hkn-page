@@ -1,3 +1,4 @@
+import { whatsappLink } from '../../lib/whatsapp';
 import React from 'react';
 import { Link } from '@inertiajs/react';
 import AppLayout from '../../Layouts/AppLayout';
@@ -83,7 +84,7 @@ export default function GuidesShow({
                 <p className="font-body-md text-sm text-secondary">Konsultasikan kebutuhan ruang rapat Anda langsung dengan {advisorShort}.</p>
               </div>
               <a
-                href={site.whatsapp}
+                href={whatsappLink({ text: `Halo Harry, saya ingin konsultasi panduan ${guide.title}.`, position: 'guide_sidebar', campaign: 'guide_consultation', entityType: 'guide', entitySlug: guide.slug })}
                 target="_blank"
                 rel="noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary font-mono text-sm font-bold hover:opacity-90 transition-opacity"
@@ -112,7 +113,7 @@ export default function GuidesShow({
                 {advisor.bio}
               </p>
               <a
-                href={site.whatsapp}
+                href={whatsappLink({ text: `Halo Harry, saya ingin konsultasi panduan ${guide.title}.`, position: 'guide_detail', campaign: 'guide_consultation', entityType: 'guide', entitySlug: guide.slug })}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary font-mono text-xs font-bold hover:opacity-90 transition-opacity"

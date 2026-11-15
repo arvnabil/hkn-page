@@ -14,4 +14,9 @@ class ListInquiries extends ListRecords
     {
         return [];
     }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [\Modules\FormBuilder\Filament\Widgets\FormSecurityOverview::class];
+    }
 }

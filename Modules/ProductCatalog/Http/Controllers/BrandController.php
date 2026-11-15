@@ -50,21 +50,7 @@ class BrandController extends Controller
             ->latest()
             ->take(8) // Limit to 8 as per UI design
             ->get()
-            ->map(function ($product) {
-                // Get first category name
-                $categoryName = $product->categories->first()?->name ?? 'General';
-                
-                return (object) [
-                    'id' => $product->id,
-                    'name' => $product->name,
-                    'image_path' => $product->image_path ?? '/assets/default.png', // Fallback
-                    'price' => $product->price ?? 0,
-                    'category' => $categoryName,
-                    'is_active' => $product->is_active,
-                    'is_new' => $product->is_new,
-                    'slug' => $product->slug
-                ];
-            });
+            ->map->toFrontendArray();
 
         // 5. SEO
         $seo = SeoResolver::for($brand);
@@ -124,7 +110,8 @@ class BrandController extends Controller
             $query->orderBy('created_at', 'desc');
         }
 
-        $products = $query->paginate(12)->withQueryString();
+        $products = $query->paginate(12)->withQueryString()
+            ->through(fn (Product $product) => $product->toFrontendArray());
 
         // Device Categories available for this brand
         $categories = \Modules\ProductCatalog\Models\ProductCategory::whereHas('products', function ($q) use ($brand) {
